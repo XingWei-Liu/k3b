@@ -104,13 +104,15 @@ void K3b::JobProgressDialog::setupGUI()
 
     // header
     // ------------------------------------------------------------------------------------------
-    QFrame* headerParentFrame = new QFrame( this );
+    //QFrame* headerParentFrame = new QFrame( this );
+    QFrame* headerParentFrame = new QFrame( );
     headerParentFrame->setFrameShape( QFrame::StyledPanel );
     headerParentFrame->setFrameShadow( QFrame::Sunken );
     headerParentFrame->setLineWidth( 1 );
     headerParentFrame->setLayout( new QVBoxLayout() );
     headerParentFrame->layout()->setSpacing(0);
     headerParentFrame->layout()->setMargin(0);
+
 
     d->headerFrame = new QFrame( headerParentFrame );
     d->headerFrame->setFrameStyle( QFrame::NoFrame );
@@ -142,22 +144,25 @@ void K3b::JobProgressDialog::setupGUI()
     headerLayout->addLayout( jobLabelsLayout );
     headerLayout->setAlignment( jobLabelsLayout, Qt::AlignVCenter );
 
-    mainLayout->addWidget( headerParentFrame );
+    //mainLayout->addWidget( headerParentFrame );
     // ------------------------------------------------------------------------------------------
 
     d->viewInfo = new QTreeWidget( this );
+    //d->viewInfo = new QTreeWidget( );
     d->viewInfo->setAllColumnsShowFocus( true );
     d->viewInfo->setHeaderHidden( true );
     d->viewInfo->setSortingEnabled( false );
     d->viewInfo->setRootIsDecorated( false );
     d->viewInfo->setSelectionMode( QAbstractItemView::NoSelection );
     d->viewInfo->setFocusPolicy( Qt::NoFocus );
-    mainLayout->addWidget( d->viewInfo, 1 );
+    d->viewInfo->setFixedHeight(30);
+    //mainLayout->addWidget( d->viewInfo, 1 );
 
 
     // progress header
     // ------------------------------------------------------------------------------------------
-    QFrame* progressHeaderParentFrame = new QFrame( this );
+    //QFrame* progressHeaderParentFrame = new QFrame( this );
+    QFrame* progressHeaderParentFrame = new QFrame( );
     progressHeaderParentFrame->setFrameShape( QFrame::StyledPanel );
     progressHeaderParentFrame->setFrameShadow( QFrame::Sunken );
     progressHeaderParentFrame->setLineWidth( 1 );
@@ -192,22 +197,25 @@ void K3b::JobProgressDialog::setupGUI()
     progressHeaderLayout->addLayout( jobProgressLayout );
     progressHeaderLayout->setAlignment( jobProgressLayout, Qt::AlignVCenter );
     progressHeaderLayout->addWidget( new K3b::ThemedLabel( K3b::Theme::PROGRESS_RIGHT, d->progressHeaderFrame ) );
-    mainLayout->addWidget( progressHeaderParentFrame );
+    //mainLayout->addWidget( progressHeaderParentFrame );
     // ------------------------------------------------------------------------------------------
 
     QHBoxLayout* layout3 = new QHBoxLayout;
 
-    m_labelSubTask = new KSqueezedTextLabel( this );
+    //m_labelSubTask = new KSqueezedTextLabel( this );
+    m_labelSubTask = new KSqueezedTextLabel( );
     m_labelSubTask->setTextElideMode( Qt::ElideRight );
     layout3->addWidget( m_labelSubTask );
 
-    m_labelSubProcessedSize = new QLabel( this );
+    //m_labelSubProcessedSize = new QLabel( this );
+    m_labelSubProcessedSize = new QLabel(  );
     m_labelSubProcessedSize->setAlignment( Qt::AlignVCenter | Qt::AlignRight );
     layout3->addWidget( m_labelSubProcessedSize );
-    mainLayout->addLayout( layout3 );
+    //mainLayout->addLayout( layout3 );
 
-    m_progressSubPercent = new QProgressBar( this );
-    mainLayout->addWidget( m_progressSubPercent );
+    //m_progressSubPercent = new QProgressBar( this );
+    m_progressSubPercent = new QProgressBar( );
+    //mainLayout->addWidget( m_progressSubPercent );
 
     QHBoxLayout* layout4 = new QHBoxLayout;
 
@@ -221,13 +229,15 @@ void K3b::JobProgressDialog::setupGUI()
 
     m_progressPercent = new QProgressBar( this );
     mainLayout->addWidget( m_progressPercent );
+    mainLayout->addWidget( d->viewInfo, 1 );
 
-    m_frameExtraInfo = new QFrame( this );
+    //m_frameExtraInfo = new QFrame( this );
+    m_frameExtraInfo = new QFrame( );
     m_frameExtraInfo->setFrameShape( QFrame::NoFrame );
     m_frameExtraInfo->setFrameShadow( QFrame::Raised );
     m_frameExtraInfoLayout = new QGridLayout( m_frameExtraInfo );
     m_frameExtraInfoLayout->setContentsMargins( 0, 0, 0,0 );
-    mainLayout->addWidget( m_frameExtraInfo );
+    //mainLayout->addWidget( m_frameExtraInfo );
 
     QDialogButtonBox* buttonBox = new QDialogButtonBox( this );
     m_cancelButton = buttonBox->addButton( QDialogButtonBox::Cancel );
@@ -340,8 +350,10 @@ void K3b::JobProgressDialog::slotProcessedSubSize( int processedTrackSize, int t
 
 void K3b::JobProgressDialog::slotInfoMessage( const QString& infoString, int type )
 {
+    d->viewInfo->clear();
     QTreeWidgetItem* currentInfoItem = new QTreeWidgetItem( d->viewInfo );
     currentInfoItem->setText( 0, infoString );
+    currentInfoItem->setFirstColumnSpanned( true );
 
     // set the icon
     switch( type ) {

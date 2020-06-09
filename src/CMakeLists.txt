@@ -78,6 +78,8 @@ add_executable(k3b
     k3bfileview.cpp
     k3bdirview.cpp
     k3b.cpp
+    k3b
+    k3bTitleBar.cpp
     main.cpp
     k3bstatusbarmanager.cpp
     k3burlnavigator.cpp

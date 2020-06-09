@@ -446,8 +446,10 @@ void K3b::ImageWritingDialog::setupGui()
 
     // image
     // -----------------------------------------------------------------------
-    QGroupBox* groupImageUrl = new QGroupBox( i18n("Image to Burn"), frame );
-    d->comboRecentImages = new KComboBox( true, this );
+    //QGroupBox* groupImageUrl = new QGroupBox( i18n("Image to Burn"), frame );
+    QGroupBox* groupImageUrl = new QGroupBox( i18n(" "), frame );
+    //d->comboRecentImages = new KComboBox( true, this );
+    d->comboRecentImages = new KComboBox( true );
     d->comboRecentImages->setSizeAdjustPolicy( QComboBox::AdjustToMinimumContentsLength );
     d->editImagePath = new KUrlRequester( d->comboRecentImages, groupImageUrl );
     d->editImagePath->setMode( KFile::File|KFile::ExistingOnly );
@@ -464,7 +466,8 @@ void K3b::ImageWritingDialog::setupGui()
     QHBoxLayout* groupImageUrlLayout = new QHBoxLayout( groupImageUrl );
     groupImageUrlLayout->addWidget( d->editImagePath );
 
-    QGroupBox* groupImageType = new QGroupBox( i18n("Image Type"), frame );
+    //QGroupBox* groupImageType = new QGroupBox( i18n("Image Type"), frame );
+    QGroupBox* groupImageType = new QGroupBox( i18n(" "), frame );
     QHBoxLayout* groupImageTypeLayout = new QHBoxLayout( groupImageType );
     d->comboImageType = new QComboBox( groupImageType );
     groupImageTypeLayout->addWidget( d->comboImageType );
@@ -492,7 +495,8 @@ void K3b::ImageWritingDialog::setupGui()
 
     // image info
     // -----------------------------------------------------------------------
-    d->infoView = new QTreeWidget( frame );
+    //d->infoView = new QTreeWidget( frame );
+    d->infoView = new QTreeWidget( );
     d->infoView->setColumnCount( 2 );
     d->infoView->headerItem()->setText( 0, "key" );
     d->infoView->headerItem()->setText( 1, "value" );
@@ -515,6 +519,7 @@ void K3b::ImageWritingDialog::setupGui()
             this, SLOT(slotContextMenuRequested(QPoint)) );
 
     d->writerSelectionWidget = new K3b::WriterSelectionWidget( frame );
+    d->writerSelectionWidget->hideComboMedium();
     d->writerSelectionWidget->setWantedMediumType( K3b::Device::MEDIA_WRITABLE );
     d->writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_EMPTY );
 
@@ -526,15 +531,17 @@ void K3b::ImageWritingDialog::setupGui()
     QGridLayout* optionTabLayout = new QGridLayout( optionTab );
     optionTabLayout->setAlignment( Qt::AlignTop );
 
-    QGroupBox* writingModeGroup = new QGroupBox( i18n("Writing Mode"), optionTab );
+    //QGroupBox* writingModeGroup = new QGroupBox( i18n("Writing Mode"), optionTab );
+    QGroupBox* writingModeGroup = new QGroupBox( i18n("Writing Mode") );
     d->writingModeWidget = new K3b::WritingModeWidget( writingModeGroup );
     QHBoxLayout* writingModeGroupLayout = new QHBoxLayout( writingModeGroup );
     writingModeGroupLayout->addWidget( d->writingModeWidget );
 
     // copies --------
-    QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), optionTab );
+    //QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), optionTab );
+    QGroupBox* groupCopies = new QGroupBox( i18n("Copies") );
     QLabel* pixLabel = new QLabel( groupCopies );
-    pixLabel->setPixmap( QIcon::fromTheme("tools-media-optical-copy").pixmap(KIconLoader::SizeMedium) );
+    pixLabel->setPixmap( SmallIcon( "tools-media-optical-copy", KIconLoader::SizeMedium ) );
     pixLabel->setScaledContents( false );
     d->spinCopies = new QSpinBox( groupCopies );
     d->spinCopies->setMinimum( 1 );
@@ -548,21 +555,46 @@ void K3b::ImageWritingDialog::setupGui()
     d->checkDummy = K3b::StdGuiItems::simulateCheckbox( optionGroup );
     d->checkCacheImage = K3b::StdGuiItems::createCacheImageCheckbox( optionGroup );
     d->checkVerify = K3b::StdGuiItems::verifyCheckBox( optionGroup );
+
+//tmp
+    d->tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
+    QLabel *m_labeltmpPath = new QLabel( optionTab );
+    QLineEdit *m_tmpPath = new QLineEdit( optionTab );
+    QString tmp_path ="temp file path: ";
+    KIO::filesize_t tempFreeSpace = d->tempDirSelectionWidget->freeTempSpace();
+
+    qDebug() << "temp path:::" << d->tempDirSelectionWidget->tempPath() <<endl;
+
+    QString tmp_size = d->tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
+    m_labeltmpPath->setText( tmp_path );
+    m_tmpPath->setText( tmp_size);
+
+    //********************
+    QPushButton *button_save = new QPushButton(optionGroup);
+    button_save->setText("save");
+    connect( button_save, SIGNAL( clicked() ), this, SLOT( slotSaveClicked() ) );
+  //***************
     QVBoxLayout* optionGroupLayout = new QVBoxLayout( optionGroup );
     optionGroupLayout->addWidget( d->checkDummy );
     optionGroupLayout->addWidget( d->checkCacheImage );
     optionGroupLayout->addWidget( d->checkVerify );
-    optionGroupLayout->addStretch( 1 );
+    //tmp
+    optionGroupLayout->addWidget( m_labeltmpPath );
+    optionGroupLayout->addWidget( m_tmpPath );
+    optionGroupLayout->addWidget( button_save );
 
+    optionGroupLayout->addStretch( 1 );
+/*
     optionTabLayout->addWidget( writingModeGroup, 0, 0 );
     optionTabLayout->addWidget( groupCopies, 1, 0 );
     optionTabLayout->addWidget( optionGroup, 0, 1, 2, 1 );
     optionTabLayout->setRowStretch( 1, 1 );
     optionTabLayout->setColumnStretch( 1, 1 );
-
+*/
+    optionTabLayout->addWidget( optionGroup , 0, 0);
     d->optionTabbed->addTab( optionTab, i18n("Settings") );
 
-
+/*
     // image tab ------------------------------------
     d->tempPathTab = new QWidget( d->optionTabbed );
     QGridLayout* imageTabGrid = new QGridLayout( d->tempPathTab );
@@ -574,7 +606,7 @@ void K3b::ImageWritingDialog::setupGui()
     d->tempPathTabIndex = d->optionTabbed->addTab( d->tempPathTab, i18n("&Image") );
     d->tempPathTabVisible = true;
     // -------------------------------------------------------------
-
+*/
 
     // advanced ---------------------------------
     d->advancedTab = new QWidget( d->optionTabbed );
@@ -600,13 +632,14 @@ void K3b::ImageWritingDialog::setupGui()
     QGridLayout* grid = new QGridLayout( frame );
     grid->setContentsMargins( 0, 0, 0, 0 );
 
-    grid->addWidget( groupImageUrl, 0, 0 );
-    grid->addWidget( groupImageType, 0, 1 );
-    grid->setColumnStretch( 0, 1 );
-    grid->addWidget( d->infoView, 1, 0, 1, 2 );
-    grid->addWidget( d->writerSelectionWidget, 2, 0, 1, 2 );
-    grid->addWidget( d->optionTabbed, 3, 0, 1, 2 );
-
+    //grid->addWidget( groupImageUrl, 0, 0 );
+    //grid->addWidget( groupImageType, 0, 1 );
+    //grid->setColumnStretch( 0, 1 );
+    //grid->addWidget( d->infoView, 1, 0, 1, 2 );
+    //grid->addWidget( d->writerSelectionWidget, 2, 0, 1, 2 );
+    //grid->addWidget( d->optionTabbed, 3, 0, 1, 2 );
+    grid->addWidget( d->writerSelectionWidget, 0, 0, 1, 2 );
+    grid->addWidget( d->optionTabbed, 1, 0, 1, 2 );
     grid->setRowStretch( 1, 1 );
 
 
@@ -636,9 +669,28 @@ void K3b::ImageWritingDialog::setupGui()
                                          "files.") );
 }
 
+void K3b::ImageWritingDialog::slotSaveClicked()
+{
+    saveConfig();
+    this->close();
+}
+
+void K3b::ImageWritingDialog::saveConfig()
+{
+    KConfigGroup grp( KSharedConfig::openConfig(), "image writing" );
+    saveSettings( grp );
+}
+
+void K3b::ImageWritingDialog::setComboMedium( K3b::Device::Device* dev )
+{
+    d->writerSelectionWidget->setWantedMedium( dev );
+}
 
 void K3b::ImageWritingDialog::slotStartClicked()
 {
+    KConfigGroup g( KSharedConfig::openConfig(), "image writing" );
+    loadSettings( g );
+    
     d->md5Job->cancel();
 
     // save the path
@@ -1004,6 +1056,7 @@ void K3b::ImageWritingDialog::toggleAll()
         d->tempPathTabVisible = false;
     }
     d->checkCacheImage->setVisible( d->currentImageType() == IMAGE_AUDIO_CUE );
+    //d->checkCacheImage->setVisible( true );
 
     d->spinCopies->setEnabled( !d->checkDummy->isChecked() );
 

@@ -41,7 +41,7 @@ namespace K3b {
         void slotToggleOptions();
         void slotCurrentChanged( const QModelIndex& current, const QModelIndex& previous );
 
-        /* reimplemented from base_...*/
+        /* reimplemeted from base_...*/
         void slotOptionsChanged();
 
         void slotNoEmulationToggled( bool );

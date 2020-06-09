@@ -625,7 +625,7 @@ QStringList K3b::MetaItemModel::mimeTypes() const
     {
         types += it->model()->mimeTypes().toSet();
     }
-    return types.values();
+    return types.toList();
 }
 
 
@@ -840,7 +840,7 @@ void K3b::MetaItemModel::slotRowsAboutToBeInserted( const QModelIndex& parent, i
     else
         parentNode = place;
 
-    // if the node doesn't have children yet (maybe not yet accessed)
+    // if the node doesn't have children yet (maybe not yet acessed)
     // or if it has less items than the start point of this insertion
     // simply load the child nodes
     if (start > parentNode->children.count()) {

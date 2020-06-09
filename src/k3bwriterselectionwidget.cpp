@@ -122,7 +122,10 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     d->lastSetSpeed = -1;
 
     QGroupBox* groupWriter = new QGroupBox( this );
-    groupWriter->setTitle( i18n( "Burn Medium" ) );
+    //groupWriter->setTitle( i18n( "Burn Medium" ) );
+    groupWriter->setTitle( i18n( "Burn Setting" ) );
+    
+    QGroupBox* group_Writer = new QGroupBox(  );
 
     QGridLayout* groupWriterLayout = new QGridLayout( groupWriter );
     groupWriterLayout->setAlignment( Qt::AlignTop );
@@ -132,17 +135,22 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
 
     m_comboSpeed = new K3b::IntMapComboBox( groupWriter );
 
-    m_comboMedium = new MediaSelectionComboBox( groupWriter );
+    m_comboMedium = new MediaSelectionComboBox( group_Writer );
 
     m_writingAppLabel = new QLabel( i18n("Writing app:"), groupWriter );
     m_comboWritingApp = new K3b::IntMapComboBox( groupWriter );
-
+/*
     groupWriterLayout->addWidget( m_comboMedium, 0, 0 );
     groupWriterLayout->addWidget( labelSpeed, 0, 1 );
     groupWriterLayout->addWidget( m_comboSpeed, 0, 2 );
     groupWriterLayout->addWidget( m_writingAppLabel, 0, 3 );
     groupWriterLayout->addWidget( m_comboWritingApp, 0, 4 );
     groupWriterLayout->setColumnStretch( 0, 1 );
+  */
+   
+    groupWriterLayout->addWidget( m_comboMedium, 0, 0 );
+    groupWriterLayout->addWidget( labelSpeed, 1, 0 );
+    groupWriterLayout->addWidget( m_comboSpeed, 2, 0 );
 
 
     QGridLayout* mainLayout = new QGridLayout( this );
@@ -161,8 +169,10 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     connect( m_comboMedium, SIGNAL(newMedia()), this, SIGNAL(newMedia()) );
     connect( m_comboMedium, SIGNAL(newMedium(K3b::Device::Device*)), this, SIGNAL(newMedium(K3b::Device::Device*)) );
     connect( m_comboMedium, SIGNAL(newMedium(K3b::Device::Device*)), this, SLOT(slotNewBurnMedium(K3b::Device::Device*)) );
+  
     connect( m_comboWritingApp, SIGNAL(valueChanged(int)), this, SLOT(slotWritingAppSelected(int)) );
     connect( this, SIGNAL(writerChanged()), SLOT(slotWriterChanged()) );
+
     connect( m_comboSpeed, SIGNAL(valueChanged(int)), this, SLOT(slotSpeedChanged(int)) );
 
 
@@ -173,6 +183,7 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     m_comboMedium->setWhatsThis( i18n("<p>Select the medium that you want to use for burning."
                                       "<p>In most cases there will only be one medium available which "
                                       "does not leave much choice.") );
+
     m_comboSpeed->setWhatsThis( i18n("<p>Select the speed with which you want to burn."
                                      "<p><b>Auto</b><br>"
                                      "This will choose the maximum writing speed possible with the used "
@@ -204,6 +215,15 @@ K3b::WriterSelectionWidget::~WriterSelectionWidget()
     delete d;
 }
 
+void K3b::WriterSelectionWidget::hideComboMedium( )
+{
+    m_comboMedium->hide();
+}
+
+void K3b::WriterSelectionWidget::setWantedMedium( K3b::Device::Device* dev )
+{
+    m_comboMedium->setSelectedDevice( dev );
+}
 
 void K3b::WriterSelectionWidget::setWantedMediumType( Device::MediaTypes type )
 {

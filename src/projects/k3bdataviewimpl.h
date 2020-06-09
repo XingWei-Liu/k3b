@@ -52,15 +52,19 @@ namespace K3b {
 
     public Q_SLOTS:
         void slotCurrentRootChanged( const QModelIndex& newRoot );
+        void slotItemActivated( const QModelIndex& index );
 
     private Q_SLOTS:
         void slotNewDir();
+        //*************************************
+        void slotOpenDir();
+        void slotClear();
+
         void slotRemove();
         void slotRename();
         void slotProperties();
         void slotOpen();
         void slotSelectionChanged();
-        void slotItemActivated( const QModelIndex& index );
         void slotEnterPressed();
         void slotImportSession();
         void slotClearImportedSession();
@@ -81,6 +85,10 @@ namespace K3b {
         QAction* m_actionRemove;
         QAction* m_actionRename;
         QAction* m_actionNewDir;
+        //******************************************
+        QAction* m_actionOpenDir;
+        QAction* m_actionClear;
+
         QAction* m_actionProperties;
         QAction* m_actionOpen;
         QAction* m_actionImportSession;

@@ -31,7 +31,7 @@ namespace K3b {
         ~DataMultiSessionCombobox() override;
 
         /**
-         * returns DataDoc::multiSessionModes
+         * returnes DataDoc::multiSessionModes
          */
         DataDoc::MultiSessionMode multiSessionMode() const;
 

@@ -38,7 +38,7 @@ public:
 
 void VolumeNameWidget::Private::fontChanged( const QFontMetrics& fontMetrics )
 {
-    volumeNameEdit->setMaximumWidth( fontMetrics.boundingRect('A').width()*50 );
+    volumeNameEdit->setMaximumWidth( fontMetrics.width('A')*50 );
 }
 
 
@@ -47,7 +47,21 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
       d( new Private )
 {
     d->doc = doc;
+    //this->setFixedWidth(200);
+    d->volumeNameEdit = new KLineEdit( KIO::convertSize( doc->size() ), this );
+    d->volumeNameEdit->setReadOnly(true);
+    d->volumeNameEdit->setFixedWidth(100);
+    //d->volumeNameEdit->setText((char *)doc->size());
+    
+    QHBoxLayout* layout = new QHBoxLayout( this );
+    layout->addStretch();
+    layout->addWidget( new QLabel( i18n("Project Size:"), this ), 1, Qt::AlignRight );
+    layout->addWidget( d->volumeNameEdit, 2 );
+    layout->setContentsMargins( 0, 0, 0, 0 );
+    connect( d->doc, SIGNAL(changed()),
+             this, SLOT(slotDocChanged()) );
 
+/*
     d->volumeNameEdit = new KLineEdit( doc->isoOptions().volumeID(), this );
     d->volumeNameEdit->setValidator( new Latin1Validator( d->volumeNameEdit ) );
     d->volumeNameEdit->setClearButtonEnabled( true );
@@ -62,6 +76,7 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
              d->doc, SLOT(setVolumeID(QString)) );
     connect( d->doc, SIGNAL(changed()),
              this, SLOT(slotDocChanged()) );
+*/
 }
 
 
@@ -83,8 +98,12 @@ void VolumeNameWidget::changeEvent( QEvent* event )
 void VolumeNameWidget::slotDocChanged()
 {
     // do not update the editor in case it changed the volume id itself
+    d->volumeNameEdit->setText( KIO::convertSize( d->doc->size() ) );
+     
+/*  
     if( d->doc->isoOptions().volumeID() != d->volumeNameEdit->text() )
         d->volumeNameEdit->setText( d->doc->isoOptions().volumeID() );
+*/
 }
 
 } // namespace K3b

@@ -27,6 +27,12 @@ namespace K3b {
     class DataImageSettingsWidget;
     class DataModeWidget;
     class DataMultiSessionCombobox;
+    
+    namespace Device {
+        class DeviceManager;
+        class Device;
+    }
+
 
     /**
      *@author Sebastian Trueg
@@ -38,6 +44,9 @@ namespace K3b {
     public:
         explicit DataBurnDialog(DataDoc*, QWidget *parent=0 );
         ~DataBurnDialog() override;
+        
+    void setComboMedium( K3b::Device::Device* dev );
+    void saveConfig();
 
     protected:
         void setupSettingsTab();
@@ -45,6 +54,7 @@ namespace K3b {
         void loadSettings( const KConfigGroup& ) override;
         void saveSettings( KConfigGroup ) override;
         void toggleAll() override;
+
 
         // --- settings tab ---------------------------
         DataImageSettingsWidget* m_imageSettingsWidget;
@@ -56,12 +66,16 @@ namespace K3b {
 
         QCheckBox* m_checkVerify;
 
-    protected Q_SLOTS:
+    //protected Q_SLOTS:
+    public Q_SLOTS:
+        void slotClose();
         void slotStartClicked() override;
         void saveSettingsToProject() override;
         void readSettingsFromProject() override;
 
         void slotMultiSessionModeChanged();
+    public:
+        DataDoc*  m_doc;
     };
 }
 

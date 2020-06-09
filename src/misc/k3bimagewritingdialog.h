@@ -28,6 +28,10 @@ namespace K3b {
     class Iso9660;
     class CueFileParser;
 
+    namespace Device {
+        class DeviceManager;
+        class Device;
+    }   
 
     /**
      *@author Sebastian Trueg
@@ -40,11 +44,16 @@ namespace K3b {
         explicit ImageWritingDialog( QWidget* = 0 );
         ~ImageWritingDialog() override;
 
+        void setComboMedium( K3b::Device::Device* dev );
         void setImage( const QUrl& url );
+        void saveConfig();
+        class Private;
+        Private* d;
 
-    protected Q_SLOTS:
+    //protected Q_SLOTS:
+    public Q_SLOTS:
         void slotStartClicked() override;
-
+        void slotSaveClicked();
         void slotMd5JobPercent( int );
         void slotMd5JobFinished( bool );
         void slotContextMenuRequested( const QPoint& pos );
@@ -65,8 +74,8 @@ namespace K3b {
     private:
         void setupGui();
 
-        class Private;
-        Private* d;
+        //class Private;
+        //Private* d;
     };
 }
 

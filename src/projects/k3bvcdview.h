@@ -20,6 +20,10 @@
 #include "k3bview.h"
 
 #include <QModelIndex>
+#include <QComboBox>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QRadioButton>
 
 class QAction;
 class QTreeView;
@@ -30,6 +34,10 @@ namespace K3b {
     class ProjectBurnDialog;
     class VcdDoc;
     class VcdProjectModel;
+    namespace Device {
+        class DeviceManager;
+        class Device;
+    }
 
     class VcdView : public View
     {
@@ -38,7 +46,16 @@ namespace K3b {
         public:
             VcdView( VcdDoc* doc, QWidget* parent );
             ~VcdView() override;
-
+   
+            void MediaCopy( K3b::Device::Device* dev );
+      
+        public Q_SLOTS:
+            void slotLabel_CDClicked();
+            void slotLabel_pathClicked();
+            void slotOpenfile();
+            void slotSetting();
+            void slotStartBurn();
+            
         private Q_SLOTS:
             void slotSelectionChanged();
             void slotProperties() override;
@@ -49,7 +66,15 @@ namespace K3b {
             ProjectBurnDialog* newBurnDialog( QWidget* parent = 0 ) override;
 
             void init();
-
+        public:
+            QRadioButton* label_CD;
+            QRadioButton* label_path;
+            QComboBox* combo_CD;
+            QComboBox* combo_iso;
+            QLineEdit* lineedit_CD;
+            QPushButton* button_openfile;
+            QPushButton* button_setting;
+            QString filepath;
         private:
             VcdDoc* m_doc;
             VcdProjectModel* m_model;

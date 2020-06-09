@@ -65,15 +65,19 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
 
     // header
     // ---------------------------------------------------------------------------------------------------
-    m_dialogHeader = new K3b::ThemedHeader( this );
-    mainGrid->addWidget( m_dialogHeader, 0, 0, 1, 3 );
+    //m_dialogHeader = new K3b::ThemedHeader( this );
+    m_dialogHeader = new K3b::ThemedHeader(  );
+    //mainGrid->addWidget( m_dialogHeader, 0, 0, 1, 3 );
 
+    KConfigGroup c( KSharedConfig::openConfig(), m_configGroup );
+    //qDebug() << "config name:"  << c.name() << endl;
 
     // settings buttons
     // ---------------------------------------------------------------------------------------------------
     if( !m_configGroup.isEmpty() ) {
         QHBoxLayout* layout2 = new QHBoxLayout;
-        m_buttonLoadSettings = new QToolButton( this );
+        //m_buttonLoadSettings = new QToolButton( this );
+        m_buttonLoadSettings = new QToolButton( );
         m_buttonLoadSettings->setIcon( QIcon::fromTheme( "document-revert" ) );
         m_buttonLoadSettings->setPopupMode( QToolButton::InstantPopup );
         QMenu* userDefaultsPopup = new QMenu( m_buttonLoadSettings );
@@ -83,11 +87,12 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
         m_buttonLoadSettings->setMenu( userDefaultsPopup );
         layout2->addWidget( m_buttonLoadSettings );
 
-        m_buttonSaveSettings = new QToolButton( this );
+        //m_buttonSaveSettings = new QToolButton( this );
+        m_buttonSaveSettings = new QToolButton( );
         m_buttonSaveSettings->setIcon( QIcon::fromTheme( "document-save" ) );
         layout2->addWidget( m_buttonSaveSettings );
 
-        mainGrid->addLayout( layout2, 2, 0 );
+        //mainGrid->addLayout( layout2, 2, 0 );
     }
 
     QSpacerItem* spacer = new QSpacerItem( 10, 10, QSizePolicy::Expanding, QSizePolicy::Minimum );
@@ -95,12 +100,14 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
 
     // action buttons
     // ---------------------------------------------------------------------------------------------------
-    QDialogButtonBox *buttonBox = new QDialogButtonBox( this );
+    //QDialogButtonBox *buttonBox = new QDialogButtonBox( this );
+    QDialogButtonBox *buttonBox = new QDialogButtonBox( );
     connect( buttonBox, SIGNAL(accepted()), this, SLOT(accept()) );
     connect( buttonBox, SIGNAL(rejected()), this, SLOT(reject()) );
 
     if( buttonMask & START_BUTTON ) {
-        m_buttonStart = new QPushButton( buttonBox );
+        //m_buttonStart = new QPushButton( buttonBox );
+        m_buttonStart = new QPushButton( );
         KGuiItem::assign( m_buttonStart, KStandardGuiItem::ok() );
         // refine the button text
         setButtonText( START_BUTTON,
@@ -112,7 +119,8 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
         buttonBox->addButton( m_buttonStart, QDialogButtonBox::AcceptRole );
     }
     if( buttonMask & SAVE_BUTTON ) {
-        m_buttonSave = new QPushButton( buttonBox );
+        //m_buttonSave = new QPushButton( buttonBox );
+        m_buttonSave = new QPushButton( );
         KGuiItem::assign( m_buttonSave, KStandardGuiItem::save() );
         buttonBox->addButton( m_buttonSave, QDialogButtonBox::ApplyRole );
     }
@@ -120,7 +128,8 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
         m_buttonSave = 0;
     }
     if( buttonMask & CANCEL_BUTTON ) {
-        m_buttonCancel = new QPushButton( buttonBox );
+        //m_buttonCancel = new QPushButton( buttonBox );
+        m_buttonCancel = new QPushButton( );
         KGuiItem::assign( m_buttonCancel, KConfigGroup( KSharedConfig::openConfig(), "General Options" )
                           .readEntry( "keep action dialogs open", false )
                           ? KStandardGuiItem::close()
@@ -131,7 +140,7 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
         m_buttonCancel = 0;
     }
 
-    mainGrid->addWidget( buttonBox, 2, 2 );
+    //mainGrid->addWidget( buttonBox, 2, 2 );
     mainGrid->setRowStretch( 1, 1 );
 
     setTitle( title, subTitle );

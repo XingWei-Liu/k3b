@@ -311,7 +311,7 @@ void K3b::ProjectManager::loadDefaults( K3b::Doc* doc )
 
         audioDoc->writeCdText( c.readEntry( "cd_text", true ) );
         audioDoc->setHideFirstTrack( c.readEntry( "hide_first_track", false ) );
-        audioDoc->setNormalize( c.readEntry( "normalize", false ) );
+        audioDoc->setNormalize( c.readEntry( "normalize-audio", false ) );
         audioDoc->setAudioRippingParanoiaMode( c.readEntry( "paranoia mode", 0 ) );
         audioDoc->setAudioRippingRetries( c.readEntry( "read retries", 128 ) );
         audioDoc->setAudioRippingIgnoreReadErrors( c.readEntry( "ignore read errors", false ) );
@@ -382,7 +382,7 @@ void K3b::ProjectManager::loadDefaults( K3b::Doc* doc )
         K3b::MixedDoc* mixedDoc = static_cast<K3b::MixedDoc*>(doc);
 
         mixedDoc->audioDoc()->writeCdText( c.readEntry( "cd_text", true ) );
-        mixedDoc->audioDoc()->setNormalize( c.readEntry( "normalize", false ) );
+        mixedDoc->audioDoc()->setNormalize( c.readEntry( "normalize-audio", false ) );
 
         // load mixed type
         if( c.readEntry( "mixed_type" ) == "last_track" )
@@ -487,7 +487,7 @@ K3b::Doc* K3b::ProjectManager::openProject( const QUrl& url )
         tmpfile.remove();
         if ( tmpfile.open() ) {
             //
-            // First check if this is really an xml file because if this is a very big file
+            // First check if this is really an xml file beacuse if this is a very big file
             // the setContent method blocks for a very long time
             //
             char test[5];

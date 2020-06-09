@@ -40,12 +40,24 @@ namespace K3b {
     public:
         explicit MediaCopyDialog( QWidget *parent = 0 );
         ~MediaCopyDialog() override;
+        
+        void setComboMedium( K3b::Device::Device* dev );
+        void setTempDirPath( const QString& dir );
+        void saveConfig();
+        void setOnlyCreateImage( bool ret);
+        QCheckBox* m_checkOnlyCreateImage;
+        QCheckBox* m_checkCacheImage;
 
         void setReadingDevice( Device::Device* );
         Device::Device* readingDevice() const;
-
-    private Q_SLOTS:
+        
+    
+    public Q_SLOTS:
         void slotStartClicked() override;
+        void slotSaveClicked();
+    
+    private Q_SLOTS:
+        //void slotStartClicked() override;
         void updateOverrideDevice();
 
     protected:
@@ -61,9 +73,9 @@ namespace K3b {
         WriterSelectionWidget* m_writerSelectionWidget;
         TempDirSelectionWidget* m_tempDirSelectionWidget;
         QCheckBox* m_checkSimulate;
-        QCheckBox* m_checkCacheImage;
+        //QCheckBox* m_checkCacheImage;
         QCheckBox* m_checkDeleteImages;
-        QCheckBox* m_checkOnlyCreateImage;
+        //QCheckBox* m_checkOnlyCreateImage;
         QCheckBox* m_checkReadCdText;
         QCheckBox* m_checkIgnoreDataReadErrors;
         QCheckBox* m_checkIgnoreAudioReadErrors;

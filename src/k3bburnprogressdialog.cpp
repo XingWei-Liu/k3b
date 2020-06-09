@@ -33,13 +33,15 @@
 K3b::BurnProgressDialog::BurnProgressDialog( QWidget *parent, bool showSubProgress )
     : K3b::JobProgressDialog( parent, showSubProgress )
 {
-    m_labelWritingSpeed = new QLabel( m_frameExtraInfo );
+    //m_labelWritingSpeed = new QLabel( m_frameExtraInfo );
+    m_labelWritingSpeed = new QLabel( );
     //  m_labelWritingSpeed->setAlignment( int( Qt::AlignVCenter | Qt::AlignRight ) );
 
-    m_frameExtraInfoLayout->addWidget( m_labelWritingSpeed, 2, 0 );
-    m_frameExtraInfoLayout->addWidget( new QLabel( i18n("Estimated writing speed:"), m_frameExtraInfo ), 1, 0 );
+    //m_frameExtraInfoLayout->addWidget( m_labelWritingSpeed, 2, 0 );
+    //m_frameExtraInfoLayout->addWidget( new QLabel( i18n("Estimated writing speed:"), m_frameExtraInfo ), 1, 0 );
 
-    QFrame* labelParentWriter = new QFrame( m_frameExtraInfo );
+    //QFrame* labelParentWriter = new QFrame( m_frameExtraInfo );
+    QFrame* labelParentWriter = new QFrame( );
     labelParentWriter->setFrameShape( QFrame::StyledPanel );
     labelParentWriter->setFrameShadow( QFrame::Sunken );
     labelParentWriter->setLineWidth( 1 );
@@ -55,7 +57,7 @@ K3b::BurnProgressDialog::BurnProgressDialog( QWidget *parent, bool showSubProgre
     m_labelWriter->setFont( textLabel14_font );
     labelParentWriter->layout()->addWidget( m_labelWriter );
 
-    m_frameExtraInfoLayout->addWidget( labelParentWriter, 0, 0, 1, 4 );
+    //m_frameExtraInfoLayout->addWidget( labelParentWriter, 0, 0, 1, 4 );
     m_frameExtraInfoLayout->addWidget( new QLabel( i18n("Software buffer:"), m_frameExtraInfo ), 1, 2 );
     m_frameExtraInfoLayout->addWidget( new QLabel( i18n("Device buffer:"), m_frameExtraInfo ), 2, 2 );
 
@@ -64,7 +66,8 @@ K3b::BurnProgressDialog::BurnProgressDialog( QWidget *parent, bool showSubProgre
 
     m_progressDeviceBuffer = new QProgressBar( m_frameExtraInfo );
     m_frameExtraInfoLayout->addWidget( m_progressDeviceBuffer, 2, 3 );
-    m_frameExtraInfoLayout->addWidget( K3b::StdGuiItems::verticalLine( m_frameExtraInfo ), 1, 1, 2, 1 );
+    //m_frameExtraInfoLayout->addWidget( K3b::StdGuiItems::verticalLine( m_frameExtraInfo ), 1, 1, 2, 1 );
+
 }
 
 K3b::BurnProgressDialog::~BurnProgressDialog()

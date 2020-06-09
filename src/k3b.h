@@ -18,6 +18,7 @@
 #define K3B_H
 
 #include "option/k3boptiondialog.h"
+#include "k3bTitleBar.h"
 
 #include <KSharedConfig>
 #include <KXmlGuiWindow>
@@ -30,6 +31,8 @@ namespace K3b {
     class View;
     class ExternalBinManager;
 
+    //class TitleBar;
+
     namespace Device {
         class DeviceManager;
         class Device;
@@ -40,13 +43,15 @@ namespace K3b {
         Q_OBJECT
 
     public:
-        /** constructor of MainWindow, calls all init functions to create the application.
+        /** construtor of MainWindow, calls all init functions to create the application.
          * @see initMenuBar initToolBar
          */
         MainWindow();
         ~MainWindow() override;
 
-        /** opens a file specified by commandline option */
+        K3b::TitleBar* title_bar = nullptr;
+      
+       /** opens a file specified by commandline option */
         Doc* openDocument( const QUrl& url = QUrl() );
 
         Device::DeviceManager* deviceManager() const;
@@ -138,7 +143,8 @@ namespace K3b {
          * returns false if the user chose cancel.
          */
         bool canCloseDocument( Doc* );
-
+        virtual bool eventFilter(QObject *obj, QEvent *event);
+    
     private Q_SLOTS:
         /** open a file and load it into the document*/
         void slotFileOpen();
@@ -204,12 +210,16 @@ namespace K3b {
         /** initializes the KActions of the application */
         void initActions();
 
-        /** sets up the statusbar for the main window by initializing a statuslabel.
+        /** sets up the statusbar for the main window by initialzing a statuslabel.
          */
         void initStatusBar();
 
         class Private;
         Private* d;
+        
+
+        QLabel *pIconLabel;
+        QLabel *pTitleLabel;
     };
 }
 

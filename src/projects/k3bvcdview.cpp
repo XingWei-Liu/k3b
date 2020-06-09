@@ -35,13 +35,96 @@
 #include <QLayout>
 #include <QTreeView>
 
+#include <QLabel>
+#include <QFileDialog>
+#include "misc/k3bmediacopydialog.h"
+
 K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
 :
     View( doc, parent ),
     m_doc( doc ),
     m_model( new K3b::VcdProjectModel( m_doc, this ) ),
-    m_view( new QTreeView( this ) )
+    //m_view( new QTreeView( this ) )
+    m_view( new QTreeView( ) )
 {
+    QLabel *widget_label = new QLabel(this);
+    QGridLayout *layout = new QGridLayout(widget_label);
+ 
+    QLabel* label_title = new QLabel(this);
+    label_title->setText("copy image");
+    QFont title_font;
+    title_font.setPointSize(12);
+    label_title->setFont( title_font );
+
+    QLabel *label_iso = new QLabel(this);
+    label_iso->setText("select CD");
+
+    combo_iso = new QComboBox(this);
+    combo_iso->setMinimumSize(360, 30);
+    
+    label_CD = new QRadioButton(this);
+    label_CD->setText("select CD");
+
+    combo_CD = new QComboBox(this);
+    combo_CD->setMinimumSize(360, 30);
+
+    button_setting = new QPushButton(this);
+    button_setting->setText("setting");
+    button_setting->setMinimumSize(80, 30);
+
+    QLabel *label_space = new QLabel(this);
+
+    label_path = new QRadioButton(this);
+    label_path->setText("extract image");
+
+    lineedit_CD = new QLineEdit(this);
+    lineedit_CD->setMinimumSize(360, 30);
+    
+    button_openfile = new QPushButton(this);
+    button_openfile->setText("choice");
+    button_openfile->setMinimumSize(80, 30);
+
+    QPushButton *button_start = new QPushButton(this);
+    button_start->setText("start");
+    button_start->setMinimumSize(140, 45);
+
+    layout->addWidget( label_title, 0, 0, 2, 1 );
+    layout->addWidget( label_iso, 1, 0, 1, 1 );
+    layout->addWidget( combo_iso, 2, 0, 1, 1 );
+    layout->addWidget( label_space, 3, 0, 1, 1 );
+    layout->addWidget( label_CD, 4, 0, 1, 1 );
+    layout->addWidget( combo_CD, 5, 0, 1, 1 );
+    layout->addWidget( button_setting, 5, 1, 1, 1 );
+    layout->addWidget( label_space, 6, 0, 1, 1 );
+    layout->addWidget( label_path, 7, 0, 1, 1 );
+    layout->addWidget( lineedit_CD, 8, 0, 1, 1 );
+    layout->addWidget( button_openfile, 8, 1, 1, 1 );
+    layout->addWidget( label_space, 9, 0, 1, 1 );
+    layout->addWidget( button_start, 10, 2, 1, 1 );
+
+    layout->setRowStretch(0, 3);
+    layout->setRowStretch(1, 1);
+    layout->setRowStretch(2, 1);
+    layout->setRowStretch(3, 3);
+    layout->setRowStretch(4, 1);
+    layout->setRowStretch(5, 1);
+    layout->setRowStretch(6, 3);
+    layout->setRowStretch(7, 1);
+    layout->setRowStretch(8, 1);
+    layout->setRowStretch(9, 3);
+    layout->setRowStretch(10, 1);
+    layout->setVerticalSpacing(10);
+
+    setMainWidget( widget_label );
+    
+    connect( label_CD, SIGNAL(clicked()), this, SLOT(slotLabel_CDClicked()) );
+    connect( label_path, SIGNAL(clicked()), this, SLOT(slotLabel_pathClicked()) );
+    connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
+    connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
+    connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
+
+
+/*
     m_view->setModel( m_model );
     m_view->setAcceptDrops( true );
     m_view->setDragEnabled( true );
@@ -76,7 +159,7 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     m_view->addAction( separator );
     m_view->addAction( m_actionProperties );
     m_view->addAction( separator );
-    m_view->addAction( actionCollection()->action("project_burn") );
+    m_view->addAction( actionCollection()->action("project_burn") );*/
 }
 
 
@@ -84,6 +167,66 @@ K3b::VcdView::~VcdView()
 {
 }
 
+void K3b::VcdView::slotOpenfile()
+{
+    filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+
+    if(filepath == NULL)
+        return;
+
+   lineedit_CD->setText( filepath );
+
+}
+void K3b::VcdView::slotLabel_CDClicked()
+{
+    if ( label_CD->isChecked() ){
+        combo_CD->setEnabled(true);
+        button_setting->setEnabled(true);
+        button_openfile->setEnabled(false);
+        lineedit_CD->setEnabled(false);
+    }
+}
+void K3b::VcdView::slotLabel_pathClicked()
+{
+    if ( label_path->isChecked() ){
+        combo_CD->setEnabled(false);
+        button_setting->setEnabled(false);
+        button_openfile->setEnabled(true);
+        lineedit_CD->setEnabled(true);
+    }
+}
+
+void K3b::VcdView::MediaCopy( K3b::Device::Device* dev )
+{
+    K3b::MediaCopyDialog *d = new K3b::MediaCopyDialog( this );
+    //d->setReadingDevice( dev );
+    //d->setComboMedium( dev );
+    d->exec();
+}
+
+void K3b::VcdView::slotSetting()
+{
+    MediaCopy(0);
+}
+
+void K3b::VcdView::slotStartBurn()
+{
+    K3b::MediaCopyDialog *dlg = new K3b::MediaCopyDialog( this );
+    //dlg->setReadingDevice( dev );
+    if ( label_path->isChecked() ){
+        dlg->setOnlyCreateImage(true);
+        dlg->setTempDirPath( lineedit_CD->text() );
+        dlg->saveConfig();
+        dlg->slotStartClicked();
+    }else if ( label_CD->isChecked() ){
+        //dlg->setComboMedium( dev );
+        dlg->saveConfig();
+        dlg->slotStartClicked();
+    }else{
+        KMessageBox::information( this, i18n("Please add files to your project first."),
+                                  i18n("No Data to Burn") );
+    }
+}
 
 K3b::ProjectBurnDialog* K3b::VcdView::newBurnDialog( QWidget * parent)
 {
@@ -99,7 +242,7 @@ void K3b::VcdView::init()
                         i18n( "Could not find VcdImager executable. "
                         "To create Video CDs you have to install VcdImager >= 0.7.12. "
                         "You can find this on your distribution’s software repository or download "
-                        "it from https://www.gnu.org/software/vcdimager/" ) );
+                        "it from http://www.vcdimager.org" ) );
     }
 }
 

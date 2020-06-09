@@ -191,7 +191,7 @@ void K3b::AudioBurnDialog::loadSettings( const KConfigGroup& c )
 
     m_cdtextWidget->setChecked( c.readEntry( "cd_text", true ) );
     m_checkHideFirstTrack->setChecked( c.readEntry( "hide_first_track", false ) );
-    m_checkNormalize->setChecked( c.readEntry( "normalize", false ) );
+    m_checkNormalize->setChecked( c.readEntry( "normalize-audio", false ) );
 
     m_comboParanoiaMode->setCurrentIndex( c.readEntry( "paranoia mode", 0 ) );
     m_checkAudioRippingIgnoreReadErrors->setChecked( c.readEntry( "ignore read errors", true ) );
@@ -207,7 +207,7 @@ void K3b::AudioBurnDialog::saveSettings( KConfigGroup c )
 
     c.writeEntry( "cd_text", m_cdtextWidget->isChecked() );
     c.writeEntry( "hide_first_track", m_checkHideFirstTrack->isChecked() );
-    c.writeEntry( "normalize", m_checkNormalize->isChecked() );
+    c.writeEntry( "normalize-audio", m_checkNormalize->isChecked() );
 
     c.writeEntry( "paranoia mode", m_comboParanoiaMode->currentText() );
     c.writeEntry( "ignore read errors", m_checkAudioRippingIgnoreReadErrors->isChecked() );
@@ -288,11 +288,11 @@ void K3b::AudioBurnDialog::slotNormalizeToggled( bool on )
 {
     if( on ) {
         // we are not able to normalize in on-the-fly mode
-        if( !k3bcore->externalBinManager()->foundBin( "normalize" ) ) {
-            KMessageBox::sorry( this, i18n("<p><b>External program <em>normalize</em> is not installed.</b>"
-                                           "<p>K3b uses <em>normalize</em> (http://normalize.nongnu.org/) "
+        if( !k3bcore->externalBinManager()->foundBin( "normalize-audio" ) ) {
+            KMessageBox::sorry( this, i18n("<p><b>External program <em>normalize-audio</em> is not installed.</b>"
+                                           "<p>K3b uses <em>normalize-audio</em> (http://normalize.nongnu.org/) "
                                            "to normalize audio tracks. In order to "
-                                           "use this functionality, please install it first.") );
+                                           "use this functionality, please install it first. (sudo apt-get install normalize-audio) " ) );
             m_checkNormalize->setChecked( false );
         }
         else if( !m_checkCacheImage->isChecked() && !m_checkOnlyCreateImage->isChecked() ) {

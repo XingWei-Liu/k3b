@@ -195,7 +195,7 @@ void K3b::MixedBurnDialog::loadSettings( const KConfigGroup& c )
     K3b::ProjectBurnDialog::loadSettings( c );
 
     m_cdtextWidget->setChecked( c.readEntry( "cd_text", false ) );
-    m_checkNormalize->setChecked( c.readEntry( "normalize", false ) );
+    m_checkNormalize->setChecked( c.readEntry( "normalize-audio", false ) );
 
     // load mixed type
     if( c.readEntry( "mixed_type" ) == "last_track" )
@@ -219,7 +219,7 @@ void K3b::MixedBurnDialog::saveSettings( KConfigGroup c )
     K3b::ProjectBurnDialog::saveSettings(c);
 
     c.writeEntry( "cd_text", m_cdtextWidget->isChecked() );
-    c.writeEntry( "normalize", m_checkNormalize->isChecked() );
+    c.writeEntry( "normalize-audio", m_checkNormalize->isChecked() );
 
     // save mixed type
     switch( m_comboMixedModeType->selectedValue() ) {
@@ -283,11 +283,11 @@ void K3b::MixedBurnDialog::slotNormalizeToggled( bool on )
 {
     if( on ) {
         // we are not able to normalize in on-the-fly mode
-        if( !k3bcore->externalBinManager()->foundBin( "normalize" ) ) {
-            KMessageBox::sorry( this, i18n("<p><b>External program <em>normalize</em> is not installed.</b>"
-                                           "<p>K3b uses <em>normalize</em> (http://normalize.nongnu.org/) "
+        if( !k3bcore->externalBinManager()->foundBin( "normalize-audio" ) ) {
+            KMessageBox::sorry( this, i18n("<p><b>External program <em>normalize-audio</em> is not installed.</b>"
+                                           "<p>K3b uses <em>normalize-audio</em> (http://normalize.nongnu.org/) "
                                            "to normalize audio tracks. In order to "
-                                           "use this functionality, please install it first.") );
+                                           "use this functionality, please install it first (sudo apt-get install normalize-audio).") );
             m_checkNormalize->setChecked( false );
         }
         else if( !m_checkCacheImage->isChecked() && !m_checkOnlyCreateImage->isChecked() ) {

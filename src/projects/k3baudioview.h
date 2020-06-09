@@ -20,9 +20,11 @@
 #define K3BAUDIOVIEW_H
 
 #include "k3bview.h"
+#include "misc/k3bimagewritingdialog.h"
 
 #include <QStringList>
-
+#include <QComboBox>
+#include <QLineEdit>
 namespace K3b {
 
     class AudioDoc;
@@ -46,10 +48,19 @@ namespace K3b {
 
     private Q_SLOTS:
         void slotPlayerStateChanged();
+        void slotOpenfile();
+        void slotSetting();
+        void slotStartBurn();
+        void slotBurn();
 
     private:
         AudioDoc* m_doc;
         AudioViewImpl* m_audioViewImpl;
+        
+        K3b::ImageWritingDialog *dlg;
+        QLineEdit *lineedit_iso;
+        QComboBox *combo_CD;
+        QString filepath;
     };
 }
 

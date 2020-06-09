@@ -61,6 +61,7 @@
 K3b::DataBurnDialog::DataBurnDialog(K3b::DataDoc* _doc, QWidget *parent )
     : K3b::ProjectBurnDialog( _doc, parent )
 {
+    m_doc = _doc;
     prepareGui();
 
     setTitle( i18n("Data Project"), i18n("Size: %1", KIO::convertSize(_doc->size()) ) );
@@ -68,6 +69,13 @@ K3b::DataBurnDialog::DataBurnDialog(K3b::DataDoc* _doc, QWidget *parent )
     // for now we just put the verify checkbox on the main page...
     m_checkVerify = K3b::StdGuiItems::verifyCheckBox( m_optionGroup );
     m_optionGroupLayout->addWidget( m_checkVerify );
+    //**************
+    m_checkVerify->hide();
+
+    QPushButton *button_close = new QPushButton(m_optionGroup);
+    button_close->setText("ok");
+    m_optionGroupLayout->addWidget( button_close );
+    connect( button_close, SIGNAL( clicked() ), this, SLOT( slotClose() ) );
 
     QSpacerItem* spacer = new QSpacerItem( 20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding );
     m_optionGroupLayout->addItem( spacer );
@@ -99,6 +107,24 @@ K3b::DataBurnDialog::DataBurnDialog(K3b::DataDoc* _doc, QWidget *parent )
 K3b::DataBurnDialog::~DataBurnDialog(){
 }
 
+void K3b::DataBurnDialog::slotClose()
+{
+    saveConfig( );
+    saveSettingsToProject();
+    this->close();
+}
+
+void K3b::DataBurnDialog::saveConfig( )
+{
+    KConfigGroup grp( KSharedConfig::openConfig(), "default " + m_doc->typeString() + " settings" );   
+    saveSettings( grp );
+}
+
+void K3b::DataBurnDialog::setComboMedium( K3b::Device::Device* dev )
+{
+    m_writerSelectionWidget->setWantedMedium( dev );
+}
+
 
 void K3b::DataBurnDialog::saveSettingsToProject()
 {
@@ -106,6 +132,7 @@ void K3b::DataBurnDialog::saveSettingsToProject()
 
     // save iso image settings
     K3b::IsoOptions o = ((K3b::DataDoc*)doc())->isoOptions();
+    qDebug() << "volume id:" << ((K3b::DataDoc*)doc())->isoOptions().volumeID() <<endl;
     m_imageSettingsWidget->save( o );
     ((K3b::DataDoc*)doc())->setIsoOptions( o );
 
@@ -146,7 +173,8 @@ void K3b::DataBurnDialog::readSettingsFromProject()
 
 void K3b::DataBurnDialog::setupSettingsTab()
 {
-    QWidget* frame = new QWidget( this );
+    //QWidget* frame = new QWidget( this );
+    QWidget* frame = new QWidget(  );
     QGridLayout* frameLayout = new QGridLayout( frame );
 
     m_groupDataMode = new QGroupBox( i18n("Datatrack Mode"), frame );
@@ -163,7 +191,7 @@ void K3b::DataBurnDialog::setupSettingsTab()
     frameLayout->addWidget( groupMultiSession, 1, 0 );
     frameLayout->setRowStretch( 2, 1 );
 
-    addPage( frame, i18n("Misc") );
+    //addPage( frame, i18n("Misc") );
 }
 
 
@@ -196,8 +224,7 @@ void K3b::DataBurnDialog::slotStartClicked()
                                                      "multisession CDs in DAO mode.") )
             == KMessageBox::Cancel )
             return;
-
-
+    readSettingsFromProject();
     K3b::ProjectBurnDialog::slotStartClicked();
 }
 

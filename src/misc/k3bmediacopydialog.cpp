@@ -59,6 +59,7 @@
 #include <QToolTip>
 #include <QTabWidget>
 
+#include <QLineEdit>
 
 K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     : K3b::InteractionDialog( parent,
@@ -73,14 +74,16 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     QGridLayout* mainGrid = new QGridLayout( main );
     mainGrid->setContentsMargins( 0, 0, 0, 0 );
 
-    QGroupBox* groupSource = new QGroupBox( i18n("Source Medium"), main );
+    //QGroupBox* groupSource = new QGroupBox( i18n("Source Medium"), main );
+    QGroupBox* groupSource = new QGroupBox( );
     m_comboSourceDevice = new K3b::MediaSelectionComboBox( groupSource );
     m_comboSourceDevice->setWantedMediumType( K3b::Device::MEDIA_ALL );
     m_comboSourceDevice->setWantedMediumState( K3b::Device::STATE_COMPLETE|K3b::Device::STATE_INCOMPLETE );
     QHBoxLayout* groupSourceLayout = new QHBoxLayout( groupSource );
-    groupSourceLayout->addWidget( m_comboSourceDevice );
+    //groupSourceLayout->addWidget( m_comboSourceDevice );
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget( main );
+    m_writerSelectionWidget->hideComboMedium();
     m_writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_EMPTY );
 
     // tab widget --------------------
@@ -92,27 +95,30 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     QWidget* optionTab = new QWidget( tabWidget );
     QGridLayout* optionTabGrid = new QGridLayout( optionTab );
 
-    QGroupBox* groupCopyMode = new QGroupBox( i18n("Copy Mode"), optionTab );
+    //QGroupBox* groupCopyMode = new QGroupBox( i18n("Copy Mode"), optionTab );
+    QGroupBox* groupCopyMode = new QGroupBox( );
     m_comboCopyMode = new QComboBox( groupCopyMode );
     m_comboCopyMode->addItem( i18n("Normal Copy") );
     m_comboCopyMode->addItem( i18n("Clone Copy") );
     QHBoxLayout* groupCopyModeLayout = new QHBoxLayout( groupCopyMode );
-    groupCopyModeLayout->addWidget( m_comboCopyMode );
+    //groupCopyModeLayout->addWidget( m_comboCopyMode );
 
-    QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), optionTab );
+    //QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), optionTab );
+    QGroupBox* groupWritingMode = new QGroupBox( );
     m_writingModeWidget = new K3b::WritingModeWidget( groupWritingMode );
     QHBoxLayout* groupWritingModeLayout = new QHBoxLayout( groupWritingMode );
-    groupWritingModeLayout->addWidget( m_writingModeWidget );
+    //groupWritingModeLayout->addWidget( m_writingModeWidget );
 
-    QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), optionTab );
+    //QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), optionTab );
+    QGroupBox* groupCopies = new QGroupBox( );
     QLabel* pixLabel = new QLabel( groupCopies );
-    pixLabel->setPixmap( QIcon::fromTheme("tools-media-optical-copy").pixmap(KIconLoader::SizeMedium) );
+    pixLabel->setPixmap( SmallIcon( "tools-media-optical-copy", KIconLoader::SizeMedium ) );
     pixLabel->setScaledContents( false );
     m_spinCopies = new QSpinBox( groupCopies );
     m_spinCopies->setRange( 1, 999 );
     QHBoxLayout* groupCopiesLayout = new QHBoxLayout( groupCopies );
-    groupCopiesLayout->addWidget( pixLabel );
-    groupCopiesLayout->addWidget( m_spinCopies );
+    //groupCopiesLayout->addWidget( pixLabel );
+    //groupCopiesLayout->addWidget( m_spinCopies );
 
     QGroupBox* groupOptions = new QGroupBox( i18n("Settings"), optionTab );
     m_checkSimulate = K3b::StdGuiItems::simulateCheckbox( groupOptions );
@@ -120,20 +126,45 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     m_checkOnlyCreateImage = K3b::StdGuiItems::onlyCreateImagesCheckbox( groupOptions );
     m_checkDeleteImages = K3b::StdGuiItems::removeImagesCheckbox( groupOptions );
     m_checkVerifyData = K3b::StdGuiItems::verifyCheckBox( groupOptions );
+    
+  //tmp
+    m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
+    QLabel *m_labeltmpPath = new QLabel( groupOptions );
+    QLineEdit *m_tmpPath = new QLineEdit( groupOptions );
+    //QLabel *m_tmpSize = new QLabel( m_optionGroup );
+    QString tmp_path ="temp file path: ";
+    KIO::filesize_t tempFreeSpace = m_tempDirSelectionWidget->freeTempSpace();
+    QString tmp_size = m_tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
+    m_labeltmpPath->setText( tmp_path );
+    m_tmpPath->setText( tmp_size);
+    //********************
+    QPushButton *button_save = new QPushButton( groupOptions );
+    button_save->setText("save");
+    connect( button_save, SIGNAL( clicked() ), this, SLOT( slotSaveClicked() ) ); 
+    //***************
+
+
     QVBoxLayout* groupOptionsLayout = new QVBoxLayout( groupOptions );
     groupOptionsLayout->addWidget( m_checkSimulate );
     groupOptionsLayout->addWidget( m_checkCacheImage );
     groupOptionsLayout->addWidget( m_checkOnlyCreateImage );
     groupOptionsLayout->addWidget( m_checkDeleteImages );
     groupOptionsLayout->addWidget( m_checkVerifyData );
-    groupOptionsLayout->addStretch( 1 );
 
+    groupOptionsLayout->addWidget( m_labeltmpPath );
+    groupOptionsLayout->addWidget( m_tmpPath );
+    groupOptionsLayout->addWidget( button_save );
+
+    groupOptionsLayout->addStretch( 1 );
+/*
     optionTabGrid->addWidget( groupCopyMode, 0, 0 );
     optionTabGrid->addWidget( groupWritingMode, 1, 0 );
     optionTabGrid->addWidget( groupOptions, 0, 1, 3, 1 );
     optionTabGrid->addWidget( groupCopies, 2, 0 );
     optionTabGrid->setRowStretch( 2, 1 );
     optionTabGrid->setColumnStretch( 1, 1 );
+*/
+    optionTabGrid->addWidget( groupOptions, 0, 0);
 
     tabWidget->addTab( optionTab, i18n("&Options") );
 
@@ -141,6 +172,7 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     //
     // image tab ------------------
     //
+    /*
     QWidget* imageTab = new QWidget( tabWidget );
     QGridLayout* imageTabGrid = new QGridLayout( imageTab );
 
@@ -149,7 +181,7 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     imageTabGrid->addWidget( m_tempDirSelectionWidget, 0, 0 );
 
     tabWidget->addTab( imageTab, i18n("&Image") );
-
+*/
 
     //
     // advanced tab ------------------
@@ -189,7 +221,7 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
 
     tabWidget->addTab( advancedTab, i18n("&Advanced") );
 
-    mainGrid->addWidget( groupSource, 0, 0  );
+    //mainGrid->addWidget( groupSource, 0, 0  );
     mainGrid->addWidget( m_writerSelectionWidget, 1, 0  );
     mainGrid->addWidget( tabWidget, 2, 0 );
     mainGrid->setRowStretch( 2, 1 );
@@ -247,6 +279,33 @@ void K3b::MediaCopyDialog::init()
     slotToggleAll();
 }
 
+void K3b::MediaCopyDialog::slotSaveClicked()
+{
+    saveConfig();
+    this->close();
+}
+
+void K3b::MediaCopyDialog::setOnlyCreateImage(bool ret)
+{
+    m_checkOnlyCreateImage->setChecked( ret );
+}
+
+void K3b::MediaCopyDialog::saveConfig()
+{
+    KConfigGroup grp( KSharedConfig::openConfig(), "Disk Copy" );
+    saveSettings( grp );
+}
+
+void K3b::MediaCopyDialog::setComboMedium( K3b::Device::Device* dev )
+{
+    m_writerSelectionWidget->setWantedMedium( dev );
+}
+
+void K3b::MediaCopyDialog::setTempDirPath( const QString& dir )
+{
+    m_tempDirSelectionWidget->setTempPath( dir );
+    m_checkCacheImage->setChecked(true);
+}
 
 void K3b::MediaCopyDialog::setReadingDevice( K3b::Device::Device* dev )
 {
@@ -265,6 +324,9 @@ void K3b::MediaCopyDialog::slotStartClicked()
     //
     // Let's check the available size
     //
+    KConfigGroup g( KSharedConfig::openConfig(), "Disk Copy" );
+    loadSettings( g );
+
     if( m_checkCacheImage->isChecked() || m_checkOnlyCreateImage->isChecked() ) {
         if( neededSize() > m_tempDirSelectionWidget->freeTempSpace() ) {
             if( KMessageBox::warningContinueCancel( this, i18n("There does not seem to be enough free space in the temporary folder. "
@@ -284,7 +346,7 @@ void K3b::MediaCopyDialog::slotStartClicked()
     else
         dlg = new K3b::BurnProgressDialog(parentWidget());
     dlg->setAttribute(Qt::WA_DeleteOnClose);    // Memory-leak issue fixed!
-
+qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
     K3b::BurnJob* burnJob = 0;
 
     if( m_comboCopyMode->currentIndex() == 1 ) {
@@ -475,7 +537,7 @@ void K3b::MediaCopyDialog::toggleAll()
         // selection of the writing mode
         //
         if( burnDev == readDev ) {
-            K3b::WritingModes modes = WritingModeAuto;
+            K3b::WritingModes modes = 0;
             if ( sourceMedium.diskInfo().mediaType() & K3b::Device::MEDIA_CD_ALL ) {
                 modes = K3b::WritingModeTao|K3b::WritingModeSao|K3b::WritingModeRaw;
             }

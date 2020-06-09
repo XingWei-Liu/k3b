@@ -52,7 +52,7 @@
 #include <QLabel>
 #include <QGridLayout>
 #include <QVBoxLayout>
-
+#include <QLineEdit>
 
 K3b::ProjectBurnDialog::ProjectBurnDialog( K3b::Doc* doc, QWidget *parent )
     : K3b::InteractionDialog( parent,
@@ -214,11 +214,11 @@ void K3b::ProjectBurnDialog::slotStartClicked()
     }
 
     K3b::JobProgressDialog* dlg = 0;
-    if( m_checkOnlyCreateImage && m_checkOnlyCreateImage->isChecked() )
+   /* if( m_checkOnlyCreateImage && m_checkOnlyCreateImage->isChecked() )
         dlg = new K3b::JobProgressDialog( parentWidget() );
-    else
+    else*/
         dlg = new K3b::BurnProgressDialog( parentWidget() );
-
+    
     m_job = m_doc->newBurnJob( dlg );
 
     if( m_writerSelectionWidget )
@@ -245,6 +245,7 @@ void K3b::ProjectBurnDialog::prepareGui()
     mainLay->setContentsMargins( 0, 0, 0, 0 );
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget( mainWidget() );
+    m_writerSelectionWidget->hideComboMedium();
     m_writerSelectionWidget->setWantedMediumType( m_doc->supportedMediaTypes() );
     m_writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_EMPTY );
     m_writerSelectionWidget->setWantedMediumSize( m_doc->length() );
@@ -255,8 +256,11 @@ void K3b::ProjectBurnDialog::prepareGui()
 
     QWidget* w = new QWidget( m_tabWidget );
     m_tabWidget->addTab( w, i18n("Writing") );
-
-    QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), w );
+    
+    //m_tabWidget->tabBar()->hide();
+    
+    //QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), w );
+    QGroupBox* groupWritingMode = new QGroupBox( i18n(" "), w );
     m_writingModeWidget = new K3b::WritingModeWidget( groupWritingMode );
     QVBoxLayout* groupWritingModeLayout = new QVBoxLayout( groupWritingMode );
     groupWritingModeLayout->addWidget( m_writingModeWidget );
@@ -269,29 +273,46 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_checkSimulate = K3b::StdGuiItems::simulateCheckbox( m_optionGroup );
     m_checkRemoveBufferFiles = K3b::StdGuiItems::removeImagesCheckbox( m_optionGroup );
     m_checkOnlyCreateImage = K3b::StdGuiItems::onlyCreateImagesCheckbox( m_optionGroup );
+   
+   //tmp
+    m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
+    QLabel *m_labeltmpPath = new QLabel( m_optionGroup );
+    QLineEdit *m_tmpPath = new QLineEdit( m_optionGroup );
+    //QLabel *m_tmpSize = new QLabel( m_optionGroup );
+    QString tmp_path ="temp file path: ";
+    KIO::filesize_t tempFreeSpace = m_tempDirSelectionWidget->freeTempSpace();
+    QString tmp_size = m_tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
+    m_labeltmpPath->setText( tmp_path );
+    m_tmpPath->setText( tmp_size);
+    //m_labeltmpSize->setText( tmp_size );
 
     m_optionGroupLayout->addWidget(m_checkSimulate);
     m_optionGroupLayout->addWidget(m_checkCacheImage);
     m_optionGroupLayout->addWidget(m_checkOnlyCreateImage);
     m_optionGroupLayout->addWidget(m_checkRemoveBufferFiles);
 
-    QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), w );
+    //tmp
+    m_optionGroupLayout->addWidget(m_labeltmpPath);
+    m_optionGroupLayout->addWidget(m_tmpPath);
+
+
+    //QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), w );
+    QGroupBox* groupCopies = new QGroupBox( i18n(" "), w );
     QLabel* pixLabel = new QLabel( groupCopies );
-    pixLabel->setPixmap( QIcon::fromTheme("tools-media-optical-copy").pixmap(KIconLoader::SizeMedium) );
+    pixLabel->setPixmap( SmallIcon( "tools-media-optical-copy", KIconLoader::SizeMedium ) );
     pixLabel->setScaledContents( false );
     m_spinCopies = new QSpinBox( groupCopies );
     m_spinCopies->setRange( 1, 999 );
     QHBoxLayout* groupCopiesLayout = new QHBoxLayout( groupCopies );
     groupCopiesLayout->addWidget( pixLabel );
     groupCopiesLayout->addWidget( m_spinCopies );
-
     // arrange it
     QGridLayout* grid = new QGridLayout( w );
-
-    grid->addWidget( groupWritingMode, 0, 0 );
+    
+    //grid->addWidget( groupWritingMode, 0, 0 );
     grid->addWidget( m_optionGroup, 0, 1, 3, 1 );
-    grid->addWidget( groupCopies, 2, 0 );
-    //  grid->addWidget( m_tempDirSelectionWidget, 1, 1, 3, 1 );
+    //grid->addWidget( groupCopies, 2, 0 );
+      //grid->addWidget( m_tempDirSelectionWidget, 1, 1, 3, 1 );
     grid->setRowStretch( 1, 1 );
     grid->setColumnStretch( 1, 1 );
 
@@ -326,7 +347,6 @@ void K3b::ProjectBurnDialog::addPage( QWidget* page, const QString& title )
 {
     m_tabWidget->addTab( page, title );
 }
-
 
 void K3b::ProjectBurnDialog::saveSettingsToProject()
 {

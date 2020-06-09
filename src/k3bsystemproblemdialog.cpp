@@ -226,6 +226,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
                                                    i18n("Install a more recent version of the cdrtools.") ) );
             }
 
+/*
 #ifdef Q_OS_LINUX
 
             //
@@ -261,6 +262,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
             }
 #endif // CDRECORD_SUID_ROOT_CHECK
 #endif
+*/
         }
 
         if( !k3bcore->externalBinManager()->binNeedGroup( "cdrdao" ).isEmpty() ) {
@@ -277,6 +279,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
                                                i18n("K3b uses cdrdao to actually write CDs."),
                                                i18n("Install the cdrdao package.") ) );
         }
+/*
         else {
 #ifdef Q_OS_LINUX
 #ifdef CDRECORD_SUID_ROOT_CHECK
@@ -300,6 +303,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
                      " CD, and for growisofs with DVD and BD."),
                 i18n("Consider to install the libburn and cdrskin packages.")));
         }
+*/
     }
 
 
@@ -347,7 +351,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
                                                         "sessions using a growisofs version older than 7.0." ),
                                                    i18n("Install a more recent version of %1.",QString("growisofs")) ) );
             }
-//            // for now we ignore the suid root bit because of the memorylocked issue
+//            // for now we ignore the suid root bit becasue of the memorylocked issue
 //            else if( !k3bcore->externalBinManager()->binObject( "growisofs" )->hasFeature( "suidroot" ) ) {
 //                showBinSettingsButton = true;
 //                problems.append( K3b::SystemProblem( K3b::SystemProblem::CRITICAL,
@@ -536,6 +540,7 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
     // Way too many users are complaining about K3b not being able to decode mp3 files. So just warn them about
     // the legal restrictions with many distros
     //
+/*
     QList<K3b::Plugin*> plugins = k3bcore->pluginManager()->plugins( "AudioDecoder" );
     bool haveMp3Decoder = false;
     for( QList<K3b::Plugin*>::const_iterator it = plugins.constBegin();
@@ -553,9 +558,9 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
                                                 "include MP3 support for legal reasons."),
                                            i18n("To enable MP3 support, please install the MAD MP3 decoding library as well as the "
                                                 "K3b MAD MP3 decoder plugin (the latter may already be installed but not functional "
-                                                "due to the missing libmad). Some distributions allow installation of MP3 support "
-                                                "via an online update tool.") ) );
+                                                "due to the missing libmad). To get MP3 support, please install the package libk3b7-extracodecs.") ) );
     }
+*/
 
 #ifdef HAVE_ICONV
     char* codec = nl_langinfo( CODESET );
@@ -618,9 +623,11 @@ void K3b::SystemProblemDialog::checkSystem(QWidget* parent, NotificationLevel le
     if( problems.isEmpty() ) {
         qDebug() << "          - none - ";
         if( level == AlwaysNotify ) {
+/*
             KNotification::event( "NoProblemsFound",
                                   i18n("System configured properly"),
                                   i18n("No problems found in system configuration.") );
+*/
         }
     }
     else {

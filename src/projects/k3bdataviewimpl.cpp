@@ -40,6 +40,8 @@
 #include <QInputDialog>
 #include <QShortcut>
 #include <QWidgetAction>
+#include <QFileDialog>
+
 
 
 namespace {
@@ -107,12 +109,28 @@ K3b::DataViewImpl::DataViewImpl( View* view, DataDoc* doc, KActionCollection* ac
     m_columnAdjuster->setColumnMargin( DataProjectModel::TypeColumn, 10 );
     m_columnAdjuster->addFixedColumn( DataProjectModel::SizeColumn );
     m_columnAdjuster->setColumnMargin( DataProjectModel::SizeColumn, 10 );
+    //*********************************************************************
+    m_columnAdjuster->addFixedColumn( DataProjectModel::PathColumn );
+    m_columnAdjuster->setColumnMargin( DataProjectModel::PathColumn, 10 );
 
     m_actionNewDir = new QAction( QIcon::fromTheme( "folder-new" ), i18n("New Folder..."), m_fileView );
     m_actionNewDir->setShortcut( Qt::CTRL + Qt::Key_N );
     m_actionNewDir->setShortcutContext( Qt::WidgetShortcut );
     actionCollection->addAction( "new_dir", m_actionNewDir );
     connect( m_actionNewDir, SIGNAL(triggered(bool)), this, SLOT(slotNewDir()) );
+    //************************************************************************************************ 
+    m_actionOpenDir = new QAction( QIcon::fromTheme( "folder-new" ), i18n("Open"), m_fileView );
+    //m_actionRemove->setShortcut( Qt::Key_Delete );
+    //m_actionRemove->setShortcutContext( Qt::WidgetShortcut );
+    actionCollection->addAction( "open_dir", m_actionOpenDir );
+    connect( m_actionOpenDir, SIGNAL(triggered(bool)), this, SLOT(slotOpenDir()) );
+    
+    m_actionClear = new QAction( QIcon::fromTheme( "edit-delete" ), i18n("Clear"), m_fileView );
+    //m_actionRemove->setShortcut( Qt::Key_Delete );
+    //m_actionRemove->setShortcutContext( Qt::WidgetShortcut );
+    actionCollection->addAction( "clear", m_actionClear );
+    connect( m_actionClear, SIGNAL(triggered(bool)), this, SLOT(slotClear()) );
+    
 
     m_actionRemove = new QAction( QIcon::fromTheme( "edit-delete" ), i18n("Remove"), m_fileView );
     m_actionRemove->setShortcut( Qt::Key_Delete );
@@ -237,6 +255,27 @@ void K3b::DataViewImpl::slotNewDir()
 
     m_doc->addEmptyDir( name, parentDir );
 }
+//*******************************************************************************************
+void K3b::DataViewImpl::slotOpenDir()
+{
+/*
+    QList<QUrl> urls = QFileDialog::getOpenFileUrls( m_view,
+                                                     i18n("Open Files"),
+                                                     QUrl(),
+                                                     "All Files(*.*)");
+  */
+    QList<QUrl> urls;
+    QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl());
+    m_doc->addUrls( urls << url );
+
+}
+void K3b::DataViewImpl::slotClear()
+{
+    m_doc->clear();
+}
+
+
+
 
 
 void K3b::DataViewImpl::slotRemove()

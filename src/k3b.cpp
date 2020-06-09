@@ -14,6 +14,7 @@
  */
 
 #include "k3b.h"
+#include "k3bTitleBar.h"
 #include "k3bappdevicemanager.h"
 #include "k3bapplication.h"
 #include "k3baudiodecoder.h"
@@ -81,6 +82,7 @@
 #include <KEditToolBar>
 #include <KXMLGUIFactory>
 #include <KShortcutsDialog>
+#include <KToolBar>
 
 #include <QtAlgorithms>
 #include <QDir>
@@ -101,6 +103,8 @@
 #include <QSplitter>
 #include <QStackedWidget>
 #include <QStatusBar>
+#include <QPushButton>
+#include <QDebug>
 
 #include <cstdlib>
 
@@ -220,6 +224,13 @@ public:
     QStackedWidget* documentStack;
     QWidget* documentHull;
 
+    K3b::Doc *doc_data;
+    K3b::Doc *doc_image;
+    K3b::Doc *doc_copy;
+    K3b::View *view_data;
+    K3b::View *view_image;
+    K3b::View *view_copy;
+
     QMimeDatabase mimeDatabase;
 };
 
@@ -228,14 +239,19 @@ K3b::MainWindow::MainWindow()
       d( new Private )
 {
     d->lastDoc = 0;
-
-    setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
-
+    //**********************
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    
+    //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
+    //this->setWindowIcon(QIcon(":/new/prefix1/pic/logo.ico"));
+    this->setWindowTitle( i18n("K3b") );
+    installEventFilter(this);
     // /////////////////////////////////////////////////////////////////
     // call inits to invoke all other construction parts
     initActions();
     initView();
     initStatusBar();
+    
     createGUI();
 
     // /////////////////////////////////////////////////////////////////
@@ -247,17 +263,19 @@ K3b::MainWindow::MainWindow()
     // we need the actions for the welcomewidget
     KConfigGroup grp( config(), "Welcome Widget" );
     d->welcomeWidget->loadConfig( grp );
+    
 
     // fill the tabs action menu
+
     d->documentTab->addAction( d->actionFileSave );
     d->documentTab->addAction( d->actionFileSaveAs );
     d->documentTab->addAction( d->actionFileClose );
 
     // /////////////////////////////////////////////////////////////////
     // disable actions at startup
-    slotStateChanged( "state_project_active", KXMLGUIClient::StateReverse );
+    //slotStateChanged( "state_project_active", KXMLGUIClient::StateReverse );
 
-    connect( k3bappcore->projectManager(), SIGNAL(newProject(K3b::Doc*)), this, SLOT(createClient(K3b::Doc*)) );
+    //connect( k3bappcore->projectManager(), SIGNAL(newProject(K3b::Doc*)), this, SLOT(createClient(K3b::Doc*)) );
     connect( k3bcore->deviceManager(), SIGNAL(changed()), this, SLOT(slotCheckSystemTimed()) );
 
     // FIXME: now make sure the welcome screen is displayed completely
@@ -266,6 +284,17 @@ K3b::MainWindow::MainWindow()
 //   d->dirTreeDock->resize( QSize( d->dirTreeDock->sizeHint().width(), d->dirTreeDock->height() ) );
 
     readOptions();
+    //**************************
+    d->documentHeader->hide();
+    statusBar()->hide();
+    menuBar()->setVisible(false);
+    //qDeleteAll( toolBars() );
+    //toolBars()->hide();
+    for (int i = 0; i < toolBars().size(); i++){
+        toolBars().at(i)->setVisible( false );
+    }
+    //setupGUI(Keys | StatusBar | Save | Create);
+    //setStandardToolBarMenuEnabled( false);
 
     new Interface( this );
 }
@@ -290,6 +319,7 @@ void K3b::MainWindow::initActions()
     // see the correct solution?)
 
     // clang-analyzer wrongly treat KF5's KStandardAction::open as Unix API Improper use of 'open'
+
     QAction* actionFileOpen = KStandardAction::open( this, SLOT(slotFileOpen()), actionCollection() );
     actionFileOpen->setToolTip( i18n( "Opens an existing project" ) );
     actionFileOpen->setStatusTip( actionFileOpen->toolTip() );
@@ -383,8 +413,7 @@ void K3b::MainWindow::initActions()
     actionFileNewMenu->addAction( actionFileNewVideoDvd );
     actionFileNewMenu->addSeparator();
     actionFileNewMenu->addAction( actionFileNewMovix );
-    actionCollection()->addAction( "file_new", actionFileNewMenu );
-
+    actionCollection()->addAction( "file_new", actionFileNewMenu ); //新建方案
     QAction* actionProjectAddFiles = new QAction( QIcon::fromTheme( "document-open" ), i18n("&Add Files..."), this );
     actionProjectAddFiles->setToolTip( i18n("Add files to the current project") );
     actionProjectAddFiles->setStatusTip( actionProjectAddFiles->toolTip() );
@@ -435,6 +464,7 @@ void K3b::MainWindow::initActions()
     actionCollection()->addAction( "tools_videocd_rip", actionToolsVideoCdRip );
     connect( actionToolsVideoCdRip, SIGNAL(triggered(bool)), this, SLOT(slotVideoCdRip()) );
 
+
     d->actionViewDocumentHeader = new KToggleAction(i18n("Show Projects Header"),this);
     d->actionViewDocumentHeader->setToolTip( i18n("Shows/hides title header of projects panel") );
     d->actionViewDocumentHeader->setStatusTip( d->actionViewDocumentHeader->toolTip() );
@@ -444,7 +474,9 @@ void K3b::MainWindow::initActions()
     KStandardAction::showMenubar( this, SLOT(slotShowMenuBar()), actionCollection() );
     KStandardAction::keyBindings( this, SLOT(slotConfigureKeys()), actionCollection() );
     KStandardAction::configureToolbars(this, SLOT(slotEditToolbars()), actionCollection());
+
     setStandardToolBarMenuEnabled(true);
+    setHelpMenuEnabled(false);
 
     QAction* actionSettingsConfigure = KStandardAction::preferences(this, SLOT(slotSettingsConfigure()), actionCollection() );
     actionSettingsConfigure->setToolTip( i18n("Configure K3b settings") );
@@ -455,6 +487,7 @@ void K3b::MainWindow::initActions()
     actionHelpSystemCheck->setStatusTip( actionHelpSystemCheck->toolTip() );
     actionCollection()->addAction( "help_check_system", actionHelpSystemCheck );
     connect( actionHelpSystemCheck, SIGNAL(triggered(bool)), this, SLOT(slotManualCheckSystem()) );
+
 }
 
 
@@ -478,33 +511,93 @@ void K3b::MainWindow::initStatusBar()
 
 void K3b::MainWindow::initView()
 {
-    // setup main docking things
-    d->mainSplitter = new QSplitter( Qt::Vertical, this );
-    
-    QSplitter* upperSplitter = new QSplitter( Qt::Horizontal, d->mainSplitter );
-    d->mainSplitter->addWidget( upperSplitter );
+    QLabel *label_title = new QLabel(this);
+    QLabel *label_window = new QLabel(this);
+    title_bar = new TitleBar( this );
+    //installEventFilter(this);
 
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+    
+    // setup main docking things
+    //d->mainSplitter = new QSplitter( Qt::Vertical, this );
+    d->mainSplitter = new QSplitter( Qt::Horizontal, this );
+    
+    //QSplitter* upperSplitter = new QSplitter( Qt::Horizontal, d->mainSplitter );//top horizontal
+    QSplitter* upperSplitter = new QSplitter( );//top horizontal
+    //d->mainSplitter->addWidget( upperSplitter );
+ 
+    pIconLabel = new QLabel( label_title );
+    pTitleLabel = new QLabel( label_title );
+    pIconLabel->setFixedSize(35,35);
+    pIconLabel->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/logo.png);"
+                              "background-color:transparent;"
+                              "background-repeat: no-repeat;}");
+    pTitleLabel->setContentsMargins(0,0,0,0);
+    pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+    pTitleLabel->setMinimumSize(100,35);
+    pTitleLabel->setText( "K3b" );
+    pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
+    
+    QHBoxLayout *hLayout = new QHBoxLayout( label_title );
+    label_title->setFixedHeight( 45 );
+    hLayout->addWidget(pIconLabel);
+    hLayout->addWidget(pTitleLabel);
+
+    QLabel* ButtonView = new QLabel(this);
+    ButtonView->setFixedWidth(200);
+    QPushButton *viewData = new QPushButton( ButtonView );
+    viewData->setText("data burn");
+    QPushButton *viewImage = new QPushButton( ButtonView );
+    viewImage->setText("image burn");
+    QPushButton *viewCopy = new QPushButton( ButtonView );
+    viewCopy->setText("copy image");
+    QVBoxLayout* ButtonLayout = new QVBoxLayout( ButtonView );
+
+    ButtonLayout->addWidget( label_title );
+
+    ButtonLayout->addWidget(viewData);
+    ButtonLayout->addWidget(viewImage);
+    ButtonLayout->addWidget(viewCopy);
+    ButtonLayout->addStretch();
+    d->mainSplitter->addWidget( ButtonView );
+
+    connect( viewData, SIGNAL(clicked(bool)), this, SLOT(slotNewDataDoc()) );
+    connect( viewImage, SIGNAL(clicked(bool)), this, SLOT(slotNewAudioDoc()) );
+    connect( viewCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
+
+    QLabel *label_view = new QLabel( this );
+    QVBoxLayout *layout_window = new QVBoxLayout( label_view );
     // --- Document Dock ----------------------------------------------------------------------------
-    d->documentStack = new QStackedWidget( d->mainSplitter );
-    d->mainSplitter->addWidget( d->documentStack );
-    d->documentHull = new QWidget( d->documentStack );
+    //d->documentStack = new QStackedWidget( d->mainSplitter );//buttom 
+    d->documentStack = new QStackedWidget( label_view );//buttom 
+    d->documentStack->showFullScreen();
+    
+    layout_window->addWidget( title_bar );
+    layout_window->addWidget( d->documentStack );
+    //d->mainSplitter->addWidget( d->documentStack );
+    d->mainSplitter->addWidget( label_view );
+    
+    d->documentHull = new QWidget( d->documentStack ); //project ui
     QGridLayout* documentHullLayout = new QGridLayout( d->documentHull );
     documentHullLayout->setContentsMargins( 0, 0, 0, 0 );
     documentHullLayout->setSpacing( 0 );
     
     setCentralWidget( d->mainSplitter );
-    setEqualSizes( d->mainSplitter );
+    //setEqualSizes( d->mainSplitter );
 
-    d->documentHeader = new K3b::ThemedHeader( d->documentHull );
+    d->documentHeader = new K3b::ThemedHeader( d->documentHull ); //buttom title
     d->documentHeader->setTitle( i18n("Current Projects") );
     d->documentHeader->setAlignment( Qt::AlignHCenter | Qt::AlignVCenter );
     d->documentHeader->setLeftPixmap( K3b::Theme::PROJECT_LEFT );
     d->documentHeader->setRightPixmap( K3b::Theme::PROJECT_RIGHT );
-    connect( d->actionViewDocumentHeader, SIGNAL(toggled(bool)),
-             d->documentHeader, SLOT(setVisible(bool)) );
+    /*connect( d->actionViewDocumentHeader, SIGNAL(toggled(bool)),
+             d->documentHeader, SLOT(setVisible(bool)) );*/
 
     // add the document tab to the styled document box
-    d->documentTab = new K3b::ProjectTabWidget( d->documentHull );
+    d->documentTab = new K3b::ProjectTabWidget( d->documentHull ); //buttom tab
 
     documentHullLayout->addWidget( d->documentHeader, 0, 0 );
     documentHullLayout->addWidget( d->documentTab, 1, 0 );
@@ -512,21 +605,21 @@ void K3b::MainWindow::initView()
     connect( d->documentTab, SIGNAL(currentChanged(int)), this, SLOT(slotCurrentDocChanged()) );
     connect( d->documentTab, SIGNAL(tabCloseRequested(Doc*)), this, SLOT(slotFileClose(Doc*)) );
 
-    d->welcomeWidget = new K3b::WelcomeWidget( this, d->documentStack );
+    d->welcomeWidget = new K3b::WelcomeWidget( this, d->documentStack );  //welcome ui??
     d->documentStack->addWidget( d->welcomeWidget );
     d->documentStack->addWidget( d->documentHull );
     d->documentStack->setCurrentWidget( d->welcomeWidget );
     // ---------------------------------------------------------------------------------------------
 
     // --- Directory Dock --------------------------------------------------------------------------
-    K3b::FileTreeView* fileTreeView = new K3b::FileTreeView( upperSplitter );
-    upperSplitter->addWidget( fileTreeView );
+    K3b::FileTreeView* fileTreeView = new K3b::FileTreeView( upperSplitter );  //top left
+    //upperSplitter->addWidget( fileTreeView );
     // ---------------------------------------------------------------------------------------------
 
 
     // --- Contents Dock ---------------------------------------------------------------------------
-    d->dirView = new K3b::DirView( fileTreeView, upperSplitter );
-    upperSplitter->addWidget( d->dirView );
+    d->dirView = new K3b::DirView( fileTreeView, upperSplitter );   //top right
+    //upperSplitter->addWidget( d->dirView );
 
     // --- filetreecombobox-toolbar ----------------------------------------------------------------
 	d->filePlacesModel = new KFilePlacesModel;
@@ -538,23 +631,82 @@ void K3b::MainWindow::initView()
     QWidgetAction * urlNavigatorAction = new QWidgetAction(this);
     urlNavigatorAction->setDefaultWidget(d->urlNavigator);
     urlNavigatorAction->setText(i18n("&Location Bar"));
-    actionCollection()->addAction( "location_bar", urlNavigatorAction );
+    //actionCollection()->addAction( "location_bar", urlNavigatorAction );
     // ---------------------------------------------------------------------------------------------
+    
+    d->doc_image = k3bappcore->projectManager()->createProject( K3b::Doc::AudioProject ); 
+    d->view_image = new K3b::AudioView( static_cast<K3b::AudioDoc*>( d->doc_image ), d->documentTab );
+    
+    d->doc_data = k3bappcore->projectManager()->createProject( K3b::Doc::DataProject );
+    d->view_data = new K3b::DataView( static_cast<K3b::DataDoc*>( d->doc_data ), d->documentTab );
+  
+    d->doc_copy = k3bappcore->projectManager()->createProject( K3b::Doc::VcdProject );
+    d->view_copy = new K3b::VcdView( static_cast<K3b::VcdDoc*>( d->doc_copy ), d->documentTab );
+
+    d->doc_image->setView( d->view_image );
+    d->doc_data->setView( d->view_data );
+    d->doc_copy->setView( d->view_copy );
+
+    d->documentTab->addTab( d->doc_image );
+    d->documentTab->addTab( d->doc_data );
+    d->documentTab->addTab( d->doc_copy );
+
+    d->documentTab->tabBar()->hide();
+    d->documentTab->setCurrentTab( d->doc_data );
+
 }
 
+bool K3b::MainWindow::eventFilter(QObject *obj, QEvent *event)
+{
+    switch (event->type())
+    {
+    case QEvent::WindowTitleChange:
+    {
+        QWidget *pWidget = qobject_cast<QWidget *>(obj);
+        if (pWidget)
+        {
+            qDebug() << "window title::" << pWidget->windowTitle() <<endl;
+            pTitleLabel->setText(pWidget->windowTitle());
+            return true;
+        }
+    }
+    case QEvent::WindowIconChange:
+    {
+        QWidget *pWidget = qobject_cast<QWidget *>(obj);
+        if (pWidget)
+        {
+            QIcon icon = pWidget->windowIcon();
+            qDebug() << "window icon::" <<endl;
+            pIconLabel->setPixmap(icon.pixmap(pIconLabel->size()));
+            return true;
+        }
+    }
+    case QEvent::WindowStateChange:
+
+    default:
+         return QWidget::eventFilter(obj, event);
+
+     }
+     return QWidget::eventFilter(obj, event);
+}
 
 void K3b::MainWindow::createClient( K3b::Doc* doc )
 {
     qDebug();
-
+    QString string_view;
     // create the proper K3b::View (maybe we should put this into some other class like K3b::ProjectManager)
     K3b::View* view = 0;
     switch( doc->type() ) {
-    case K3b::Doc::AudioProject:
-        view = new K3b::AudioView( static_cast<K3b::AudioDoc*>(doc), d->documentTab );
+    case K3b::Doc::AudioProject:{
+            view = new K3b::AudioView( static_cast<K3b::AudioDoc*>(doc), d->documentTab );
+            string_view = i18n("udio");
+        }
         break;
     case K3b::Doc::DataProject:
-        view = new K3b::DataView( static_cast<K3b::DataDoc*>(doc), d->documentTab );
+        {
+            view = new K3b::DataView( static_cast<K3b::DataDoc*>(doc), d->documentTab );
+            string_view = i18n("Data");
+        }
         break;
     case K3b::Doc::MixedProject:
     {
@@ -576,12 +728,22 @@ void K3b::MainWindow::createClient( K3b::Doc* doc )
     }
 
     if( view != 0 ) {
+        int flag = 1;
         doc->setView( view );
         view->setWindowTitle( doc->URL().fileName() );
-
-        d->documentTab->addTab( doc );
-        d->documentTab->setCurrentTab( doc );
-
+        for ( int i = 0; i < d->documentTab->count(); i++ ){
+            if( strstr(d->documentTab->tabText(i).toLatin1(), string_view.toLatin1()) != 0 ){
+                d->documentTab->setCurrentIndex( i ); 
+                flag = 0;
+                break;
+            }
+        }
+        if (flag ){
+            d->documentTab->addTab( doc );
+        
+            d->documentTab->setCurrentTab( doc );
+        }
+        d->documentTab->tabBar()->hide();
         slotCurrentDocChanged();
     }
 }
@@ -674,7 +836,7 @@ void K3b::MainWindow::readOptions()
     applyMainWindowSettings( grpWindow );
     
     KConfigGroup grp( config(), "General Options" );
-    d->actionViewDocumentHeader->setChecked( grp.readEntry("Show Document Header", true) );
+    d->actionViewDocumentHeader->setChecked( grp.readEntry("Show Document Header", false) );
     d->urlNavigator->setUrlEditable( !grp.readEntry( "Navigator breadcrumb mode", true ) );
 
     // initialize the recent file list
@@ -745,7 +907,7 @@ void K3b::MainWindow::readProperties( const KConfigGroup& grp )
     //        since that's when we can be sure we never need the session stuff again.
 
     // 1. read all projects from the config
-    // 2. simply open all of them
+    // 2. simply open all of themg
     // 3. reset the saved urls and the modified state
     // 4. delete "~/.kde/share/apps/k3b/sessions/" + KApp->sessionId()
 
@@ -1138,20 +1300,29 @@ void K3b::MainWindow::showOptionDialog( K3b::OptionDialog::ConfigPage index )
 
 K3b::Doc* K3b::MainWindow::slotNewAudioDoc()
 {
-    slotStatusMsg(i18n("Creating new Audio CD Project."));
+    /*slotStatusMsg(i18n("Creating new Audio CD Project."));
 
     K3b::Doc* doc = k3bappcore->projectManager()->createProject( K3b::Doc::AudioProject );
 
     return doc;
+    */
+    d->documentTab->setCurrentTab( d->doc_image );
+    slotCurrentDocChanged();
+    return d->doc_image;
 }
 
 K3b::Doc* K3b::MainWindow::slotNewDataDoc()
 {
+/*
     slotStatusMsg(i18n("Creating new Data CD Project."));
 
     K3b::Doc* doc = k3bappcore->projectManager()->createProject( K3b::Doc::DataProject );
 
     return doc;
+*/
+    d->documentTab->setCurrentTab( d->doc_data );
+    slotCurrentDocChanged();
+    return d->doc_data;
 }
 
 
@@ -1181,12 +1352,15 @@ K3b::Doc* K3b::MainWindow::slotNewMixedDoc()
 }
 
 K3b::Doc* K3b::MainWindow::slotNewVcdDoc()
-{
+{/*
     slotStatusMsg(i18n("Creating new Video CD Project."));
 
     K3b::Doc* doc = k3bappcore->projectManager()->createProject( K3b::Doc::VcdProject );
 
-    return doc;
+    return doc;*/
+    d->documentTab->setCurrentTab( d->doc_copy );
+    slotCurrentDocChanged();
+    return d->doc_copy;
 }
 
 
@@ -1294,6 +1468,7 @@ void K3b::MainWindow::slotWriteImage()
 void K3b::MainWindow::slotWriteImage( const QUrl& url )
 {
     K3b::ImageWritingDialog d( this );
+    //K3b::ImageWritingDialog d( this->d->documentTab );
     d.setImage( url );
     d.exec();
 }

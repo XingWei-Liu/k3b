@@ -1,0 +1,10 @@
+-I/home/ubuntu/workspace/k3b/git/k3b-19.12.3
+-I/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src
+-I/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src
+-D_GNU_SOURCE
+-D_LARGEFILE64_SOURCE
+-DHAVE_QT5WEBKITWIDGETS
+-DQT_NO_URL_CAST_FROM_STRING
+-o
+/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.moc
+/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.h

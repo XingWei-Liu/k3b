@@ -241,7 +241,13 @@ QVariant K3b::DataProjectModel::data( const QModelIndex& index, int role ) const
             else if ( role == SortRole ) {
                 return item->size();
             }
+            break; 
+        //***********************************************************
+        case PathColumn:
+            if ( role == Qt::DisplayRole )
+                return item->localPath();
             break;
+
         }
     }
 
@@ -261,6 +267,9 @@ QVariant K3b::DataProjectModel::headerData( int section, Qt::Orientation orienta
             return i18nc( "file type", "Type" );
         case SizeColumn:
             return i18nc( "file size", "Size" );
+        //**************************************************************************
+        case PathColumn:
+            return i18nc( "file path", "Path" );
         }
     }
 

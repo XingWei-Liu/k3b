@@ -36,6 +36,7 @@ namespace K3b {
             FilenameColumn = 0,
             TypeColumn,
             SizeColumn,
+            PathColumn,
             NumColumns
         };
 

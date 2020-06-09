@@ -31,13 +31,16 @@
 #include <QList>
 #include <QAction>
 #include <QVBoxLayout>
+#include <QGridLayout>
+#include <QLabel>
+#include <QComboBox>
 
 K3b::View::View( K3b::Doc* pDoc, QWidget *parent )
     : QWidget( parent ),
       m_doc( pDoc )
 {
     m_toolBox = new KToolBar( this );
-    m_fillStatusDisplay = new K3b::FillStatusDisplay( m_doc, this );
+    m_fillStatusDisplay = new K3b::FillStatusDisplay( m_doc/*, this */);
 
     QVBoxLayout* fillStatusDisplayLayout = new QVBoxLayout;
     fillStatusDisplayLayout->addWidget( m_fillStatusDisplay );
@@ -45,18 +48,20 @@ K3b::View::View( K3b::Doc* pDoc, QWidget *parent )
 
     m_layout = new QVBoxLayout( this );
     m_layout->addWidget( m_toolBox );
-    m_layout->addLayout( fillStatusDisplayLayout );
+    //m_layout->addLayout( fillStatusDisplayLayout );
+    //m_layout->addWidget(label);
     m_layout->setSpacing( 0 );
     m_layout->setContentsMargins( 0, 0, 0, 0 );
-
+ 
     QAction* burnAction = K3b::createAction(this,i18n("&Burn"), "tools-media-optical-burn", Qt::CTRL + Qt::Key_B, this, SLOT(slotBurn()),
                                             actionCollection(), "project_burn");
     burnAction->setToolTip( i18n("Open the burn dialog for the current project") );
+   
     QAction* propAction = K3b::createAction(this, i18n("&Properties"), "document-properties", Qt::CTRL + Qt::Key_P, this, SLOT(slotProperties()),
                                             actionCollection(), "project_properties");
     propAction->setToolTip( i18n("Open the properties dialog") );
 
-    m_toolBox->addAction( burnAction/*, true*/ );
+    //m_toolBox->addAction( burnAction/*, true*/ );
     m_toolBox->addSeparator();
 
     // this is just for testing (or not?)

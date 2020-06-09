@@ -38,6 +38,8 @@ namespace K3b {
 
     public Q_SLOTS:
         void slotBurn() override;
+        void slotStartBurn();
+        void add_device_urls(QString filenpath);
         void addUrls( const QList<QUrl>& urls ) override;
 
     private Q_SLOTS:

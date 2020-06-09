@@ -114,6 +114,8 @@ namespace K3b {
          * Compare MediaSelectionComboBox::setIgnoreDevice
          */
         void setIgnoreDevice( K3b::Device::Device* dev );
+        void hideComboMedium();
+        void setWantedMedium( K3b::Device::Device* dev );
 
     Q_SIGNALS:
         void writerChanged();
@@ -135,17 +137,22 @@ namespace K3b {
         void slotWriterChanged();
         void slotNewBurnMedium( K3b::Device::Device* dev );
         void slotManualSpeed();
-
-    private:
-        void clearSpeedCombo();
-        void insertSpeedItem( int );
-        K3b::WritingApp selectedWritingApp() const;
-
+    public:
         class MediaSelectionComboBox;
 
         IntMapComboBox* m_comboSpeed;
         MediaSelectionComboBox* m_comboMedium;
-        IntMapComboBox* m_comboWritingApp;
+        
+    private:
+        void clearSpeedCombo();
+        void insertSpeedItem( int );
+        K3b::WritingApp selectedWritingApp() const;
+/*
+        class MediaSelectionComboBox;
+
+        IntMapComboBox* m_comboSpeed;
+        MediaSelectionComboBox* m_comboMedium;
+  */      IntMapComboBox* m_comboWritingApp;
         QLabel* m_writingAppLabel;
 
         class Private;
