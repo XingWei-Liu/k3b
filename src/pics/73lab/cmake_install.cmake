@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/pics/73lab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,25 +47,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/share/k3b/pics/73lab" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/splash.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/project_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/project_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/probing.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_audio.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_data.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_video.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_empty.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_mixed.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/media_none.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/progress_working.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/progress_fail.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/progress_success.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/progress_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/dialog_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/dialog_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/welcome_bg.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/k3b.theme"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/splash.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/project_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/project_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/probing.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_audio.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_data.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_video.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_empty.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_mixed.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/media_none.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/progress_working.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/progress_fail.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/progress_success.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/progress_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/dialog_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/dialog_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/welcome_bg.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/73lab/k3b.theme"
     )
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/helper
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libexec/k3bhelper"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libexec" TYPE EXECUTABLE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/bin/k3bhelper")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libexec" TYPE EXECUTABLE FILES "/home/ubuntu/k3b-19.12.3/bin/k3bhelper")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libexec/k3bhelper" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/x86_64-linux-gnu/libexec/k3bhelper")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -54,11 +54,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/system.d" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/org.kde.k3b.conf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/system.d" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/helper/org.kde.k3b.conf")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/system-services" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/org.kde.k3b.service")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/dbus-1/system-services" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/helper/org.kde.k3b.service")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,6 +70,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/polkit-1/actions" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/org.kde.k3b.policy")
+file(INSTALL DESTINATION "/usr/share/polkit-1/actions" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/helper/org.kde.k3b.policy")
 endif()
 

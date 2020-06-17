@@ -6,21 +6,67 @@
 
 #IncludeRegexTransform: 
 
-/home/ukylin/workspace/k3b/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/moc_k3bhelper.cpp
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper.cpp
 k3bhelper.h
-/home/ukylin/workspace/k3b/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/k3bhelper.h
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper.h
+k3bhelperprogramitem.h
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.h
+KAuthHelperSupport
+-
+QFile
+-
+QProcess
+-
+QString
+-
+QStringList
+-
+grp.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+unistd.h
+-
+
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper.h
+KAuthActionReply
+-
+QObject
+-
+
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/moc_k3bhelper.cpp
+k3bhelper.h
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/k3bhelper.h
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
 -
 
-/home/ukylin/workspace/k3b/k3b-19.12.3/src/helper/k3bhelper_autogen/mocs_compilation.cpp
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper_autogen/mocs_compilation.cpp
 EWIEGA46WW/moc_k3bhelper.cpp
-/home/ukylin/workspace/k3b/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/moc_k3bhelper.cpp
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper_autogen/EWIEGA46WW/moc_k3bhelper.cpp
+
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp
+k3bhelperprogramitem.h
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.h
+QDataStream
+-
+
+/home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.h
+QMetaType
+-
+QString
+-
 
 /usr/include/KF5/KAuth/KAuthActionReply
 kauthactionreply.h
 /usr/include/KF5/KAuth/kauthactionreply.h
+
+/usr/include/KF5/KAuth/KAuthHelperSupport
+kauthhelpersupport.h
+/usr/include/KF5/KAuth/kauthhelpersupport.h
 
 /usr/include/KF5/KAuth/kauthactionreply.h
 QString
@@ -38,17 +84,37 @@ kauthcore_export.h
 
 /usr/include/KF5/KAuth/kauthcore_export.h
 
+/usr/include/KF5/KAuth/kauthhelpersupport.h
+QObject
+-
+QVariant
+-
+kauthcore_export.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QDataStream
 qdatastream.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QFile
+qfile.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
 qmap.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
+qmetatype.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 qobject.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QProcess
+qprocess.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
 qshareddata.h
@@ -57,6 +123,10 @@ qshareddata.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstring.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+qstringlist.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 qvariant.h
@@ -200,6 +270,20 @@ list
 map
 -
 utility
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+QtCore/qfiledevice.h
+-
+QtCore/qstring.h
+-
+stdio.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
+QtCore/qiodevice.h
+-
+QtCore/qstring.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
@@ -448,6 +532,16 @@ QtCore/qglobal.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qpoint.h
 QtCore/qnamespace.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qprocess.h
+QtCore/qiodevice.h
+-
+QtCore/qstringlist.h
+-
+QtCore/qshareddata.h
+-
+functional
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qprocessordetection.h

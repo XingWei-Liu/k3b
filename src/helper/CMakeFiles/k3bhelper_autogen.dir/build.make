@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 # Utility rule file for k3bhelper_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
 include src/helper/CMakeFiles/k3bhelper_autogen.dir/progress.make
 
 src/helper/CMakeFiles/k3bhelper_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target k3bhelper"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper && /usr/bin/cmake -E cmake_autogen /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target k3bhelper"
+	cd /home/ubuntu/k3b-19.12.3/src/helper && /usr/bin/cmake -E cmake_autogen /home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper_autogen.dir/AutogenInfo.json ""
 
 k3bhelper_autogen: src/helper/CMakeFiles/k3bhelper_autogen
 k3bhelper_autogen: src/helper/CMakeFiles/k3bhelper_autogen.dir/build.make
@@ -68,10 +68,10 @@ src/helper/CMakeFiles/k3bhelper_autogen.dir/build: k3bhelper_autogen
 .PHONY : src/helper/CMakeFiles/k3bhelper_autogen.dir/build
 
 src/helper/CMakeFiles/k3bhelper_autogen.dir/clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper && $(CMAKE_COMMAND) -P CMakeFiles/k3bhelper_autogen.dir/cmake_clean.cmake
+	cd /home/ubuntu/k3b-19.12.3/src/helper && $(CMAKE_COMMAND) -P CMakeFiles/k3bhelper_autogen.dir/cmake_clean.cmake
 .PHONY : src/helper/CMakeFiles/k3bhelper_autogen.dir/clean
 
 src/helper/CMakeFiles/k3bhelper_autogen.dir/depend:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src/helper /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src/helper /home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/helper/CMakeFiles/k3bhelper_autogen.dir/depend
 

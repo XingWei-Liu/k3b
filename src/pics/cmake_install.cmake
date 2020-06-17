@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/pics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/quant/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/pics/73lab/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/pics/crystal/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/pics/quant/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/cmake_install.cmake")
 
 endif()
 

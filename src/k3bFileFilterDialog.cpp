@@ -1,14 +1,18 @@
-#include "k3bFileFilter.h"
+#include "k3bFileFilterDialog.h"
+
 #include <KConfig>
 #include <KSharedConfig>
-
+#include <KIO/Global>
+#include <KConfigGroup>
+#include <QPushButton>
+#include <QLabel>
+#include <QHBoxLayout>
 
 FileFilter::FileFilter(QWidget *parent) :
-    QDialog(parent),
+    QDialog(parent)
 {
-    filter_dialog = new QDialog();
-    filter_dialog->setWindowFlags(Qt::FramelessWindowHint | windowFlags());
-    filter_dialog->setFixedSize(400, 400);
+    this->setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    this->setFixedSize(400, 400);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(30,30);
@@ -28,7 +32,7 @@ FileFilter::FileFilter(QWidget *parent) :
                           "QPushButton:hover{border-image: url(:/new/prefix1/pic/icon-关闭-悬停点击.png);"
                          "border:none;background-color:rgb(248, 100, 87);"
                          "border-radius: 4px;}");
-    connect(close, &QPushButton::clicked, this, &BurnFilter::filter_exit);
+    connect(close, &QPushButton::clicked, this, &FileFilter::filter_exit);
 
     QHBoxLayout *titlebar = new QHBoxLayout();
     titlebar->addWidget(icon);
@@ -36,47 +40,48 @@ FileFilter::FileFilter(QWidget *parent) :
     titlebar->addWidget(title);
     titlebar->addStretch();
     titlebar->addWidget(close);
-    QVBoxLayout *mainWidgetLayout = new QVBoxLayout(filter_dialog);
+    
+    QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
     QLabel *filter_label = new QLabel("filter");
     filter_label->setFixedSize(80,30);
     filter_label->setStyleSheet("QLabel{background-color:rgb(233, 233, 233);"
                                 "background-repeat: no-repeat;color:rgb(0, 0, 0);"
                                 "font: 24px;background-color:transparent;}");
 
-    hide_check = new QCheckBox();
-    hide_check->setText("Checking discs with MD5 files");
-    hide_check->setChecked(false);
-    link_check = new QCheckBox("link");
-    link_check->setChecked(false);
-    deform_link = new QCheckBox("deform link");
-    deform_link->setChecked(false);
+    discard_hidden_file = new QCheckBox("discard hidden file");
+    discard_hidden_file->setChecked(true);
+    
+    discard_broken_link = new QCheckBox("discard broken link");
+    discard_broken_link->setChecked(true);
+    
+    follow_link = new QCheckBox("follow link");
+    follow_link->setChecked(false);
 
     mainWidgetLayout->addLayout(titlebar);
     mainWidgetLayout->addWidget(filter_label);
     mainWidgetLayout->addSpacing(50);
-    mainWidgetLayout->addWidget(hide_check);
+    mainWidgetLayout->addWidget( discard_hidden_file);
     mainWidgetLayout->addSpacing(20);
-    mainWidgetLayout->addWidget(link_check);
+    mainWidgetLayout->addWidget( discard_broken_link);
     mainWidgetLayout->addSpacing(20);
-    mainWidgetLayout->addWidget(deform_link);
+    mainWidgetLayout->addWidget(follow_link);
     mainWidgetLayout->addStretch();
 
-    filter_dialog->setModal(true);
-    filter_dialog->show();
+    this->setModal(true);
 
 }
 
 FileFilter::~FileFilter()
 {
-    delete ui;
 }
 
 void FileFilter::filter_exit()
 {
-    pro.set_filter_hide(hide_check->isChecked());
-    pro.set_filter_link(link_check->isChecked());
-    pro.set_filter_deform_link(deform_link->isChecked());
-    KConfigGroup grp( KSharedConfig::openConfig(), "image writing" );
-    c.writeEntry( "simulate", d->checkDummy->isChecked() );
-    filter_dialog->close();
+    KConfigGroup grp( KSharedConfig::openConfig(), "default data settings" );   
+    grp.writeEntry( "discard hidden file", discard_hidden_file->isChecked() );
+    grp.writeEntry( "discard symlinks", false );
+    grp.writeEntry( "discard broken symlinks", discard_broken_link->isChecked() );
+    grp.writeEntry( "follow symbolic links", follow_link->isChecked() );
+    
+    this->close();
 }

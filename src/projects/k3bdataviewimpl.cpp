@@ -32,6 +32,9 @@
 #include <KFileItemDelegate>
 #include <KRun>
 #include <KActionCollection>
+#include <KConfigGroup>
+#include <KSharedConfig>
+#include <KConfig>
 
 #include <QSortFilterProxyModel>
 #include <QAction>
@@ -264,11 +267,11 @@ void K3b::DataViewImpl::slotOpenDir()
                                                      QUrl(),
                                                      "All Files(*.*)");
   */
-    QList<QUrl> urls;
-    QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl());
-    m_doc->addUrls( urls << url );
-
+     QList<QUrl> urls;
+     QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl()/*, QFileDialog::DontUseNativeDialog*/);
+     m_doc->addUrls( urls << url );
 }
+
 void K3b::DataViewImpl::slotClear()
 {
     m_doc->clear();

@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "k3b_autogen"
   "CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o"
   "CMakeFiles/k3b.dir/k3b.cpp.o"
+  "CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o"
   "CMakeFiles/k3b.dir/k3bTitleBar.cpp.o"
   "CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/k3b.dir/k3baction.cpp.o"

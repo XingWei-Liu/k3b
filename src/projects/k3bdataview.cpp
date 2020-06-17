@@ -21,11 +21,14 @@
 #include "k3bdataprojectmodel.h"
 #include "k3bdataviewimpl.h"
 #include "k3bdirproxymodel.h"
+#include "k3bmediaselectioncombobox.h"
 
 #include <KLocalizedString>
 #include <KMessageBox>
 #include <KActionCollection>
 #include <KToolBar>
+#include <KConfig>
+#include <KSharedConfig>
 
 #include <QDebug>
 #include <QUrl>
@@ -38,7 +41,15 @@
 #include <QLabel>
 #include <QComboBox>
 #include <QFileDialog>
+
 #include "misc/k3bimagewritingdialog.h"
+#include "k3bapplication.h"
+#include "k3bappdevicemanager.h"
+#include "k3bmediacache.h"
+#include <Solid/Block>
+#include <Solid/Device>
+#include <Solid/StorageAccess>
+#include <KMountPoint>
 
 K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 :
@@ -79,11 +90,16 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     QLabel *label = new QLabel(this);
     QGridLayout *layout = new QGridLayout(label);
 
+    QList<K3b::Device::Device*> device_list = k3bappcore->deviceManager()->allDevices();
+    foreach( K3b::Device::Device* device, device_list){
+        qDebug()<< "descripition::" << device->description() <<endl;
+    }
+
     QLabel *label_burner = new QLabel(label);
     label_burner->setText("current burner");
     label_burner->setMinimumSize(75, 30);
 
-    QComboBox *combo_burner = new QComboBox(label);
+    combo_burner = new QComboBox(label);
     combo_burner->setMinimumSize(310, 30);
     
     QLabel *label_space = new QLabel(label);
@@ -92,7 +108,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     label_CD->setText("current CD");
     label_CD->setMinimumSize(75, 30);
 
-    QComboBox *combo_CD = new QComboBox(label);
+    combo_CD = new QComboBox(label);
     combo_CD->setMinimumSize(310, 30);
 
     layout->addWidget( m_dataViewImpl->view(), 0, 0, 1, 5 );
@@ -145,6 +161,13 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 
     if( m_dirProxy->rowCount() > 0 )
         m_dirView->setCurrentIndex( m_dirProxy->index( 0, 0 ) );
+    /********************************************/
+/*    connect( k3bappcore->appDeviceManager(), SIGNAL( currentDeviceChanged( K3b::Device::Device* ) ),
+              this, SLOT( slotMountPoint( K3b::Device::Device* ) ) );*/
+    connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
+              this, SLOT(slotMediaChange(K3b::Device::Device*)) );
+    connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
+              this, SLOT(slotDeviceChange(K3b::Device::DeviceManager*)) );
 
     // Setup toolbar
     /*
@@ -183,6 +206,45 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 K3b::DataView::~DataView()
 {
 }
+#if 1
+void K3b::DataView::slotDeviceChange( K3b::Device::DeviceManager* manager )
+{
+    //qDebug()<< "mount at:" << k3bappcore->appDeviceManager()->currentDevice() <<endl;
+    qDebug()<< "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" <<endl;
+    QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
+    if ( device_list.count() == 0 ){
+        combo_burner->setEnabled(false);
+        combo_CD->setEditable(true);
+    }else
+        slotMediaChange( 0 );
+}
+#endif
+#if 1
+void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
+{
+    //if(dev){
+    QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
+    combo_burner->clear();
+    combo_CD->clear();
+    qDebug()<< "device count" << device_list.count() <<endl;
+    foreach(K3b::Device::Device* device, device_list){
+        combo_burner->addItem( device->vendor() + " " + device->description() );
+        device_index.append( device->vendor() + " " + device->description() );
+        KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
+        if( !mountPoint ){
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            CD_index.append( "please insert a medium or empty CD" );
+            return;
+        }
+        combo_CD->addItem( k3bappcore->mediaCache()->medium( device ).shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        CD_index.append( k3bappcore->mediaCache()->medium( device ).shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        mount_index.append( mountPoint->mountPoint() );
+    }
+    add_device_urls( mount_index.at(0) );
+    //}
+ 
+}
+#endif
 
 K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
 {
@@ -192,16 +254,18 @@ K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
 void K3b::DataView::add_device_urls(QString filepath)
 {
     QString s;
-    QDir *dir = new QDir(filepath);
-    QStringList nameFilters;
-    QList<QFileInfo> fileinfo(dir->entryInfoList( nameFilters ) );
-    for ( int i = 0; i < fileinfo.count(); i++ ){
-         if( strstr(fileinfo.at(i).filePath().toLatin1().data(), "/.") != NULL )
-             continue;
-         s = "file://" + fileinfo.at(i).filePath();
-         m_doc->addUrls( QList<QUrl>() << QUrl( s ) );
+    m_doc->clear();
+    if (filepath != NULL){
+        QDir *dir = new QDir(filepath);
+        QStringList nameFilters;
+        QList<QFileInfo> fileinfo(dir->entryInfoList( nameFilters ) );
+        for ( int i = 0; i < fileinfo.count(); i++ ){
+             if( strstr(fileinfo.at(i).filePath().toLatin1().data(), "/.") != NULL )
+                 continue;
+             s = "file://" + fileinfo.at(i).filePath();
+             m_doc->addUrls( QList<QUrl>() << QUrl( s ) );
+        }
     }
-
 }
 
 void K3b::DataView::slotStartBurn()

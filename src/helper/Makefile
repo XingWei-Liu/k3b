@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles /home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/progress.marks
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/clean
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/rule:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/rule
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/rule
 .PHONY : src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ org.kde.k3b.policy-customtarget: src/helper/CMakeFiles/org.kde.k3b.policy-custom
 
 # fast build rule for target.
 org.kde.k3b.policy-customtarget/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build.make src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build.make src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build
 .PHONY : org.kde.k3b.policy-customtarget/fast
 
 # Convenience name for target.
 src/helper/CMakeFiles/k3bhelper.dir/rule:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/k3bhelper.dir/rule
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/k3bhelper.dir/rule
 .PHONY : src/helper/CMakeFiles/k3bhelper.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ k3bhelper: src/helper/CMakeFiles/k3bhelper.dir/rule
 
 # fast build rule for target.
 k3bhelper/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/build
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/build
 .PHONY : k3bhelper/fast
 
 # Convenience name for target.
 src/helper/CMakeFiles/k3bhelper_autogen.dir/rule:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/k3bhelper_autogen.dir/rule
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/helper/CMakeFiles/k3bhelper_autogen.dir/rule
 .PHONY : src/helper/CMakeFiles/k3bhelper_autogen.dir/rule
 
 # Convenience name for target.
@@ -209,7 +209,7 @@ k3bhelper_autogen: src/helper/CMakeFiles/k3bhelper_autogen.dir/rule
 
 # fast build rule for target.
 k3bhelper_autogen/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper_autogen.dir/build.make src/helper/CMakeFiles/k3bhelper_autogen.dir/build
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper_autogen.dir/build.make src/helper/CMakeFiles/k3bhelper_autogen.dir/build
 .PHONY : k3bhelper_autogen/fast
 
 k3bhelper.o: k3bhelper.cpp.o
@@ -218,7 +218,7 @@ k3bhelper.o: k3bhelper.cpp.o
 
 # target to build an object file
 k3bhelper.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.o
 .PHONY : k3bhelper.cpp.o
 
 k3bhelper.i: k3bhelper.cpp.i
@@ -227,7 +227,7 @@ k3bhelper.i: k3bhelper.cpp.i
 
 # target to preprocess a source file
 k3bhelper.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.i
 .PHONY : k3bhelper.cpp.i
 
 k3bhelper.s: k3bhelper.cpp.s
@@ -236,7 +236,7 @@ k3bhelper.s: k3bhelper.cpp.s
 
 # target to generate assembly for a file
 k3bhelper.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.s
 .PHONY : k3bhelper.cpp.s
 
 k3bhelper_autogen/mocs_compilation.o: k3bhelper_autogen/mocs_compilation.cpp.o
@@ -245,7 +245,7 @@ k3bhelper_autogen/mocs_compilation.o: k3bhelper_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 k3bhelper_autogen/mocs_compilation.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.o
 .PHONY : k3bhelper_autogen/mocs_compilation.cpp.o
 
 k3bhelper_autogen/mocs_compilation.i: k3bhelper_autogen/mocs_compilation.cpp.i
@@ -254,7 +254,7 @@ k3bhelper_autogen/mocs_compilation.i: k3bhelper_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 k3bhelper_autogen/mocs_compilation.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.i
 .PHONY : k3bhelper_autogen/mocs_compilation.cpp.i
 
 k3bhelper_autogen/mocs_compilation.s: k3bhelper_autogen/mocs_compilation.cpp.s
@@ -263,7 +263,7 @@ k3bhelper_autogen/mocs_compilation.s: k3bhelper_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 k3bhelper_autogen/mocs_compilation.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.s
 .PHONY : k3bhelper_autogen/mocs_compilation.cpp.s
 
 k3bhelperprogramitem.o: k3bhelperprogramitem.cpp.o
@@ -272,7 +272,7 @@ k3bhelperprogramitem.o: k3bhelperprogramitem.cpp.o
 
 # target to build an object file
 k3bhelperprogramitem.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.o
 .PHONY : k3bhelperprogramitem.cpp.o
 
 k3bhelperprogramitem.i: k3bhelperprogramitem.cpp.i
@@ -281,7 +281,7 @@ k3bhelperprogramitem.i: k3bhelperprogramitem.cpp.i
 
 # target to preprocess a source file
 k3bhelperprogramitem.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.i
 .PHONY : k3bhelperprogramitem.cpp.i
 
 k3bhelperprogramitem.s: k3bhelperprogramitem.cpp.s
@@ -290,7 +290,7 @@ k3bhelperprogramitem.s: k3bhelperprogramitem.cpp.s
 
 # target to generate assembly for a file
 k3bhelperprogramitem.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/helper/CMakeFiles/k3bhelper.dir/build.make src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.s
 .PHONY : k3bhelperprogramitem.cpp.s
 
 # Help Target
@@ -329,6 +329,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

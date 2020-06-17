@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/pics/crystal
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,25 +47,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/share/k3b/pics/crystal" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/splash.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/project_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/project_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/probing.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_audio.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_data.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_video.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_empty.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_mixed.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/media_none.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/progress_working.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/progress_fail.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/progress_success.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/progress_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/dialog_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/dialog_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/welcome_bg.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/crystal/k3b.theme"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/splash.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/project_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/project_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/probing.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_audio.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_data.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_video.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_empty.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_mixed.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/media_none.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/progress_working.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/progress_fail.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/progress_success.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/progress_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/dialog_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/dialog_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/welcome_bg.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/crystal/k3b.theme"
     )
 endif()
 

@@ -54,6 +54,7 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget( frame );
     m_writerSelectionWidget->setWantedMediumType( K3b::Device::MEDIA_REWRITABLE );
+    m_writerSelectionWidget->hideSpeed();
     // we need state empty here for preformatting DVD+RW.
     m_writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_COMPLETE|
                                                    K3b::Device::STATE_INCOMPLETE|
@@ -61,14 +62,16 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
     m_writerSelectionWidget->setSupportedWritingApps( K3b::WritingAppDvdRwFormat );
     m_writerSelectionWidget->setForceAutoSpeed(true);
 
-    QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), frame );
+    //QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), frame );
+    QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"));
     m_writingModeWidget = new K3b::WritingModeWidget( K3b::WritingModeIncrementalSequential|K3b::WritingModeRestrictedOverwrite,
                                                     groupWritingMode );
     QVBoxLayout* groupWritingModeLayout = new QVBoxLayout( groupWritingMode );
     groupWritingModeLayout->addWidget( m_writingModeWidget );
     groupWritingModeLayout->addStretch( 1 );
 
-    QGroupBox* groupOptions = new QGroupBox( i18n("Settings"), frame );
+    //QGroupBox* groupOptions = new QGroupBox( i18n("Settings"), frame );
+    QGroupBox* groupOptions = new QGroupBox( i18n("Settings"));
     m_checkForce = new QCheckBox( i18n("Force"), groupOptions );
     m_checkQuickFormat = new QCheckBox( i18n("Quick format"), groupOptions );
     QVBoxLayout* groupOptionsLayout = new QVBoxLayout( groupOptions );
@@ -80,8 +83,8 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
     grid->setContentsMargins( 0, 0, 0, 0 );
 
     grid->addWidget( m_writerSelectionWidget, 0, 0, 1, 2 );
-    grid->addWidget( groupWritingMode, 1, 0 );
-    grid->addWidget( groupOptions, 1, 1 );
+    //grid->addWidget( groupWritingMode, 1, 0 );
+    //grid->addWidget( groupOptions, 1, 1 );
     grid->setRowStretch( 1, 1 );
 
     m_checkForce->setToolTip( i18n("Force formatting of empty DVDs") );
@@ -117,7 +120,6 @@ void K3b::MediaFormattingDialog::setDevice( K3b::Device::Device* dev )
 {
     m_writerSelectionWidget->setWriterDevice( dev );
 }
-
 
 void K3b::MediaFormattingDialog::slotStartClicked()
 {

@@ -19,6 +19,8 @@
 
 #include <KLocalizedString>
 #include <KMessageBox>
+#include <KSharedConfig>
+#include <KConfig>
 
 #include <QDebug>
 #include <QCheckBox>
@@ -333,10 +335,15 @@ void K3b::DataImageSettingsWidget::save( K3b::IsoOptions& o )
     m_customFsDlg->save( o );
 
     m_volDescDlg->save( o );
-
+/*
     o.setDiscardSymlinks( m_comboSymlinkHandling->currentIndex() == SYM_DISCARD_ALL );
     o.setDiscardBrokenSymlinks( m_comboSymlinkHandling->currentIndex() == SYM_DISCARD_BROKEN );
     o.setFollowSymbolicLinks( m_comboSymlinkHandling->currentIndex() == SYM_FOLLOW );
+*/
+    KConfigGroup grp( KSharedConfig::openConfig(), "default data settings" );   
+    o.setDiscardSymlinks( grp.readEntry( "discard symlinks", false ) );
+    o.setDiscardBrokenSymlinks( grp.readEntry( "discard broken symlinks", true ) );
+    o.setFollowSymbolicLinks( grp.readEntry( "follow symbolic links", false ) );
 
     switch( m_comboSpaceHandling->currentIndex() ) {
     case WS_STRIP:

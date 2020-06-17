@@ -257,7 +257,8 @@ void K3b::ProjectBurnDialog::prepareGui()
     QWidget* w = new QWidget( m_tabWidget );
     m_tabWidget->addTab( w, i18n("Writing") );
     
-    //m_tabWidget->tabBar()->hide();
+    //hide tabBar
+    m_tabWidget->tabBar()->hide();
     
     //QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), w );
     QGroupBox* groupWritingMode = new QGroupBox( i18n(" "), w );

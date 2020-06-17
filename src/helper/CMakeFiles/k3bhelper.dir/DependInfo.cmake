@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelper.cpp" "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.o"
-  "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelper_autogen/mocs_compilation.cpp" "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.o"
-  "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp" "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.o"
+  "/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper.cpp" "/home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelper.cpp.o"
+  "/home/ubuntu/k3b-19.12.3/src/helper/k3bhelper_autogen/mocs_compilation.cpp" "/home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelper_autogen/mocs_compilation.cpp.o"
+  "/home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp" "/home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/k3bhelper.dir/k3bhelperprogramitem.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

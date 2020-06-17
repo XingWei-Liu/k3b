@@ -1,0 +1,36 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.k3b.AudioProject">
+    <method name="trackCount">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="title">
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="artist">
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="trackTitle">
+      <arg type="s" direction="out"/>
+      <arg name="trackNum" type="i" direction="in"/>
+    </method>
+    <method name="trackArtist">
+      <arg type="s" direction="out"/>
+      <arg name="trackNum" type="i" direction="in"/>
+    </method>
+    <method name="setTitle">
+      <arg name="title" type="s" direction="in"/>
+    </method>
+    <method name="setArtist">
+      <arg name="artist" type="s" direction="in"/>
+    </method>
+    <method name="setTrackTitle">
+      <arg name="trackNum" type="i" direction="in"/>
+      <arg name="title" type="s" direction="in"/>
+    </method>
+    <method name="setTrackArtist">
+      <arg name="trackNum" type="i" direction="in"/>
+      <arg name="artist" type="s" direction="in"/>
+    </method>
+  </interface>
+</node>

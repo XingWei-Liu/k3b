@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/icons/devices
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/128-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/128-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -58,7 +58,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/128-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/128-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,7 +70,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/128-devices-media-optical-dvd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/128-devices-media-optical-dvd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/128-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/128-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -94,7 +94,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/128-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/128-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -106,7 +106,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/16-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/16-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/16-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/16-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -130,7 +130,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/16-devices-media-optical-data.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/16-devices-media-optical-data.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -142,7 +142,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/16-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/16-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -154,7 +154,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/16-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/16-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -166,7 +166,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/22-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/22-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -178,7 +178,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/22-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/22-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -190,7 +190,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/22-devices-media-optical-data.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/22-devices-media-optical-data.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -202,7 +202,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/22-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/22-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -214,7 +214,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/22-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/22-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -226,7 +226,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -238,7 +238,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -250,7 +250,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-data.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-data.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -262,7 +262,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-dvd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-dvd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -274,7 +274,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -286,7 +286,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/32-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/32-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -298,7 +298,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -310,7 +310,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -322,7 +322,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-data.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-data.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-data.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -334,7 +334,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-dvd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-dvd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -346,7 +346,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -358,7 +358,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/48-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/48-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -370,7 +370,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/64-devices-media-optical-audio.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-audio.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/64-devices-media-optical-audio.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -382,7 +382,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/64-devices-media-optical-cd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-cd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/64-devices-media-optical-cd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -394,7 +394,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/64-devices-media-optical-dvd-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-dvd-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/64-devices-media-optical-dvd-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -406,7 +406,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/64-devices-media-optical-mixed-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-mixed-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/64-devices-media-optical-mixed-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -418,7 +418,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/64-devices-media-optical-video.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/devices" TYPE FILE RENAME "media-optical-video.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/64-devices-media-optical-video.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -430,7 +430,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-audio.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-audio.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-audio.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-audio.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -442,7 +442,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-cd-video.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-cd-video.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-cd-video.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-cd-video.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -454,7 +454,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-data.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-data.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-data.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-data.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -466,7 +466,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-dvd-video.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-dvd-video.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-dvd-video.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-dvd-video.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -478,7 +478,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-mixed-cd.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-mixed-cd.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-mixed-cd.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-mixed-cd.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -490,7 +490,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-video.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-video.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/devices" TYPE FILE RENAME "media-optical-video.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/devices/sc-devices-media-optical-video.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)

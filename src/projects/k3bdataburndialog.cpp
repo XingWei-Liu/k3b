@@ -132,7 +132,6 @@ void K3b::DataBurnDialog::saveSettingsToProject()
 
     // save iso image settings
     K3b::IsoOptions o = ((K3b::DataDoc*)doc())->isoOptions();
-    qDebug() << "volume id:" << ((K3b::DataDoc*)doc())->isoOptions().volumeID() <<endl;
     m_imageSettingsWidget->save( o );
     ((K3b::DataDoc*)doc())->setIsoOptions( o );
 

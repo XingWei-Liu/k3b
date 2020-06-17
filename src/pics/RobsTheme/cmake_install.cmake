@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/pics/RobsTheme
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -47,24 +47,24 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/share/k3b/pics/RobsTheme" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/splash.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/project_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/project_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_audio.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_data.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_video.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_empty.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_mixed.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/media_none.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/progress_working.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/progress_fail.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/progress_success.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/progress_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/dialog_left.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/dialog_right.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/welcome_bg.png"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/RobsTheme/k3b.theme"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/splash.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/project_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/project_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_audio.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_data.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_video.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_empty.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_mixed.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/media_none.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/progress_working.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/progress_fail.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/progress_success.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/progress_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/dialog_left.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/dialog_right.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/welcome_bg.png"
+    "/home/ubuntu/k3b-19.12.3/src/pics/RobsTheme/k3b.theme"
     )
 endif()
 

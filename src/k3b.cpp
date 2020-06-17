@@ -230,6 +230,7 @@ public:
     K3b::View *view_data;
     K3b::View *view_image;
     K3b::View *view_copy;
+    K3b::Device::Device* dev;
 
     QMimeDatabase mimeDatabase;
 };
@@ -240,7 +241,7 @@ K3b::MainWindow::MainWindow()
 {
     d->lastDoc = 0;
     //**********************
-    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    //setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     
     //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
     //this->setWindowIcon(QIcon(":/new/prefix1/pic/logo.ico"));
@@ -287,15 +288,11 @@ K3b::MainWindow::MainWindow()
     //**************************
     d->documentHeader->hide();
     statusBar()->hide();
-    menuBar()->setVisible(false);
-    //qDeleteAll( toolBars() );
-    //toolBars()->hide();
+    menuBar()->setVisible(true);
     for (int i = 0; i < toolBars().size(); i++){
         toolBars().at(i)->setVisible( false );
     }
-    //setupGUI(Keys | StatusBar | Save | Create);
-    //setStandardToolBarMenuEnabled( false);
-
+ 
     new Interface( this );
 }
 

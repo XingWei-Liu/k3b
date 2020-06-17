@@ -1,6 +1,8 @@
 #ifndef K3BFILEFILTER_H
 #define K3BFILEFILTER_H
 
+#include <QDialog>
+#include <QCheckBox>
 
 class FileFilter : public QDialog
 {
@@ -10,9 +12,9 @@ public:
     explicit FileFilter(QWidget *parent = nullptr);
     ~FileFilter();
 
-    QCheckBox *hide_check;
-    QCheckBox *link_check;
-    QCheckBox *deform_link;
+    QCheckBox *discard_hidden_file;
+    QCheckBox *discard_broken_link;
+    QCheckBox *follow_link;
 
     Q_SLOT void filter_exit();
 

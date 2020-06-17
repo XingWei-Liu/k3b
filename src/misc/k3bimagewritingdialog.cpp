@@ -593,7 +593,8 @@ void K3b::ImageWritingDialog::setupGui()
 */
     optionTabLayout->addWidget( optionGroup , 0, 0);
     d->optionTabbed->addTab( optionTab, i18n("Settings") );
-
+    //hide tabBar
+    d->optionTabbed->tabBar()->hide();
 /*
     // image tab ------------------------------------
     d->tempPathTab = new QWidget( d->optionTabbed );

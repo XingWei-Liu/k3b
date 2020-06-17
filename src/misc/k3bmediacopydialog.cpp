@@ -88,7 +88,8 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
 
     // tab widget --------------------
     QTabWidget* tabWidget = new QTabWidget( main );
-
+    //hide tabBar
+    tabWidget->tabBar()->hide();
     //
     // option tab --------------------
     //

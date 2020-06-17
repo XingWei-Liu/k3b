@@ -130,7 +130,8 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     QGridLayout* groupWriterLayout = new QGridLayout( groupWriter );
     groupWriterLayout->setAlignment( Qt::AlignTop );
 
-    QLabel* labelSpeed = new QLabel( groupWriter );
+    //labelSpeed = new QLabel( groupWriter );
+    labelSpeed = new QLabel( );
     labelSpeed->setText( i18n( "Speed:" ) );
 
     m_comboSpeed = new K3b::IntMapComboBox( groupWriter );
@@ -218,6 +219,12 @@ K3b::WriterSelectionWidget::~WriterSelectionWidget()
 void K3b::WriterSelectionWidget::hideComboMedium( )
 {
     m_comboMedium->hide();
+}
+
+void K3b::WriterSelectionWidget::hideSpeed( )
+{
+    labelSpeed->hide();
+    m_comboSpeed->hide();
 }
 
 void K3b::WriterSelectionWidget::setWantedMedium( K3b::Device::Device* dev )

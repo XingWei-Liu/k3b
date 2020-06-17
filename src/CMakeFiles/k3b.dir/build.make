@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/k3b.dir/depend.make
@@ -58,2155 +58,2168 @@ include src/CMakeFiles/k3b.dir/progress.make
 include src/CMakeFiles/k3b.dir/flags.make
 
 src/ui_base_k3bthemeoptiontab.h: src/option/base_k3bthemeoptiontab.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_base_k3bthemeoptiontab.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/base_k3bthemeoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bthemeoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bthemeoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ui_base_k3bthemeoptiontab.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/option/base_k3bthemeoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bthemeoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bthemeoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bmiscoptiontab.h: src/option/base_k3bmiscoptiontab.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_base_k3bmiscoptiontab.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/base_k3bmiscoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bmiscoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bmiscoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_base_k3bmiscoptiontab.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/option/base_k3bmiscoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bmiscoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bmiscoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bpluginoptiontab.h: src/option/base_k3bpluginoptiontab.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ui_base_k3bpluginoptiontab.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/base_k3bpluginoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bpluginoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bpluginoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating ui_base_k3bpluginoptiontab.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/option/base_k3bpluginoptiontab.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bpluginoptiontab.h -DKDE_UIC_BASENAME:STRING=base_k3bpluginoptiontab -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3baudiocdtextwidget.h: src/projects/base_k3baudiocdtextwidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ui_base_k3baudiocdtextwidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3baudiocdtextwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3baudiocdtextwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiocdtextwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating ui_base_k3baudiocdtextwidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3baudiocdtextwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3baudiocdtextwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiocdtextwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bbootimagedialog.h: src/projects/base_k3bbootimagedialog.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating ui_base_k3bbootimagedialog.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3bbootimagedialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bbootimagedialog.h -DKDE_UIC_BASENAME:STRING=base_k3bbootimagedialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating ui_base_k3bbootimagedialog.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3bbootimagedialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bbootimagedialog.h -DKDE_UIC_BASENAME:STRING=base_k3bbootimagedialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3badvanceddataimagesettings.h: src/projects/base_k3badvanceddataimagesettings.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating ui_base_k3badvanceddataimagesettings.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3badvanceddataimagesettings.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3badvanceddataimagesettings.h -DKDE_UIC_BASENAME:STRING=base_k3badvanceddataimagesettings -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating ui_base_k3badvanceddataimagesettings.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3badvanceddataimagesettings.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3badvanceddataimagesettings.h -DKDE_UIC_BASENAME:STRING=base_k3badvanceddataimagesettings -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3baudiocdtextallfieldsdialog.h: src/projects/base_k3baudiocdtextallfieldsdialog.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating ui_base_k3baudiocdtextallfieldsdialog.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3baudiocdtextallfieldsdialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3baudiocdtextallfieldsdialog.h -DKDE_UIC_BASENAME:STRING=base_k3baudiocdtextallfieldsdialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating ui_base_k3baudiocdtextallfieldsdialog.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3baudiocdtextallfieldsdialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3baudiocdtextallfieldsdialog.h -DKDE_UIC_BASENAME:STRING=base_k3baudiocdtextallfieldsdialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bdataimagesettings.h: src/projects/base_k3bdataimagesettings.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating ui_base_k3bdataimagesettings.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3bdataimagesettings.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bdataimagesettings.h -DKDE_UIC_BASENAME:STRING=base_k3bdataimagesettings -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating ui_base_k3bdataimagesettings.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3bdataimagesettings.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bdataimagesettings.h -DKDE_UIC_BASENAME:STRING=base_k3bdataimagesettings -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bdatavolumedescdialog.h: src/projects/base_k3bdatavolumedescdialog.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating ui_base_k3bdatavolumedescdialog.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3bdatavolumedescdialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bdatavolumedescdialog.h -DKDE_UIC_BASENAME:STRING=base_k3bdatavolumedescdialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating ui_base_k3bdatavolumedescdialog.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3bdatavolumedescdialog.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bdatavolumedescdialog.h -DKDE_UIC_BASENAME:STRING=base_k3bdatavolumedescdialog -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3baudiotrackwidget.h: src/projects/base_k3baudiotrackwidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating ui_base_k3baudiotrackwidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3baudiotrackwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3baudiotrackwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiotrackwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating ui_base_k3baudiotrackwidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3baudiotrackwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3baudiotrackwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiotrackwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bmovixoptionswidget.h: src/projects/base_k3bmovixoptionswidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating ui_base_k3bmovixoptionswidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/base_k3bmovixoptionswidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bmovixoptionswidget.h -DKDE_UIC_BASENAME:STRING=base_k3bmovixoptionswidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating ui_base_k3bmovixoptionswidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/projects/base_k3bmovixoptionswidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bmovixoptionswidget.h -DKDE_UIC_BASENAME:STRING=base_k3bmovixoptionswidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3baudiorippingoptionwidget.h: src/rip/base_k3baudiorippingoptionwidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating ui_base_k3baudiorippingoptionwidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/base_k3baudiorippingoptionwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3baudiorippingoptionwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiorippingoptionwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating ui_base_k3baudiorippingoptionwidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/rip/base_k3baudiorippingoptionwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3baudiorippingoptionwidget.h -DKDE_UIC_BASENAME:STRING=base_k3baudiorippingoptionwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bcddbpatternwidget.h: src/rip/base_k3bcddbpatternwidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating ui_base_k3bcddbpatternwidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/base_k3bcddbpatternwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bcddbpatternwidget.h -DKDE_UIC_BASENAME:STRING=base_k3bcddbpatternwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating ui_base_k3bcddbpatternwidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/rip/base_k3bcddbpatternwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bcddbpatternwidget.h -DKDE_UIC_BASENAME:STRING=base_k3bcddbpatternwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/ui_base_k3bvideodvdrippingwidget.h: src/rip/videodvd/base_k3bvideodvdrippingwidget.ui
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating ui_base_k3bvideodvdrippingwidget.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/base_k3bvideodvdrippingwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/ui_base_k3bvideodvdrippingwidget.h -DKDE_UIC_BASENAME:STRING=base_k3bvideodvdrippingwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating ui_base_k3bvideodvdrippingwidget.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/cmake -DKDE_UIC_EXECUTABLE:FILEPATH=/usr/lib/qt5/bin/uic -DKDE_UIC_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/rip/videodvd/base_k3bvideodvdrippingwidget.ui -DKDE_UIC_H_FILE:FILEPATH=/home/ubuntu/k3b-19.12.3/src/ui_base_k3bvideodvdrippingwidget.h -DKDE_UIC_BASENAME:STRING=base_k3bvideodvdrippingwidget -P /usr/lib/x86_64-linux-gnu/cmake/KF5I18n/kf5i18nuic.cmake
 
 src/k3binterfaceadaptor.moc: src/k3binterfaceadaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating k3binterfaceadaptor.moc"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterfaceadaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating k3binterfaceadaptor.moc"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/k3b-19.12.3/src/k3binterfaceadaptor.moc_parameters
 
 src/k3binterfaceadaptor.cpp: src/org.k3b.MainWindow.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating k3binterfaceadaptor.cpp, k3binterfaceadaptor.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3binterfaceadaptor -c K3bInterfaceAdaptor -i k3binterface.h -l K3b::Interface /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.MainWindow.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating k3binterfaceadaptor.cpp, k3binterfaceadaptor.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3binterfaceadaptor -c K3bInterfaceAdaptor -i k3binterface.h -l K3b::Interface /home/ubuntu/k3b-19.12.3/src/org.k3b.MainWindow.xml
 
 src/k3binterfaceadaptor.h: src/k3binterfaceadaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/k3binterfaceadaptor.h
 
 src/k3bjobinterfaceadaptor.moc: src/k3bjobinterfaceadaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating k3bjobinterfaceadaptor.moc"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterfaceadaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating k3bjobinterfaceadaptor.moc"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/k3b-19.12.3/src/k3bjobinterfaceadaptor.moc_parameters
 
 src/k3bjobinterfaceadaptor.cpp: src/org.k3b.Job.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating k3bjobinterfaceadaptor.cpp, k3bjobinterfaceadaptor.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bjobinterfaceadaptor -c K3bJobInterfaceAdaptor -i k3bjobinterface.h -l K3b::JobInterface /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.Job.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Generating k3bjobinterfaceadaptor.cpp, k3bjobinterfaceadaptor.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bjobinterfaceadaptor -c K3bJobInterfaceAdaptor -i k3bjobinterface.h -l K3b::JobInterface /home/ubuntu/k3b-19.12.3/src/org.k3b.Job.xml
 
 src/k3bjobinterfaceadaptor.h: src/k3bjobinterfaceadaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/k3bjobinterfaceadaptor.h
 
 src/k3bprojectinterfaceadaptor.moc: src/k3bprojectinterfaceadaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating k3bprojectinterfaceadaptor.moc"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterfaceadaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Generating k3bprojectinterfaceadaptor.moc"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/k3b-19.12.3/src/k3bprojectinterfaceadaptor.moc_parameters
 
 src/k3bprojectinterfaceadaptor.cpp: src/org.k3b.Project.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating k3bprojectinterfaceadaptor.cpp, k3bprojectinterfaceadaptor.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bprojectinterfaceadaptor -c K3bProjectInterfaceAdaptor -i k3bprojectinterface.h -l K3b::ProjectInterface /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.Project.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Generating k3bprojectinterfaceadaptor.cpp, k3bprojectinterfaceadaptor.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bprojectinterfaceadaptor -c K3bProjectInterfaceAdaptor -i k3bprojectinterface.h -l K3b::ProjectInterface /home/ubuntu/k3b-19.12.3/src/org.k3b.Project.xml
 
 src/k3bprojectinterfaceadaptor.h: src/k3bprojectinterfaceadaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/k3bprojectinterfaceadaptor.h
 
 src/k3baudioprojectinterfaceadaptor.moc: src/k3baudioprojectinterfaceadaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating k3baudioprojectinterfaceadaptor.moc"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Generating k3baudioprojectinterfaceadaptor.moc"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.moc_parameters
 
 src/k3baudioprojectinterfaceadaptor.cpp: src/org.k3b.AudioProject.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating k3baudioprojectinterfaceadaptor.cpp, k3baudioprojectinterfaceadaptor.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3baudioprojectinterfaceadaptor -c K3bAudioProjectInterfaceAdaptor -i k3baudioprojectinterface.h -l K3b::AudioProjectInterface /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.AudioProject.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Generating k3baudioprojectinterfaceadaptor.cpp, k3baudioprojectinterfaceadaptor.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3baudioprojectinterfaceadaptor -c K3bAudioProjectInterfaceAdaptor -i k3baudioprojectinterface.h -l K3b::AudioProjectInterface /home/ubuntu/k3b-19.12.3/src/org.k3b.AudioProject.xml
 
 src/k3baudioprojectinterfaceadaptor.h: src/k3baudioprojectinterfaceadaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/k3baudioprojectinterfaceadaptor.h
 
 src/k3bdataprojectinterfaceadaptor.moc: src/k3bdataprojectinterfaceadaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating k3bdataprojectinterfaceadaptor.moc"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Generating k3bdataprojectinterfaceadaptor.moc"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/moc @/home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.moc_parameters
 
 src/k3bdataprojectinterfaceadaptor.cpp: src/org.k3b.DataProject.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating k3bdataprojectinterfaceadaptor.cpp, k3bdataprojectinterfaceadaptor.h"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bdataprojectinterfaceadaptor -c K3bDataProjectInterfaceAdaptor -i k3bdataprojectinterface.h -l K3b::DataProjectInterface /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.DataProject.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Generating k3bdataprojectinterfaceadaptor.cpp, k3bdataprojectinterfaceadaptor.h"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a k3bdataprojectinterfaceadaptor -c K3bDataProjectInterfaceAdaptor -i k3bdataprojectinterface.h -l K3b::DataProjectInterface /home/ubuntu/k3b-19.12.3/src/org.k3b.DataProject.xml
 
 src/k3bdataprojectinterfaceadaptor.h: src/k3bdataprojectinterfaceadaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/k3bdataprojectinterfaceadaptor.h
 
 src/org.k3b.MainWindow.xml: src/k3binterface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating org.k3b.MainWindow.xml"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterface.h -o /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.MainWindow.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Generating org.k3b.MainWindow.xml"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/k3b-19.12.3/src/k3binterface.h -o /home/ubuntu/k3b-19.12.3/src/org.k3b.MainWindow.xml
 
 src/org.k3b.Job.xml: src/k3bjobinterface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating org.k3b.Job.xml"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterface.h -o /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.Job.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Generating org.k3b.Job.xml"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/k3b-19.12.3/src/k3bjobinterface.h -o /home/ubuntu/k3b-19.12.3/src/org.k3b.Job.xml
 
 src/org.k3b.Project.xml: src/k3bprojectinterface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating org.k3b.Project.xml"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterface.h -o /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.Project.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Generating org.k3b.Project.xml"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/k3b-19.12.3/src/k3bprojectinterface.h -o /home/ubuntu/k3b-19.12.3/src/org.k3b.Project.xml
 
 src/org.k3b.AudioProject.xml: src/k3baudioprojectinterface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating org.k3b.AudioProject.xml"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterface.h -o /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.AudioProject.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Generating org.k3b.AudioProject.xml"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterface.h -o /home/ubuntu/k3b-19.12.3/src/org.k3b.AudioProject.xml
 
 src/org.k3b.DataProject.xml: src/k3bdataprojectinterface.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating org.k3b.DataProject.xml"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterface.h -o /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.k3b.DataProject.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Generating org.k3b.DataProject.xml"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/lib/qt5/bin/qdbuscpp2xml /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterface.h -o /home/ubuntu/k3b-19.12.3/src/org.k3b.DataProject.xml
 
 src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o: src/k3b_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp > CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp > CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp -o CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3b_autogen/mocs_compilation.cpp -o CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o: src/k3bwelcomewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwelcomewidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bwelcomewidget.cpp
 
 src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwelcomewidget.cpp > CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bwelcomewidget.cpp > CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwelcomewidget.cpp -o CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bwelcomewidget.cpp -o CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bapplication.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bapplication.cpp.o: src/k3bapplication.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/k3b.dir/k3bapplication.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bapplication.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/k3b.dir/k3bapplication.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bapplication.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bapplication.cpp
 
 src/CMakeFiles/k3b.dir/k3bapplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bapplication.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bapplication.cpp > CMakeFiles/k3b.dir/k3bapplication.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bapplication.cpp > CMakeFiles/k3b.dir/k3bapplication.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bapplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bapplication.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bapplication.cpp -o CMakeFiles/k3b.dir/k3bapplication.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bapplication.cpp -o CMakeFiles/k3b.dir/k3bapplication.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o: src/k3bdevicedelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicedelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdevicedelegate.cpp
 
 src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicedelegate.cpp > CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdevicedelegate.cpp > CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicedelegate.cpp -o CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdevicedelegate.cpp -o CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o: src/k3bmediumdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediumdelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmediumdelegate.cpp
 
 src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediumdelegate.cpp > CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmediumdelegate.cpp > CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediumdelegate.cpp -o CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmediumdelegate.cpp -o CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o: src/k3bmetaitemmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmetaitemmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmetaitemmodel.cpp
 
 src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmetaitemmodel.cpp > CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmetaitemmodel.cpp > CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmetaitemmodel.cpp -o CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmetaitemmodel.cpp -o CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o: src/k3bplacesmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bplacesmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bplacesmodel.cpp
 
 src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bplacesmodel.cpp > CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bplacesmodel.cpp > CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bplacesmodel.cpp -o CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bplacesmodel.cpp -o CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o: src/k3bdiroperator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdiroperator.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiroperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdiroperator.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdiroperator.cpp
 
 src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdiroperator.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiroperator.cpp > CMakeFiles/k3b.dir/k3bdiroperator.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdiroperator.cpp > CMakeFiles/k3b.dir/k3bdiroperator.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdiroperator.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiroperator.cpp -o CMakeFiles/k3b.dir/k3bdiroperator.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdiroperator.cpp -o CMakeFiles/k3b.dir/k3bdiroperator.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o: src/k3bfiletreeview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfiletreeview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bfiletreeview.cpp
 
 src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfiletreeview.cpp > CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bfiletreeview.cpp > CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfiletreeview.cpp -o CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bfiletreeview.cpp -o CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o: src/k3bprojecttabwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojecttabwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bprojecttabwidget.cpp
 
 src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojecttabwidget.cpp > CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bprojecttabwidget.cpp > CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojecttabwidget.cpp -o CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bprojecttabwidget.cpp -o CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bsplash.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bsplash.cpp.o: src/k3bsplash.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/k3b.dir/k3bsplash.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bsplash.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsplash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/k3b.dir/k3bsplash.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bsplash.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bsplash.cpp
 
 src/CMakeFiles/k3b.dir/k3bsplash.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bsplash.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsplash.cpp > CMakeFiles/k3b.dir/k3bsplash.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bsplash.cpp > CMakeFiles/k3b.dir/k3bsplash.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bsplash.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bsplash.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsplash.cpp -o CMakeFiles/k3b.dir/k3bsplash.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bsplash.cpp -o CMakeFiles/k3b.dir/k3bsplash.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bfileview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bfileview.cpp.o: src/k3bfileview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/k3b.dir/k3bfileview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bfileview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfileview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/k3b.dir/k3bfileview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bfileview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bfileview.cpp
 
 src/CMakeFiles/k3b.dir/k3bfileview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bfileview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfileview.cpp > CMakeFiles/k3b.dir/k3bfileview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bfileview.cpp > CMakeFiles/k3b.dir/k3bfileview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bfileview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bfileview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bfileview.cpp -o CMakeFiles/k3b.dir/k3bfileview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bfileview.cpp -o CMakeFiles/k3b.dir/k3bfileview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdirview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdirview.cpp.o: src/k3bdirview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/k3b.dir/k3bdirview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdirview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdirview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/k3b.dir/k3bdirview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdirview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdirview.cpp
 
 src/CMakeFiles/k3b.dir/k3bdirview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdirview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdirview.cpp > CMakeFiles/k3b.dir/k3bdirview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdirview.cpp > CMakeFiles/k3b.dir/k3bdirview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdirview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdirview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdirview.cpp -o CMakeFiles/k3b.dir/k3bdirview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdirview.cpp -o CMakeFiles/k3b.dir/k3bdirview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3b.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3b.cpp.o: src/k3b.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/k3b.dir/k3b.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3b.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/k3b.dir/k3b.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3b.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3b.cpp
 
 src/CMakeFiles/k3b.dir/k3b.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3b.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b.cpp > CMakeFiles/k3b.dir/k3b.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3b.cpp > CMakeFiles/k3b.dir/k3b.cpp.i
 
 src/CMakeFiles/k3b.dir/k3b.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3b.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b.cpp -o CMakeFiles/k3b.dir/k3b.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3b.cpp -o CMakeFiles/k3b.dir/k3b.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o: src/k3bTitleBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bTitleBar.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bTitleBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bTitleBar.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bTitleBar.cpp
 
 src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bTitleBar.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bTitleBar.cpp > CMakeFiles/k3b.dir/k3bTitleBar.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bTitleBar.cpp > CMakeFiles/k3b.dir/k3bTitleBar.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bTitleBar.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bTitleBar.cpp -o CMakeFiles/k3b.dir/k3bTitleBar.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bTitleBar.cpp -o CMakeFiles/k3b.dir/k3bTitleBar.cpp.s
+
+src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
+src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o: src/k3bFileFilterDialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bFileFilterDialog.cpp
+
+src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.i"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bFileFilterDialog.cpp > CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.i
+
+src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.s"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bFileFilterDialog.cpp -o CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.s
 
 src/CMakeFiles/k3b.dir/main.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/main.cpp.o: src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/k3b.dir/main.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/main.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/k3b.dir/main.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/main.cpp.o -c /home/ubuntu/k3b-19.12.3/src/main.cpp
 
 src/CMakeFiles/k3b.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/main.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/main.cpp > CMakeFiles/k3b.dir/main.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/main.cpp > CMakeFiles/k3b.dir/main.cpp.i
 
 src/CMakeFiles/k3b.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/main.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/main.cpp -o CMakeFiles/k3b.dir/main.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/main.cpp -o CMakeFiles/k3b.dir/main.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o: src/k3bstatusbarmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bstatusbarmanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bstatusbarmanager.cpp
 
 src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bstatusbarmanager.cpp > CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bstatusbarmanager.cpp > CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bstatusbarmanager.cpp -o CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bstatusbarmanager.cpp -o CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s
 
 src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o: src/k3burlnavigator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3burlnavigator.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3burlnavigator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3burlnavigator.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3burlnavigator.cpp
 
 src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3burlnavigator.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3burlnavigator.cpp > CMakeFiles/k3b.dir/k3burlnavigator.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3burlnavigator.cpp > CMakeFiles/k3b.dir/k3burlnavigator.cpp.i
 
 src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3burlnavigator.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3burlnavigator.cpp -o CMakeFiles/k3b.dir/k3burlnavigator.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3burlnavigator.cpp -o CMakeFiles/k3b.dir/k3burlnavigator.cpp.s
 
 src/CMakeFiles/k3b.dir/k3binterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3binterface.cpp.o: src/k3binterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/k3b.dir/k3binterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/k3b.dir/k3binterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3binterface.cpp
 
 src/CMakeFiles/k3b.dir/k3binterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3binterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterface.cpp > CMakeFiles/k3b.dir/k3binterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3binterface.cpp > CMakeFiles/k3b.dir/k3binterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3binterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3binterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterface.cpp -o CMakeFiles/k3b.dir/k3binterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3binterface.cpp -o CMakeFiles/k3b.dir/k3binterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o: src/k3bjobinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobinterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobinterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bjobinterface.cpp
 
 src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bjobinterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterface.cpp > CMakeFiles/k3b.dir/k3bjobinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bjobinterface.cpp > CMakeFiles/k3b.dir/k3bjobinterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bjobinterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterface.cpp -o CMakeFiles/k3b.dir/k3bjobinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bjobinterface.cpp -o CMakeFiles/k3b.dir/k3bjobinterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o: src/k3baudioprojectinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterface.cpp
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterface.cpp > CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterface.cpp > CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterface.cpp -o CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterface.cpp -o CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o: src/k3bdataprojectinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterface.cpp
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterface.cpp > CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterface.cpp > CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o: src/k3bmixedprojectinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmixedprojectinterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmixedprojectinterface.cpp
 
 src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmixedprojectinterface.cpp > CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmixedprojectinterface.cpp > CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmixedprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmixedprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o: src/k3bprojectinterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bprojectinterface.cpp
 
 src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterface.cpp > CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bprojectinterface.cpp > CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bprojectinterface.cpp -o CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o: src/k3bsystemproblemdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsystemproblemdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bsystemproblemdialog.cpp
 
 src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsystemproblemdialog.cpp > CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bsystemproblemdialog.cpp > CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bsystemproblemdialog.cpp -o CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bsystemproblemdialog.cpp -o CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o: src/k3bmediacontentsview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediacontentsview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmediacontentsview.cpp
 
 src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediacontentsview.cpp > CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmediacontentsview.cpp > CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediacontentsview.cpp -o CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmediacontentsview.cpp -o CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o: src/k3bcontentsview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bcontentsview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bcontentsview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bcontentsview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bcontentsview.cpp
 
 src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bcontentsview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bcontentsview.cpp > CMakeFiles/k3b.dir/k3bcontentsview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bcontentsview.cpp > CMakeFiles/k3b.dir/k3bcontentsview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bcontentsview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bcontentsview.cpp -o CMakeFiles/k3b.dir/k3bcontentsview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bcontentsview.cpp -o CMakeFiles/k3b.dir/k3bcontentsview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o: src/k3bjobprogressdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobprogressdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bjobprogressdialog.cpp
 
 src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobprogressdialog.cpp > CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bjobprogressdialog.cpp > CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobprogressdialog.cpp -o CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bjobprogressdialog.cpp -o CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o: src/k3bburnprogressdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bburnprogressdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bburnprogressdialog.cpp
 
 src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bburnprogressdialog.cpp > CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bburnprogressdialog.cpp > CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bburnprogressdialog.cpp -o CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bburnprogressdialog.cpp -o CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o: src/k3btempdirselectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btempdirselectionwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3btempdirselectionwidget.cpp
 
 src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btempdirselectionwidget.cpp > CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3btempdirselectionwidget.cpp > CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btempdirselectionwidget.cpp -o CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3btempdirselectionwidget.cpp -o CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o: src/k3bdatamodewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdatamodewidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdatamodewidget.cpp
 
 src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdatamodewidget.cpp > CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdatamodewidget.cpp > CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdatamodewidget.cpp -o CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdatamodewidget.cpp -o CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o: src/k3bwritingmodewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwritingmodewidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bwritingmodewidget.cpp
 
 src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwritingmodewidget.cpp > CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bwritingmodewidget.cpp > CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwritingmodewidget.cpp -o CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bwritingmodewidget.cpp -o CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o: src/k3bwriterselectionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwriterselectionwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bwriterselectionwidget.cpp
 
 src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwriterselectionwidget.cpp > CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bwriterselectionwidget.cpp > CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwriterselectionwidget.cpp -o CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bwriterselectionwidget.cpp -o CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o: src/k3binteractiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binteractiondialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3binteractiondialog.cpp
 
 src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binteractiondialog.cpp > CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3binteractiondialog.cpp > CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binteractiondialog.cpp -o CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3binteractiondialog.cpp -o CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o: src/k3bthememanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthememanager.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthememanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthememanager.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bthememanager.cpp
 
 src/CMakeFiles/k3b.dir/k3bthememanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bthememanager.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthememanager.cpp > CMakeFiles/k3b.dir/k3bthememanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bthememanager.cpp > CMakeFiles/k3b.dir/k3bthememanager.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bthememanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bthememanager.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthememanager.cpp -o CMakeFiles/k3b.dir/k3bthememanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bthememanager.cpp -o CMakeFiles/k3b.dir/k3bthememanager.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o: src/k3bprojectmanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectmanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bprojectmanager.cpp
 
 src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectmanager.cpp > CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bprojectmanager.cpp > CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectmanager.cpp -o CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bprojectmanager.cpp -o CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o: src/k3bflatbutton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bflatbutton.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bflatbutton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bflatbutton.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bflatbutton.cpp
 
 src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bflatbutton.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bflatbutton.cpp > CMakeFiles/k3b.dir/k3bflatbutton.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bflatbutton.cpp > CMakeFiles/k3b.dir/k3bflatbutton.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bflatbutton.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bflatbutton.cpp -o CMakeFiles/k3b.dir/k3bflatbutton.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bflatbutton.cpp -o CMakeFiles/k3b.dir/k3bflatbutton.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o: src/k3bemptydiscwaiter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bemptydiscwaiter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bemptydiscwaiter.cpp
 
 src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bemptydiscwaiter.cpp > CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bemptydiscwaiter.cpp > CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bemptydiscwaiter.cpp -o CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bemptydiscwaiter.cpp -o CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o: src/k3bdebuggingoutputcache.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputcache.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o: src/k3bdebuggingoutputdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputdialog.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o: src/k3bdebuggingoutputfile.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp > CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdebuggingoutputfile.cpp -o CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o: src/k3bappdevicemanager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bappdevicemanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bappdevicemanager.cpp
 
 src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bappdevicemanager.cpp > CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bappdevicemanager.cpp > CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bappdevicemanager.cpp -o CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bappdevicemanager.cpp -o CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o: src/k3bmediaselectioncombobox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp
 
 src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp > CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp > CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp -o CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmediaselectioncombobox.cpp -o CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o: src/k3bwidgetshoweffect.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwidgetshoweffect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bwidgetshoweffect.cpp
 
 src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwidgetshoweffect.cpp > CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bwidgetshoweffect.cpp > CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bwidgetshoweffect.cpp -o CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bwidgetshoweffect.cpp -o CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o: src/k3bmediaselectiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectiondialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmediaselectiondialog.cpp
 
 src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectiondialog.cpp > CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmediaselectiondialog.cpp > CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmediaselectiondialog.cpp -o CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmediaselectiondialog.cpp -o CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o: src/k3bdiskinfoview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiskinfoview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdiskinfoview.cpp
 
 src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiskinfoview.cpp > CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdiskinfoview.cpp > CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdiskinfoview.cpp -o CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdiskinfoview.cpp -o CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s
 
 src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o: src/k3btimeoutwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btimeoutwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3btimeoutwidget.cpp
 
 src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btimeoutwidget.cpp > CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3btimeoutwidget.cpp > CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3btimeoutwidget.cpp -o CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3btimeoutwidget.cpp -o CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o: src/k3bthemedheader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthemedheader.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedheader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthemedheader.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bthemedheader.cpp
 
 src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bthemedheader.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedheader.cpp > CMakeFiles/k3b.dir/k3bthemedheader.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bthemedheader.cpp > CMakeFiles/k3b.dir/k3bthemedheader.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bthemedheader.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedheader.cpp -o CMakeFiles/k3b.dir/k3bthemedheader.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bthemedheader.cpp -o CMakeFiles/k3b.dir/k3bthemedheader.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o: src/k3bthemedlabel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedlabel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bthemedlabel.cpp
 
 src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedlabel.cpp > CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bthemedlabel.cpp > CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bthemedlabel.cpp -o CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bthemedlabel.cpp -o CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s
 
 src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o: src/k3blsofwrapper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3blsofwrapper.cpp
 
 src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapper.cpp > CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3blsofwrapper.cpp > CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i
 
 src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapper.cpp -o CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3blsofwrapper.cpp -o CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s
 
 src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o: src/k3blsofwrapperdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapperdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3blsofwrapperdialog.cpp
 
 src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapperdialog.cpp > CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3blsofwrapperdialog.cpp > CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3blsofwrapperdialog.cpp -o CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3blsofwrapperdialog.cpp -o CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/k3baction.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3baction.cpp.o: src/k3baction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object src/CMakeFiles/k3b.dir/k3baction.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baction.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object src/CMakeFiles/k3b.dir/k3baction.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baction.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3baction.cpp
 
 src/CMakeFiles/k3b.dir/k3baction.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3baction.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baction.cpp > CMakeFiles/k3b.dir/k3baction.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3baction.cpp > CMakeFiles/k3b.dir/k3baction.cpp.i
 
 src/CMakeFiles/k3b.dir/k3baction.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3baction.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baction.cpp -o CMakeFiles/k3b.dir/k3baction.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3baction.cpp -o CMakeFiles/k3b.dir/k3baction.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o: src/k3bdevicemenu.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicemenu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdevicemenu.cpp
 
 src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicemenu.cpp > CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdevicemenu.cpp > CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdevicemenu.cpp -o CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdevicemenu.cpp -o CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o: src/k3bviewcolumnadjuster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp
 
 src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp > CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp > CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp -o CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bviewcolumnadjuster.cpp -o CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o: src/k3bmodelutils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmodelutils.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmodelutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bmodelutils.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bmodelutils.cpp
 
 src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bmodelutils.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmodelutils.cpp > CMakeFiles/k3b.dir/k3bmodelutils.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bmodelutils.cpp > CMakeFiles/k3b.dir/k3bmodelutils.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bmodelutils.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bmodelutils.cpp -o CMakeFiles/k3b.dir/k3bmodelutils.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bmodelutils.cpp -o CMakeFiles/k3b.dir/k3bmodelutils.cpp.s
 
 src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o: src/helper/k3bhelperprogramitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o -c /home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp
 
 src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp > CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp > CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i
 
 src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp -o CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/helper/k3bhelperprogramitem.cpp -o CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s
 
 src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o: src/misc/k3bimagewritingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp
 
 src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp > CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp > CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp -o CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/misc/k3bimagewritingdialog.cpp -o CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o: src/misc/k3bmediacopydialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp
 
 src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp > CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp > CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i
 
 src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp -o CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/misc/k3bmediacopydialog.cpp -o CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s
 
 src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o: src/misc/k3bmediaformattingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp
 
 src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp > CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp > CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp -o CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/misc/k3bmediaformattingdialog.cpp -o CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o: src/option/k3bmiscoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bmiscoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o: src/option/k3bexternalbinmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o: src/option/k3bexternalbinoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o: src/option/k3bexternalbinparamsmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinparamsmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o: src/option/k3bexternalbinpermissionmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinpermissionmodel.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o: src/option/k3badvancedoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp > CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp > CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3badvancedoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o: src/option/k3boptiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3boptiondialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3boptiondialog.cpp
 
 src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3boptiondialog.cpp > CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3boptiondialog.cpp > CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3boptiondialog.cpp -o CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3boptiondialog.cpp -o CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o: src/option/k3bdeviceoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bdeviceoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o: src/option/k3bnotifyoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bnotifyoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o: src/option/k3bpluginoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bpluginoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o: src/option/k3bthemeoptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp > CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bthemeoptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o: src/option/k3bthememodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthememodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bthememodel.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthememodel.cpp > CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bthememodel.cpp > CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bthememodel.cpp -o CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bthememodel.cpp -o CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o: src/option/k3bdevicewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdevicewidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bdevicewidget.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdevicewidget.cpp > CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bdevicewidget.cpp > CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bdevicewidget.cpp -o CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bdevicewidget.cpp -o CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o: src/option/k3bexternalbinwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp > CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bexternalbinwidget.cpp -o CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o: src/option/k3bcddboptiontab.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bcddboptiontab.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o -c /home/ubuntu/k3b-19.12.3/src/option/k3bcddboptiontab.cpp
 
 src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bcddboptiontab.cpp > CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/option/k3bcddboptiontab.cpp > CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i
 
 src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3bcddboptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/option/k3bcddboptiontab.cpp -o CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o: src/projects/k3baudioburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioburndialog.cpp > CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioburndialog.cpp > CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o: src/projects/k3baudiocdtextwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiocdtextwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o: src/projects/k3baudioeditorwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioeditorwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o: src/projects/k3baudiotrackdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o: src/projects/k3baudiotrackwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o: src/projects/k3baudiotracksplitdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotracksplitdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o: src/projects/k3baudioview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioview.cpp > CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioview.cpp > CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioview.cpp -o CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioview.cpp -o CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o: src/projects/k3baudioviewimpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp > CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp > CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp -o CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioviewimpl.cpp -o CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o: src/projects/k3baudioprojectdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp > CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp > CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o: src/projects/k3baudioprojectmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudioprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o: src/projects/k3bmixedburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o: src/projects/k3bmixedview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedview.cpp > CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedview.cpp > CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmixedview.cpp -o CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmixedview.cpp -o CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o: src/projects/k3bdataadvancedimagesettingsdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataadvancedimagesettingsdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o: src/projects/k3bdatadirtreeview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp > CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp > CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp -o CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdatadirtreeview.cpp -o CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o: src/projects/k3bdataimagesettingswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp > CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp > CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp -o CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataimagesettingswidget.cpp -o CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o: src/projects/k3bdatapropertiesdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdatapropertiesdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o: src/projects/k3bdataview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataview.cpp > CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataview.cpp > CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataview.cpp -o CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataview.cpp -o CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o: src/projects/k3bdataviewimpl.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp > CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp > CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp -o CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataviewimpl.cpp -o CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o: src/projects/k3bdatavolumedescdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdatavolumedescdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o: src/projects/k3bdataburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o: src/projects/k3bdataprojectdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_124) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o: src/projects/k3bdataprojectmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_125) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o: src/projects/k3bdataprojectsortproxymodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_126) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp > CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataprojectsortproxymodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o: src/projects/k3bbootimagedialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_127) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp > CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp > CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp -o CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagedialog.cpp -o CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o: src/projects/k3bbootimagemodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_128) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp > CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp > CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp -o CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bbootimagemodel.cpp -o CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o: src/projects/k3bmovixburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_129) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o: src/projects/k3bmovixoptionswidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_130) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp > CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp > CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixoptionswidget.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o: src/projects/k3bmovixview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_131) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixview.cpp > CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixview.cpp > CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixview.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixview.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o: src/projects/k3bmovixprojectmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_132) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bmovixprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o: src/projects/k3bvideodvdburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_133) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o: src/projects/k3bvideodvdview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdview.cpp > CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdview.cpp > CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvideodvdview.cpp -o CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvideodvdview.cpp -o CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o: src/projects/k3bvcdburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_135) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o: src/projects/k3bvcdtrackdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o: src/projects/k3bvcdtrackkeysdelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_137) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysdelegate.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o: src/projects/k3bvcdtrackkeysmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_138) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp > CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdtrackkeysmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o: src/projects/k3bvcdview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_139) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdview.cpp > CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdview.cpp > CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdview.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdview.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o: src/projects/k3bvcdprojectmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp > CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvcdprojectmodel.cpp -o CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o: src/projects/k3bfillstatusdisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp > CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp > CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp -o CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bfillstatusdisplay.cpp -o CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o: src/projects/k3bview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bview.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bview.cpp > CMakeFiles/k3b.dir/projects/k3bview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bview.cpp > CMakeFiles/k3b.dir/projects/k3bview.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bview.cpp -o CMakeFiles/k3b.dir/projects/k3bview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bview.cpp -o CMakeFiles/k3b.dir/projects/k3bview.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o: src/projects/k3bdirproxymodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp > CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp > CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdirproxymodel.cpp -o CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o: src/projects/k3bprojectburndialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp > CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectburndialog.cpp -o CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o: src/projects/k3bprojectplugindialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp > CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp > CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp -o CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bprojectplugindialog.cpp -o CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o: src/projects/k3bdatamultisessioncombobox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp > CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp > CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp -o CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessioncombobox.cpp -o CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o: src/projects/k3bdataurladdingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_147) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdataurladdingdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o: src/projects/k3baudiodatasourceeditwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_148) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp > CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiodatasourceeditwidget.cpp -o CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o: src/projects/k3baudiotrackaddingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_149) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp > CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3baudiotrackaddingdialog.cpp -o CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o: src/projects/k3bencodingconverter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_150) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bencodingconverter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bencodingconverter.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bencodingconverter.cpp > CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bencodingconverter.cpp > CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bencodingconverter.cpp -o CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bencodingconverter.cpp -o CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o: src/projects/k3bdatamultisessionimportdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_151) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp > CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bdatamultisessionimportdialog.cpp -o CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o: src/projects/k3bvolumenamewidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_152) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp
 
 src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp > CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp > CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp -o CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/k3bvolumenamewidget.cpp -o CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o: src/projects/kostore/KoStore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_153) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStore.cpp
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStore.cpp > CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStore.cpp > CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStore.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStore.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o: src/projects/kostore/KoZipStore.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_154) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp > CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp > CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoZipStore.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o: src/projects/kostore/KoStoreBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_155) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o -c /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp > CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp > CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i
 
 src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/projects/kostore/KoStoreBase.cpp -o CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o: src/rip/k3baudioripjob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_156) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioripjob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudioripjob.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioripjob.cpp > CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudioripjob.cpp > CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioripjob.cpp -o CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudioripjob.cpp -o CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o: src/rip/k3bpatternparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_157) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bpatternparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bpatternparser.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bpatternparser.cpp > CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bpatternparser.cpp > CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bpatternparser.cpp -o CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bpatternparser.cpp -o CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o: src/rip/k3baudiorippingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_158) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp > CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp > CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudiorippingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o: src/rip/k3baudiocdview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_159) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiocdview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudiocdview.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiocdview.cpp > CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudiocdview.cpp > CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiocdview.cpp -o CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudiocdview.cpp -o CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o: src/rip/k3bcddbpatternwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_160) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp > CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp > CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp -o CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bcddbpatternwidget.cpp -o CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o: src/rip/k3bmassaudioencodingjob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_161) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp > CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp > CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp -o CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bmassaudioencodingjob.cpp -o CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o: src/rip/k3bvideocdinfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_162) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdinfo.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o: src/rip/k3bvideocdview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_163) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdview.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdview.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdview.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdview.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdview.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o: src/rip/k3bvideocdrip.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_164) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrip.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrip.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrip.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrip.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrip.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o: src/rip/k3bvideocdrippingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_165) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp > CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bvideocdrippingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o: src/rip/k3bcuefilewriter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_166) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp > CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp > CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp -o CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3bcuefilewriter.cpp -o CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o: src/rip/k3baudioconvertingoptionwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_167) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp > CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp > CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp -o CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudioconvertingoptionwidget.cpp -o CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o: src/rip/k3baudioprojectconvertingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_168) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp > CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp > CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingdialog.cpp -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o: src/rip/k3baudioprojectconvertingjob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_169) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp > CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp > CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudioprojectconvertingjob.cpp -o CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/categories.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/categories.cpp.o: src/rip/categories.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_170) "Building CXX object src/CMakeFiles/k3b.dir/rip/categories.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/categories.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/categories.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object src/CMakeFiles/k3b.dir/rip/categories.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/categories.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/categories.cpp
 
 src/CMakeFiles/k3b.dir/rip/categories.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/categories.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/categories.cpp > CMakeFiles/k3b.dir/rip/categories.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/categories.cpp > CMakeFiles/k3b.dir/rip/categories.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/categories.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/categories.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/categories.cpp -o CMakeFiles/k3b.dir/rip/categories.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/categories.cpp -o CMakeFiles/k3b.dir/rip/categories.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o: src/rip/k3baudiotrackmodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_171) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp
 
 src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp > CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp > CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp -o CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/k3baudiotrackmodel.cpp -o CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o: src/rip/videodvd/k3bvideodvdaudiomodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_172) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdaudiomodel.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o: src/rip/videodvd/k3bvideodvdrippingview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_173) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingview.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o: src/rip/videodvd/k3bvideodvdrippingjob.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_174) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingjob.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o: src/rip/videodvd/k3bvideodvdrippingwidget.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_175) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingwidget.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o: src/rip/videodvd/k3bvideodvdrippingdialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_176) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingdialog.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o: src/rip/videodvd/k3bvideodvdrippingpreview.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_177) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdrippingpreview.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o: src/rip/videodvd/k3bvideodvdtitledelegate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_178) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitledelegate.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o: src/rip/videodvd/k3bvideodvdtitlemodel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_179) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o -c /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp > CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i
 
 src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/rip/videodvd/k3bvideodvdtitlemodel.cpp -o CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s
 
 src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o: src/k3binterfaceadaptor.cpp
 src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o: src/k3binterfaceadaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_180) "Building CXX object src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterfaceadaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3binterfaceadaptor.cpp
 
 src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3binterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i
 
 src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3binterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3binterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o: src/k3bjobinterfaceadaptor.cpp
 src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o: src/k3bjobinterfaceadaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_181) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp
 
 src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bjobinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o: src/k3bprojectinterfaceadaptor.cpp
 src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o: src/k3bprojectinterfaceadaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_182) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp
 
 src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o: src/k3baudioprojectinterfaceadaptor.cpp
 src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o: src/k3baudioprojectinterfaceadaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_183) "Building CXX object src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i
 
 src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3baudioprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o: src/CMakeFiles/k3b.dir/flags.make
 src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o: src/k3bdataprojectinterfaceadaptor.cpp
 src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o: src/k3bdataprojectinterfaceadaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_184) "Building CXX object src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o -c /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Building CXX object src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o"
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o -c /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp > CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i
 
 src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/k3b-19.12.3/src/k3bdataprojectinterfaceadaptor.cpp -o CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s
 
 # Object files for target k3b
 k3b_OBJECTS = \
@@ -2225,6 +2238,7 @@ k3b_OBJECTS = \
 "CMakeFiles/k3b.dir/k3bdirview.cpp.o" \
 "CMakeFiles/k3b.dir/k3b.cpp.o" \
 "CMakeFiles/k3b.dir/k3bTitleBar.cpp.o" \
+"CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o" \
 "CMakeFiles/k3b.dir/main.cpp.o" \
 "CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o" \
 "CMakeFiles/k3b.dir/k3burlnavigator.cpp.o" \
@@ -2384,6 +2398,7 @@ bin/k3b: src/CMakeFiles/k3b.dir/k3bfileview.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/k3bdirview.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/k3b.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o
+bin/k3b: src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/main.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o
@@ -2527,8 +2542,8 @@ bin/k3b: src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o
 bin/k3b: src/CMakeFiles/k3b.dir/build.make
 bin/k3b: /usr/lib/x86_64-linux-gnu/libc.so
 bin/k3b: src/CMakeFiles/k3b.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_185) "Linking CXX executable ../bin/k3b"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/k3b.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_186) "Linking CXX executable ../bin/k3b"
+	cd /home/ubuntu/k3b-19.12.3/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/k3b.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/k3b.dir/build: bin/k3b
@@ -2536,7 +2551,7 @@ src/CMakeFiles/k3b.dir/build: bin/k3b
 .PHONY : src/CMakeFiles/k3b.dir/build
 
 src/CMakeFiles/k3b.dir/clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src && $(CMAKE_COMMAND) -P CMakeFiles/k3b.dir/cmake_clean.cmake
+	cd /home/ubuntu/k3b-19.12.3/src && $(CMAKE_COMMAND) -P CMakeFiles/k3b.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/k3b.dir/clean
 
 src/CMakeFiles/k3b.dir/depend: src/ui_base_k3bthemeoptiontab.h
@@ -2573,6 +2588,6 @@ src/CMakeFiles/k3b.dir/depend: src/org.k3b.Job.xml
 src/CMakeFiles/k3b.dir/depend: src/org.k3b.Project.xml
 src/CMakeFiles/k3b.dir/depend: src/org.k3b.AudioProject.xml
 src/CMakeFiles/k3b.dir/depend: src/org.k3b.DataProject.xml
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/CMakeFiles/k3b.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src /home/ubuntu/k3b-19.12.3/src/CMakeFiles/k3b.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/k3b.dir/depend
 

@@ -77,7 +77,7 @@ void K3b::Application::init( QCommandLineParser* commandLineParser )
             m_core->m_themeManager->readConfig( generalOptions );
 
             splash = new Splash( 0 );
-            splash->show();
+            //splash->show();
         }
     }
 

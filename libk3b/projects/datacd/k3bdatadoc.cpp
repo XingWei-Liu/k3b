@@ -40,6 +40,8 @@
 
 #include <KConfig>
 #include <KMessageBox>
+#include <KSharedConfig>
+#include <KConfigGroup>
 
 #include <QDebug>
 #include <QDir>
@@ -254,7 +256,16 @@ void K3b::DataDoc::addUrlsToDir( const QList<QUrl>& l, K3b::DirItem* dir )
             }
 
             // recursively add all the files in the directory
-            QStringList dlist = QDir( f.absoluteFilePath() ).entryList( QDir::AllEntries|QDir::System|QDir::Hidden|QDir::NoDotAndDotDot );
+            QStringList dlist;
+            
+            KConfigGroup grp( KSharedConfig::openConfig(), "default data settings" );
+            int AddHiddenFiles = !grp.readEntry( "discard hidden file", false );
+            if ( AddHiddenFiles ){
+                dlist = QDir( f.absoluteFilePath() ).entryList( QDir::AllEntries|QDir::System|QDir::Hidden|QDir::NoDotAndDotDot );
+            }else{    
+                dlist = QDir( f.absoluteFilePath() ).entryList( QDir::AllEntries|QDir::System|QDir::NoDotAndDotDot );
+            }  
+            
             QList<QUrl> newUrls;
             for( QStringList::ConstIterator it = dlist.constBegin(); it != dlist.constEnd(); ++it )
                 newUrls.append( QUrl::fromLocalFile( f.absoluteFilePath() + '/' + *it ) );
@@ -581,7 +592,7 @@ bool K3b::DataDoc::loadDataItem( QDomElement& elem, K3b::DirItem* parent )
 
         QFileInfo f( urlElem.text() );
 
-        // We cannot use exists() here since this always disqualifies broken symlinks
+        // We canot use exists() here since this always disqualifies broken symlinks
         if( !f.isFile() && !f.isSymLink() )
             d->notFoundFiles.append( urlElem.text() );
 

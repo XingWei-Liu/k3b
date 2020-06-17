@@ -765,6 +765,7 @@ bool K3b::DataUrlAddingDialog::getNewName( const QString& oldName, K3b::DirItem*
 
 bool K3b::DataUrlAddingDialog::addHiddenFiles()
 {
+
     if( m_iAddHiddenFiles == 0 ) {
         // FIXME: the isVisible() stuff makes the static addUrls method not return (same below)
         if( KMessageBox::questionYesNo( /*isVisible() ? */this/* : parentWidget()*/,

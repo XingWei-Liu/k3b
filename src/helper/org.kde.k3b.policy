@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE policyconfig PUBLIC
+"-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+"http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+   <action id="org.kde.k3b.addtogroup" >
+      <description xml:lang="ar">يضيف المستخدم الحاليّ إلى المجموعة المحدّدة</description>
+      <description xml:lang="bs">Dodaje trenutnog korisnika u određenu grupu</description>
+      <description xml:lang="ca">Afegeix l'usuari actual a un grup especificat</description>
+      <description xml:lang="cs">Přidá nynějšího uživatele do určené skupiny</description>
+      <description xml:lang="da">Tilføjer den aktuelle bruger til en angiven gruppe</description>
+      <description xml:lang="de">Fügt den aktuellen Benutzer zur angegebenen Gruppe hinzu</description>
+      <description xml:lang="el">Προσθέτει τον τρέχοντα χρήστη σε μια ορισμένη ομάδα</description>
+      <description>Adds current user to a specified group</description>
+      <description xml:lang="en_GB">Adds current user to a specified group</description>
+      <description xml:lang="es">Añade el usuario actual al grupo especificado</description>
+      <description xml:lang="et">Aktiivse kasutaja lisamine määratud rühma</description>
+      <description xml:lang="eu">Uneko erabiltzailea zehaztutako taldera gehitzen du</description>
+      <description xml:lang="fi">Lisää nykyisen käyttäjän määritettyyn ryhmään</description>
+      <description xml:lang="fr">Ajoute l'utilisateur courant à un groupe spécifié</description>
+      <description xml:lang="gl">Engade o usuario actual ao grupo indicado</description>
+      <description xml:lang="hu">A jelenlegi felhasználó hozzáadása egy megadott csoporthoz</description>
+      <description xml:lang="ia">Adde usator currente a un gruppo specificate</description>
+      <description xml:lang="id">Menambahkan pengguna saat ini ke sebuah grup tertentu</description>
+      <description xml:lang="it">Aggiunge l'utente attuale al gruppo specifico</description>
+      <description xml:lang="ja">現在のユーザを指定したグループに追加する</description>
+      <description xml:lang="kk">Назардағы пайдаланушыны көрсетілген топқа қосу</description>
+      <description xml:lang="km">បន្ថែម​អ្នកប្រើ​បច្ចុប្បន្ន​ទៅ​ក្រុម​ដែល​បានបញ្ជាក់</description>
+      <description xml:lang="ko">현재 사용자를 지정한 그룹에 추가</description>
+      <description xml:lang="lt">Prideda dabartinį naudotoją į nurodytą grupę</description>
+      <description xml:lang="lv">Pievieno pašreizējo lietotāju norādītajai grupai</description>
+      <description xml:lang="nb">Legger til gjeldende bruker til en oppgitt gruppe</description>
+      <description xml:lang="nds">Föögt den aktuellen Bruker en angeven Koppel to</description>
+      <description xml:lang="nl">Voegt de huidige gebruiker toe aan een gespecificeerde groep</description>
+      <description xml:lang="nn">Legg gjeldande brukar til ei vald gruppe</description>
+      <description xml:lang="pl">Dodaje bieżącego użytkownika do podanej grupy</description>
+      <description xml:lang="pt">Adiciona o utilizador actual a um grupo indicado</description>
+      <description xml:lang="pt_BR">Adiciona o usuário atual a um grupo indicado</description>
+      <description xml:lang="ro">Adaugă utilizatorul curent la un grup specificat</description>
+      <description xml:lang="ru">Добавление текущего пользователя в указанную группу</description>
+      <description xml:lang="sk">Pridá aktuálneho používateľa do zadanej skupiny</description>
+      <description xml:lang="sl">Doda trenutnega uporabnika k določeni skupini</description>
+      <description xml:lang="sr">Додај тренутног корисника у задату групу</description>
+      <description xml:lang="sv">Lägger till aktuell användare i en angiven grupp</description>
+      <description xml:lang="tr">Geçerli kullanıcıyı belirli bir gruba ekle</description>
+      <description xml:lang="uk">Додавання поточного користувача до вказаної групи</description>
+      <description xml:lang="zh_CN">将当前用户添加到指定的组</description>
+      <description xml:lang="zh_TW">將目前的使用者加到特定的群組</description>
+      <message xml:lang="ar">الاستيثاق مطلوب لإضافة المستخدم الحاليّ إلى أحد المجموعات</message>
+      <message xml:lang="bs">Provjera autentičnosti se zahtijeva da se trenutni korisnik doda u grupu</message>
+      <message xml:lang="ca">Cal autenticar-se per afegir l'usuari actual a un grup</message>
+      <message xml:lang="cs">Pro přidání současného uživatele do skupiny je potřeba oprávnění</message>
+      <message xml:lang="da">Autentificering er påkrævet for at føje den aktuelle bruger til en gruppe</message>
+      <message xml:lang="de"></message>
+      <message xml:lang="el">Απαιτείται πιστοποίηση για την προσθήκη του τρέχοντος χρήστη σε ομάδα</message>
+      <message>Authentication is required to add current user to a group</message>
+      <message xml:lang="en_GB">Authentication is required to add current user to a group</message>
+      <message xml:lang="es">Se necesita autenticación para añadir al usuario a un grupo</message>
+      <message xml:lang="et">Aktiivse kasutaja lisamiseks rühma on vajalik autentimine</message>
+      <message xml:lang="eu">Autentifikatu beharra dago uneko erabiltzailea taldera gehitzeko</message>
+      <message xml:lang="fi">Nykyisen käyttäjän lisääminen ryhmään vaatii tunnistautumisen</message>
+      <message xml:lang="fr">Une authentification est nécessaire pour ajouter un utilisateur à un groupe spécifié</message>
+      <message xml:lang="gl">Requírese a autenticación para engadir o usuario actual a un grupo</message>
+      <message xml:lang="hu">Hitelesítés szükséges a jelenlegi felhasználó csoporthoz adásához</message>
+      <message xml:lang="ia">Authentication es requirite pro adder usator currente a un gruppo</message>
+      <message xml:lang="id">Autentikasi diperlukan untuk menabahkan pengguna saat ini ke sebuah grup</message>
+      <message xml:lang="it">È richiesta l'autenticazione per aggiungere l'utente attuale a un gruppo</message>
+      <message xml:lang="ja">現在のユーザをグループに追加するには、認証が必要です</message>
+      <message xml:lang="kk">Назардағы пайдаланушыны бір топқа қосу үшін аутентификация қажет</message>
+      <message xml:lang="km">តម្រូវ​ឲ្យ​​ធ្វើការ​ផ្ទៀងផ្ទាត់​ ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​​សិទ្ធិ​​ឧបករណ៍ និង​កម្មវិធី​</message>
+      <message xml:lang="ko">현재 사용자를 그룹에 추가하려면 인증해야 합니다</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="mr">वर्तमान वापरकर्ता समूहात जोडण्याकरिता अधिप्रमाणनाची गरज आहे</message>
+      <message xml:lang="nb">Det kreves autentisering for å kunne legge gjeldende bruker til en gruppe</message>
+      <message xml:lang="nds">För't Tofögen vun en Bruker na Koppel deit en Identiteetprööv noot.</message>
+      <message xml:lang="nl">Authenticatie is vereist om de huidige gebruiker aan een groep toe te voegen</message>
+      <message xml:lang="nn">Treng autentisering for å leggja gjeldande brukar til ei gruppe</message>
+      <message xml:lang="pl"></message>
+      <message xml:lang="pt">É necessária a autenticação para adicionar o utilizador actual a um grupo</message>
+      <message xml:lang="pt_BR">É necessária autenticação para adicionar o usuário atual a um grupo</message>
+      <message xml:lang="ro">Este nevoie de autentificare pentru a adăuga utilizatorul curent la un grup</message>
+      <message xml:lang="ru">Для добавления текущего пользователя в указанную группу требуется идентификация</message>
+      <message xml:lang="sk">Na pridanie aktuálneho používateľa do skupiny je potrebné overenie</message>
+      <message xml:lang="sl">Za dodajanje trenutnega uporabnika k skupini je potrebna overitev</message>
+      <message xml:lang="sr">Додавање корисника у групу захтева аутентификацију</message>
+      <message xml:lang="sv">Behörighetskontroll krävs för att lägga till aktuell användare i en grupp</message>
+      <message xml:lang="tr">Geçerli kullanıcıyı bir gruba eklemek için yetki gerekiyor</message>
+      <message xml:lang="uk">Для додавання поточного користувача до вказаної групи слід пройти розпізнавання</message>
+      <message xml:lang="zh_CN">添加用户到组需要身份验证</message>
+      <message xml:lang="zh_TW">新增目前的使用者到某個群組需要驗證身份</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin</allow_active>
+      </defaults>
+   </action>
+   <action id="org.kde.k3b.updatepermissions" >
+      <description xml:lang="ar">حدّث تصاريح الأجهزة والبرامج</description>
+      <description xml:lang="bg">Обновяване правата върху устройства и програми</description>
+      <description xml:lang="bs">Ažurirajte uređaje i programske dozvole</description>
+      <description xml:lang="ca">Actualitza els permisos dels dispositius i programes</description>
+      <description xml:lang="cs">Aktualizovat oprávnění zařízení a programů</description>
+      <description xml:lang="da">Opdatér rettigheder for enheder og programmer</description>
+      <description xml:lang="de">Berechtigungen von Geräten und Programmen aktualisieren</description>
+      <description xml:lang="el">Ενημέρωση δικαιωμάτων για συσκευές και προγράμματα</description>
+      <description>Update device and programs permissions</description>
+      <description xml:lang="en_GB">Update device and programs permissions</description>
+      <description xml:lang="es">Actualizar dispositivo y permisos del programa</description>
+      <description xml:lang="et">Seadmete ja programmide õiguste uuendamine</description>
+      <description xml:lang="eu">Eguneratu gailu eta programen baimenak</description>
+      <description xml:lang="fi">Päivitä laitteiden ja ohjelmien oikeudet</description>
+      <description xml:lang="fr">Mettre à jour les droits d'accès aux périphériques et aux programmes</description>
+      <description xml:lang="gl">Actualizar o dispositivo e os permisos dos programas</description>
+      <description xml:lang="he">עדכן הרשאות התקן ותכנות</description>
+      <description xml:lang="hr">Ažurirajte dozvole uređaja i programa</description>
+      <description xml:lang="hu">Eszköz- és programengedélyek módosítása</description>
+      <description xml:lang="ia">Actualisa dispositivo e permissiones de programmas</description>
+      <description xml:lang="id">Perbarui perangkat dan perizinan program</description>
+      <description xml:lang="it">Aggiorna i permessi di dispositivi e programmi</description>
+      <description xml:lang="ja">デバイスとプログラムのパーミッションを更新する</description>
+      <description xml:lang="kk">Құрылғы мен бағдарламалар рұқсаттарын жаңарту</description>
+      <description xml:lang="km">ធ្វើ​បច្ចុប្បន្នភាព​​សិទ្ធិ​ឧបករណ៍ និង​​កម្មវិធី</description>
+      <description xml:lang="ko">장치와 프로그램의 권한 갱신하기</description>
+      <description xml:lang="lt">Atnaujinti įrenginio ir programų teises</description>
+      <description xml:lang="lv">Atjaunināt ierīču un programmu atļaujas</description>
+      <description xml:lang="mr">साधने व कार्यक्रम परवानगी अद्ययावत करा</description>
+      <description xml:lang="nb">Oppdater rettigheter til enhet og programmer</description>
+      <description xml:lang="nds">Reedschap- un Programmverlöven opfrischen</description>
+      <description xml:lang="nl">Rechten van apparaten en programma's bijwerken</description>
+      <description xml:lang="nn">Oppdater einings- og programløyve</description>
+      <description xml:lang="pl">Uaktualnij uprawnienia urządzenia i programów</description>
+      <description xml:lang="pt">Actualizar as permissões dos dispositivos e dos programas</description>
+      <description xml:lang="pt_BR">Atualizar as permissões dos programas e dispositivos</description>
+      <description xml:lang="ro">Actualizează permisiunile dispozitivelor și programelor</description>
+      <description xml:lang="ru">Обновить права доступа к устройствам и программам</description>
+      <description xml:lang="sk">Aktualizovať práva zariadení a programov</description>
+      <description xml:lang="sl">Posodobi dovoljenja za naprave in programe</description>
+      <description xml:lang="sr">Освежи дозволе уређаја и програма</description>
+      <description xml:lang="sv">Uppdatera rättigheter för enheter och program</description>
+      <description xml:lang="th">ปรับปรุงสิทธิ์ที่อนุญาตของอุปกรณ์และโปรแกรมต่าง ๆ</description>
+      <description xml:lang="tr">Aygıt ve uygulama izinlerini güncelle</description>
+      <description xml:lang="ug">Update device and programs permissions</description>
+      <description xml:lang="uk">Оновлення прав доступу до пристроїв і програм</description>
+      <description xml:lang="zh_CN">更新设备和程序的权限</description>
+      <description xml:lang="zh_TW">更新裝置與程式的權限</description>
+      <message xml:lang="ar">الاستيثاق مطلوب لتحديث تصاريح الأجهزة والبرامج</message>
+      <message xml:lang="bg">За обновяване правата върху устройства и програми е нужна автентикация</message>
+      <message xml:lang="bs">Autentifikacija je potrebna za ažuriranje dozvole uređaja i programa</message>
+      <message xml:lang="ca">Cal autenticar-se per actualitzar els permisos dels dispositius i els programes</message>
+      <message xml:lang="cs">Pro aktualizaci oprávnění zařízení a programů je potřeba oprávnění</message>
+      <message xml:lang="da">Autentificering er påkrævet for at opdatere rettigheder for enheder og programmer</message>
+      <message xml:lang="de"></message>
+      <message xml:lang="el">Απαιτείται πιστοποίηση για την ενημέρωση δικαιωμάτων για συσκευές και προγράμματα</message>
+      <message>Authentication is required to update permissions of devices and programs</message>
+      <message xml:lang="en_GB">Authentication is required to update permissions of devices and programs</message>
+      <message xml:lang="es">Se necesita autenticación para actualizar los permisos de dispositivos y programas</message>
+      <message xml:lang="et">Seadmete ja programmide õiguste uuendamiseks on vajalik autentimine</message>
+      <message xml:lang="eu">Autentifikatu beharra dago gailu eta programen baimenak eguneratzeko</message>
+      <message xml:lang="fi">Tunnistautuminen vaaditaan laitteiden ja ohjelmien oikeuksien päivittämiseksi</message>
+      <message xml:lang="fr">Une authentification est nécessaire pour mettre à jour les droits d'accès des périphériques et des programmes</message>
+      <message xml:lang="gl">Requírese a autenticación para actualizar os permisos dos dispositivos e os programas</message>
+      <message xml:lang="hr">Potrebno je autentificirati se za ažuriranje dozvola uređaja i programa</message>
+      <message xml:lang="hu">Az eszközök és a programok engedélyeinek módosításához felhasználóazonosítás szükséges</message>
+      <message xml:lang="ia">Authentication es requirite pro actualisar permissiones de dispositivos e programmas</message>
+      <message xml:lang="id">Autentikasi diperlukan untuk memperbarui perizinan perangkat dan program</message>
+      <message xml:lang="it">È richiesta l'autenticazione per aggiornare i permessi di dispositivi e programmi</message>
+      <message xml:lang="ja">デバイスやプログラムのパーミッションを更新するには、認証が必要です</message>
+      <message xml:lang="kk">Құрылғы мен бағдарламалар рұқсаттарын жаңарту үшін аутентификация қажет</message>
+      <message xml:lang="km">តម្រូវ​ឲ្យ​​ធ្វើការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ដើម្បី​ធ្វើ​បច្ចុប្បន្នភាព​​សិទ្ធិ​​ឧបករណ៍ និង​កម្មវិធី​</message>
+      <message xml:lang="ko">장치와 프로그램의 권한을 갱신하려면 인증해야 합니다</message>
+      <message xml:lang="lt"></message>
+      <message xml:lang="lv"></message>
+      <message xml:lang="mr">साधने व कार्यक्रम परवानगी अद्ययावत करण्याकरिता अधिप्रमाणनाची गरज आहे</message>
+      <message xml:lang="nb">Det kreves autentisering for å kunne oppdatere rettigheter til enheter og programmer</message>
+      <message xml:lang="nds">För't Opfrischen vun Reedschap- un Programmverlöven deit en Identiteetprööv noot.</message>
+      <message xml:lang="nl">Authenticatie is vereist om rechten van apparaten en programma's bij te werken</message>
+      <message xml:lang="nn">Treng autentisering for å oppdatera løyva til einingar og program</message>
+      <message xml:lang="pl">Uwierzytelnienie jest potrzebne do aktualizacji uprawnień urządzeń i programów</message>
+      <message xml:lang="pt">É necessária a autenticação para actualizar as permissões dos dispositivos e dos programas</message>
+      <message xml:lang="pt_BR">É necessária autenticação para atualizar as permissões dos programas e dispositivos</message>
+      <message xml:lang="ro">Pentru a actualiza permisiunile dispozitivelor și programelor este nevoie de autentificare</message>
+      <message xml:lang="ru">Для обновления прав доступа к программам и устройствам необходима идентификация</message>
+      <message xml:lang="sk">Pre aktualizáciu práv zariadení a programov je potrebné overenie</message>
+      <message xml:lang="sl">Za posodobitev dovoljenj za naprave in programe je potrebna overitev</message>
+      <message xml:lang="sr">Освежавање дозвола уређаја и програма захтева аутентификацију</message>
+      <message xml:lang="sv">Behörighetskontroll krävs för att uppdatera rättigheter för enheter och program</message>
+      <message xml:lang="th">ต้องการการตรวจสอบสิทธิ์เพื่อใช้ในการปรับปรุงสิทธิ์ที่อนุญาตของอุปกรณ์และโปรแกรมต่าง ๆ</message>
+      <message xml:lang="tr">Aygıt ve uygulama dizinlerini güncellemek için yetki gerekiyor</message>
+      <message xml:lang="uk">Для оновлення прав доступу до пристроїв та програм слід пройти розпізнавання</message>
+      <message xml:lang="zh_CN">更新设备和程序权限需要身份验证</message>
+      <message xml:lang="zh_TW">更新裝置與程式的權限時需要驗證身份</message>
+      <defaults>
+         <allow_inactive>no</allow_inactive>
+         <allow_active>auth_admin</allow_active>
+      </defaults>
+   </action>
+</policyconfig>

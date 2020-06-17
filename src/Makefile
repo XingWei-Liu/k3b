@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles /home/ubuntu/k3b-19.12.3/src/CMakeFiles/progress.marks
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/k3b.dir/rule:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/k3b.dir/rule
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/k3b.dir/rule
 .PHONY : src/CMakeFiles/k3b.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ k3b: src/CMakeFiles/k3b.dir/rule
 
 # fast build rule for target.
 k3b/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/build
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/build
 .PHONY : k3b/fast
 
 # Convenience name for target.
 src/CMakeFiles/k3b_autogen.dir/rule:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/k3b_autogen.dir/rule
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/k3b_autogen.dir/rule
 .PHONY : src/CMakeFiles/k3b_autogen.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ k3b_autogen: src/CMakeFiles/k3b_autogen.dir/rule
 
 # fast build rule for target.
 k3b_autogen/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b_autogen.dir/build.make src/CMakeFiles/k3b_autogen.dir/build
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b_autogen.dir/build.make src/CMakeFiles/k3b_autogen.dir/build
 .PHONY : k3b_autogen/fast
 
 helper/k3bhelperprogramitem.o: helper/k3bhelperprogramitem.cpp.o
@@ -203,7 +203,7 @@ helper/k3bhelperprogramitem.o: helper/k3bhelperprogramitem.cpp.o
 
 # target to build an object file
 helper/k3bhelperprogramitem.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.o
 .PHONY : helper/k3bhelperprogramitem.cpp.o
 
 helper/k3bhelperprogramitem.i: helper/k3bhelperprogramitem.cpp.i
@@ -212,7 +212,7 @@ helper/k3bhelperprogramitem.i: helper/k3bhelperprogramitem.cpp.i
 
 # target to preprocess a source file
 helper/k3bhelperprogramitem.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.i
 .PHONY : helper/k3bhelperprogramitem.cpp.i
 
 helper/k3bhelperprogramitem.s: helper/k3bhelperprogramitem.cpp.s
@@ -221,7 +221,7 @@ helper/k3bhelperprogramitem.s: helper/k3bhelperprogramitem.cpp.s
 
 # target to generate assembly for a file
 helper/k3bhelperprogramitem.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/helper/k3bhelperprogramitem.cpp.s
 .PHONY : helper/k3bhelperprogramitem.cpp.s
 
 k3b.o: k3b.cpp.o
@@ -230,7 +230,7 @@ k3b.o: k3b.cpp.o
 
 # target to build an object file
 k3b.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.o
 .PHONY : k3b.cpp.o
 
 k3b.i: k3b.cpp.i
@@ -239,7 +239,7 @@ k3b.i: k3b.cpp.i
 
 # target to preprocess a source file
 k3b.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.i
 .PHONY : k3b.cpp.i
 
 k3b.s: k3b.cpp.s
@@ -248,8 +248,35 @@ k3b.s: k3b.cpp.s
 
 # target to generate assembly for a file
 k3b.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b.cpp.s
 .PHONY : k3b.cpp.s
+
+k3bFileFilterDialog.o: k3bFileFilterDialog.cpp.o
+
+.PHONY : k3bFileFilterDialog.o
+
+# target to build an object file
+k3bFileFilterDialog.cpp.o:
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.o
+.PHONY : k3bFileFilterDialog.cpp.o
+
+k3bFileFilterDialog.i: k3bFileFilterDialog.cpp.i
+
+.PHONY : k3bFileFilterDialog.i
+
+# target to preprocess a source file
+k3bFileFilterDialog.cpp.i:
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.i
+.PHONY : k3bFileFilterDialog.cpp.i
+
+k3bFileFilterDialog.s: k3bFileFilterDialog.cpp.s
+
+.PHONY : k3bFileFilterDialog.s
+
+# target to generate assembly for a file
+k3bFileFilterDialog.cpp.s:
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bFileFilterDialog.cpp.s
+.PHONY : k3bFileFilterDialog.cpp.s
 
 k3bTitleBar.o: k3bTitleBar.cpp.o
 
@@ -257,7 +284,7 @@ k3bTitleBar.o: k3bTitleBar.cpp.o
 
 # target to build an object file
 k3bTitleBar.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.o
 .PHONY : k3bTitleBar.cpp.o
 
 k3bTitleBar.i: k3bTitleBar.cpp.i
@@ -266,7 +293,7 @@ k3bTitleBar.i: k3bTitleBar.cpp.i
 
 # target to preprocess a source file
 k3bTitleBar.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.i
 .PHONY : k3bTitleBar.cpp.i
 
 k3bTitleBar.s: k3bTitleBar.cpp.s
@@ -275,7 +302,7 @@ k3bTitleBar.s: k3bTitleBar.cpp.s
 
 # target to generate assembly for a file
 k3bTitleBar.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bTitleBar.cpp.s
 .PHONY : k3bTitleBar.cpp.s
 
 k3b_autogen/mocs_compilation.o: k3b_autogen/mocs_compilation.cpp.o
@@ -284,7 +311,7 @@ k3b_autogen/mocs_compilation.o: k3b_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 k3b_autogen/mocs_compilation.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.o
 .PHONY : k3b_autogen/mocs_compilation.cpp.o
 
 k3b_autogen/mocs_compilation.i: k3b_autogen/mocs_compilation.cpp.i
@@ -293,7 +320,7 @@ k3b_autogen/mocs_compilation.i: k3b_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 k3b_autogen/mocs_compilation.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.i
 .PHONY : k3b_autogen/mocs_compilation.cpp.i
 
 k3b_autogen/mocs_compilation.s: k3b_autogen/mocs_compilation.cpp.s
@@ -302,7 +329,7 @@ k3b_autogen/mocs_compilation.s: k3b_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 k3b_autogen/mocs_compilation.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3b_autogen/mocs_compilation.cpp.s
 .PHONY : k3b_autogen/mocs_compilation.cpp.s
 
 k3baction.o: k3baction.cpp.o
@@ -311,7 +338,7 @@ k3baction.o: k3baction.cpp.o
 
 # target to build an object file
 k3baction.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.o
 .PHONY : k3baction.cpp.o
 
 k3baction.i: k3baction.cpp.i
@@ -320,7 +347,7 @@ k3baction.i: k3baction.cpp.i
 
 # target to preprocess a source file
 k3baction.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.i
 .PHONY : k3baction.cpp.i
 
 k3baction.s: k3baction.cpp.s
@@ -329,7 +356,7 @@ k3baction.s: k3baction.cpp.s
 
 # target to generate assembly for a file
 k3baction.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baction.cpp.s
 .PHONY : k3baction.cpp.s
 
 k3bappdevicemanager.o: k3bappdevicemanager.cpp.o
@@ -338,7 +365,7 @@ k3bappdevicemanager.o: k3bappdevicemanager.cpp.o
 
 # target to build an object file
 k3bappdevicemanager.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.o
 .PHONY : k3bappdevicemanager.cpp.o
 
 k3bappdevicemanager.i: k3bappdevicemanager.cpp.i
@@ -347,7 +374,7 @@ k3bappdevicemanager.i: k3bappdevicemanager.cpp.i
 
 # target to preprocess a source file
 k3bappdevicemanager.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.i
 .PHONY : k3bappdevicemanager.cpp.i
 
 k3bappdevicemanager.s: k3bappdevicemanager.cpp.s
@@ -356,7 +383,7 @@ k3bappdevicemanager.s: k3bappdevicemanager.cpp.s
 
 # target to generate assembly for a file
 k3bappdevicemanager.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bappdevicemanager.cpp.s
 .PHONY : k3bappdevicemanager.cpp.s
 
 k3bapplication.o: k3bapplication.cpp.o
@@ -365,7 +392,7 @@ k3bapplication.o: k3bapplication.cpp.o
 
 # target to build an object file
 k3bapplication.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.o
 .PHONY : k3bapplication.cpp.o
 
 k3bapplication.i: k3bapplication.cpp.i
@@ -374,7 +401,7 @@ k3bapplication.i: k3bapplication.cpp.i
 
 # target to preprocess a source file
 k3bapplication.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.i
 .PHONY : k3bapplication.cpp.i
 
 k3bapplication.s: k3bapplication.cpp.s
@@ -383,7 +410,7 @@ k3bapplication.s: k3bapplication.cpp.s
 
 # target to generate assembly for a file
 k3bapplication.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bapplication.cpp.s
 .PHONY : k3bapplication.cpp.s
 
 k3baudioprojectinterface.o: k3baudioprojectinterface.cpp.o
@@ -392,7 +419,7 @@ k3baudioprojectinterface.o: k3baudioprojectinterface.cpp.o
 
 # target to build an object file
 k3baudioprojectinterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.o
 .PHONY : k3baudioprojectinterface.cpp.o
 
 k3baudioprojectinterface.i: k3baudioprojectinterface.cpp.i
@@ -401,7 +428,7 @@ k3baudioprojectinterface.i: k3baudioprojectinterface.cpp.i
 
 # target to preprocess a source file
 k3baudioprojectinterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.i
 .PHONY : k3baudioprojectinterface.cpp.i
 
 k3baudioprojectinterface.s: k3baudioprojectinterface.cpp.s
@@ -410,7 +437,7 @@ k3baudioprojectinterface.s: k3baudioprojectinterface.cpp.s
 
 # target to generate assembly for a file
 k3baudioprojectinterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterface.cpp.s
 .PHONY : k3baudioprojectinterface.cpp.s
 
 k3baudioprojectinterfaceadaptor.o: k3baudioprojectinterfaceadaptor.cpp.o
@@ -419,7 +446,7 @@ k3baudioprojectinterfaceadaptor.o: k3baudioprojectinterfaceadaptor.cpp.o
 
 # target to build an object file
 k3baudioprojectinterfaceadaptor.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.o
 .PHONY : k3baudioprojectinterfaceadaptor.cpp.o
 
 k3baudioprojectinterfaceadaptor.i: k3baudioprojectinterfaceadaptor.cpp.i
@@ -428,7 +455,7 @@ k3baudioprojectinterfaceadaptor.i: k3baudioprojectinterfaceadaptor.cpp.i
 
 # target to preprocess a source file
 k3baudioprojectinterfaceadaptor.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.i
 .PHONY : k3baudioprojectinterfaceadaptor.cpp.i
 
 k3baudioprojectinterfaceadaptor.s: k3baudioprojectinterfaceadaptor.cpp.s
@@ -437,7 +464,7 @@ k3baudioprojectinterfaceadaptor.s: k3baudioprojectinterfaceadaptor.cpp.s
 
 # target to generate assembly for a file
 k3baudioprojectinterfaceadaptor.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3baudioprojectinterfaceadaptor.cpp.s
 .PHONY : k3baudioprojectinterfaceadaptor.cpp.s
 
 k3bburnprogressdialog.o: k3bburnprogressdialog.cpp.o
@@ -446,7 +473,7 @@ k3bburnprogressdialog.o: k3bburnprogressdialog.cpp.o
 
 # target to build an object file
 k3bburnprogressdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.o
 .PHONY : k3bburnprogressdialog.cpp.o
 
 k3bburnprogressdialog.i: k3bburnprogressdialog.cpp.i
@@ -455,7 +482,7 @@ k3bburnprogressdialog.i: k3bburnprogressdialog.cpp.i
 
 # target to preprocess a source file
 k3bburnprogressdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.i
 .PHONY : k3bburnprogressdialog.cpp.i
 
 k3bburnprogressdialog.s: k3bburnprogressdialog.cpp.s
@@ -464,7 +491,7 @@ k3bburnprogressdialog.s: k3bburnprogressdialog.cpp.s
 
 # target to generate assembly for a file
 k3bburnprogressdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bburnprogressdialog.cpp.s
 .PHONY : k3bburnprogressdialog.cpp.s
 
 k3bcontentsview.o: k3bcontentsview.cpp.o
@@ -473,7 +500,7 @@ k3bcontentsview.o: k3bcontentsview.cpp.o
 
 # target to build an object file
 k3bcontentsview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.o
 .PHONY : k3bcontentsview.cpp.o
 
 k3bcontentsview.i: k3bcontentsview.cpp.i
@@ -482,7 +509,7 @@ k3bcontentsview.i: k3bcontentsview.cpp.i
 
 # target to preprocess a source file
 k3bcontentsview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.i
 .PHONY : k3bcontentsview.cpp.i
 
 k3bcontentsview.s: k3bcontentsview.cpp.s
@@ -491,7 +518,7 @@ k3bcontentsview.s: k3bcontentsview.cpp.s
 
 # target to generate assembly for a file
 k3bcontentsview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bcontentsview.cpp.s
 .PHONY : k3bcontentsview.cpp.s
 
 k3bdatamodewidget.o: k3bdatamodewidget.cpp.o
@@ -500,7 +527,7 @@ k3bdatamodewidget.o: k3bdatamodewidget.cpp.o
 
 # target to build an object file
 k3bdatamodewidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.o
 .PHONY : k3bdatamodewidget.cpp.o
 
 k3bdatamodewidget.i: k3bdatamodewidget.cpp.i
@@ -509,7 +536,7 @@ k3bdatamodewidget.i: k3bdatamodewidget.cpp.i
 
 # target to preprocess a source file
 k3bdatamodewidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.i
 .PHONY : k3bdatamodewidget.cpp.i
 
 k3bdatamodewidget.s: k3bdatamodewidget.cpp.s
@@ -518,7 +545,7 @@ k3bdatamodewidget.s: k3bdatamodewidget.cpp.s
 
 # target to generate assembly for a file
 k3bdatamodewidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdatamodewidget.cpp.s
 .PHONY : k3bdatamodewidget.cpp.s
 
 k3bdataprojectinterface.o: k3bdataprojectinterface.cpp.o
@@ -527,7 +554,7 @@ k3bdataprojectinterface.o: k3bdataprojectinterface.cpp.o
 
 # target to build an object file
 k3bdataprojectinterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.o
 .PHONY : k3bdataprojectinterface.cpp.o
 
 k3bdataprojectinterface.i: k3bdataprojectinterface.cpp.i
@@ -536,7 +563,7 @@ k3bdataprojectinterface.i: k3bdataprojectinterface.cpp.i
 
 # target to preprocess a source file
 k3bdataprojectinterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.i
 .PHONY : k3bdataprojectinterface.cpp.i
 
 k3bdataprojectinterface.s: k3bdataprojectinterface.cpp.s
@@ -545,7 +572,7 @@ k3bdataprojectinterface.s: k3bdataprojectinterface.cpp.s
 
 # target to generate assembly for a file
 k3bdataprojectinterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterface.cpp.s
 .PHONY : k3bdataprojectinterface.cpp.s
 
 k3bdataprojectinterfaceadaptor.o: k3bdataprojectinterfaceadaptor.cpp.o
@@ -554,7 +581,7 @@ k3bdataprojectinterfaceadaptor.o: k3bdataprojectinterfaceadaptor.cpp.o
 
 # target to build an object file
 k3bdataprojectinterfaceadaptor.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.o
 .PHONY : k3bdataprojectinterfaceadaptor.cpp.o
 
 k3bdataprojectinterfaceadaptor.i: k3bdataprojectinterfaceadaptor.cpp.i
@@ -563,7 +590,7 @@ k3bdataprojectinterfaceadaptor.i: k3bdataprojectinterfaceadaptor.cpp.i
 
 # target to preprocess a source file
 k3bdataprojectinterfaceadaptor.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.i
 .PHONY : k3bdataprojectinterfaceadaptor.cpp.i
 
 k3bdataprojectinterfaceadaptor.s: k3bdataprojectinterfaceadaptor.cpp.s
@@ -572,7 +599,7 @@ k3bdataprojectinterfaceadaptor.s: k3bdataprojectinterfaceadaptor.cpp.s
 
 # target to generate assembly for a file
 k3bdataprojectinterfaceadaptor.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdataprojectinterfaceadaptor.cpp.s
 .PHONY : k3bdataprojectinterfaceadaptor.cpp.s
 
 k3bdebuggingoutputcache.o: k3bdebuggingoutputcache.cpp.o
@@ -581,7 +608,7 @@ k3bdebuggingoutputcache.o: k3bdebuggingoutputcache.cpp.o
 
 # target to build an object file
 k3bdebuggingoutputcache.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.o
 .PHONY : k3bdebuggingoutputcache.cpp.o
 
 k3bdebuggingoutputcache.i: k3bdebuggingoutputcache.cpp.i
@@ -590,7 +617,7 @@ k3bdebuggingoutputcache.i: k3bdebuggingoutputcache.cpp.i
 
 # target to preprocess a source file
 k3bdebuggingoutputcache.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.i
 .PHONY : k3bdebuggingoutputcache.cpp.i
 
 k3bdebuggingoutputcache.s: k3bdebuggingoutputcache.cpp.s
@@ -599,7 +626,7 @@ k3bdebuggingoutputcache.s: k3bdebuggingoutputcache.cpp.s
 
 # target to generate assembly for a file
 k3bdebuggingoutputcache.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputcache.cpp.s
 .PHONY : k3bdebuggingoutputcache.cpp.s
 
 k3bdebuggingoutputdialog.o: k3bdebuggingoutputdialog.cpp.o
@@ -608,7 +635,7 @@ k3bdebuggingoutputdialog.o: k3bdebuggingoutputdialog.cpp.o
 
 # target to build an object file
 k3bdebuggingoutputdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.o
 .PHONY : k3bdebuggingoutputdialog.cpp.o
 
 k3bdebuggingoutputdialog.i: k3bdebuggingoutputdialog.cpp.i
@@ -617,7 +644,7 @@ k3bdebuggingoutputdialog.i: k3bdebuggingoutputdialog.cpp.i
 
 # target to preprocess a source file
 k3bdebuggingoutputdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.i
 .PHONY : k3bdebuggingoutputdialog.cpp.i
 
 k3bdebuggingoutputdialog.s: k3bdebuggingoutputdialog.cpp.s
@@ -626,7 +653,7 @@ k3bdebuggingoutputdialog.s: k3bdebuggingoutputdialog.cpp.s
 
 # target to generate assembly for a file
 k3bdebuggingoutputdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputdialog.cpp.s
 .PHONY : k3bdebuggingoutputdialog.cpp.s
 
 k3bdebuggingoutputfile.o: k3bdebuggingoutputfile.cpp.o
@@ -635,7 +662,7 @@ k3bdebuggingoutputfile.o: k3bdebuggingoutputfile.cpp.o
 
 # target to build an object file
 k3bdebuggingoutputfile.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.o
 .PHONY : k3bdebuggingoutputfile.cpp.o
 
 k3bdebuggingoutputfile.i: k3bdebuggingoutputfile.cpp.i
@@ -644,7 +671,7 @@ k3bdebuggingoutputfile.i: k3bdebuggingoutputfile.cpp.i
 
 # target to preprocess a source file
 k3bdebuggingoutputfile.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.i
 .PHONY : k3bdebuggingoutputfile.cpp.i
 
 k3bdebuggingoutputfile.s: k3bdebuggingoutputfile.cpp.s
@@ -653,7 +680,7 @@ k3bdebuggingoutputfile.s: k3bdebuggingoutputfile.cpp.s
 
 # target to generate assembly for a file
 k3bdebuggingoutputfile.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdebuggingoutputfile.cpp.s
 .PHONY : k3bdebuggingoutputfile.cpp.s
 
 k3bdevicedelegate.o: k3bdevicedelegate.cpp.o
@@ -662,7 +689,7 @@ k3bdevicedelegate.o: k3bdevicedelegate.cpp.o
 
 # target to build an object file
 k3bdevicedelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.o
 .PHONY : k3bdevicedelegate.cpp.o
 
 k3bdevicedelegate.i: k3bdevicedelegate.cpp.i
@@ -671,7 +698,7 @@ k3bdevicedelegate.i: k3bdevicedelegate.cpp.i
 
 # target to preprocess a source file
 k3bdevicedelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.i
 .PHONY : k3bdevicedelegate.cpp.i
 
 k3bdevicedelegate.s: k3bdevicedelegate.cpp.s
@@ -680,7 +707,7 @@ k3bdevicedelegate.s: k3bdevicedelegate.cpp.s
 
 # target to generate assembly for a file
 k3bdevicedelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicedelegate.cpp.s
 .PHONY : k3bdevicedelegate.cpp.s
 
 k3bdevicemenu.o: k3bdevicemenu.cpp.o
@@ -689,7 +716,7 @@ k3bdevicemenu.o: k3bdevicemenu.cpp.o
 
 # target to build an object file
 k3bdevicemenu.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.o
 .PHONY : k3bdevicemenu.cpp.o
 
 k3bdevicemenu.i: k3bdevicemenu.cpp.i
@@ -698,7 +725,7 @@ k3bdevicemenu.i: k3bdevicemenu.cpp.i
 
 # target to preprocess a source file
 k3bdevicemenu.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.i
 .PHONY : k3bdevicemenu.cpp.i
 
 k3bdevicemenu.s: k3bdevicemenu.cpp.s
@@ -707,7 +734,7 @@ k3bdevicemenu.s: k3bdevicemenu.cpp.s
 
 # target to generate assembly for a file
 k3bdevicemenu.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdevicemenu.cpp.s
 .PHONY : k3bdevicemenu.cpp.s
 
 k3bdiroperator.o: k3bdiroperator.cpp.o
@@ -716,7 +743,7 @@ k3bdiroperator.o: k3bdiroperator.cpp.o
 
 # target to build an object file
 k3bdiroperator.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.o
 .PHONY : k3bdiroperator.cpp.o
 
 k3bdiroperator.i: k3bdiroperator.cpp.i
@@ -725,7 +752,7 @@ k3bdiroperator.i: k3bdiroperator.cpp.i
 
 # target to preprocess a source file
 k3bdiroperator.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.i
 .PHONY : k3bdiroperator.cpp.i
 
 k3bdiroperator.s: k3bdiroperator.cpp.s
@@ -734,7 +761,7 @@ k3bdiroperator.s: k3bdiroperator.cpp.s
 
 # target to generate assembly for a file
 k3bdiroperator.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiroperator.cpp.s
 .PHONY : k3bdiroperator.cpp.s
 
 k3bdirview.o: k3bdirview.cpp.o
@@ -743,7 +770,7 @@ k3bdirview.o: k3bdirview.cpp.o
 
 # target to build an object file
 k3bdirview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.o
 .PHONY : k3bdirview.cpp.o
 
 k3bdirview.i: k3bdirview.cpp.i
@@ -752,7 +779,7 @@ k3bdirview.i: k3bdirview.cpp.i
 
 # target to preprocess a source file
 k3bdirview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.i
 .PHONY : k3bdirview.cpp.i
 
 k3bdirview.s: k3bdirview.cpp.s
@@ -761,7 +788,7 @@ k3bdirview.s: k3bdirview.cpp.s
 
 # target to generate assembly for a file
 k3bdirview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdirview.cpp.s
 .PHONY : k3bdirview.cpp.s
 
 k3bdiskinfoview.o: k3bdiskinfoview.cpp.o
@@ -770,7 +797,7 @@ k3bdiskinfoview.o: k3bdiskinfoview.cpp.o
 
 # target to build an object file
 k3bdiskinfoview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.o
 .PHONY : k3bdiskinfoview.cpp.o
 
 k3bdiskinfoview.i: k3bdiskinfoview.cpp.i
@@ -779,7 +806,7 @@ k3bdiskinfoview.i: k3bdiskinfoview.cpp.i
 
 # target to preprocess a source file
 k3bdiskinfoview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.i
 .PHONY : k3bdiskinfoview.cpp.i
 
 k3bdiskinfoview.s: k3bdiskinfoview.cpp.s
@@ -788,7 +815,7 @@ k3bdiskinfoview.s: k3bdiskinfoview.cpp.s
 
 # target to generate assembly for a file
 k3bdiskinfoview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bdiskinfoview.cpp.s
 .PHONY : k3bdiskinfoview.cpp.s
 
 k3bemptydiscwaiter.o: k3bemptydiscwaiter.cpp.o
@@ -797,7 +824,7 @@ k3bemptydiscwaiter.o: k3bemptydiscwaiter.cpp.o
 
 # target to build an object file
 k3bemptydiscwaiter.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.o
 .PHONY : k3bemptydiscwaiter.cpp.o
 
 k3bemptydiscwaiter.i: k3bemptydiscwaiter.cpp.i
@@ -806,7 +833,7 @@ k3bemptydiscwaiter.i: k3bemptydiscwaiter.cpp.i
 
 # target to preprocess a source file
 k3bemptydiscwaiter.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.i
 .PHONY : k3bemptydiscwaiter.cpp.i
 
 k3bemptydiscwaiter.s: k3bemptydiscwaiter.cpp.s
@@ -815,7 +842,7 @@ k3bemptydiscwaiter.s: k3bemptydiscwaiter.cpp.s
 
 # target to generate assembly for a file
 k3bemptydiscwaiter.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bemptydiscwaiter.cpp.s
 .PHONY : k3bemptydiscwaiter.cpp.s
 
 k3bfiletreeview.o: k3bfiletreeview.cpp.o
@@ -824,7 +851,7 @@ k3bfiletreeview.o: k3bfiletreeview.cpp.o
 
 # target to build an object file
 k3bfiletreeview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.o
 .PHONY : k3bfiletreeview.cpp.o
 
 k3bfiletreeview.i: k3bfiletreeview.cpp.i
@@ -833,7 +860,7 @@ k3bfiletreeview.i: k3bfiletreeview.cpp.i
 
 # target to preprocess a source file
 k3bfiletreeview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.i
 .PHONY : k3bfiletreeview.cpp.i
 
 k3bfiletreeview.s: k3bfiletreeview.cpp.s
@@ -842,7 +869,7 @@ k3bfiletreeview.s: k3bfiletreeview.cpp.s
 
 # target to generate assembly for a file
 k3bfiletreeview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfiletreeview.cpp.s
 .PHONY : k3bfiletreeview.cpp.s
 
 k3bfileview.o: k3bfileview.cpp.o
@@ -851,7 +878,7 @@ k3bfileview.o: k3bfileview.cpp.o
 
 # target to build an object file
 k3bfileview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.o
 .PHONY : k3bfileview.cpp.o
 
 k3bfileview.i: k3bfileview.cpp.i
@@ -860,7 +887,7 @@ k3bfileview.i: k3bfileview.cpp.i
 
 # target to preprocess a source file
 k3bfileview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.i
 .PHONY : k3bfileview.cpp.i
 
 k3bfileview.s: k3bfileview.cpp.s
@@ -869,7 +896,7 @@ k3bfileview.s: k3bfileview.cpp.s
 
 # target to generate assembly for a file
 k3bfileview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bfileview.cpp.s
 .PHONY : k3bfileview.cpp.s
 
 k3bflatbutton.o: k3bflatbutton.cpp.o
@@ -878,7 +905,7 @@ k3bflatbutton.o: k3bflatbutton.cpp.o
 
 # target to build an object file
 k3bflatbutton.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.o
 .PHONY : k3bflatbutton.cpp.o
 
 k3bflatbutton.i: k3bflatbutton.cpp.i
@@ -887,7 +914,7 @@ k3bflatbutton.i: k3bflatbutton.cpp.i
 
 # target to preprocess a source file
 k3bflatbutton.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.i
 .PHONY : k3bflatbutton.cpp.i
 
 k3bflatbutton.s: k3bflatbutton.cpp.s
@@ -896,7 +923,7 @@ k3bflatbutton.s: k3bflatbutton.cpp.s
 
 # target to generate assembly for a file
 k3bflatbutton.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bflatbutton.cpp.s
 .PHONY : k3bflatbutton.cpp.s
 
 k3binteractiondialog.o: k3binteractiondialog.cpp.o
@@ -905,7 +932,7 @@ k3binteractiondialog.o: k3binteractiondialog.cpp.o
 
 # target to build an object file
 k3binteractiondialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.o
 .PHONY : k3binteractiondialog.cpp.o
 
 k3binteractiondialog.i: k3binteractiondialog.cpp.i
@@ -914,7 +941,7 @@ k3binteractiondialog.i: k3binteractiondialog.cpp.i
 
 # target to preprocess a source file
 k3binteractiondialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.i
 .PHONY : k3binteractiondialog.cpp.i
 
 k3binteractiondialog.s: k3binteractiondialog.cpp.s
@@ -923,7 +950,7 @@ k3binteractiondialog.s: k3binteractiondialog.cpp.s
 
 # target to generate assembly for a file
 k3binteractiondialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binteractiondialog.cpp.s
 .PHONY : k3binteractiondialog.cpp.s
 
 k3binterface.o: k3binterface.cpp.o
@@ -932,7 +959,7 @@ k3binterface.o: k3binterface.cpp.o
 
 # target to build an object file
 k3binterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.o
 .PHONY : k3binterface.cpp.o
 
 k3binterface.i: k3binterface.cpp.i
@@ -941,7 +968,7 @@ k3binterface.i: k3binterface.cpp.i
 
 # target to preprocess a source file
 k3binterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.i
 .PHONY : k3binterface.cpp.i
 
 k3binterface.s: k3binterface.cpp.s
@@ -950,7 +977,7 @@ k3binterface.s: k3binterface.cpp.s
 
 # target to generate assembly for a file
 k3binterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterface.cpp.s
 .PHONY : k3binterface.cpp.s
 
 k3binterfaceadaptor.o: k3binterfaceadaptor.cpp.o
@@ -959,7 +986,7 @@ k3binterfaceadaptor.o: k3binterfaceadaptor.cpp.o
 
 # target to build an object file
 k3binterfaceadaptor.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.o
 .PHONY : k3binterfaceadaptor.cpp.o
 
 k3binterfaceadaptor.i: k3binterfaceadaptor.cpp.i
@@ -968,7 +995,7 @@ k3binterfaceadaptor.i: k3binterfaceadaptor.cpp.i
 
 # target to preprocess a source file
 k3binterfaceadaptor.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.i
 .PHONY : k3binterfaceadaptor.cpp.i
 
 k3binterfaceadaptor.s: k3binterfaceadaptor.cpp.s
@@ -977,7 +1004,7 @@ k3binterfaceadaptor.s: k3binterfaceadaptor.cpp.s
 
 # target to generate assembly for a file
 k3binterfaceadaptor.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3binterfaceadaptor.cpp.s
 .PHONY : k3binterfaceadaptor.cpp.s
 
 k3bjobinterface.o: k3bjobinterface.cpp.o
@@ -986,7 +1013,7 @@ k3bjobinterface.o: k3bjobinterface.cpp.o
 
 # target to build an object file
 k3bjobinterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.o
 .PHONY : k3bjobinterface.cpp.o
 
 k3bjobinterface.i: k3bjobinterface.cpp.i
@@ -995,7 +1022,7 @@ k3bjobinterface.i: k3bjobinterface.cpp.i
 
 # target to preprocess a source file
 k3bjobinterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.i
 .PHONY : k3bjobinterface.cpp.i
 
 k3bjobinterface.s: k3bjobinterface.cpp.s
@@ -1004,7 +1031,7 @@ k3bjobinterface.s: k3bjobinterface.cpp.s
 
 # target to generate assembly for a file
 k3bjobinterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterface.cpp.s
 .PHONY : k3bjobinterface.cpp.s
 
 k3bjobinterfaceadaptor.o: k3bjobinterfaceadaptor.cpp.o
@@ -1013,7 +1040,7 @@ k3bjobinterfaceadaptor.o: k3bjobinterfaceadaptor.cpp.o
 
 # target to build an object file
 k3bjobinterfaceadaptor.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.o
 .PHONY : k3bjobinterfaceadaptor.cpp.o
 
 k3bjobinterfaceadaptor.i: k3bjobinterfaceadaptor.cpp.i
@@ -1022,7 +1049,7 @@ k3bjobinterfaceadaptor.i: k3bjobinterfaceadaptor.cpp.i
 
 # target to preprocess a source file
 k3bjobinterfaceadaptor.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.i
 .PHONY : k3bjobinterfaceadaptor.cpp.i
 
 k3bjobinterfaceadaptor.s: k3bjobinterfaceadaptor.cpp.s
@@ -1031,7 +1058,7 @@ k3bjobinterfaceadaptor.s: k3bjobinterfaceadaptor.cpp.s
 
 # target to generate assembly for a file
 k3bjobinterfaceadaptor.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobinterfaceadaptor.cpp.s
 .PHONY : k3bjobinterfaceadaptor.cpp.s
 
 k3bjobprogressdialog.o: k3bjobprogressdialog.cpp.o
@@ -1040,7 +1067,7 @@ k3bjobprogressdialog.o: k3bjobprogressdialog.cpp.o
 
 # target to build an object file
 k3bjobprogressdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.o
 .PHONY : k3bjobprogressdialog.cpp.o
 
 k3bjobprogressdialog.i: k3bjobprogressdialog.cpp.i
@@ -1049,7 +1076,7 @@ k3bjobprogressdialog.i: k3bjobprogressdialog.cpp.i
 
 # target to preprocess a source file
 k3bjobprogressdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.i
 .PHONY : k3bjobprogressdialog.cpp.i
 
 k3bjobprogressdialog.s: k3bjobprogressdialog.cpp.s
@@ -1058,7 +1085,7 @@ k3bjobprogressdialog.s: k3bjobprogressdialog.cpp.s
 
 # target to generate assembly for a file
 k3bjobprogressdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bjobprogressdialog.cpp.s
 .PHONY : k3bjobprogressdialog.cpp.s
 
 k3blsofwrapper.o: k3blsofwrapper.cpp.o
@@ -1067,7 +1094,7 @@ k3blsofwrapper.o: k3blsofwrapper.cpp.o
 
 # target to build an object file
 k3blsofwrapper.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.o
 .PHONY : k3blsofwrapper.cpp.o
 
 k3blsofwrapper.i: k3blsofwrapper.cpp.i
@@ -1076,7 +1103,7 @@ k3blsofwrapper.i: k3blsofwrapper.cpp.i
 
 # target to preprocess a source file
 k3blsofwrapper.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.i
 .PHONY : k3blsofwrapper.cpp.i
 
 k3blsofwrapper.s: k3blsofwrapper.cpp.s
@@ -1085,7 +1112,7 @@ k3blsofwrapper.s: k3blsofwrapper.cpp.s
 
 # target to generate assembly for a file
 k3blsofwrapper.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapper.cpp.s
 .PHONY : k3blsofwrapper.cpp.s
 
 k3blsofwrapperdialog.o: k3blsofwrapperdialog.cpp.o
@@ -1094,7 +1121,7 @@ k3blsofwrapperdialog.o: k3blsofwrapperdialog.cpp.o
 
 # target to build an object file
 k3blsofwrapperdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.o
 .PHONY : k3blsofwrapperdialog.cpp.o
 
 k3blsofwrapperdialog.i: k3blsofwrapperdialog.cpp.i
@@ -1103,7 +1130,7 @@ k3blsofwrapperdialog.i: k3blsofwrapperdialog.cpp.i
 
 # target to preprocess a source file
 k3blsofwrapperdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.i
 .PHONY : k3blsofwrapperdialog.cpp.i
 
 k3blsofwrapperdialog.s: k3blsofwrapperdialog.cpp.s
@@ -1112,7 +1139,7 @@ k3blsofwrapperdialog.s: k3blsofwrapperdialog.cpp.s
 
 # target to generate assembly for a file
 k3blsofwrapperdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3blsofwrapperdialog.cpp.s
 .PHONY : k3blsofwrapperdialog.cpp.s
 
 k3bmediacontentsview.o: k3bmediacontentsview.cpp.o
@@ -1121,7 +1148,7 @@ k3bmediacontentsview.o: k3bmediacontentsview.cpp.o
 
 # target to build an object file
 k3bmediacontentsview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.o
 .PHONY : k3bmediacontentsview.cpp.o
 
 k3bmediacontentsview.i: k3bmediacontentsview.cpp.i
@@ -1130,7 +1157,7 @@ k3bmediacontentsview.i: k3bmediacontentsview.cpp.i
 
 # target to preprocess a source file
 k3bmediacontentsview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.i
 .PHONY : k3bmediacontentsview.cpp.i
 
 k3bmediacontentsview.s: k3bmediacontentsview.cpp.s
@@ -1139,7 +1166,7 @@ k3bmediacontentsview.s: k3bmediacontentsview.cpp.s
 
 # target to generate assembly for a file
 k3bmediacontentsview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediacontentsview.cpp.s
 .PHONY : k3bmediacontentsview.cpp.s
 
 k3bmediaselectioncombobox.o: k3bmediaselectioncombobox.cpp.o
@@ -1148,7 +1175,7 @@ k3bmediaselectioncombobox.o: k3bmediaselectioncombobox.cpp.o
 
 # target to build an object file
 k3bmediaselectioncombobox.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.o
 .PHONY : k3bmediaselectioncombobox.cpp.o
 
 k3bmediaselectioncombobox.i: k3bmediaselectioncombobox.cpp.i
@@ -1157,7 +1184,7 @@ k3bmediaselectioncombobox.i: k3bmediaselectioncombobox.cpp.i
 
 # target to preprocess a source file
 k3bmediaselectioncombobox.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.i
 .PHONY : k3bmediaselectioncombobox.cpp.i
 
 k3bmediaselectioncombobox.s: k3bmediaselectioncombobox.cpp.s
@@ -1166,7 +1193,7 @@ k3bmediaselectioncombobox.s: k3bmediaselectioncombobox.cpp.s
 
 # target to generate assembly for a file
 k3bmediaselectioncombobox.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectioncombobox.cpp.s
 .PHONY : k3bmediaselectioncombobox.cpp.s
 
 k3bmediaselectiondialog.o: k3bmediaselectiondialog.cpp.o
@@ -1175,7 +1202,7 @@ k3bmediaselectiondialog.o: k3bmediaselectiondialog.cpp.o
 
 # target to build an object file
 k3bmediaselectiondialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.o
 .PHONY : k3bmediaselectiondialog.cpp.o
 
 k3bmediaselectiondialog.i: k3bmediaselectiondialog.cpp.i
@@ -1184,7 +1211,7 @@ k3bmediaselectiondialog.i: k3bmediaselectiondialog.cpp.i
 
 # target to preprocess a source file
 k3bmediaselectiondialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.i
 .PHONY : k3bmediaselectiondialog.cpp.i
 
 k3bmediaselectiondialog.s: k3bmediaselectiondialog.cpp.s
@@ -1193,7 +1220,7 @@ k3bmediaselectiondialog.s: k3bmediaselectiondialog.cpp.s
 
 # target to generate assembly for a file
 k3bmediaselectiondialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediaselectiondialog.cpp.s
 .PHONY : k3bmediaselectiondialog.cpp.s
 
 k3bmediumdelegate.o: k3bmediumdelegate.cpp.o
@@ -1202,7 +1229,7 @@ k3bmediumdelegate.o: k3bmediumdelegate.cpp.o
 
 # target to build an object file
 k3bmediumdelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.o
 .PHONY : k3bmediumdelegate.cpp.o
 
 k3bmediumdelegate.i: k3bmediumdelegate.cpp.i
@@ -1211,7 +1238,7 @@ k3bmediumdelegate.i: k3bmediumdelegate.cpp.i
 
 # target to preprocess a source file
 k3bmediumdelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.i
 .PHONY : k3bmediumdelegate.cpp.i
 
 k3bmediumdelegate.s: k3bmediumdelegate.cpp.s
@@ -1220,7 +1247,7 @@ k3bmediumdelegate.s: k3bmediumdelegate.cpp.s
 
 # target to generate assembly for a file
 k3bmediumdelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmediumdelegate.cpp.s
 .PHONY : k3bmediumdelegate.cpp.s
 
 k3bmetaitemmodel.o: k3bmetaitemmodel.cpp.o
@@ -1229,7 +1256,7 @@ k3bmetaitemmodel.o: k3bmetaitemmodel.cpp.o
 
 # target to build an object file
 k3bmetaitemmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.o
 .PHONY : k3bmetaitemmodel.cpp.o
 
 k3bmetaitemmodel.i: k3bmetaitemmodel.cpp.i
@@ -1238,7 +1265,7 @@ k3bmetaitemmodel.i: k3bmetaitemmodel.cpp.i
 
 # target to preprocess a source file
 k3bmetaitemmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.i
 .PHONY : k3bmetaitemmodel.cpp.i
 
 k3bmetaitemmodel.s: k3bmetaitemmodel.cpp.s
@@ -1247,7 +1274,7 @@ k3bmetaitemmodel.s: k3bmetaitemmodel.cpp.s
 
 # target to generate assembly for a file
 k3bmetaitemmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmetaitemmodel.cpp.s
 .PHONY : k3bmetaitemmodel.cpp.s
 
 k3bmixedprojectinterface.o: k3bmixedprojectinterface.cpp.o
@@ -1256,7 +1283,7 @@ k3bmixedprojectinterface.o: k3bmixedprojectinterface.cpp.o
 
 # target to build an object file
 k3bmixedprojectinterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.o
 .PHONY : k3bmixedprojectinterface.cpp.o
 
 k3bmixedprojectinterface.i: k3bmixedprojectinterface.cpp.i
@@ -1265,7 +1292,7 @@ k3bmixedprojectinterface.i: k3bmixedprojectinterface.cpp.i
 
 # target to preprocess a source file
 k3bmixedprojectinterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.i
 .PHONY : k3bmixedprojectinterface.cpp.i
 
 k3bmixedprojectinterface.s: k3bmixedprojectinterface.cpp.s
@@ -1274,7 +1301,7 @@ k3bmixedprojectinterface.s: k3bmixedprojectinterface.cpp.s
 
 # target to generate assembly for a file
 k3bmixedprojectinterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmixedprojectinterface.cpp.s
 .PHONY : k3bmixedprojectinterface.cpp.s
 
 k3bmodelutils.o: k3bmodelutils.cpp.o
@@ -1283,7 +1310,7 @@ k3bmodelutils.o: k3bmodelutils.cpp.o
 
 # target to build an object file
 k3bmodelutils.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.o
 .PHONY : k3bmodelutils.cpp.o
 
 k3bmodelutils.i: k3bmodelutils.cpp.i
@@ -1292,7 +1319,7 @@ k3bmodelutils.i: k3bmodelutils.cpp.i
 
 # target to preprocess a source file
 k3bmodelutils.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.i
 .PHONY : k3bmodelutils.cpp.i
 
 k3bmodelutils.s: k3bmodelutils.cpp.s
@@ -1301,7 +1328,7 @@ k3bmodelutils.s: k3bmodelutils.cpp.s
 
 # target to generate assembly for a file
 k3bmodelutils.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bmodelutils.cpp.s
 .PHONY : k3bmodelutils.cpp.s
 
 k3bplacesmodel.o: k3bplacesmodel.cpp.o
@@ -1310,7 +1337,7 @@ k3bplacesmodel.o: k3bplacesmodel.cpp.o
 
 # target to build an object file
 k3bplacesmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.o
 .PHONY : k3bplacesmodel.cpp.o
 
 k3bplacesmodel.i: k3bplacesmodel.cpp.i
@@ -1319,7 +1346,7 @@ k3bplacesmodel.i: k3bplacesmodel.cpp.i
 
 # target to preprocess a source file
 k3bplacesmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.i
 .PHONY : k3bplacesmodel.cpp.i
 
 k3bplacesmodel.s: k3bplacesmodel.cpp.s
@@ -1328,7 +1355,7 @@ k3bplacesmodel.s: k3bplacesmodel.cpp.s
 
 # target to generate assembly for a file
 k3bplacesmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bplacesmodel.cpp.s
 .PHONY : k3bplacesmodel.cpp.s
 
 k3bprojectinterface.o: k3bprojectinterface.cpp.o
@@ -1337,7 +1364,7 @@ k3bprojectinterface.o: k3bprojectinterface.cpp.o
 
 # target to build an object file
 k3bprojectinterface.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.o
 .PHONY : k3bprojectinterface.cpp.o
 
 k3bprojectinterface.i: k3bprojectinterface.cpp.i
@@ -1346,7 +1373,7 @@ k3bprojectinterface.i: k3bprojectinterface.cpp.i
 
 # target to preprocess a source file
 k3bprojectinterface.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.i
 .PHONY : k3bprojectinterface.cpp.i
 
 k3bprojectinterface.s: k3bprojectinterface.cpp.s
@@ -1355,7 +1382,7 @@ k3bprojectinterface.s: k3bprojectinterface.cpp.s
 
 # target to generate assembly for a file
 k3bprojectinterface.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterface.cpp.s
 .PHONY : k3bprojectinterface.cpp.s
 
 k3bprojectinterfaceadaptor.o: k3bprojectinterfaceadaptor.cpp.o
@@ -1364,7 +1391,7 @@ k3bprojectinterfaceadaptor.o: k3bprojectinterfaceadaptor.cpp.o
 
 # target to build an object file
 k3bprojectinterfaceadaptor.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.o
 .PHONY : k3bprojectinterfaceadaptor.cpp.o
 
 k3bprojectinterfaceadaptor.i: k3bprojectinterfaceadaptor.cpp.i
@@ -1373,7 +1400,7 @@ k3bprojectinterfaceadaptor.i: k3bprojectinterfaceadaptor.cpp.i
 
 # target to preprocess a source file
 k3bprojectinterfaceadaptor.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.i
 .PHONY : k3bprojectinterfaceadaptor.cpp.i
 
 k3bprojectinterfaceadaptor.s: k3bprojectinterfaceadaptor.cpp.s
@@ -1382,7 +1409,7 @@ k3bprojectinterfaceadaptor.s: k3bprojectinterfaceadaptor.cpp.s
 
 # target to generate assembly for a file
 k3bprojectinterfaceadaptor.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectinterfaceadaptor.cpp.s
 .PHONY : k3bprojectinterfaceadaptor.cpp.s
 
 k3bprojectmanager.o: k3bprojectmanager.cpp.o
@@ -1391,7 +1418,7 @@ k3bprojectmanager.o: k3bprojectmanager.cpp.o
 
 # target to build an object file
 k3bprojectmanager.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.o
 .PHONY : k3bprojectmanager.cpp.o
 
 k3bprojectmanager.i: k3bprojectmanager.cpp.i
@@ -1400,7 +1427,7 @@ k3bprojectmanager.i: k3bprojectmanager.cpp.i
 
 # target to preprocess a source file
 k3bprojectmanager.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.i
 .PHONY : k3bprojectmanager.cpp.i
 
 k3bprojectmanager.s: k3bprojectmanager.cpp.s
@@ -1409,7 +1436,7 @@ k3bprojectmanager.s: k3bprojectmanager.cpp.s
 
 # target to generate assembly for a file
 k3bprojectmanager.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojectmanager.cpp.s
 .PHONY : k3bprojectmanager.cpp.s
 
 k3bprojecttabwidget.o: k3bprojecttabwidget.cpp.o
@@ -1418,7 +1445,7 @@ k3bprojecttabwidget.o: k3bprojecttabwidget.cpp.o
 
 # target to build an object file
 k3bprojecttabwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.o
 .PHONY : k3bprojecttabwidget.cpp.o
 
 k3bprojecttabwidget.i: k3bprojecttabwidget.cpp.i
@@ -1427,7 +1454,7 @@ k3bprojecttabwidget.i: k3bprojecttabwidget.cpp.i
 
 # target to preprocess a source file
 k3bprojecttabwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.i
 .PHONY : k3bprojecttabwidget.cpp.i
 
 k3bprojecttabwidget.s: k3bprojecttabwidget.cpp.s
@@ -1436,7 +1463,7 @@ k3bprojecttabwidget.s: k3bprojecttabwidget.cpp.s
 
 # target to generate assembly for a file
 k3bprojecttabwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bprojecttabwidget.cpp.s
 .PHONY : k3bprojecttabwidget.cpp.s
 
 k3bsplash.o: k3bsplash.cpp.o
@@ -1445,7 +1472,7 @@ k3bsplash.o: k3bsplash.cpp.o
 
 # target to build an object file
 k3bsplash.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.o
 .PHONY : k3bsplash.cpp.o
 
 k3bsplash.i: k3bsplash.cpp.i
@@ -1454,7 +1481,7 @@ k3bsplash.i: k3bsplash.cpp.i
 
 # target to preprocess a source file
 k3bsplash.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.i
 .PHONY : k3bsplash.cpp.i
 
 k3bsplash.s: k3bsplash.cpp.s
@@ -1463,7 +1490,7 @@ k3bsplash.s: k3bsplash.cpp.s
 
 # target to generate assembly for a file
 k3bsplash.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsplash.cpp.s
 .PHONY : k3bsplash.cpp.s
 
 k3bstatusbarmanager.o: k3bstatusbarmanager.cpp.o
@@ -1472,7 +1499,7 @@ k3bstatusbarmanager.o: k3bstatusbarmanager.cpp.o
 
 # target to build an object file
 k3bstatusbarmanager.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.o
 .PHONY : k3bstatusbarmanager.cpp.o
 
 k3bstatusbarmanager.i: k3bstatusbarmanager.cpp.i
@@ -1481,7 +1508,7 @@ k3bstatusbarmanager.i: k3bstatusbarmanager.cpp.i
 
 # target to preprocess a source file
 k3bstatusbarmanager.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.i
 .PHONY : k3bstatusbarmanager.cpp.i
 
 k3bstatusbarmanager.s: k3bstatusbarmanager.cpp.s
@@ -1490,7 +1517,7 @@ k3bstatusbarmanager.s: k3bstatusbarmanager.cpp.s
 
 # target to generate assembly for a file
 k3bstatusbarmanager.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bstatusbarmanager.cpp.s
 .PHONY : k3bstatusbarmanager.cpp.s
 
 k3bsystemproblemdialog.o: k3bsystemproblemdialog.cpp.o
@@ -1499,7 +1526,7 @@ k3bsystemproblemdialog.o: k3bsystemproblemdialog.cpp.o
 
 # target to build an object file
 k3bsystemproblemdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.o
 .PHONY : k3bsystemproblemdialog.cpp.o
 
 k3bsystemproblemdialog.i: k3bsystemproblemdialog.cpp.i
@@ -1508,7 +1535,7 @@ k3bsystemproblemdialog.i: k3bsystemproblemdialog.cpp.i
 
 # target to preprocess a source file
 k3bsystemproblemdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.i
 .PHONY : k3bsystemproblemdialog.cpp.i
 
 k3bsystemproblemdialog.s: k3bsystemproblemdialog.cpp.s
@@ -1517,7 +1544,7 @@ k3bsystemproblemdialog.s: k3bsystemproblemdialog.cpp.s
 
 # target to generate assembly for a file
 k3bsystemproblemdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bsystemproblemdialog.cpp.s
 .PHONY : k3bsystemproblemdialog.cpp.s
 
 k3btempdirselectionwidget.o: k3btempdirselectionwidget.cpp.o
@@ -1526,7 +1553,7 @@ k3btempdirselectionwidget.o: k3btempdirselectionwidget.cpp.o
 
 # target to build an object file
 k3btempdirselectionwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.o
 .PHONY : k3btempdirselectionwidget.cpp.o
 
 k3btempdirselectionwidget.i: k3btempdirselectionwidget.cpp.i
@@ -1535,7 +1562,7 @@ k3btempdirselectionwidget.i: k3btempdirselectionwidget.cpp.i
 
 # target to preprocess a source file
 k3btempdirselectionwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.i
 .PHONY : k3btempdirselectionwidget.cpp.i
 
 k3btempdirselectionwidget.s: k3btempdirselectionwidget.cpp.s
@@ -1544,7 +1571,7 @@ k3btempdirselectionwidget.s: k3btempdirselectionwidget.cpp.s
 
 # target to generate assembly for a file
 k3btempdirselectionwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btempdirselectionwidget.cpp.s
 .PHONY : k3btempdirselectionwidget.cpp.s
 
 k3bthemedheader.o: k3bthemedheader.cpp.o
@@ -1553,7 +1580,7 @@ k3bthemedheader.o: k3bthemedheader.cpp.o
 
 # target to build an object file
 k3bthemedheader.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.o
 .PHONY : k3bthemedheader.cpp.o
 
 k3bthemedheader.i: k3bthemedheader.cpp.i
@@ -1562,7 +1589,7 @@ k3bthemedheader.i: k3bthemedheader.cpp.i
 
 # target to preprocess a source file
 k3bthemedheader.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.i
 .PHONY : k3bthemedheader.cpp.i
 
 k3bthemedheader.s: k3bthemedheader.cpp.s
@@ -1571,7 +1598,7 @@ k3bthemedheader.s: k3bthemedheader.cpp.s
 
 # target to generate assembly for a file
 k3bthemedheader.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedheader.cpp.s
 .PHONY : k3bthemedheader.cpp.s
 
 k3bthemedlabel.o: k3bthemedlabel.cpp.o
@@ -1580,7 +1607,7 @@ k3bthemedlabel.o: k3bthemedlabel.cpp.o
 
 # target to build an object file
 k3bthemedlabel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.o
 .PHONY : k3bthemedlabel.cpp.o
 
 k3bthemedlabel.i: k3bthemedlabel.cpp.i
@@ -1589,7 +1616,7 @@ k3bthemedlabel.i: k3bthemedlabel.cpp.i
 
 # target to preprocess a source file
 k3bthemedlabel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.i
 .PHONY : k3bthemedlabel.cpp.i
 
 k3bthemedlabel.s: k3bthemedlabel.cpp.s
@@ -1598,7 +1625,7 @@ k3bthemedlabel.s: k3bthemedlabel.cpp.s
 
 # target to generate assembly for a file
 k3bthemedlabel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthemedlabel.cpp.s
 .PHONY : k3bthemedlabel.cpp.s
 
 k3bthememanager.o: k3bthememanager.cpp.o
@@ -1607,7 +1634,7 @@ k3bthememanager.o: k3bthememanager.cpp.o
 
 # target to build an object file
 k3bthememanager.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.o
 .PHONY : k3bthememanager.cpp.o
 
 k3bthememanager.i: k3bthememanager.cpp.i
@@ -1616,7 +1643,7 @@ k3bthememanager.i: k3bthememanager.cpp.i
 
 # target to preprocess a source file
 k3bthememanager.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.i
 .PHONY : k3bthememanager.cpp.i
 
 k3bthememanager.s: k3bthememanager.cpp.s
@@ -1625,7 +1652,7 @@ k3bthememanager.s: k3bthememanager.cpp.s
 
 # target to generate assembly for a file
 k3bthememanager.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bthememanager.cpp.s
 .PHONY : k3bthememanager.cpp.s
 
 k3btimeoutwidget.o: k3btimeoutwidget.cpp.o
@@ -1634,7 +1661,7 @@ k3btimeoutwidget.o: k3btimeoutwidget.cpp.o
 
 # target to build an object file
 k3btimeoutwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.o
 .PHONY : k3btimeoutwidget.cpp.o
 
 k3btimeoutwidget.i: k3btimeoutwidget.cpp.i
@@ -1643,7 +1670,7 @@ k3btimeoutwidget.i: k3btimeoutwidget.cpp.i
 
 # target to preprocess a source file
 k3btimeoutwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.i
 .PHONY : k3btimeoutwidget.cpp.i
 
 k3btimeoutwidget.s: k3btimeoutwidget.cpp.s
@@ -1652,7 +1679,7 @@ k3btimeoutwidget.s: k3btimeoutwidget.cpp.s
 
 # target to generate assembly for a file
 k3btimeoutwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3btimeoutwidget.cpp.s
 .PHONY : k3btimeoutwidget.cpp.s
 
 k3burlnavigator.o: k3burlnavigator.cpp.o
@@ -1661,7 +1688,7 @@ k3burlnavigator.o: k3burlnavigator.cpp.o
 
 # target to build an object file
 k3burlnavigator.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.o
 .PHONY : k3burlnavigator.cpp.o
 
 k3burlnavigator.i: k3burlnavigator.cpp.i
@@ -1670,7 +1697,7 @@ k3burlnavigator.i: k3burlnavigator.cpp.i
 
 # target to preprocess a source file
 k3burlnavigator.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.i
 .PHONY : k3burlnavigator.cpp.i
 
 k3burlnavigator.s: k3burlnavigator.cpp.s
@@ -1679,7 +1706,7 @@ k3burlnavigator.s: k3burlnavigator.cpp.s
 
 # target to generate assembly for a file
 k3burlnavigator.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3burlnavigator.cpp.s
 .PHONY : k3burlnavigator.cpp.s
 
 k3bviewcolumnadjuster.o: k3bviewcolumnadjuster.cpp.o
@@ -1688,7 +1715,7 @@ k3bviewcolumnadjuster.o: k3bviewcolumnadjuster.cpp.o
 
 # target to build an object file
 k3bviewcolumnadjuster.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.o
 .PHONY : k3bviewcolumnadjuster.cpp.o
 
 k3bviewcolumnadjuster.i: k3bviewcolumnadjuster.cpp.i
@@ -1697,7 +1724,7 @@ k3bviewcolumnadjuster.i: k3bviewcolumnadjuster.cpp.i
 
 # target to preprocess a source file
 k3bviewcolumnadjuster.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.i
 .PHONY : k3bviewcolumnadjuster.cpp.i
 
 k3bviewcolumnadjuster.s: k3bviewcolumnadjuster.cpp.s
@@ -1706,7 +1733,7 @@ k3bviewcolumnadjuster.s: k3bviewcolumnadjuster.cpp.s
 
 # target to generate assembly for a file
 k3bviewcolumnadjuster.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bviewcolumnadjuster.cpp.s
 .PHONY : k3bviewcolumnadjuster.cpp.s
 
 k3bwelcomewidget.o: k3bwelcomewidget.cpp.o
@@ -1715,7 +1742,7 @@ k3bwelcomewidget.o: k3bwelcomewidget.cpp.o
 
 # target to build an object file
 k3bwelcomewidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.o
 .PHONY : k3bwelcomewidget.cpp.o
 
 k3bwelcomewidget.i: k3bwelcomewidget.cpp.i
@@ -1724,7 +1751,7 @@ k3bwelcomewidget.i: k3bwelcomewidget.cpp.i
 
 # target to preprocess a source file
 k3bwelcomewidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.i
 .PHONY : k3bwelcomewidget.cpp.i
 
 k3bwelcomewidget.s: k3bwelcomewidget.cpp.s
@@ -1733,7 +1760,7 @@ k3bwelcomewidget.s: k3bwelcomewidget.cpp.s
 
 # target to generate assembly for a file
 k3bwelcomewidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwelcomewidget.cpp.s
 .PHONY : k3bwelcomewidget.cpp.s
 
 k3bwidgetshoweffect.o: k3bwidgetshoweffect.cpp.o
@@ -1742,7 +1769,7 @@ k3bwidgetshoweffect.o: k3bwidgetshoweffect.cpp.o
 
 # target to build an object file
 k3bwidgetshoweffect.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.o
 .PHONY : k3bwidgetshoweffect.cpp.o
 
 k3bwidgetshoweffect.i: k3bwidgetshoweffect.cpp.i
@@ -1751,7 +1778,7 @@ k3bwidgetshoweffect.i: k3bwidgetshoweffect.cpp.i
 
 # target to preprocess a source file
 k3bwidgetshoweffect.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.i
 .PHONY : k3bwidgetshoweffect.cpp.i
 
 k3bwidgetshoweffect.s: k3bwidgetshoweffect.cpp.s
@@ -1760,7 +1787,7 @@ k3bwidgetshoweffect.s: k3bwidgetshoweffect.cpp.s
 
 # target to generate assembly for a file
 k3bwidgetshoweffect.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwidgetshoweffect.cpp.s
 .PHONY : k3bwidgetshoweffect.cpp.s
 
 k3bwriterselectionwidget.o: k3bwriterselectionwidget.cpp.o
@@ -1769,7 +1796,7 @@ k3bwriterselectionwidget.o: k3bwriterselectionwidget.cpp.o
 
 # target to build an object file
 k3bwriterselectionwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.o
 .PHONY : k3bwriterselectionwidget.cpp.o
 
 k3bwriterselectionwidget.i: k3bwriterselectionwidget.cpp.i
@@ -1778,7 +1805,7 @@ k3bwriterselectionwidget.i: k3bwriterselectionwidget.cpp.i
 
 # target to preprocess a source file
 k3bwriterselectionwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.i
 .PHONY : k3bwriterselectionwidget.cpp.i
 
 k3bwriterselectionwidget.s: k3bwriterselectionwidget.cpp.s
@@ -1787,7 +1814,7 @@ k3bwriterselectionwidget.s: k3bwriterselectionwidget.cpp.s
 
 # target to generate assembly for a file
 k3bwriterselectionwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwriterselectionwidget.cpp.s
 .PHONY : k3bwriterselectionwidget.cpp.s
 
 k3bwritingmodewidget.o: k3bwritingmodewidget.cpp.o
@@ -1796,7 +1823,7 @@ k3bwritingmodewidget.o: k3bwritingmodewidget.cpp.o
 
 # target to build an object file
 k3bwritingmodewidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.o
 .PHONY : k3bwritingmodewidget.cpp.o
 
 k3bwritingmodewidget.i: k3bwritingmodewidget.cpp.i
@@ -1805,7 +1832,7 @@ k3bwritingmodewidget.i: k3bwritingmodewidget.cpp.i
 
 # target to preprocess a source file
 k3bwritingmodewidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.i
 .PHONY : k3bwritingmodewidget.cpp.i
 
 k3bwritingmodewidget.s: k3bwritingmodewidget.cpp.s
@@ -1814,7 +1841,7 @@ k3bwritingmodewidget.s: k3bwritingmodewidget.cpp.s
 
 # target to generate assembly for a file
 k3bwritingmodewidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/k3bwritingmodewidget.cpp.s
 .PHONY : k3bwritingmodewidget.cpp.s
 
 main.o: main.cpp.o
@@ -1823,7 +1850,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -1832,7 +1859,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -1841,7 +1868,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 misc/k3bimagewritingdialog.o: misc/k3bimagewritingdialog.cpp.o
@@ -1850,7 +1877,7 @@ misc/k3bimagewritingdialog.o: misc/k3bimagewritingdialog.cpp.o
 
 # target to build an object file
 misc/k3bimagewritingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.o
 .PHONY : misc/k3bimagewritingdialog.cpp.o
 
 misc/k3bimagewritingdialog.i: misc/k3bimagewritingdialog.cpp.i
@@ -1859,7 +1886,7 @@ misc/k3bimagewritingdialog.i: misc/k3bimagewritingdialog.cpp.i
 
 # target to preprocess a source file
 misc/k3bimagewritingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.i
 .PHONY : misc/k3bimagewritingdialog.cpp.i
 
 misc/k3bimagewritingdialog.s: misc/k3bimagewritingdialog.cpp.s
@@ -1868,7 +1895,7 @@ misc/k3bimagewritingdialog.s: misc/k3bimagewritingdialog.cpp.s
 
 # target to generate assembly for a file
 misc/k3bimagewritingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bimagewritingdialog.cpp.s
 .PHONY : misc/k3bimagewritingdialog.cpp.s
 
 misc/k3bmediacopydialog.o: misc/k3bmediacopydialog.cpp.o
@@ -1877,7 +1904,7 @@ misc/k3bmediacopydialog.o: misc/k3bmediacopydialog.cpp.o
 
 # target to build an object file
 misc/k3bmediacopydialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.o
 .PHONY : misc/k3bmediacopydialog.cpp.o
 
 misc/k3bmediacopydialog.i: misc/k3bmediacopydialog.cpp.i
@@ -1886,7 +1913,7 @@ misc/k3bmediacopydialog.i: misc/k3bmediacopydialog.cpp.i
 
 # target to preprocess a source file
 misc/k3bmediacopydialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.i
 .PHONY : misc/k3bmediacopydialog.cpp.i
 
 misc/k3bmediacopydialog.s: misc/k3bmediacopydialog.cpp.s
@@ -1895,7 +1922,7 @@ misc/k3bmediacopydialog.s: misc/k3bmediacopydialog.cpp.s
 
 # target to generate assembly for a file
 misc/k3bmediacopydialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediacopydialog.cpp.s
 .PHONY : misc/k3bmediacopydialog.cpp.s
 
 misc/k3bmediaformattingdialog.o: misc/k3bmediaformattingdialog.cpp.o
@@ -1904,7 +1931,7 @@ misc/k3bmediaformattingdialog.o: misc/k3bmediaformattingdialog.cpp.o
 
 # target to build an object file
 misc/k3bmediaformattingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.o
 .PHONY : misc/k3bmediaformattingdialog.cpp.o
 
 misc/k3bmediaformattingdialog.i: misc/k3bmediaformattingdialog.cpp.i
@@ -1913,7 +1940,7 @@ misc/k3bmediaformattingdialog.i: misc/k3bmediaformattingdialog.cpp.i
 
 # target to preprocess a source file
 misc/k3bmediaformattingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.i
 .PHONY : misc/k3bmediaformattingdialog.cpp.i
 
 misc/k3bmediaformattingdialog.s: misc/k3bmediaformattingdialog.cpp.s
@@ -1922,7 +1949,7 @@ misc/k3bmediaformattingdialog.s: misc/k3bmediaformattingdialog.cpp.s
 
 # target to generate assembly for a file
 misc/k3bmediaformattingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/misc/k3bmediaformattingdialog.cpp.s
 .PHONY : misc/k3bmediaformattingdialog.cpp.s
 
 option/k3badvancedoptiontab.o: option/k3badvancedoptiontab.cpp.o
@@ -1931,7 +1958,7 @@ option/k3badvancedoptiontab.o: option/k3badvancedoptiontab.cpp.o
 
 # target to build an object file
 option/k3badvancedoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.o
 .PHONY : option/k3badvancedoptiontab.cpp.o
 
 option/k3badvancedoptiontab.i: option/k3badvancedoptiontab.cpp.i
@@ -1940,7 +1967,7 @@ option/k3badvancedoptiontab.i: option/k3badvancedoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3badvancedoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.i
 .PHONY : option/k3badvancedoptiontab.cpp.i
 
 option/k3badvancedoptiontab.s: option/k3badvancedoptiontab.cpp.s
@@ -1949,7 +1976,7 @@ option/k3badvancedoptiontab.s: option/k3badvancedoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3badvancedoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3badvancedoptiontab.cpp.s
 .PHONY : option/k3badvancedoptiontab.cpp.s
 
 option/k3bcddboptiontab.o: option/k3bcddboptiontab.cpp.o
@@ -1958,7 +1985,7 @@ option/k3bcddboptiontab.o: option/k3bcddboptiontab.cpp.o
 
 # target to build an object file
 option/k3bcddboptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.o
 .PHONY : option/k3bcddboptiontab.cpp.o
 
 option/k3bcddboptiontab.i: option/k3bcddboptiontab.cpp.i
@@ -1967,7 +1994,7 @@ option/k3bcddboptiontab.i: option/k3bcddboptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bcddboptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.i
 .PHONY : option/k3bcddboptiontab.cpp.i
 
 option/k3bcddboptiontab.s: option/k3bcddboptiontab.cpp.s
@@ -1976,7 +2003,7 @@ option/k3bcddboptiontab.s: option/k3bcddboptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bcddboptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bcddboptiontab.cpp.s
 .PHONY : option/k3bcddboptiontab.cpp.s
 
 option/k3bdeviceoptiontab.o: option/k3bdeviceoptiontab.cpp.o
@@ -1985,7 +2012,7 @@ option/k3bdeviceoptiontab.o: option/k3bdeviceoptiontab.cpp.o
 
 # target to build an object file
 option/k3bdeviceoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.o
 .PHONY : option/k3bdeviceoptiontab.cpp.o
 
 option/k3bdeviceoptiontab.i: option/k3bdeviceoptiontab.cpp.i
@@ -1994,7 +2021,7 @@ option/k3bdeviceoptiontab.i: option/k3bdeviceoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bdeviceoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.i
 .PHONY : option/k3bdeviceoptiontab.cpp.i
 
 option/k3bdeviceoptiontab.s: option/k3bdeviceoptiontab.cpp.s
@@ -2003,7 +2030,7 @@ option/k3bdeviceoptiontab.s: option/k3bdeviceoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bdeviceoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdeviceoptiontab.cpp.s
 .PHONY : option/k3bdeviceoptiontab.cpp.s
 
 option/k3bdevicewidget.o: option/k3bdevicewidget.cpp.o
@@ -2012,7 +2039,7 @@ option/k3bdevicewidget.o: option/k3bdevicewidget.cpp.o
 
 # target to build an object file
 option/k3bdevicewidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.o
 .PHONY : option/k3bdevicewidget.cpp.o
 
 option/k3bdevicewidget.i: option/k3bdevicewidget.cpp.i
@@ -2021,7 +2048,7 @@ option/k3bdevicewidget.i: option/k3bdevicewidget.cpp.i
 
 # target to preprocess a source file
 option/k3bdevicewidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.i
 .PHONY : option/k3bdevicewidget.cpp.i
 
 option/k3bdevicewidget.s: option/k3bdevicewidget.cpp.s
@@ -2030,7 +2057,7 @@ option/k3bdevicewidget.s: option/k3bdevicewidget.cpp.s
 
 # target to generate assembly for a file
 option/k3bdevicewidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bdevicewidget.cpp.s
 .PHONY : option/k3bdevicewidget.cpp.s
 
 option/k3bexternalbinmodel.o: option/k3bexternalbinmodel.cpp.o
@@ -2039,7 +2066,7 @@ option/k3bexternalbinmodel.o: option/k3bexternalbinmodel.cpp.o
 
 # target to build an object file
 option/k3bexternalbinmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.o
 .PHONY : option/k3bexternalbinmodel.cpp.o
 
 option/k3bexternalbinmodel.i: option/k3bexternalbinmodel.cpp.i
@@ -2048,7 +2075,7 @@ option/k3bexternalbinmodel.i: option/k3bexternalbinmodel.cpp.i
 
 # target to preprocess a source file
 option/k3bexternalbinmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.i
 .PHONY : option/k3bexternalbinmodel.cpp.i
 
 option/k3bexternalbinmodel.s: option/k3bexternalbinmodel.cpp.s
@@ -2057,7 +2084,7 @@ option/k3bexternalbinmodel.s: option/k3bexternalbinmodel.cpp.s
 
 # target to generate assembly for a file
 option/k3bexternalbinmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinmodel.cpp.s
 .PHONY : option/k3bexternalbinmodel.cpp.s
 
 option/k3bexternalbinoptiontab.o: option/k3bexternalbinoptiontab.cpp.o
@@ -2066,7 +2093,7 @@ option/k3bexternalbinoptiontab.o: option/k3bexternalbinoptiontab.cpp.o
 
 # target to build an object file
 option/k3bexternalbinoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.o
 .PHONY : option/k3bexternalbinoptiontab.cpp.o
 
 option/k3bexternalbinoptiontab.i: option/k3bexternalbinoptiontab.cpp.i
@@ -2075,7 +2102,7 @@ option/k3bexternalbinoptiontab.i: option/k3bexternalbinoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bexternalbinoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.i
 .PHONY : option/k3bexternalbinoptiontab.cpp.i
 
 option/k3bexternalbinoptiontab.s: option/k3bexternalbinoptiontab.cpp.s
@@ -2084,7 +2111,7 @@ option/k3bexternalbinoptiontab.s: option/k3bexternalbinoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bexternalbinoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinoptiontab.cpp.s
 .PHONY : option/k3bexternalbinoptiontab.cpp.s
 
 option/k3bexternalbinparamsmodel.o: option/k3bexternalbinparamsmodel.cpp.o
@@ -2093,7 +2120,7 @@ option/k3bexternalbinparamsmodel.o: option/k3bexternalbinparamsmodel.cpp.o
 
 # target to build an object file
 option/k3bexternalbinparamsmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.o
 .PHONY : option/k3bexternalbinparamsmodel.cpp.o
 
 option/k3bexternalbinparamsmodel.i: option/k3bexternalbinparamsmodel.cpp.i
@@ -2102,7 +2129,7 @@ option/k3bexternalbinparamsmodel.i: option/k3bexternalbinparamsmodel.cpp.i
 
 # target to preprocess a source file
 option/k3bexternalbinparamsmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.i
 .PHONY : option/k3bexternalbinparamsmodel.cpp.i
 
 option/k3bexternalbinparamsmodel.s: option/k3bexternalbinparamsmodel.cpp.s
@@ -2111,7 +2138,7 @@ option/k3bexternalbinparamsmodel.s: option/k3bexternalbinparamsmodel.cpp.s
 
 # target to generate assembly for a file
 option/k3bexternalbinparamsmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinparamsmodel.cpp.s
 .PHONY : option/k3bexternalbinparamsmodel.cpp.s
 
 option/k3bexternalbinpermissionmodel.o: option/k3bexternalbinpermissionmodel.cpp.o
@@ -2120,7 +2147,7 @@ option/k3bexternalbinpermissionmodel.o: option/k3bexternalbinpermissionmodel.cpp
 
 # target to build an object file
 option/k3bexternalbinpermissionmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.o
 .PHONY : option/k3bexternalbinpermissionmodel.cpp.o
 
 option/k3bexternalbinpermissionmodel.i: option/k3bexternalbinpermissionmodel.cpp.i
@@ -2129,7 +2156,7 @@ option/k3bexternalbinpermissionmodel.i: option/k3bexternalbinpermissionmodel.cpp
 
 # target to preprocess a source file
 option/k3bexternalbinpermissionmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.i
 .PHONY : option/k3bexternalbinpermissionmodel.cpp.i
 
 option/k3bexternalbinpermissionmodel.s: option/k3bexternalbinpermissionmodel.cpp.s
@@ -2138,7 +2165,7 @@ option/k3bexternalbinpermissionmodel.s: option/k3bexternalbinpermissionmodel.cpp
 
 # target to generate assembly for a file
 option/k3bexternalbinpermissionmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinpermissionmodel.cpp.s
 .PHONY : option/k3bexternalbinpermissionmodel.cpp.s
 
 option/k3bexternalbinwidget.o: option/k3bexternalbinwidget.cpp.o
@@ -2147,7 +2174,7 @@ option/k3bexternalbinwidget.o: option/k3bexternalbinwidget.cpp.o
 
 # target to build an object file
 option/k3bexternalbinwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.o
 .PHONY : option/k3bexternalbinwidget.cpp.o
 
 option/k3bexternalbinwidget.i: option/k3bexternalbinwidget.cpp.i
@@ -2156,7 +2183,7 @@ option/k3bexternalbinwidget.i: option/k3bexternalbinwidget.cpp.i
 
 # target to preprocess a source file
 option/k3bexternalbinwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.i
 .PHONY : option/k3bexternalbinwidget.cpp.i
 
 option/k3bexternalbinwidget.s: option/k3bexternalbinwidget.cpp.s
@@ -2165,7 +2192,7 @@ option/k3bexternalbinwidget.s: option/k3bexternalbinwidget.cpp.s
 
 # target to generate assembly for a file
 option/k3bexternalbinwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bexternalbinwidget.cpp.s
 .PHONY : option/k3bexternalbinwidget.cpp.s
 
 option/k3bmiscoptiontab.o: option/k3bmiscoptiontab.cpp.o
@@ -2174,7 +2201,7 @@ option/k3bmiscoptiontab.o: option/k3bmiscoptiontab.cpp.o
 
 # target to build an object file
 option/k3bmiscoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.o
 .PHONY : option/k3bmiscoptiontab.cpp.o
 
 option/k3bmiscoptiontab.i: option/k3bmiscoptiontab.cpp.i
@@ -2183,7 +2210,7 @@ option/k3bmiscoptiontab.i: option/k3bmiscoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bmiscoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.i
 .PHONY : option/k3bmiscoptiontab.cpp.i
 
 option/k3bmiscoptiontab.s: option/k3bmiscoptiontab.cpp.s
@@ -2192,7 +2219,7 @@ option/k3bmiscoptiontab.s: option/k3bmiscoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bmiscoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bmiscoptiontab.cpp.s
 .PHONY : option/k3bmiscoptiontab.cpp.s
 
 option/k3bnotifyoptiontab.o: option/k3bnotifyoptiontab.cpp.o
@@ -2201,7 +2228,7 @@ option/k3bnotifyoptiontab.o: option/k3bnotifyoptiontab.cpp.o
 
 # target to build an object file
 option/k3bnotifyoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.o
 .PHONY : option/k3bnotifyoptiontab.cpp.o
 
 option/k3bnotifyoptiontab.i: option/k3bnotifyoptiontab.cpp.i
@@ -2210,7 +2237,7 @@ option/k3bnotifyoptiontab.i: option/k3bnotifyoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bnotifyoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.i
 .PHONY : option/k3bnotifyoptiontab.cpp.i
 
 option/k3bnotifyoptiontab.s: option/k3bnotifyoptiontab.cpp.s
@@ -2219,7 +2246,7 @@ option/k3bnotifyoptiontab.s: option/k3bnotifyoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bnotifyoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bnotifyoptiontab.cpp.s
 .PHONY : option/k3bnotifyoptiontab.cpp.s
 
 option/k3boptiondialog.o: option/k3boptiondialog.cpp.o
@@ -2228,7 +2255,7 @@ option/k3boptiondialog.o: option/k3boptiondialog.cpp.o
 
 # target to build an object file
 option/k3boptiondialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.o
 .PHONY : option/k3boptiondialog.cpp.o
 
 option/k3boptiondialog.i: option/k3boptiondialog.cpp.i
@@ -2237,7 +2264,7 @@ option/k3boptiondialog.i: option/k3boptiondialog.cpp.i
 
 # target to preprocess a source file
 option/k3boptiondialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.i
 .PHONY : option/k3boptiondialog.cpp.i
 
 option/k3boptiondialog.s: option/k3boptiondialog.cpp.s
@@ -2246,7 +2273,7 @@ option/k3boptiondialog.s: option/k3boptiondialog.cpp.s
 
 # target to generate assembly for a file
 option/k3boptiondialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3boptiondialog.cpp.s
 .PHONY : option/k3boptiondialog.cpp.s
 
 option/k3bpluginoptiontab.o: option/k3bpluginoptiontab.cpp.o
@@ -2255,7 +2282,7 @@ option/k3bpluginoptiontab.o: option/k3bpluginoptiontab.cpp.o
 
 # target to build an object file
 option/k3bpluginoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.o
 .PHONY : option/k3bpluginoptiontab.cpp.o
 
 option/k3bpluginoptiontab.i: option/k3bpluginoptiontab.cpp.i
@@ -2264,7 +2291,7 @@ option/k3bpluginoptiontab.i: option/k3bpluginoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bpluginoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.i
 .PHONY : option/k3bpluginoptiontab.cpp.i
 
 option/k3bpluginoptiontab.s: option/k3bpluginoptiontab.cpp.s
@@ -2273,7 +2300,7 @@ option/k3bpluginoptiontab.s: option/k3bpluginoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bpluginoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bpluginoptiontab.cpp.s
 .PHONY : option/k3bpluginoptiontab.cpp.s
 
 option/k3bthememodel.o: option/k3bthememodel.cpp.o
@@ -2282,7 +2309,7 @@ option/k3bthememodel.o: option/k3bthememodel.cpp.o
 
 # target to build an object file
 option/k3bthememodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.o
 .PHONY : option/k3bthememodel.cpp.o
 
 option/k3bthememodel.i: option/k3bthememodel.cpp.i
@@ -2291,7 +2318,7 @@ option/k3bthememodel.i: option/k3bthememodel.cpp.i
 
 # target to preprocess a source file
 option/k3bthememodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.i
 .PHONY : option/k3bthememodel.cpp.i
 
 option/k3bthememodel.s: option/k3bthememodel.cpp.s
@@ -2300,7 +2327,7 @@ option/k3bthememodel.s: option/k3bthememodel.cpp.s
 
 # target to generate assembly for a file
 option/k3bthememodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthememodel.cpp.s
 .PHONY : option/k3bthememodel.cpp.s
 
 option/k3bthemeoptiontab.o: option/k3bthemeoptiontab.cpp.o
@@ -2309,7 +2336,7 @@ option/k3bthemeoptiontab.o: option/k3bthemeoptiontab.cpp.o
 
 # target to build an object file
 option/k3bthemeoptiontab.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.o
 .PHONY : option/k3bthemeoptiontab.cpp.o
 
 option/k3bthemeoptiontab.i: option/k3bthemeoptiontab.cpp.i
@@ -2318,7 +2345,7 @@ option/k3bthemeoptiontab.i: option/k3bthemeoptiontab.cpp.i
 
 # target to preprocess a source file
 option/k3bthemeoptiontab.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.i
 .PHONY : option/k3bthemeoptiontab.cpp.i
 
 option/k3bthemeoptiontab.s: option/k3bthemeoptiontab.cpp.s
@@ -2327,7 +2354,7 @@ option/k3bthemeoptiontab.s: option/k3bthemeoptiontab.cpp.s
 
 # target to generate assembly for a file
 option/k3bthemeoptiontab.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/option/k3bthemeoptiontab.cpp.s
 .PHONY : option/k3bthemeoptiontab.cpp.s
 
 projects/k3baudioburndialog.o: projects/k3baudioburndialog.cpp.o
@@ -2336,7 +2363,7 @@ projects/k3baudioburndialog.o: projects/k3baudioburndialog.cpp.o
 
 # target to build an object file
 projects/k3baudioburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.o
 .PHONY : projects/k3baudioburndialog.cpp.o
 
 projects/k3baudioburndialog.i: projects/k3baudioburndialog.cpp.i
@@ -2345,7 +2372,7 @@ projects/k3baudioburndialog.i: projects/k3baudioburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.i
 .PHONY : projects/k3baudioburndialog.cpp.i
 
 projects/k3baudioburndialog.s: projects/k3baudioburndialog.cpp.s
@@ -2354,7 +2381,7 @@ projects/k3baudioburndialog.s: projects/k3baudioburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioburndialog.cpp.s
 .PHONY : projects/k3baudioburndialog.cpp.s
 
 projects/k3baudiocdtextwidget.o: projects/k3baudiocdtextwidget.cpp.o
@@ -2363,7 +2390,7 @@ projects/k3baudiocdtextwidget.o: projects/k3baudiocdtextwidget.cpp.o
 
 # target to build an object file
 projects/k3baudiocdtextwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.o
 .PHONY : projects/k3baudiocdtextwidget.cpp.o
 
 projects/k3baudiocdtextwidget.i: projects/k3baudiocdtextwidget.cpp.i
@@ -2372,7 +2399,7 @@ projects/k3baudiocdtextwidget.i: projects/k3baudiocdtextwidget.cpp.i
 
 # target to preprocess a source file
 projects/k3baudiocdtextwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.i
 .PHONY : projects/k3baudiocdtextwidget.cpp.i
 
 projects/k3baudiocdtextwidget.s: projects/k3baudiocdtextwidget.cpp.s
@@ -2381,7 +2408,7 @@ projects/k3baudiocdtextwidget.s: projects/k3baudiocdtextwidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudiocdtextwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiocdtextwidget.cpp.s
 .PHONY : projects/k3baudiocdtextwidget.cpp.s
 
 projects/k3baudiodatasourceeditwidget.o: projects/k3baudiodatasourceeditwidget.cpp.o
@@ -2390,7 +2417,7 @@ projects/k3baudiodatasourceeditwidget.o: projects/k3baudiodatasourceeditwidget.c
 
 # target to build an object file
 projects/k3baudiodatasourceeditwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.o
 .PHONY : projects/k3baudiodatasourceeditwidget.cpp.o
 
 projects/k3baudiodatasourceeditwidget.i: projects/k3baudiodatasourceeditwidget.cpp.i
@@ -2399,7 +2426,7 @@ projects/k3baudiodatasourceeditwidget.i: projects/k3baudiodatasourceeditwidget.c
 
 # target to preprocess a source file
 projects/k3baudiodatasourceeditwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.i
 .PHONY : projects/k3baudiodatasourceeditwidget.cpp.i
 
 projects/k3baudiodatasourceeditwidget.s: projects/k3baudiodatasourceeditwidget.cpp.s
@@ -2408,7 +2435,7 @@ projects/k3baudiodatasourceeditwidget.s: projects/k3baudiodatasourceeditwidget.c
 
 # target to generate assembly for a file
 projects/k3baudiodatasourceeditwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiodatasourceeditwidget.cpp.s
 .PHONY : projects/k3baudiodatasourceeditwidget.cpp.s
 
 projects/k3baudioeditorwidget.o: projects/k3baudioeditorwidget.cpp.o
@@ -2417,7 +2444,7 @@ projects/k3baudioeditorwidget.o: projects/k3baudioeditorwidget.cpp.o
 
 # target to build an object file
 projects/k3baudioeditorwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.o
 .PHONY : projects/k3baudioeditorwidget.cpp.o
 
 projects/k3baudioeditorwidget.i: projects/k3baudioeditorwidget.cpp.i
@@ -2426,7 +2453,7 @@ projects/k3baudioeditorwidget.i: projects/k3baudioeditorwidget.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioeditorwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.i
 .PHONY : projects/k3baudioeditorwidget.cpp.i
 
 projects/k3baudioeditorwidget.s: projects/k3baudioeditorwidget.cpp.s
@@ -2435,7 +2462,7 @@ projects/k3baudioeditorwidget.s: projects/k3baudioeditorwidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioeditorwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioeditorwidget.cpp.s
 .PHONY : projects/k3baudioeditorwidget.cpp.s
 
 projects/k3baudioprojectdelegate.o: projects/k3baudioprojectdelegate.cpp.o
@@ -2444,7 +2471,7 @@ projects/k3baudioprojectdelegate.o: projects/k3baudioprojectdelegate.cpp.o
 
 # target to build an object file
 projects/k3baudioprojectdelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.o
 .PHONY : projects/k3baudioprojectdelegate.cpp.o
 
 projects/k3baudioprojectdelegate.i: projects/k3baudioprojectdelegate.cpp.i
@@ -2453,7 +2480,7 @@ projects/k3baudioprojectdelegate.i: projects/k3baudioprojectdelegate.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioprojectdelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.i
 .PHONY : projects/k3baudioprojectdelegate.cpp.i
 
 projects/k3baudioprojectdelegate.s: projects/k3baudioprojectdelegate.cpp.s
@@ -2462,7 +2489,7 @@ projects/k3baudioprojectdelegate.s: projects/k3baudioprojectdelegate.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioprojectdelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectdelegate.cpp.s
 .PHONY : projects/k3baudioprojectdelegate.cpp.s
 
 projects/k3baudioprojectmodel.o: projects/k3baudioprojectmodel.cpp.o
@@ -2471,7 +2498,7 @@ projects/k3baudioprojectmodel.o: projects/k3baudioprojectmodel.cpp.o
 
 # target to build an object file
 projects/k3baudioprojectmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.o
 .PHONY : projects/k3baudioprojectmodel.cpp.o
 
 projects/k3baudioprojectmodel.i: projects/k3baudioprojectmodel.cpp.i
@@ -2480,7 +2507,7 @@ projects/k3baudioprojectmodel.i: projects/k3baudioprojectmodel.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioprojectmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.i
 .PHONY : projects/k3baudioprojectmodel.cpp.i
 
 projects/k3baudioprojectmodel.s: projects/k3baudioprojectmodel.cpp.s
@@ -2489,7 +2516,7 @@ projects/k3baudioprojectmodel.s: projects/k3baudioprojectmodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioprojectmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioprojectmodel.cpp.s
 .PHONY : projects/k3baudioprojectmodel.cpp.s
 
 projects/k3baudiotrackaddingdialog.o: projects/k3baudiotrackaddingdialog.cpp.o
@@ -2498,7 +2525,7 @@ projects/k3baudiotrackaddingdialog.o: projects/k3baudiotrackaddingdialog.cpp.o
 
 # target to build an object file
 projects/k3baudiotrackaddingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.o
 .PHONY : projects/k3baudiotrackaddingdialog.cpp.o
 
 projects/k3baudiotrackaddingdialog.i: projects/k3baudiotrackaddingdialog.cpp.i
@@ -2507,7 +2534,7 @@ projects/k3baudiotrackaddingdialog.i: projects/k3baudiotrackaddingdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3baudiotrackaddingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.i
 .PHONY : projects/k3baudiotrackaddingdialog.cpp.i
 
 projects/k3baudiotrackaddingdialog.s: projects/k3baudiotrackaddingdialog.cpp.s
@@ -2516,7 +2543,7 @@ projects/k3baudiotrackaddingdialog.s: projects/k3baudiotrackaddingdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudiotrackaddingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackaddingdialog.cpp.s
 .PHONY : projects/k3baudiotrackaddingdialog.cpp.s
 
 projects/k3baudiotrackdialog.o: projects/k3baudiotrackdialog.cpp.o
@@ -2525,7 +2552,7 @@ projects/k3baudiotrackdialog.o: projects/k3baudiotrackdialog.cpp.o
 
 # target to build an object file
 projects/k3baudiotrackdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.o
 .PHONY : projects/k3baudiotrackdialog.cpp.o
 
 projects/k3baudiotrackdialog.i: projects/k3baudiotrackdialog.cpp.i
@@ -2534,7 +2561,7 @@ projects/k3baudiotrackdialog.i: projects/k3baudiotrackdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3baudiotrackdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.i
 .PHONY : projects/k3baudiotrackdialog.cpp.i
 
 projects/k3baudiotrackdialog.s: projects/k3baudiotrackdialog.cpp.s
@@ -2543,7 +2570,7 @@ projects/k3baudiotrackdialog.s: projects/k3baudiotrackdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudiotrackdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackdialog.cpp.s
 .PHONY : projects/k3baudiotrackdialog.cpp.s
 
 projects/k3baudiotracksplitdialog.o: projects/k3baudiotracksplitdialog.cpp.o
@@ -2552,7 +2579,7 @@ projects/k3baudiotracksplitdialog.o: projects/k3baudiotracksplitdialog.cpp.o
 
 # target to build an object file
 projects/k3baudiotracksplitdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.o
 .PHONY : projects/k3baudiotracksplitdialog.cpp.o
 
 projects/k3baudiotracksplitdialog.i: projects/k3baudiotracksplitdialog.cpp.i
@@ -2561,7 +2588,7 @@ projects/k3baudiotracksplitdialog.i: projects/k3baudiotracksplitdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3baudiotracksplitdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.i
 .PHONY : projects/k3baudiotracksplitdialog.cpp.i
 
 projects/k3baudiotracksplitdialog.s: projects/k3baudiotracksplitdialog.cpp.s
@@ -2570,7 +2597,7 @@ projects/k3baudiotracksplitdialog.s: projects/k3baudiotracksplitdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudiotracksplitdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotracksplitdialog.cpp.s
 .PHONY : projects/k3baudiotracksplitdialog.cpp.s
 
 projects/k3baudiotrackwidget.o: projects/k3baudiotrackwidget.cpp.o
@@ -2579,7 +2606,7 @@ projects/k3baudiotrackwidget.o: projects/k3baudiotrackwidget.cpp.o
 
 # target to build an object file
 projects/k3baudiotrackwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.o
 .PHONY : projects/k3baudiotrackwidget.cpp.o
 
 projects/k3baudiotrackwidget.i: projects/k3baudiotrackwidget.cpp.i
@@ -2588,7 +2615,7 @@ projects/k3baudiotrackwidget.i: projects/k3baudiotrackwidget.cpp.i
 
 # target to preprocess a source file
 projects/k3baudiotrackwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.i
 .PHONY : projects/k3baudiotrackwidget.cpp.i
 
 projects/k3baudiotrackwidget.s: projects/k3baudiotrackwidget.cpp.s
@@ -2597,7 +2624,7 @@ projects/k3baudiotrackwidget.s: projects/k3baudiotrackwidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudiotrackwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudiotrackwidget.cpp.s
 .PHONY : projects/k3baudiotrackwidget.cpp.s
 
 projects/k3baudioview.o: projects/k3baudioview.cpp.o
@@ -2606,7 +2633,7 @@ projects/k3baudioview.o: projects/k3baudioview.cpp.o
 
 # target to build an object file
 projects/k3baudioview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
 .PHONY : projects/k3baudioview.cpp.o
 
 projects/k3baudioview.i: projects/k3baudioview.cpp.i
@@ -2615,7 +2642,7 @@ projects/k3baudioview.i: projects/k3baudioview.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.i
 .PHONY : projects/k3baudioview.cpp.i
 
 projects/k3baudioview.s: projects/k3baudioview.cpp.s
@@ -2624,7 +2651,7 @@ projects/k3baudioview.s: projects/k3baudioview.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.s
 .PHONY : projects/k3baudioview.cpp.s
 
 projects/k3baudioviewimpl.o: projects/k3baudioviewimpl.cpp.o
@@ -2633,7 +2660,7 @@ projects/k3baudioviewimpl.o: projects/k3baudioviewimpl.cpp.o
 
 # target to build an object file
 projects/k3baudioviewimpl.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.o
 .PHONY : projects/k3baudioviewimpl.cpp.o
 
 projects/k3baudioviewimpl.i: projects/k3baudioviewimpl.cpp.i
@@ -2642,7 +2669,7 @@ projects/k3baudioviewimpl.i: projects/k3baudioviewimpl.cpp.i
 
 # target to preprocess a source file
 projects/k3baudioviewimpl.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.i
 .PHONY : projects/k3baudioviewimpl.cpp.i
 
 projects/k3baudioviewimpl.s: projects/k3baudioviewimpl.cpp.s
@@ -2651,7 +2678,7 @@ projects/k3baudioviewimpl.s: projects/k3baudioviewimpl.cpp.s
 
 # target to generate assembly for a file
 projects/k3baudioviewimpl.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3baudioviewimpl.cpp.s
 .PHONY : projects/k3baudioviewimpl.cpp.s
 
 projects/k3bbootimagedialog.o: projects/k3bbootimagedialog.cpp.o
@@ -2660,7 +2687,7 @@ projects/k3bbootimagedialog.o: projects/k3bbootimagedialog.cpp.o
 
 # target to build an object file
 projects/k3bbootimagedialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.o
 .PHONY : projects/k3bbootimagedialog.cpp.o
 
 projects/k3bbootimagedialog.i: projects/k3bbootimagedialog.cpp.i
@@ -2669,7 +2696,7 @@ projects/k3bbootimagedialog.i: projects/k3bbootimagedialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bbootimagedialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.i
 .PHONY : projects/k3bbootimagedialog.cpp.i
 
 projects/k3bbootimagedialog.s: projects/k3bbootimagedialog.cpp.s
@@ -2678,7 +2705,7 @@ projects/k3bbootimagedialog.s: projects/k3bbootimagedialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bbootimagedialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagedialog.cpp.s
 .PHONY : projects/k3bbootimagedialog.cpp.s
 
 projects/k3bbootimagemodel.o: projects/k3bbootimagemodel.cpp.o
@@ -2687,7 +2714,7 @@ projects/k3bbootimagemodel.o: projects/k3bbootimagemodel.cpp.o
 
 # target to build an object file
 projects/k3bbootimagemodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.o
 .PHONY : projects/k3bbootimagemodel.cpp.o
 
 projects/k3bbootimagemodel.i: projects/k3bbootimagemodel.cpp.i
@@ -2696,7 +2723,7 @@ projects/k3bbootimagemodel.i: projects/k3bbootimagemodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bbootimagemodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.i
 .PHONY : projects/k3bbootimagemodel.cpp.i
 
 projects/k3bbootimagemodel.s: projects/k3bbootimagemodel.cpp.s
@@ -2705,7 +2732,7 @@ projects/k3bbootimagemodel.s: projects/k3bbootimagemodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bbootimagemodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bbootimagemodel.cpp.s
 .PHONY : projects/k3bbootimagemodel.cpp.s
 
 projects/k3bdataadvancedimagesettingsdialog.o: projects/k3bdataadvancedimagesettingsdialog.cpp.o
@@ -2714,7 +2741,7 @@ projects/k3bdataadvancedimagesettingsdialog.o: projects/k3bdataadvancedimagesett
 
 # target to build an object file
 projects/k3bdataadvancedimagesettingsdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.o
 .PHONY : projects/k3bdataadvancedimagesettingsdialog.cpp.o
 
 projects/k3bdataadvancedimagesettingsdialog.i: projects/k3bdataadvancedimagesettingsdialog.cpp.i
@@ -2723,7 +2750,7 @@ projects/k3bdataadvancedimagesettingsdialog.i: projects/k3bdataadvancedimagesett
 
 # target to preprocess a source file
 projects/k3bdataadvancedimagesettingsdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.i
 .PHONY : projects/k3bdataadvancedimagesettingsdialog.cpp.i
 
 projects/k3bdataadvancedimagesettingsdialog.s: projects/k3bdataadvancedimagesettingsdialog.cpp.s
@@ -2732,7 +2759,7 @@ projects/k3bdataadvancedimagesettingsdialog.s: projects/k3bdataadvancedimagesett
 
 # target to generate assembly for a file
 projects/k3bdataadvancedimagesettingsdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataadvancedimagesettingsdialog.cpp.s
 .PHONY : projects/k3bdataadvancedimagesettingsdialog.cpp.s
 
 projects/k3bdataburndialog.o: projects/k3bdataburndialog.cpp.o
@@ -2741,7 +2768,7 @@ projects/k3bdataburndialog.o: projects/k3bdataburndialog.cpp.o
 
 # target to build an object file
 projects/k3bdataburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.o
 .PHONY : projects/k3bdataburndialog.cpp.o
 
 projects/k3bdataburndialog.i: projects/k3bdataburndialog.cpp.i
@@ -2750,7 +2777,7 @@ projects/k3bdataburndialog.i: projects/k3bdataburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.i
 .PHONY : projects/k3bdataburndialog.cpp.i
 
 projects/k3bdataburndialog.s: projects/k3bdataburndialog.cpp.s
@@ -2759,7 +2786,7 @@ projects/k3bdataburndialog.s: projects/k3bdataburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataburndialog.cpp.s
 .PHONY : projects/k3bdataburndialog.cpp.s
 
 projects/k3bdatadirtreeview.o: projects/k3bdatadirtreeview.cpp.o
@@ -2768,7 +2795,7 @@ projects/k3bdatadirtreeview.o: projects/k3bdatadirtreeview.cpp.o
 
 # target to build an object file
 projects/k3bdatadirtreeview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.o
 .PHONY : projects/k3bdatadirtreeview.cpp.o
 
 projects/k3bdatadirtreeview.i: projects/k3bdatadirtreeview.cpp.i
@@ -2777,7 +2804,7 @@ projects/k3bdatadirtreeview.i: projects/k3bdatadirtreeview.cpp.i
 
 # target to preprocess a source file
 projects/k3bdatadirtreeview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.i
 .PHONY : projects/k3bdatadirtreeview.cpp.i
 
 projects/k3bdatadirtreeview.s: projects/k3bdatadirtreeview.cpp.s
@@ -2786,7 +2813,7 @@ projects/k3bdatadirtreeview.s: projects/k3bdatadirtreeview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdatadirtreeview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatadirtreeview.cpp.s
 .PHONY : projects/k3bdatadirtreeview.cpp.s
 
 projects/k3bdataimagesettingswidget.o: projects/k3bdataimagesettingswidget.cpp.o
@@ -2795,7 +2822,7 @@ projects/k3bdataimagesettingswidget.o: projects/k3bdataimagesettingswidget.cpp.o
 
 # target to build an object file
 projects/k3bdataimagesettingswidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.o
 .PHONY : projects/k3bdataimagesettingswidget.cpp.o
 
 projects/k3bdataimagesettingswidget.i: projects/k3bdataimagesettingswidget.cpp.i
@@ -2804,7 +2831,7 @@ projects/k3bdataimagesettingswidget.i: projects/k3bdataimagesettingswidget.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataimagesettingswidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.i
 .PHONY : projects/k3bdataimagesettingswidget.cpp.i
 
 projects/k3bdataimagesettingswidget.s: projects/k3bdataimagesettingswidget.cpp.s
@@ -2813,7 +2840,7 @@ projects/k3bdataimagesettingswidget.s: projects/k3bdataimagesettingswidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataimagesettingswidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataimagesettingswidget.cpp.s
 .PHONY : projects/k3bdataimagesettingswidget.cpp.s
 
 projects/k3bdatamultisessioncombobox.o: projects/k3bdatamultisessioncombobox.cpp.o
@@ -2822,7 +2849,7 @@ projects/k3bdatamultisessioncombobox.o: projects/k3bdatamultisessioncombobox.cpp
 
 # target to build an object file
 projects/k3bdatamultisessioncombobox.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.o
 .PHONY : projects/k3bdatamultisessioncombobox.cpp.o
 
 projects/k3bdatamultisessioncombobox.i: projects/k3bdatamultisessioncombobox.cpp.i
@@ -2831,7 +2858,7 @@ projects/k3bdatamultisessioncombobox.i: projects/k3bdatamultisessioncombobox.cpp
 
 # target to preprocess a source file
 projects/k3bdatamultisessioncombobox.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.i
 .PHONY : projects/k3bdatamultisessioncombobox.cpp.i
 
 projects/k3bdatamultisessioncombobox.s: projects/k3bdatamultisessioncombobox.cpp.s
@@ -2840,7 +2867,7 @@ projects/k3bdatamultisessioncombobox.s: projects/k3bdatamultisessioncombobox.cpp
 
 # target to generate assembly for a file
 projects/k3bdatamultisessioncombobox.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessioncombobox.cpp.s
 .PHONY : projects/k3bdatamultisessioncombobox.cpp.s
 
 projects/k3bdatamultisessionimportdialog.o: projects/k3bdatamultisessionimportdialog.cpp.o
@@ -2849,7 +2876,7 @@ projects/k3bdatamultisessionimportdialog.o: projects/k3bdatamultisessionimportdi
 
 # target to build an object file
 projects/k3bdatamultisessionimportdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.o
 .PHONY : projects/k3bdatamultisessionimportdialog.cpp.o
 
 projects/k3bdatamultisessionimportdialog.i: projects/k3bdatamultisessionimportdialog.cpp.i
@@ -2858,7 +2885,7 @@ projects/k3bdatamultisessionimportdialog.i: projects/k3bdatamultisessionimportdi
 
 # target to preprocess a source file
 projects/k3bdatamultisessionimportdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.i
 .PHONY : projects/k3bdatamultisessionimportdialog.cpp.i
 
 projects/k3bdatamultisessionimportdialog.s: projects/k3bdatamultisessionimportdialog.cpp.s
@@ -2867,7 +2894,7 @@ projects/k3bdatamultisessionimportdialog.s: projects/k3bdatamultisessionimportdi
 
 # target to generate assembly for a file
 projects/k3bdatamultisessionimportdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatamultisessionimportdialog.cpp.s
 .PHONY : projects/k3bdatamultisessionimportdialog.cpp.s
 
 projects/k3bdataprojectdelegate.o: projects/k3bdataprojectdelegate.cpp.o
@@ -2876,7 +2903,7 @@ projects/k3bdataprojectdelegate.o: projects/k3bdataprojectdelegate.cpp.o
 
 # target to build an object file
 projects/k3bdataprojectdelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.o
 .PHONY : projects/k3bdataprojectdelegate.cpp.o
 
 projects/k3bdataprojectdelegate.i: projects/k3bdataprojectdelegate.cpp.i
@@ -2885,7 +2912,7 @@ projects/k3bdataprojectdelegate.i: projects/k3bdataprojectdelegate.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataprojectdelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.i
 .PHONY : projects/k3bdataprojectdelegate.cpp.i
 
 projects/k3bdataprojectdelegate.s: projects/k3bdataprojectdelegate.cpp.s
@@ -2894,7 +2921,7 @@ projects/k3bdataprojectdelegate.s: projects/k3bdataprojectdelegate.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataprojectdelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectdelegate.cpp.s
 .PHONY : projects/k3bdataprojectdelegate.cpp.s
 
 projects/k3bdataprojectmodel.o: projects/k3bdataprojectmodel.cpp.o
@@ -2903,7 +2930,7 @@ projects/k3bdataprojectmodel.o: projects/k3bdataprojectmodel.cpp.o
 
 # target to build an object file
 projects/k3bdataprojectmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.o
 .PHONY : projects/k3bdataprojectmodel.cpp.o
 
 projects/k3bdataprojectmodel.i: projects/k3bdataprojectmodel.cpp.i
@@ -2912,7 +2939,7 @@ projects/k3bdataprojectmodel.i: projects/k3bdataprojectmodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataprojectmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.i
 .PHONY : projects/k3bdataprojectmodel.cpp.i
 
 projects/k3bdataprojectmodel.s: projects/k3bdataprojectmodel.cpp.s
@@ -2921,7 +2948,7 @@ projects/k3bdataprojectmodel.s: projects/k3bdataprojectmodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataprojectmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectmodel.cpp.s
 .PHONY : projects/k3bdataprojectmodel.cpp.s
 
 projects/k3bdataprojectsortproxymodel.o: projects/k3bdataprojectsortproxymodel.cpp.o
@@ -2930,7 +2957,7 @@ projects/k3bdataprojectsortproxymodel.o: projects/k3bdataprojectsortproxymodel.c
 
 # target to build an object file
 projects/k3bdataprojectsortproxymodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.o
 .PHONY : projects/k3bdataprojectsortproxymodel.cpp.o
 
 projects/k3bdataprojectsortproxymodel.i: projects/k3bdataprojectsortproxymodel.cpp.i
@@ -2939,7 +2966,7 @@ projects/k3bdataprojectsortproxymodel.i: projects/k3bdataprojectsortproxymodel.c
 
 # target to preprocess a source file
 projects/k3bdataprojectsortproxymodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.i
 .PHONY : projects/k3bdataprojectsortproxymodel.cpp.i
 
 projects/k3bdataprojectsortproxymodel.s: projects/k3bdataprojectsortproxymodel.cpp.s
@@ -2948,7 +2975,7 @@ projects/k3bdataprojectsortproxymodel.s: projects/k3bdataprojectsortproxymodel.c
 
 # target to generate assembly for a file
 projects/k3bdataprojectsortproxymodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataprojectsortproxymodel.cpp.s
 .PHONY : projects/k3bdataprojectsortproxymodel.cpp.s
 
 projects/k3bdatapropertiesdialog.o: projects/k3bdatapropertiesdialog.cpp.o
@@ -2957,7 +2984,7 @@ projects/k3bdatapropertiesdialog.o: projects/k3bdatapropertiesdialog.cpp.o
 
 # target to build an object file
 projects/k3bdatapropertiesdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.o
 .PHONY : projects/k3bdatapropertiesdialog.cpp.o
 
 projects/k3bdatapropertiesdialog.i: projects/k3bdatapropertiesdialog.cpp.i
@@ -2966,7 +2993,7 @@ projects/k3bdatapropertiesdialog.i: projects/k3bdatapropertiesdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bdatapropertiesdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.i
 .PHONY : projects/k3bdatapropertiesdialog.cpp.i
 
 projects/k3bdatapropertiesdialog.s: projects/k3bdatapropertiesdialog.cpp.s
@@ -2975,7 +3002,7 @@ projects/k3bdatapropertiesdialog.s: projects/k3bdatapropertiesdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdatapropertiesdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatapropertiesdialog.cpp.s
 .PHONY : projects/k3bdatapropertiesdialog.cpp.s
 
 projects/k3bdataurladdingdialog.o: projects/k3bdataurladdingdialog.cpp.o
@@ -2984,7 +3011,7 @@ projects/k3bdataurladdingdialog.o: projects/k3bdataurladdingdialog.cpp.o
 
 # target to build an object file
 projects/k3bdataurladdingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.o
 .PHONY : projects/k3bdataurladdingdialog.cpp.o
 
 projects/k3bdataurladdingdialog.i: projects/k3bdataurladdingdialog.cpp.i
@@ -2993,7 +3020,7 @@ projects/k3bdataurladdingdialog.i: projects/k3bdataurladdingdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataurladdingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.i
 .PHONY : projects/k3bdataurladdingdialog.cpp.i
 
 projects/k3bdataurladdingdialog.s: projects/k3bdataurladdingdialog.cpp.s
@@ -3002,7 +3029,7 @@ projects/k3bdataurladdingdialog.s: projects/k3bdataurladdingdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataurladdingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataurladdingdialog.cpp.s
 .PHONY : projects/k3bdataurladdingdialog.cpp.s
 
 projects/k3bdataview.o: projects/k3bdataview.cpp.o
@@ -3011,7 +3038,7 @@ projects/k3bdataview.o: projects/k3bdataview.cpp.o
 
 # target to build an object file
 projects/k3bdataview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.o
 .PHONY : projects/k3bdataview.cpp.o
 
 projects/k3bdataview.i: projects/k3bdataview.cpp.i
@@ -3020,7 +3047,7 @@ projects/k3bdataview.i: projects/k3bdataview.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.i
 .PHONY : projects/k3bdataview.cpp.i
 
 projects/k3bdataview.s: projects/k3bdataview.cpp.s
@@ -3029,7 +3056,7 @@ projects/k3bdataview.s: projects/k3bdataview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataview.cpp.s
 .PHONY : projects/k3bdataview.cpp.s
 
 projects/k3bdataviewimpl.o: projects/k3bdataviewimpl.cpp.o
@@ -3038,7 +3065,7 @@ projects/k3bdataviewimpl.o: projects/k3bdataviewimpl.cpp.o
 
 # target to build an object file
 projects/k3bdataviewimpl.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.o
 .PHONY : projects/k3bdataviewimpl.cpp.o
 
 projects/k3bdataviewimpl.i: projects/k3bdataviewimpl.cpp.i
@@ -3047,7 +3074,7 @@ projects/k3bdataviewimpl.i: projects/k3bdataviewimpl.cpp.i
 
 # target to preprocess a source file
 projects/k3bdataviewimpl.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.i
 .PHONY : projects/k3bdataviewimpl.cpp.i
 
 projects/k3bdataviewimpl.s: projects/k3bdataviewimpl.cpp.s
@@ -3056,7 +3083,7 @@ projects/k3bdataviewimpl.s: projects/k3bdataviewimpl.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdataviewimpl.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdataviewimpl.cpp.s
 .PHONY : projects/k3bdataviewimpl.cpp.s
 
 projects/k3bdatavolumedescdialog.o: projects/k3bdatavolumedescdialog.cpp.o
@@ -3065,7 +3092,7 @@ projects/k3bdatavolumedescdialog.o: projects/k3bdatavolumedescdialog.cpp.o
 
 # target to build an object file
 projects/k3bdatavolumedescdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.o
 .PHONY : projects/k3bdatavolumedescdialog.cpp.o
 
 projects/k3bdatavolumedescdialog.i: projects/k3bdatavolumedescdialog.cpp.i
@@ -3074,7 +3101,7 @@ projects/k3bdatavolumedescdialog.i: projects/k3bdatavolumedescdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bdatavolumedescdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.i
 .PHONY : projects/k3bdatavolumedescdialog.cpp.i
 
 projects/k3bdatavolumedescdialog.s: projects/k3bdatavolumedescdialog.cpp.s
@@ -3083,7 +3110,7 @@ projects/k3bdatavolumedescdialog.s: projects/k3bdatavolumedescdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdatavolumedescdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdatavolumedescdialog.cpp.s
 .PHONY : projects/k3bdatavolumedescdialog.cpp.s
 
 projects/k3bdirproxymodel.o: projects/k3bdirproxymodel.cpp.o
@@ -3092,7 +3119,7 @@ projects/k3bdirproxymodel.o: projects/k3bdirproxymodel.cpp.o
 
 # target to build an object file
 projects/k3bdirproxymodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.o
 .PHONY : projects/k3bdirproxymodel.cpp.o
 
 projects/k3bdirproxymodel.i: projects/k3bdirproxymodel.cpp.i
@@ -3101,7 +3128,7 @@ projects/k3bdirproxymodel.i: projects/k3bdirproxymodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bdirproxymodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.i
 .PHONY : projects/k3bdirproxymodel.cpp.i
 
 projects/k3bdirproxymodel.s: projects/k3bdirproxymodel.cpp.s
@@ -3110,7 +3137,7 @@ projects/k3bdirproxymodel.s: projects/k3bdirproxymodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bdirproxymodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bdirproxymodel.cpp.s
 .PHONY : projects/k3bdirproxymodel.cpp.s
 
 projects/k3bencodingconverter.o: projects/k3bencodingconverter.cpp.o
@@ -3119,7 +3146,7 @@ projects/k3bencodingconverter.o: projects/k3bencodingconverter.cpp.o
 
 # target to build an object file
 projects/k3bencodingconverter.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.o
 .PHONY : projects/k3bencodingconverter.cpp.o
 
 projects/k3bencodingconverter.i: projects/k3bencodingconverter.cpp.i
@@ -3128,7 +3155,7 @@ projects/k3bencodingconverter.i: projects/k3bencodingconverter.cpp.i
 
 # target to preprocess a source file
 projects/k3bencodingconverter.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.i
 .PHONY : projects/k3bencodingconverter.cpp.i
 
 projects/k3bencodingconverter.s: projects/k3bencodingconverter.cpp.s
@@ -3137,7 +3164,7 @@ projects/k3bencodingconverter.s: projects/k3bencodingconverter.cpp.s
 
 # target to generate assembly for a file
 projects/k3bencodingconverter.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bencodingconverter.cpp.s
 .PHONY : projects/k3bencodingconverter.cpp.s
 
 projects/k3bfillstatusdisplay.o: projects/k3bfillstatusdisplay.cpp.o
@@ -3146,7 +3173,7 @@ projects/k3bfillstatusdisplay.o: projects/k3bfillstatusdisplay.cpp.o
 
 # target to build an object file
 projects/k3bfillstatusdisplay.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.o
 .PHONY : projects/k3bfillstatusdisplay.cpp.o
 
 projects/k3bfillstatusdisplay.i: projects/k3bfillstatusdisplay.cpp.i
@@ -3155,7 +3182,7 @@ projects/k3bfillstatusdisplay.i: projects/k3bfillstatusdisplay.cpp.i
 
 # target to preprocess a source file
 projects/k3bfillstatusdisplay.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.i
 .PHONY : projects/k3bfillstatusdisplay.cpp.i
 
 projects/k3bfillstatusdisplay.s: projects/k3bfillstatusdisplay.cpp.s
@@ -3164,7 +3191,7 @@ projects/k3bfillstatusdisplay.s: projects/k3bfillstatusdisplay.cpp.s
 
 # target to generate assembly for a file
 projects/k3bfillstatusdisplay.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bfillstatusdisplay.cpp.s
 .PHONY : projects/k3bfillstatusdisplay.cpp.s
 
 projects/k3bmixedburndialog.o: projects/k3bmixedburndialog.cpp.o
@@ -3173,7 +3200,7 @@ projects/k3bmixedburndialog.o: projects/k3bmixedburndialog.cpp.o
 
 # target to build an object file
 projects/k3bmixedburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.o
 .PHONY : projects/k3bmixedburndialog.cpp.o
 
 projects/k3bmixedburndialog.i: projects/k3bmixedburndialog.cpp.i
@@ -3182,7 +3209,7 @@ projects/k3bmixedburndialog.i: projects/k3bmixedburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bmixedburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.i
 .PHONY : projects/k3bmixedburndialog.cpp.i
 
 projects/k3bmixedburndialog.s: projects/k3bmixedburndialog.cpp.s
@@ -3191,7 +3218,7 @@ projects/k3bmixedburndialog.s: projects/k3bmixedburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmixedburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedburndialog.cpp.s
 .PHONY : projects/k3bmixedburndialog.cpp.s
 
 projects/k3bmixedview.o: projects/k3bmixedview.cpp.o
@@ -3200,7 +3227,7 @@ projects/k3bmixedview.o: projects/k3bmixedview.cpp.o
 
 # target to build an object file
 projects/k3bmixedview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.o
 .PHONY : projects/k3bmixedview.cpp.o
 
 projects/k3bmixedview.i: projects/k3bmixedview.cpp.i
@@ -3209,7 +3236,7 @@ projects/k3bmixedview.i: projects/k3bmixedview.cpp.i
 
 # target to preprocess a source file
 projects/k3bmixedview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.i
 .PHONY : projects/k3bmixedview.cpp.i
 
 projects/k3bmixedview.s: projects/k3bmixedview.cpp.s
@@ -3218,7 +3245,7 @@ projects/k3bmixedview.s: projects/k3bmixedview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmixedview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmixedview.cpp.s
 .PHONY : projects/k3bmixedview.cpp.s
 
 projects/k3bmovixburndialog.o: projects/k3bmovixburndialog.cpp.o
@@ -3227,7 +3254,7 @@ projects/k3bmovixburndialog.o: projects/k3bmovixburndialog.cpp.o
 
 # target to build an object file
 projects/k3bmovixburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.o
 .PHONY : projects/k3bmovixburndialog.cpp.o
 
 projects/k3bmovixburndialog.i: projects/k3bmovixburndialog.cpp.i
@@ -3236,7 +3263,7 @@ projects/k3bmovixburndialog.i: projects/k3bmovixburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bmovixburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.i
 .PHONY : projects/k3bmovixburndialog.cpp.i
 
 projects/k3bmovixburndialog.s: projects/k3bmovixburndialog.cpp.s
@@ -3245,7 +3272,7 @@ projects/k3bmovixburndialog.s: projects/k3bmovixburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmovixburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixburndialog.cpp.s
 .PHONY : projects/k3bmovixburndialog.cpp.s
 
 projects/k3bmovixoptionswidget.o: projects/k3bmovixoptionswidget.cpp.o
@@ -3254,7 +3281,7 @@ projects/k3bmovixoptionswidget.o: projects/k3bmovixoptionswidget.cpp.o
 
 # target to build an object file
 projects/k3bmovixoptionswidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.o
 .PHONY : projects/k3bmovixoptionswidget.cpp.o
 
 projects/k3bmovixoptionswidget.i: projects/k3bmovixoptionswidget.cpp.i
@@ -3263,7 +3290,7 @@ projects/k3bmovixoptionswidget.i: projects/k3bmovixoptionswidget.cpp.i
 
 # target to preprocess a source file
 projects/k3bmovixoptionswidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.i
 .PHONY : projects/k3bmovixoptionswidget.cpp.i
 
 projects/k3bmovixoptionswidget.s: projects/k3bmovixoptionswidget.cpp.s
@@ -3272,7 +3299,7 @@ projects/k3bmovixoptionswidget.s: projects/k3bmovixoptionswidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmovixoptionswidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixoptionswidget.cpp.s
 .PHONY : projects/k3bmovixoptionswidget.cpp.s
 
 projects/k3bmovixprojectmodel.o: projects/k3bmovixprojectmodel.cpp.o
@@ -3281,7 +3308,7 @@ projects/k3bmovixprojectmodel.o: projects/k3bmovixprojectmodel.cpp.o
 
 # target to build an object file
 projects/k3bmovixprojectmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.o
 .PHONY : projects/k3bmovixprojectmodel.cpp.o
 
 projects/k3bmovixprojectmodel.i: projects/k3bmovixprojectmodel.cpp.i
@@ -3290,7 +3317,7 @@ projects/k3bmovixprojectmodel.i: projects/k3bmovixprojectmodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bmovixprojectmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.i
 .PHONY : projects/k3bmovixprojectmodel.cpp.i
 
 projects/k3bmovixprojectmodel.s: projects/k3bmovixprojectmodel.cpp.s
@@ -3299,7 +3326,7 @@ projects/k3bmovixprojectmodel.s: projects/k3bmovixprojectmodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmovixprojectmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixprojectmodel.cpp.s
 .PHONY : projects/k3bmovixprojectmodel.cpp.s
 
 projects/k3bmovixview.o: projects/k3bmovixview.cpp.o
@@ -3308,7 +3335,7 @@ projects/k3bmovixview.o: projects/k3bmovixview.cpp.o
 
 # target to build an object file
 projects/k3bmovixview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.o
 .PHONY : projects/k3bmovixview.cpp.o
 
 projects/k3bmovixview.i: projects/k3bmovixview.cpp.i
@@ -3317,7 +3344,7 @@ projects/k3bmovixview.i: projects/k3bmovixview.cpp.i
 
 # target to preprocess a source file
 projects/k3bmovixview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.i
 .PHONY : projects/k3bmovixview.cpp.i
 
 projects/k3bmovixview.s: projects/k3bmovixview.cpp.s
@@ -3326,7 +3353,7 @@ projects/k3bmovixview.s: projects/k3bmovixview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bmovixview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bmovixview.cpp.s
 .PHONY : projects/k3bmovixview.cpp.s
 
 projects/k3bprojectburndialog.o: projects/k3bprojectburndialog.cpp.o
@@ -3335,7 +3362,7 @@ projects/k3bprojectburndialog.o: projects/k3bprojectburndialog.cpp.o
 
 # target to build an object file
 projects/k3bprojectburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.o
 .PHONY : projects/k3bprojectburndialog.cpp.o
 
 projects/k3bprojectburndialog.i: projects/k3bprojectburndialog.cpp.i
@@ -3344,7 +3371,7 @@ projects/k3bprojectburndialog.i: projects/k3bprojectburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bprojectburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.i
 .PHONY : projects/k3bprojectburndialog.cpp.i
 
 projects/k3bprojectburndialog.s: projects/k3bprojectburndialog.cpp.s
@@ -3353,7 +3380,7 @@ projects/k3bprojectburndialog.s: projects/k3bprojectburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bprojectburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectburndialog.cpp.s
 .PHONY : projects/k3bprojectburndialog.cpp.s
 
 projects/k3bprojectplugindialog.o: projects/k3bprojectplugindialog.cpp.o
@@ -3362,7 +3389,7 @@ projects/k3bprojectplugindialog.o: projects/k3bprojectplugindialog.cpp.o
 
 # target to build an object file
 projects/k3bprojectplugindialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.o
 .PHONY : projects/k3bprojectplugindialog.cpp.o
 
 projects/k3bprojectplugindialog.i: projects/k3bprojectplugindialog.cpp.i
@@ -3371,7 +3398,7 @@ projects/k3bprojectplugindialog.i: projects/k3bprojectplugindialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bprojectplugindialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.i
 .PHONY : projects/k3bprojectplugindialog.cpp.i
 
 projects/k3bprojectplugindialog.s: projects/k3bprojectplugindialog.cpp.s
@@ -3380,7 +3407,7 @@ projects/k3bprojectplugindialog.s: projects/k3bprojectplugindialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bprojectplugindialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bprojectplugindialog.cpp.s
 .PHONY : projects/k3bprojectplugindialog.cpp.s
 
 projects/k3bvcdburndialog.o: projects/k3bvcdburndialog.cpp.o
@@ -3389,7 +3416,7 @@ projects/k3bvcdburndialog.o: projects/k3bvcdburndialog.cpp.o
 
 # target to build an object file
 projects/k3bvcdburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.o
 .PHONY : projects/k3bvcdburndialog.cpp.o
 
 projects/k3bvcdburndialog.i: projects/k3bvcdburndialog.cpp.i
@@ -3398,7 +3425,7 @@ projects/k3bvcdburndialog.i: projects/k3bvcdburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.i
 .PHONY : projects/k3bvcdburndialog.cpp.i
 
 projects/k3bvcdburndialog.s: projects/k3bvcdburndialog.cpp.s
@@ -3407,7 +3434,7 @@ projects/k3bvcdburndialog.s: projects/k3bvcdburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdburndialog.cpp.s
 .PHONY : projects/k3bvcdburndialog.cpp.s
 
 projects/k3bvcdprojectmodel.o: projects/k3bvcdprojectmodel.cpp.o
@@ -3416,7 +3443,7 @@ projects/k3bvcdprojectmodel.o: projects/k3bvcdprojectmodel.cpp.o
 
 # target to build an object file
 projects/k3bvcdprojectmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.o
 .PHONY : projects/k3bvcdprojectmodel.cpp.o
 
 projects/k3bvcdprojectmodel.i: projects/k3bvcdprojectmodel.cpp.i
@@ -3425,7 +3452,7 @@ projects/k3bvcdprojectmodel.i: projects/k3bvcdprojectmodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdprojectmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.i
 .PHONY : projects/k3bvcdprojectmodel.cpp.i
 
 projects/k3bvcdprojectmodel.s: projects/k3bvcdprojectmodel.cpp.s
@@ -3434,7 +3461,7 @@ projects/k3bvcdprojectmodel.s: projects/k3bvcdprojectmodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdprojectmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdprojectmodel.cpp.s
 .PHONY : projects/k3bvcdprojectmodel.cpp.s
 
 projects/k3bvcdtrackdialog.o: projects/k3bvcdtrackdialog.cpp.o
@@ -3443,7 +3470,7 @@ projects/k3bvcdtrackdialog.o: projects/k3bvcdtrackdialog.cpp.o
 
 # target to build an object file
 projects/k3bvcdtrackdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.o
 .PHONY : projects/k3bvcdtrackdialog.cpp.o
 
 projects/k3bvcdtrackdialog.i: projects/k3bvcdtrackdialog.cpp.i
@@ -3452,7 +3479,7 @@ projects/k3bvcdtrackdialog.i: projects/k3bvcdtrackdialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdtrackdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.i
 .PHONY : projects/k3bvcdtrackdialog.cpp.i
 
 projects/k3bvcdtrackdialog.s: projects/k3bvcdtrackdialog.cpp.s
@@ -3461,7 +3488,7 @@ projects/k3bvcdtrackdialog.s: projects/k3bvcdtrackdialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdtrackdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackdialog.cpp.s
 .PHONY : projects/k3bvcdtrackdialog.cpp.s
 
 projects/k3bvcdtrackkeysdelegate.o: projects/k3bvcdtrackkeysdelegate.cpp.o
@@ -3470,7 +3497,7 @@ projects/k3bvcdtrackkeysdelegate.o: projects/k3bvcdtrackkeysdelegate.cpp.o
 
 # target to build an object file
 projects/k3bvcdtrackkeysdelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.o
 .PHONY : projects/k3bvcdtrackkeysdelegate.cpp.o
 
 projects/k3bvcdtrackkeysdelegate.i: projects/k3bvcdtrackkeysdelegate.cpp.i
@@ -3479,7 +3506,7 @@ projects/k3bvcdtrackkeysdelegate.i: projects/k3bvcdtrackkeysdelegate.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdtrackkeysdelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.i
 .PHONY : projects/k3bvcdtrackkeysdelegate.cpp.i
 
 projects/k3bvcdtrackkeysdelegate.s: projects/k3bvcdtrackkeysdelegate.cpp.s
@@ -3488,7 +3515,7 @@ projects/k3bvcdtrackkeysdelegate.s: projects/k3bvcdtrackkeysdelegate.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdtrackkeysdelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysdelegate.cpp.s
 .PHONY : projects/k3bvcdtrackkeysdelegate.cpp.s
 
 projects/k3bvcdtrackkeysmodel.o: projects/k3bvcdtrackkeysmodel.cpp.o
@@ -3497,7 +3524,7 @@ projects/k3bvcdtrackkeysmodel.o: projects/k3bvcdtrackkeysmodel.cpp.o
 
 # target to build an object file
 projects/k3bvcdtrackkeysmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.o
 .PHONY : projects/k3bvcdtrackkeysmodel.cpp.o
 
 projects/k3bvcdtrackkeysmodel.i: projects/k3bvcdtrackkeysmodel.cpp.i
@@ -3506,7 +3533,7 @@ projects/k3bvcdtrackkeysmodel.i: projects/k3bvcdtrackkeysmodel.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdtrackkeysmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.i
 .PHONY : projects/k3bvcdtrackkeysmodel.cpp.i
 
 projects/k3bvcdtrackkeysmodel.s: projects/k3bvcdtrackkeysmodel.cpp.s
@@ -3515,7 +3542,7 @@ projects/k3bvcdtrackkeysmodel.s: projects/k3bvcdtrackkeysmodel.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdtrackkeysmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdtrackkeysmodel.cpp.s
 .PHONY : projects/k3bvcdtrackkeysmodel.cpp.s
 
 projects/k3bvcdview.o: projects/k3bvcdview.cpp.o
@@ -3524,7 +3551,7 @@ projects/k3bvcdview.o: projects/k3bvcdview.cpp.o
 
 # target to build an object file
 projects/k3bvcdview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
 .PHONY : projects/k3bvcdview.cpp.o
 
 projects/k3bvcdview.i: projects/k3bvcdview.cpp.i
@@ -3533,7 +3560,7 @@ projects/k3bvcdview.i: projects/k3bvcdview.cpp.i
 
 # target to preprocess a source file
 projects/k3bvcdview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.i
 .PHONY : projects/k3bvcdview.cpp.i
 
 projects/k3bvcdview.s: projects/k3bvcdview.cpp.s
@@ -3542,7 +3569,7 @@ projects/k3bvcdview.s: projects/k3bvcdview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvcdview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.s
 .PHONY : projects/k3bvcdview.cpp.s
 
 projects/k3bvideodvdburndialog.o: projects/k3bvideodvdburndialog.cpp.o
@@ -3551,7 +3578,7 @@ projects/k3bvideodvdburndialog.o: projects/k3bvideodvdburndialog.cpp.o
 
 # target to build an object file
 projects/k3bvideodvdburndialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o
 .PHONY : projects/k3bvideodvdburndialog.cpp.o
 
 projects/k3bvideodvdburndialog.i: projects/k3bvideodvdburndialog.cpp.i
@@ -3560,7 +3587,7 @@ projects/k3bvideodvdburndialog.i: projects/k3bvideodvdburndialog.cpp.i
 
 # target to preprocess a source file
 projects/k3bvideodvdburndialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.i
 .PHONY : projects/k3bvideodvdburndialog.cpp.i
 
 projects/k3bvideodvdburndialog.s: projects/k3bvideodvdburndialog.cpp.s
@@ -3569,7 +3596,7 @@ projects/k3bvideodvdburndialog.s: projects/k3bvideodvdburndialog.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvideodvdburndialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.s
 .PHONY : projects/k3bvideodvdburndialog.cpp.s
 
 projects/k3bvideodvdview.o: projects/k3bvideodvdview.cpp.o
@@ -3578,7 +3605,7 @@ projects/k3bvideodvdview.o: projects/k3bvideodvdview.cpp.o
 
 # target to build an object file
 projects/k3bvideodvdview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.o
 .PHONY : projects/k3bvideodvdview.cpp.o
 
 projects/k3bvideodvdview.i: projects/k3bvideodvdview.cpp.i
@@ -3587,7 +3614,7 @@ projects/k3bvideodvdview.i: projects/k3bvideodvdview.cpp.i
 
 # target to preprocess a source file
 projects/k3bvideodvdview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.i
 .PHONY : projects/k3bvideodvdview.cpp.i
 
 projects/k3bvideodvdview.s: projects/k3bvideodvdview.cpp.s
@@ -3596,7 +3623,7 @@ projects/k3bvideodvdview.s: projects/k3bvideodvdview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvideodvdview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvideodvdview.cpp.s
 .PHONY : projects/k3bvideodvdview.cpp.s
 
 projects/k3bview.o: projects/k3bview.cpp.o
@@ -3605,7 +3632,7 @@ projects/k3bview.o: projects/k3bview.cpp.o
 
 # target to build an object file
 projects/k3bview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.o
 .PHONY : projects/k3bview.cpp.o
 
 projects/k3bview.i: projects/k3bview.cpp.i
@@ -3614,7 +3641,7 @@ projects/k3bview.i: projects/k3bview.cpp.i
 
 # target to preprocess a source file
 projects/k3bview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.i
 .PHONY : projects/k3bview.cpp.i
 
 projects/k3bview.s: projects/k3bview.cpp.s
@@ -3623,7 +3650,7 @@ projects/k3bview.s: projects/k3bview.cpp.s
 
 # target to generate assembly for a file
 projects/k3bview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bview.cpp.s
 .PHONY : projects/k3bview.cpp.s
 
 projects/k3bvolumenamewidget.o: projects/k3bvolumenamewidget.cpp.o
@@ -3632,7 +3659,7 @@ projects/k3bvolumenamewidget.o: projects/k3bvolumenamewidget.cpp.o
 
 # target to build an object file
 projects/k3bvolumenamewidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.o
 .PHONY : projects/k3bvolumenamewidget.cpp.o
 
 projects/k3bvolumenamewidget.i: projects/k3bvolumenamewidget.cpp.i
@@ -3641,7 +3668,7 @@ projects/k3bvolumenamewidget.i: projects/k3bvolumenamewidget.cpp.i
 
 # target to preprocess a source file
 projects/k3bvolumenamewidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.i
 .PHONY : projects/k3bvolumenamewidget.cpp.i
 
 projects/k3bvolumenamewidget.s: projects/k3bvolumenamewidget.cpp.s
@@ -3650,7 +3677,7 @@ projects/k3bvolumenamewidget.s: projects/k3bvolumenamewidget.cpp.s
 
 # target to generate assembly for a file
 projects/k3bvolumenamewidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/k3bvolumenamewidget.cpp.s
 .PHONY : projects/k3bvolumenamewidget.cpp.s
 
 projects/kostore/KoStore.o: projects/kostore/KoStore.cpp.o
@@ -3659,7 +3686,7 @@ projects/kostore/KoStore.o: projects/kostore/KoStore.cpp.o
 
 # target to build an object file
 projects/kostore/KoStore.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.o
 .PHONY : projects/kostore/KoStore.cpp.o
 
 projects/kostore/KoStore.i: projects/kostore/KoStore.cpp.i
@@ -3668,7 +3695,7 @@ projects/kostore/KoStore.i: projects/kostore/KoStore.cpp.i
 
 # target to preprocess a source file
 projects/kostore/KoStore.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.i
 .PHONY : projects/kostore/KoStore.cpp.i
 
 projects/kostore/KoStore.s: projects/kostore/KoStore.cpp.s
@@ -3677,7 +3704,7 @@ projects/kostore/KoStore.s: projects/kostore/KoStore.cpp.s
 
 # target to generate assembly for a file
 projects/kostore/KoStore.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStore.cpp.s
 .PHONY : projects/kostore/KoStore.cpp.s
 
 projects/kostore/KoStoreBase.o: projects/kostore/KoStoreBase.cpp.o
@@ -3686,7 +3713,7 @@ projects/kostore/KoStoreBase.o: projects/kostore/KoStoreBase.cpp.o
 
 # target to build an object file
 projects/kostore/KoStoreBase.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.o
 .PHONY : projects/kostore/KoStoreBase.cpp.o
 
 projects/kostore/KoStoreBase.i: projects/kostore/KoStoreBase.cpp.i
@@ -3695,7 +3722,7 @@ projects/kostore/KoStoreBase.i: projects/kostore/KoStoreBase.cpp.i
 
 # target to preprocess a source file
 projects/kostore/KoStoreBase.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.i
 .PHONY : projects/kostore/KoStoreBase.cpp.i
 
 projects/kostore/KoStoreBase.s: projects/kostore/KoStoreBase.cpp.s
@@ -3704,7 +3731,7 @@ projects/kostore/KoStoreBase.s: projects/kostore/KoStoreBase.cpp.s
 
 # target to generate assembly for a file
 projects/kostore/KoStoreBase.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoStoreBase.cpp.s
 .PHONY : projects/kostore/KoStoreBase.cpp.s
 
 projects/kostore/KoZipStore.o: projects/kostore/KoZipStore.cpp.o
@@ -3713,7 +3740,7 @@ projects/kostore/KoZipStore.o: projects/kostore/KoZipStore.cpp.o
 
 # target to build an object file
 projects/kostore/KoZipStore.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.o
 .PHONY : projects/kostore/KoZipStore.cpp.o
 
 projects/kostore/KoZipStore.i: projects/kostore/KoZipStore.cpp.i
@@ -3722,7 +3749,7 @@ projects/kostore/KoZipStore.i: projects/kostore/KoZipStore.cpp.i
 
 # target to preprocess a source file
 projects/kostore/KoZipStore.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.i
 .PHONY : projects/kostore/KoZipStore.cpp.i
 
 projects/kostore/KoZipStore.s: projects/kostore/KoZipStore.cpp.s
@@ -3731,7 +3758,7 @@ projects/kostore/KoZipStore.s: projects/kostore/KoZipStore.cpp.s
 
 # target to generate assembly for a file
 projects/kostore/KoZipStore.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/projects/kostore/KoZipStore.cpp.s
 .PHONY : projects/kostore/KoZipStore.cpp.s
 
 rip/categories.o: rip/categories.cpp.o
@@ -3740,7 +3767,7 @@ rip/categories.o: rip/categories.cpp.o
 
 # target to build an object file
 rip/categories.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.o
 .PHONY : rip/categories.cpp.o
 
 rip/categories.i: rip/categories.cpp.i
@@ -3749,7 +3776,7 @@ rip/categories.i: rip/categories.cpp.i
 
 # target to preprocess a source file
 rip/categories.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.i
 .PHONY : rip/categories.cpp.i
 
 rip/categories.s: rip/categories.cpp.s
@@ -3758,7 +3785,7 @@ rip/categories.s: rip/categories.cpp.s
 
 # target to generate assembly for a file
 rip/categories.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/categories.cpp.s
 .PHONY : rip/categories.cpp.s
 
 rip/k3baudiocdview.o: rip/k3baudiocdview.cpp.o
@@ -3767,7 +3794,7 @@ rip/k3baudiocdview.o: rip/k3baudiocdview.cpp.o
 
 # target to build an object file
 rip/k3baudiocdview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.o
 .PHONY : rip/k3baudiocdview.cpp.o
 
 rip/k3baudiocdview.i: rip/k3baudiocdview.cpp.i
@@ -3776,7 +3803,7 @@ rip/k3baudiocdview.i: rip/k3baudiocdview.cpp.i
 
 # target to preprocess a source file
 rip/k3baudiocdview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.i
 .PHONY : rip/k3baudiocdview.cpp.i
 
 rip/k3baudiocdview.s: rip/k3baudiocdview.cpp.s
@@ -3785,7 +3812,7 @@ rip/k3baudiocdview.s: rip/k3baudiocdview.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudiocdview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiocdview.cpp.s
 .PHONY : rip/k3baudiocdview.cpp.s
 
 rip/k3baudioconvertingoptionwidget.o: rip/k3baudioconvertingoptionwidget.cpp.o
@@ -3794,7 +3821,7 @@ rip/k3baudioconvertingoptionwidget.o: rip/k3baudioconvertingoptionwidget.cpp.o
 
 # target to build an object file
 rip/k3baudioconvertingoptionwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.o
 .PHONY : rip/k3baudioconvertingoptionwidget.cpp.o
 
 rip/k3baudioconvertingoptionwidget.i: rip/k3baudioconvertingoptionwidget.cpp.i
@@ -3803,7 +3830,7 @@ rip/k3baudioconvertingoptionwidget.i: rip/k3baudioconvertingoptionwidget.cpp.i
 
 # target to preprocess a source file
 rip/k3baudioconvertingoptionwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.i
 .PHONY : rip/k3baudioconvertingoptionwidget.cpp.i
 
 rip/k3baudioconvertingoptionwidget.s: rip/k3baudioconvertingoptionwidget.cpp.s
@@ -3812,7 +3839,7 @@ rip/k3baudioconvertingoptionwidget.s: rip/k3baudioconvertingoptionwidget.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudioconvertingoptionwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioconvertingoptionwidget.cpp.s
 .PHONY : rip/k3baudioconvertingoptionwidget.cpp.s
 
 rip/k3baudioprojectconvertingdialog.o: rip/k3baudioprojectconvertingdialog.cpp.o
@@ -3821,7 +3848,7 @@ rip/k3baudioprojectconvertingdialog.o: rip/k3baudioprojectconvertingdialog.cpp.o
 
 # target to build an object file
 rip/k3baudioprojectconvertingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.o
 .PHONY : rip/k3baudioprojectconvertingdialog.cpp.o
 
 rip/k3baudioprojectconvertingdialog.i: rip/k3baudioprojectconvertingdialog.cpp.i
@@ -3830,7 +3857,7 @@ rip/k3baudioprojectconvertingdialog.i: rip/k3baudioprojectconvertingdialog.cpp.i
 
 # target to preprocess a source file
 rip/k3baudioprojectconvertingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.i
 .PHONY : rip/k3baudioprojectconvertingdialog.cpp.i
 
 rip/k3baudioprojectconvertingdialog.s: rip/k3baudioprojectconvertingdialog.cpp.s
@@ -3839,7 +3866,7 @@ rip/k3baudioprojectconvertingdialog.s: rip/k3baudioprojectconvertingdialog.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudioprojectconvertingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingdialog.cpp.s
 .PHONY : rip/k3baudioprojectconvertingdialog.cpp.s
 
 rip/k3baudioprojectconvertingjob.o: rip/k3baudioprojectconvertingjob.cpp.o
@@ -3848,7 +3875,7 @@ rip/k3baudioprojectconvertingjob.o: rip/k3baudioprojectconvertingjob.cpp.o
 
 # target to build an object file
 rip/k3baudioprojectconvertingjob.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.o
 .PHONY : rip/k3baudioprojectconvertingjob.cpp.o
 
 rip/k3baudioprojectconvertingjob.i: rip/k3baudioprojectconvertingjob.cpp.i
@@ -3857,7 +3884,7 @@ rip/k3baudioprojectconvertingjob.i: rip/k3baudioprojectconvertingjob.cpp.i
 
 # target to preprocess a source file
 rip/k3baudioprojectconvertingjob.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.i
 .PHONY : rip/k3baudioprojectconvertingjob.cpp.i
 
 rip/k3baudioprojectconvertingjob.s: rip/k3baudioprojectconvertingjob.cpp.s
@@ -3866,7 +3893,7 @@ rip/k3baudioprojectconvertingjob.s: rip/k3baudioprojectconvertingjob.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudioprojectconvertingjob.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioprojectconvertingjob.cpp.s
 .PHONY : rip/k3baudioprojectconvertingjob.cpp.s
 
 rip/k3baudioripjob.o: rip/k3baudioripjob.cpp.o
@@ -3875,7 +3902,7 @@ rip/k3baudioripjob.o: rip/k3baudioripjob.cpp.o
 
 # target to build an object file
 rip/k3baudioripjob.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.o
 .PHONY : rip/k3baudioripjob.cpp.o
 
 rip/k3baudioripjob.i: rip/k3baudioripjob.cpp.i
@@ -3884,7 +3911,7 @@ rip/k3baudioripjob.i: rip/k3baudioripjob.cpp.i
 
 # target to preprocess a source file
 rip/k3baudioripjob.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.i
 .PHONY : rip/k3baudioripjob.cpp.i
 
 rip/k3baudioripjob.s: rip/k3baudioripjob.cpp.s
@@ -3893,7 +3920,7 @@ rip/k3baudioripjob.s: rip/k3baudioripjob.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudioripjob.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudioripjob.cpp.s
 .PHONY : rip/k3baudioripjob.cpp.s
 
 rip/k3baudiorippingdialog.o: rip/k3baudiorippingdialog.cpp.o
@@ -3902,7 +3929,7 @@ rip/k3baudiorippingdialog.o: rip/k3baudiorippingdialog.cpp.o
 
 # target to build an object file
 rip/k3baudiorippingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.o
 .PHONY : rip/k3baudiorippingdialog.cpp.o
 
 rip/k3baudiorippingdialog.i: rip/k3baudiorippingdialog.cpp.i
@@ -3911,7 +3938,7 @@ rip/k3baudiorippingdialog.i: rip/k3baudiorippingdialog.cpp.i
 
 # target to preprocess a source file
 rip/k3baudiorippingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.i
 .PHONY : rip/k3baudiorippingdialog.cpp.i
 
 rip/k3baudiorippingdialog.s: rip/k3baudiorippingdialog.cpp.s
@@ -3920,7 +3947,7 @@ rip/k3baudiorippingdialog.s: rip/k3baudiorippingdialog.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudiorippingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiorippingdialog.cpp.s
 .PHONY : rip/k3baudiorippingdialog.cpp.s
 
 rip/k3baudiotrackmodel.o: rip/k3baudiotrackmodel.cpp.o
@@ -3929,7 +3956,7 @@ rip/k3baudiotrackmodel.o: rip/k3baudiotrackmodel.cpp.o
 
 # target to build an object file
 rip/k3baudiotrackmodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.o
 .PHONY : rip/k3baudiotrackmodel.cpp.o
 
 rip/k3baudiotrackmodel.i: rip/k3baudiotrackmodel.cpp.i
@@ -3938,7 +3965,7 @@ rip/k3baudiotrackmodel.i: rip/k3baudiotrackmodel.cpp.i
 
 # target to preprocess a source file
 rip/k3baudiotrackmodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.i
 .PHONY : rip/k3baudiotrackmodel.cpp.i
 
 rip/k3baudiotrackmodel.s: rip/k3baudiotrackmodel.cpp.s
@@ -3947,7 +3974,7 @@ rip/k3baudiotrackmodel.s: rip/k3baudiotrackmodel.cpp.s
 
 # target to generate assembly for a file
 rip/k3baudiotrackmodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3baudiotrackmodel.cpp.s
 .PHONY : rip/k3baudiotrackmodel.cpp.s
 
 rip/k3bcddbpatternwidget.o: rip/k3bcddbpatternwidget.cpp.o
@@ -3956,7 +3983,7 @@ rip/k3bcddbpatternwidget.o: rip/k3bcddbpatternwidget.cpp.o
 
 # target to build an object file
 rip/k3bcddbpatternwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.o
 .PHONY : rip/k3bcddbpatternwidget.cpp.o
 
 rip/k3bcddbpatternwidget.i: rip/k3bcddbpatternwidget.cpp.i
@@ -3965,7 +3992,7 @@ rip/k3bcddbpatternwidget.i: rip/k3bcddbpatternwidget.cpp.i
 
 # target to preprocess a source file
 rip/k3bcddbpatternwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.i
 .PHONY : rip/k3bcddbpatternwidget.cpp.i
 
 rip/k3bcddbpatternwidget.s: rip/k3bcddbpatternwidget.cpp.s
@@ -3974,7 +4001,7 @@ rip/k3bcddbpatternwidget.s: rip/k3bcddbpatternwidget.cpp.s
 
 # target to generate assembly for a file
 rip/k3bcddbpatternwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcddbpatternwidget.cpp.s
 .PHONY : rip/k3bcddbpatternwidget.cpp.s
 
 rip/k3bcuefilewriter.o: rip/k3bcuefilewriter.cpp.o
@@ -3983,7 +4010,7 @@ rip/k3bcuefilewriter.o: rip/k3bcuefilewriter.cpp.o
 
 # target to build an object file
 rip/k3bcuefilewriter.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.o
 .PHONY : rip/k3bcuefilewriter.cpp.o
 
 rip/k3bcuefilewriter.i: rip/k3bcuefilewriter.cpp.i
@@ -3992,7 +4019,7 @@ rip/k3bcuefilewriter.i: rip/k3bcuefilewriter.cpp.i
 
 # target to preprocess a source file
 rip/k3bcuefilewriter.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.i
 .PHONY : rip/k3bcuefilewriter.cpp.i
 
 rip/k3bcuefilewriter.s: rip/k3bcuefilewriter.cpp.s
@@ -4001,7 +4028,7 @@ rip/k3bcuefilewriter.s: rip/k3bcuefilewriter.cpp.s
 
 # target to generate assembly for a file
 rip/k3bcuefilewriter.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bcuefilewriter.cpp.s
 .PHONY : rip/k3bcuefilewriter.cpp.s
 
 rip/k3bmassaudioencodingjob.o: rip/k3bmassaudioencodingjob.cpp.o
@@ -4010,7 +4037,7 @@ rip/k3bmassaudioencodingjob.o: rip/k3bmassaudioencodingjob.cpp.o
 
 # target to build an object file
 rip/k3bmassaudioencodingjob.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.o
 .PHONY : rip/k3bmassaudioencodingjob.cpp.o
 
 rip/k3bmassaudioencodingjob.i: rip/k3bmassaudioencodingjob.cpp.i
@@ -4019,7 +4046,7 @@ rip/k3bmassaudioencodingjob.i: rip/k3bmassaudioencodingjob.cpp.i
 
 # target to preprocess a source file
 rip/k3bmassaudioencodingjob.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.i
 .PHONY : rip/k3bmassaudioencodingjob.cpp.i
 
 rip/k3bmassaudioencodingjob.s: rip/k3bmassaudioencodingjob.cpp.s
@@ -4028,7 +4055,7 @@ rip/k3bmassaudioencodingjob.s: rip/k3bmassaudioencodingjob.cpp.s
 
 # target to generate assembly for a file
 rip/k3bmassaudioencodingjob.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bmassaudioencodingjob.cpp.s
 .PHONY : rip/k3bmassaudioencodingjob.cpp.s
 
 rip/k3bpatternparser.o: rip/k3bpatternparser.cpp.o
@@ -4037,7 +4064,7 @@ rip/k3bpatternparser.o: rip/k3bpatternparser.cpp.o
 
 # target to build an object file
 rip/k3bpatternparser.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.o
 .PHONY : rip/k3bpatternparser.cpp.o
 
 rip/k3bpatternparser.i: rip/k3bpatternparser.cpp.i
@@ -4046,7 +4073,7 @@ rip/k3bpatternparser.i: rip/k3bpatternparser.cpp.i
 
 # target to preprocess a source file
 rip/k3bpatternparser.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.i
 .PHONY : rip/k3bpatternparser.cpp.i
 
 rip/k3bpatternparser.s: rip/k3bpatternparser.cpp.s
@@ -4055,7 +4082,7 @@ rip/k3bpatternparser.s: rip/k3bpatternparser.cpp.s
 
 # target to generate assembly for a file
 rip/k3bpatternparser.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bpatternparser.cpp.s
 .PHONY : rip/k3bpatternparser.cpp.s
 
 rip/k3bvideocdinfo.o: rip/k3bvideocdinfo.cpp.o
@@ -4064,7 +4091,7 @@ rip/k3bvideocdinfo.o: rip/k3bvideocdinfo.cpp.o
 
 # target to build an object file
 rip/k3bvideocdinfo.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.o
 .PHONY : rip/k3bvideocdinfo.cpp.o
 
 rip/k3bvideocdinfo.i: rip/k3bvideocdinfo.cpp.i
@@ -4073,7 +4100,7 @@ rip/k3bvideocdinfo.i: rip/k3bvideocdinfo.cpp.i
 
 # target to preprocess a source file
 rip/k3bvideocdinfo.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.i
 .PHONY : rip/k3bvideocdinfo.cpp.i
 
 rip/k3bvideocdinfo.s: rip/k3bvideocdinfo.cpp.s
@@ -4082,7 +4109,7 @@ rip/k3bvideocdinfo.s: rip/k3bvideocdinfo.cpp.s
 
 # target to generate assembly for a file
 rip/k3bvideocdinfo.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdinfo.cpp.s
 .PHONY : rip/k3bvideocdinfo.cpp.s
 
 rip/k3bvideocdrip.o: rip/k3bvideocdrip.cpp.o
@@ -4091,7 +4118,7 @@ rip/k3bvideocdrip.o: rip/k3bvideocdrip.cpp.o
 
 # target to build an object file
 rip/k3bvideocdrip.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.o
 .PHONY : rip/k3bvideocdrip.cpp.o
 
 rip/k3bvideocdrip.i: rip/k3bvideocdrip.cpp.i
@@ -4100,7 +4127,7 @@ rip/k3bvideocdrip.i: rip/k3bvideocdrip.cpp.i
 
 # target to preprocess a source file
 rip/k3bvideocdrip.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.i
 .PHONY : rip/k3bvideocdrip.cpp.i
 
 rip/k3bvideocdrip.s: rip/k3bvideocdrip.cpp.s
@@ -4109,7 +4136,7 @@ rip/k3bvideocdrip.s: rip/k3bvideocdrip.cpp.s
 
 # target to generate assembly for a file
 rip/k3bvideocdrip.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrip.cpp.s
 .PHONY : rip/k3bvideocdrip.cpp.s
 
 rip/k3bvideocdrippingdialog.o: rip/k3bvideocdrippingdialog.cpp.o
@@ -4118,7 +4145,7 @@ rip/k3bvideocdrippingdialog.o: rip/k3bvideocdrippingdialog.cpp.o
 
 # target to build an object file
 rip/k3bvideocdrippingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.o
 .PHONY : rip/k3bvideocdrippingdialog.cpp.o
 
 rip/k3bvideocdrippingdialog.i: rip/k3bvideocdrippingdialog.cpp.i
@@ -4127,7 +4154,7 @@ rip/k3bvideocdrippingdialog.i: rip/k3bvideocdrippingdialog.cpp.i
 
 # target to preprocess a source file
 rip/k3bvideocdrippingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.i
 .PHONY : rip/k3bvideocdrippingdialog.cpp.i
 
 rip/k3bvideocdrippingdialog.s: rip/k3bvideocdrippingdialog.cpp.s
@@ -4136,7 +4163,7 @@ rip/k3bvideocdrippingdialog.s: rip/k3bvideocdrippingdialog.cpp.s
 
 # target to generate assembly for a file
 rip/k3bvideocdrippingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdrippingdialog.cpp.s
 .PHONY : rip/k3bvideocdrippingdialog.cpp.s
 
 rip/k3bvideocdview.o: rip/k3bvideocdview.cpp.o
@@ -4145,7 +4172,7 @@ rip/k3bvideocdview.o: rip/k3bvideocdview.cpp.o
 
 # target to build an object file
 rip/k3bvideocdview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.o
 .PHONY : rip/k3bvideocdview.cpp.o
 
 rip/k3bvideocdview.i: rip/k3bvideocdview.cpp.i
@@ -4154,7 +4181,7 @@ rip/k3bvideocdview.i: rip/k3bvideocdview.cpp.i
 
 # target to preprocess a source file
 rip/k3bvideocdview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.i
 .PHONY : rip/k3bvideocdview.cpp.i
 
 rip/k3bvideocdview.s: rip/k3bvideocdview.cpp.s
@@ -4163,7 +4190,7 @@ rip/k3bvideocdview.s: rip/k3bvideocdview.cpp.s
 
 # target to generate assembly for a file
 rip/k3bvideocdview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/k3bvideocdview.cpp.s
 .PHONY : rip/k3bvideocdview.cpp.s
 
 rip/videodvd/k3bvideodvdaudiomodel.o: rip/videodvd/k3bvideodvdaudiomodel.cpp.o
@@ -4172,7 +4199,7 @@ rip/videodvd/k3bvideodvdaudiomodel.o: rip/videodvd/k3bvideodvdaudiomodel.cpp.o
 
 # target to build an object file
 rip/videodvd/k3bvideodvdaudiomodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdaudiomodel.cpp.o
 
 rip/videodvd/k3bvideodvdaudiomodel.i: rip/videodvd/k3bvideodvdaudiomodel.cpp.i
@@ -4181,7 +4208,7 @@ rip/videodvd/k3bvideodvdaudiomodel.i: rip/videodvd/k3bvideodvdaudiomodel.cpp.i
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdaudiomodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdaudiomodel.cpp.i
 
 rip/videodvd/k3bvideodvdaudiomodel.s: rip/videodvd/k3bvideodvdaudiomodel.cpp.s
@@ -4190,7 +4217,7 @@ rip/videodvd/k3bvideodvdaudiomodel.s: rip/videodvd/k3bvideodvdaudiomodel.cpp.s
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdaudiomodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdaudiomodel.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdaudiomodel.cpp.s
 
 rip/videodvd/k3bvideodvdrippingdialog.o: rip/videodvd/k3bvideodvdrippingdialog.cpp.o
@@ -4199,7 +4226,7 @@ rip/videodvd/k3bvideodvdrippingdialog.o: rip/videodvd/k3bvideodvdrippingdialog.c
 
 # target to build an object file
 rip/videodvd/k3bvideodvdrippingdialog.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdrippingdialog.cpp.o
 
 rip/videodvd/k3bvideodvdrippingdialog.i: rip/videodvd/k3bvideodvdrippingdialog.cpp.i
@@ -4208,7 +4235,7 @@ rip/videodvd/k3bvideodvdrippingdialog.i: rip/videodvd/k3bvideodvdrippingdialog.c
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdrippingdialog.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdrippingdialog.cpp.i
 
 rip/videodvd/k3bvideodvdrippingdialog.s: rip/videodvd/k3bvideodvdrippingdialog.cpp.s
@@ -4217,7 +4244,7 @@ rip/videodvd/k3bvideodvdrippingdialog.s: rip/videodvd/k3bvideodvdrippingdialog.c
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdrippingdialog.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingdialog.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdrippingdialog.cpp.s
 
 rip/videodvd/k3bvideodvdrippingjob.o: rip/videodvd/k3bvideodvdrippingjob.cpp.o
@@ -4226,7 +4253,7 @@ rip/videodvd/k3bvideodvdrippingjob.o: rip/videodvd/k3bvideodvdrippingjob.cpp.o
 
 # target to build an object file
 rip/videodvd/k3bvideodvdrippingjob.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdrippingjob.cpp.o
 
 rip/videodvd/k3bvideodvdrippingjob.i: rip/videodvd/k3bvideodvdrippingjob.cpp.i
@@ -4235,7 +4262,7 @@ rip/videodvd/k3bvideodvdrippingjob.i: rip/videodvd/k3bvideodvdrippingjob.cpp.i
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdrippingjob.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdrippingjob.cpp.i
 
 rip/videodvd/k3bvideodvdrippingjob.s: rip/videodvd/k3bvideodvdrippingjob.cpp.s
@@ -4244,7 +4271,7 @@ rip/videodvd/k3bvideodvdrippingjob.s: rip/videodvd/k3bvideodvdrippingjob.cpp.s
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdrippingjob.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingjob.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdrippingjob.cpp.s
 
 rip/videodvd/k3bvideodvdrippingpreview.o: rip/videodvd/k3bvideodvdrippingpreview.cpp.o
@@ -4253,7 +4280,7 @@ rip/videodvd/k3bvideodvdrippingpreview.o: rip/videodvd/k3bvideodvdrippingpreview
 
 # target to build an object file
 rip/videodvd/k3bvideodvdrippingpreview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdrippingpreview.cpp.o
 
 rip/videodvd/k3bvideodvdrippingpreview.i: rip/videodvd/k3bvideodvdrippingpreview.cpp.i
@@ -4262,7 +4289,7 @@ rip/videodvd/k3bvideodvdrippingpreview.i: rip/videodvd/k3bvideodvdrippingpreview
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdrippingpreview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdrippingpreview.cpp.i
 
 rip/videodvd/k3bvideodvdrippingpreview.s: rip/videodvd/k3bvideodvdrippingpreview.cpp.s
@@ -4271,7 +4298,7 @@ rip/videodvd/k3bvideodvdrippingpreview.s: rip/videodvd/k3bvideodvdrippingpreview
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdrippingpreview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingpreview.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdrippingpreview.cpp.s
 
 rip/videodvd/k3bvideodvdrippingview.o: rip/videodvd/k3bvideodvdrippingview.cpp.o
@@ -4280,7 +4307,7 @@ rip/videodvd/k3bvideodvdrippingview.o: rip/videodvd/k3bvideodvdrippingview.cpp.o
 
 # target to build an object file
 rip/videodvd/k3bvideodvdrippingview.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdrippingview.cpp.o
 
 rip/videodvd/k3bvideodvdrippingview.i: rip/videodvd/k3bvideodvdrippingview.cpp.i
@@ -4289,7 +4316,7 @@ rip/videodvd/k3bvideodvdrippingview.i: rip/videodvd/k3bvideodvdrippingview.cpp.i
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdrippingview.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdrippingview.cpp.i
 
 rip/videodvd/k3bvideodvdrippingview.s: rip/videodvd/k3bvideodvdrippingview.cpp.s
@@ -4298,7 +4325,7 @@ rip/videodvd/k3bvideodvdrippingview.s: rip/videodvd/k3bvideodvdrippingview.cpp.s
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdrippingview.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingview.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdrippingview.cpp.s
 
 rip/videodvd/k3bvideodvdrippingwidget.o: rip/videodvd/k3bvideodvdrippingwidget.cpp.o
@@ -4307,7 +4334,7 @@ rip/videodvd/k3bvideodvdrippingwidget.o: rip/videodvd/k3bvideodvdrippingwidget.c
 
 # target to build an object file
 rip/videodvd/k3bvideodvdrippingwidget.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdrippingwidget.cpp.o
 
 rip/videodvd/k3bvideodvdrippingwidget.i: rip/videodvd/k3bvideodvdrippingwidget.cpp.i
@@ -4316,7 +4343,7 @@ rip/videodvd/k3bvideodvdrippingwidget.i: rip/videodvd/k3bvideodvdrippingwidget.c
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdrippingwidget.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdrippingwidget.cpp.i
 
 rip/videodvd/k3bvideodvdrippingwidget.s: rip/videodvd/k3bvideodvdrippingwidget.cpp.s
@@ -4325,7 +4352,7 @@ rip/videodvd/k3bvideodvdrippingwidget.s: rip/videodvd/k3bvideodvdrippingwidget.c
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdrippingwidget.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdrippingwidget.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdrippingwidget.cpp.s
 
 rip/videodvd/k3bvideodvdtitledelegate.o: rip/videodvd/k3bvideodvdtitledelegate.cpp.o
@@ -4334,7 +4361,7 @@ rip/videodvd/k3bvideodvdtitledelegate.o: rip/videodvd/k3bvideodvdtitledelegate.c
 
 # target to build an object file
 rip/videodvd/k3bvideodvdtitledelegate.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdtitledelegate.cpp.o
 
 rip/videodvd/k3bvideodvdtitledelegate.i: rip/videodvd/k3bvideodvdtitledelegate.cpp.i
@@ -4343,7 +4370,7 @@ rip/videodvd/k3bvideodvdtitledelegate.i: rip/videodvd/k3bvideodvdtitledelegate.c
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdtitledelegate.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdtitledelegate.cpp.i
 
 rip/videodvd/k3bvideodvdtitledelegate.s: rip/videodvd/k3bvideodvdtitledelegate.cpp.s
@@ -4352,7 +4379,7 @@ rip/videodvd/k3bvideodvdtitledelegate.s: rip/videodvd/k3bvideodvdtitledelegate.c
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdtitledelegate.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitledelegate.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdtitledelegate.cpp.s
 
 rip/videodvd/k3bvideodvdtitlemodel.o: rip/videodvd/k3bvideodvdtitlemodel.cpp.o
@@ -4361,7 +4388,7 @@ rip/videodvd/k3bvideodvdtitlemodel.o: rip/videodvd/k3bvideodvdtitlemodel.cpp.o
 
 # target to build an object file
 rip/videodvd/k3bvideodvdtitlemodel.cpp.o:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.o
 .PHONY : rip/videodvd/k3bvideodvdtitlemodel.cpp.o
 
 rip/videodvd/k3bvideodvdtitlemodel.i: rip/videodvd/k3bvideodvdtitlemodel.cpp.i
@@ -4370,7 +4397,7 @@ rip/videodvd/k3bvideodvdtitlemodel.i: rip/videodvd/k3bvideodvdtitlemodel.cpp.i
 
 # target to preprocess a source file
 rip/videodvd/k3bvideodvdtitlemodel.cpp.i:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.i
 .PHONY : rip/videodvd/k3bvideodvdtitlemodel.cpp.i
 
 rip/videodvd/k3bvideodvdtitlemodel.s: rip/videodvd/k3bvideodvdtitlemodel.cpp.s
@@ -4379,7 +4406,7 @@ rip/videodvd/k3bvideodvdtitlemodel.s: rip/videodvd/k3bvideodvdtitlemodel.cpp.s
 
 # target to generate assembly for a file
 rip/videodvd/k3bvideodvdtitlemodel.cpp.s:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f src/CMakeFiles/k3b.dir/build.make src/CMakeFiles/k3b.dir/rip/videodvd/k3bvideodvdtitlemodel.cpp.s
 .PHONY : rip/videodvd/k3bvideodvdtitlemodel.cpp.s
 
 # Help Target
@@ -4403,6 +4430,9 @@ help:
 	@echo "... k3b.o"
 	@echo "... k3b.i"
 	@echo "... k3b.s"
+	@echo "... k3bFileFilterDialog.o"
+	@echo "... k3bFileFilterDialog.i"
+	@echo "... k3bFileFilterDialog.s"
 	@echo "... k3bTitleBar.o"
 	@echo "... k3bTitleBar.i"
 	@echo "... k3bTitleBar.s"
@@ -4873,6 +4903,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

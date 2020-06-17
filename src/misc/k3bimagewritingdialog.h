@@ -46,6 +46,7 @@ namespace K3b {
 
         void setComboMedium( K3b::Device::Device* dev );
         void setImage( const QUrl& url );
+        
         void saveConfig();
         class Private;
         Private* d;

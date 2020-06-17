@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/icons/actions
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -58,7 +58,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -70,7 +70,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/128x128/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/128-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -82,7 +82,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "musicbrainz.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/16-actions-musicbrainz.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "musicbrainz.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/16-actions-musicbrainz.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -94,7 +94,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -106,7 +106,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -118,7 +118,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/16x16/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/16-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -130,7 +130,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -142,7 +142,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -154,7 +154,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/22x22/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/22-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -166,7 +166,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -178,7 +178,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -190,7 +190,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/32x32/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/32-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -202,7 +202,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -214,7 +214,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -226,7 +226,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/48x48/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/48-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -238,7 +238,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "musicbrainz.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/64-actions-musicbrainz.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "musicbrainz.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/64-actions-musicbrainz.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -250,7 +250,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-audio-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-audio-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-audio-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -262,7 +262,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-video-cd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-video-cd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-video-cd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -274,7 +274,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-video-dvd.png")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/64x64/actions" TYPE FILE RENAME "tools-rip-video-dvd.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/64-actions-tools-rip-video-dvd.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -286,7 +286,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-audio-cd.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-audio-cd.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-audio-cd.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-audio-cd.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -298,7 +298,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-video-cd.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-video-cd.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-video-cd.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-video-cd.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -310,7 +310,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-video-dvd.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-video-dvd.svgz")
+file(INSTALL DESTINATION "/usr/share/k3b/icons/hicolor/scalable/actions" TYPE FILE RENAME "tools-rip-video-dvd.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/actions/sc-actions-tools-rip-video-dvd.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)

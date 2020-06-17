@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 # Utility rule file for org.kde.k3b.policy-customtarget.
 
@@ -54,12 +54,12 @@ CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
 include src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/progress.make
 
 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget: src/helper/org.kde.k3b.policy
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "actions for org.kde.k3b"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "actions for org.kde.k3b"
 
 src/helper/org.kde.k3b.policy: /usr/lib/kauth/libexec/kauth-policy-gen
 src/helper/org.kde.k3b.policy: src/helper/k3b.actions
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating org.kde.k3b.policy"
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper && /usr/lib/kauth/libexec/kauth-policy-gen /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/k3b.actions /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/org.kde.k3b.policy
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/k3b-19.12.3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating org.kde.k3b.policy"
+	cd /home/ubuntu/k3b-19.12.3/src/helper && /usr/lib/kauth/libexec/kauth-policy-gen /home/ubuntu/k3b-19.12.3/src/helper/k3b.actions /home/ubuntu/k3b-19.12.3/src/helper/org.kde.k3b.policy
 
 org.kde.k3b.policy-customtarget: src/helper/CMakeFiles/org.kde.k3b.policy-customtarget
 org.kde.k3b.policy-customtarget: src/helper/org.kde.k3b.policy
@@ -73,10 +73,10 @@ src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build: org.kde.k3b.pol
 .PHONY : src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/build
 
 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper && $(CMAKE_COMMAND) -P CMakeFiles/org.kde.k3b.policy-customtarget.dir/cmake_clean.cmake
+	cd /home/ubuntu/k3b-19.12.3/src/helper && $(CMAKE_COMMAND) -P CMakeFiles/org.kde.k3b.policy-customtarget.dir/cmake_clean.cmake
 .PHONY : src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/clean
 
 src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/depend:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper /home/ubuntu/workspace/k3b/git/k3b-19.12.3 /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src/helper /home/ubuntu/k3b-19.12.3 /home/ubuntu/k3b-19.12.3/src/helper /home/ubuntu/k3b-19.12.3/src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/helper/CMakeFiles/org.kde.k3b.policy-customtarget.dir/depend
 

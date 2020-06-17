@@ -21,12 +21,18 @@
 
 class QModelIndex;
 class QTreeView;
+class QComboBox;
 
 namespace K3b {
     class DataDoc;
     class DataProjectModel;
     class DataViewImpl;
     class DirProxyModel;
+
+    namespace Device{
+        class Device;
+        class DeviceManager;
+    }
 
     class DataView : public View
     {
@@ -41,6 +47,8 @@ namespace K3b {
         void slotStartBurn();
         void add_device_urls(QString filenpath);
         void addUrls( const QList<QUrl>& urls ) override;
+        void slotMediaChange( K3b::Device::Device* );
+        void slotDeviceChange( K3b::Device::DeviceManager* );
 
     private Q_SLOTS:
         void slotParentDir();
@@ -55,6 +63,13 @@ namespace K3b {
         DataViewImpl* m_dataViewImpl;
         QTreeView* m_dirView;
         DirProxyModel* m_dirProxy;
+
+        QComboBox* combo_burner;
+        QComboBox* combo_CD;
+        QStringList device_index;
+        QStringList CD_index;
+        QStringList mount_index;
+
     };
 }
 

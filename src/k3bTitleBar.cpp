@@ -11,12 +11,17 @@
 #include <QTextEdit>
 
 #include "k3bTitleBar.h"
-#include "misc/k3bmediaformattingdialog.h"
+#include "k3bFileFilterDialog.h"
 #include "k3bappdevicemanager.h"
+#include  "k3bdevice.h"
+#include "k3bapplication.h"
+#include "k3bappdevicemanager.h"
+
 
 K3b::TitleBar::TitleBar(QWidget *parent)
     : QWidget(parent)
 {
+
     setFixedHeight(50);
 
     m_pIconLabel = new QLabel(this);
@@ -133,6 +138,12 @@ K3b::TitleBar::TitleBar(QWidget *parent)
 
 K3b::TitleBar::~TitleBar()
 {
+   delete m_pIconLabel;
+   delete m_pTitleLabel;
+   delete m_pMenubutton;
+   delete m_pMinimizeButton;
+   delete m_pMaximizeButton;
+   delete m_pCloseButton;
 
 }
 
@@ -222,15 +233,21 @@ void K3b::TitleBar::clean()
 
 void K3b::TitleBar::formatMedium( K3b::Device::Device* dev )
 {
-    K3b::MediaFormattingDialog d( this );
-    d.setDevice( dev );
-    d.exec();
+    K3b::MediaFormattingDialog dlg( this );
+    dlg.setDevice( dev );
+    dlg.exec();
 }
 
 void K3b::TitleBar::popup()
 {
-    K3b::AppDeviceManager *appDeviceManager = new K3b::AppDeviceManager( this );
-    appDeviceManager->ejectDisk();   
+    QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
+    foreach(K3b::Device::Device* dev, device_list){
+        qDebug() << "device list" << dev <<endl;
+        if(dev){
+            dev->eject();
+            break;
+        }
+    }
 }
 
 void K3b::TitleBar::md5()
@@ -240,7 +257,8 @@ void K3b::TitleBar::md5()
 
 void K3b::TitleBar::filter()
 {
-
+    FileFilter* dlg = new FileFilter();
+    dlg->show();
 }
 void K3b::TitleBar::help()
 {

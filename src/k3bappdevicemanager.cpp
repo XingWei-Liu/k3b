@@ -120,6 +120,7 @@ K3b::Device::Device* K3b::AppDeviceManager::addDevice( const Solid::Device& soli
     if( dev && currentDevice() == 0 ) {
         setCurrentDevice( dev );
     }
+
     return dev;
 }
 
@@ -268,8 +269,10 @@ void K3b::AppDeviceManager::unmountDisk()
 
 void K3b::AppDeviceManager::ejectDisk()
 {
-    if ( currentDevice() )
+    if ( currentDevice() ){
+        qDebug()<< __func__ <<__LINE__ << __FILE__ <<endl;
         K3b::Device::eject( currentDevice() );
+    }
 }
 
 

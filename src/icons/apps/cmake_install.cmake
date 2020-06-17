@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/icons/apps
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,31 +38,31 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/128-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/128-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/16-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/16-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/22x22/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/22-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/22x22/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/22-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/32-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/32-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/48-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/48-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/64-apps-k3b.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "k3b.png" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/64-apps-k3b.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps" TYPE FILE RENAME "k3b.svgz" FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/apps/sc-apps-k3b.svgz")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/scalable/apps" TYPE FILE RENAME "k3b.svgz" FILES "/home/ubuntu/k3b-19.12.3/src/icons/apps/sc-apps-k3b.svgz")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)

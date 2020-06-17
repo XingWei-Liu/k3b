@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src/services
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,24 +39,24 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/solid/actions" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_audiocd_rip.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_copy_disc.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_create_data_project_from_blank_medium.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_create_audio_cd_from_blank_medium.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_audiocd_rip.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_copy_disc.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_create_data_project_from_blank_medium.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_create_audio_cd_from_blank_medium.desktop"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/solid/actions" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_videodvd_rip.desktop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/solid/actions" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/services/k3b_videodvd_rip.desktop")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kservices5/ServiceMenus" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_create_audio_cd.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_create_data_project.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_create_video_cd.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_write_bin_image.desktop"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/k3b_write_iso_image.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_create_audio_cd.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_create_data_project.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_create_video_cd.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_write_bin_image.desktop"
+    "/home/ubuntu/k3b-19.12.3/src/services/k3b_write_iso_image.desktop"
     )
 endif()
 

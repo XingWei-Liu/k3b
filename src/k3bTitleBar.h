@@ -2,6 +2,7 @@
 #define TITLE_BAR_H
 
 #include "option/k3boptiondialog.h"
+#include "misc/k3bmediaformattingdialog.h"
 
 #include <QToolButton>
 #include <QLabel>

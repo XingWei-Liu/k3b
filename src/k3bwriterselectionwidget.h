@@ -115,6 +115,7 @@ namespace K3b {
          */
         void setIgnoreDevice( K3b::Device::Device* dev );
         void hideComboMedium();
+        void hideSpeed();
         void setWantedMedium( K3b::Device::Device* dev );
 
     Q_SIGNALS:
@@ -139,7 +140,8 @@ namespace K3b {
         void slotManualSpeed();
     public:
         class MediaSelectionComboBox;
-
+ 
+        QLabel *labelSpeed;
         IntMapComboBox* m_comboSpeed;
         MediaSelectionComboBox* m_comboMedium;
         

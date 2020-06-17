@@ -37,7 +37,7 @@ namespace K3b {
         ~MediaFormattingDialog() override;
 
     public Q_SLOTS:
-        void setDevice( Device::Device* );
+        void setDevice( K3b::Device::Device* );
 
     protected Q_SLOTS:
         void slotStartClicked() override;

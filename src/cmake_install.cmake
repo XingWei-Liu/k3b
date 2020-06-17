@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src
+# Install script for directory: /home/ubuntu/k3b-19.12.3/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/k3b"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/bin/k3b")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/ubuntu/k3b-19.12.3/bin/k3b")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/k3b" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/k3b")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/k3b"
-         OLD_RPATH "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/bin:"
+         OLD_RPATH "/home/ubuntu/k3b-19.12.3/bin:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/k3b")
@@ -58,30 +58,30 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONEN
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE PROGRAM FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.kde.k3b.desktop")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/applications" TYPE PROGRAM FILES "/home/ubuntu/k3b-19.12.3/src/org.kde.k3b.desktop")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/knotifications5" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3b.notifyrc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/knotifications5" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/k3b.notifyrc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/kxmlgui5/k3b" TYPE FILE FILES
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bui.rc"
-    "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/k3bdeviceui.rc"
+    "/home/ubuntu/k3b-19.12.3/src/k3bui.rc"
+    "/home/ubuntu/k3b-19.12.3/src/k3bdeviceui.rc"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/org.kde.k3b.appdata.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/metainfo" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/org.kde.k3b.appdata.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/knsrcfiles" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/option/k3btheme.knsrc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/knsrcfiles" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/option/k3btheme.knsrc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mime/packages" TYPE FILE FILES "/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/x-k3b.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mime/packages" TYPE FILE FILES "/home/ubuntu/k3b-19.12.3/src/x-k3b.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xk3bx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -98,10 +98,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/helper/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/icons/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/cmake_install.cmake")
-  include("/home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/services/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/helper/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/icons/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/pics/cmake_install.cmake")
+  include("/home/ubuntu/k3b-19.12.3/src/services/cmake_install.cmake")
 
 endif()
 

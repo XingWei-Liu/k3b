@@ -1,0 +1,27 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.k3b.Project">
+    <method name="addUrls">
+      <arg name="urls" type="as" direction="in"/>
+    </method>
+    <method name="addUrl">
+      <arg name="url" type="s" direction="in"/>
+    </method>
+    <method name="burn">
+    </method>
+    <method name="directBurn">
+      <arg type="b" direction="out"/>
+    </method>
+    <method name="setBurnDevice">
+      <arg name="blockdevicename" type="s" direction="in"/>
+    </method>
+    <method name="length">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="imagePath">
+    </method>
+    <method name="projectType">
+      <arg type="s" direction="out"/>
+    </method>
+  </interface>
+</node>

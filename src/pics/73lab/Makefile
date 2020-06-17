@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_SOURCE_DIR = /home/ubuntu/k3b-19.12.3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ubuntu/workspace/k3b/git/k3b-19.12.3
+CMAKE_BINARY_DIR = /home/ubuntu/k3b-19.12.3
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles /home/ubuntu/workspace/k3b/git/k3b-19.12.3/src/pics/73lab/CMakeFiles/progress.marks
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/workspace/k3b/git/k3b-19.12.3/CMakeFiles 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles /home/ubuntu/k3b-19.12.3/src/pics/73lab/CMakeFiles/progress.marks
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/k3b-19.12.3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/clean
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,17 +154,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/preinstall
+	cd /home/ubuntu/k3b-19.12.3 && $(MAKE) -f CMakeFiles/Makefile2 src/pics/73lab/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/ubuntu/workspace/k3b/git/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/k3b-19.12.3 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
