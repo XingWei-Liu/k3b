@@ -50,6 +50,7 @@
 #include <Solid/Device>
 #include <Solid/StorageAccess>
 #include <KMountPoint>
+#include <QThread>
 
 K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 :
@@ -79,12 +80,14 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     m_dirView->hide();
     
     
-    QPushButton *burn_setting = new QPushButton(this);
-    burn_setting->setText("setting");
+    burn_setting = new QPushButton(this);
+    //burn_setting->setText("setting");
+    burn_setting->setText("open");
     burn_setting->setMinimumSize(80, 30);
 
-    QPushButton *burn_button = new QPushButton(this);
-    burn_button->setText("start burner");
+    burn_button = new QPushButton(this);
+    //burn_button->setText("start burner");
+    burn_button->setText("crreate iso");
     burn_button->setMinimumSize(140, 45);
 
     QLabel *label = new QLabel(this);
@@ -100,6 +103,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     label_burner->setMinimumSize(75, 30);
 
     combo_burner = new QComboBox(label);
+    combo_burner->setEnabled( false );
     combo_burner->setMinimumSize(310, 30);
     
     QLabel *label_space = new QLabel(label);
@@ -109,6 +113,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     label_CD->setMinimumSize(75, 30);
 
     combo_CD = new QComboBox(label);
+    combo_CD->setEditable( true );
     combo_CD->setMinimumSize(310, 30);
 
     layout->addWidget( m_dataViewImpl->view(), 0, 0, 1, 5 );
@@ -152,6 +157,8 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 
     connect( burn_setting, SIGNAL(clicked()), this, SLOT(slotBurn()) );
     connect( burn_button, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
+    
+    connect( combo_burner, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotBurnerChanged(int) ) );
 
     connect( m_dataViewImpl, SIGNAL(setCurrentRoot(QModelIndex)),
              this, SLOT(slotSetCurrentRoot(QModelIndex)) );
@@ -210,7 +217,6 @@ K3b::DataView::~DataView()
 void K3b::DataView::slotDeviceChange( K3b::Device::DeviceManager* manager )
 {
     //qDebug()<< "mount at:" << k3bappcore->appDeviceManager()->currentDevice() <<endl;
-    qDebug()<< "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" <<endl;
     QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
     if ( device_list.count() == 0 ){
         combo_burner->setEnabled(false);
@@ -223,21 +229,44 @@ void K3b::DataView::slotDeviceChange( K3b::Device::DeviceManager* manager )
 void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
 {
     //if(dev){
+    QThread::sleep(5);
     QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
     combo_burner->clear();
     combo_CD->clear();
+    mount_index.clear();
     qDebug()<< "device count" << device_list.count() <<endl;
     foreach(K3b::Device::Device* device, device_list){
+        combo_burner->setEnabled( true );
+        burn_setting->setText("setting");
+        burn_button->setText("start burner");
+       
         combo_burner->addItem( device->vendor() + " " + device->description() );
         device_index.append( device->vendor() + " " + device->description() );
+
+        K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
+        
+        qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
+        
+        if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
+            qDebug()<< "empty medium" << device <<endl;
+            
+            combo_CD->addItem( "empty medium  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+            CD_index.append( "empty medium" + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+            mount_index.append( "empty medium" );    
+            continue;
+        }
         if( !mountPoint ){
+            qDebug()<< "no mount point" << device <<endl;
+            
             combo_CD->addItem( "please insert a medium or empty CD" );
             CD_index.append( "please insert a medium or empty CD" );
-            return;
+            mount_index.append( "no medium" );    
+            continue;
         }
-        combo_CD->addItem( k3bappcore->mediaCache()->medium( device ).shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
-        CD_index.append( k3bappcore->mediaCache()->medium( device ).shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        qDebug()<< "mount point" << device <<endl;
+        combo_CD->addItem( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        CD_index.append( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
         mount_index.append( mountPoint->mountPoint() );
     }
     add_device_urls( mount_index.at(0) );
@@ -245,6 +274,13 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
  
 }
 #endif
+
+void K3b::DataView::slotBurnerChanged(int index)
+{
+     qDebug()<< " combo index " << index << endl;
+     combo_CD->setCurrentIndex( index );
+     //add_device_urls( mount_index.at( index ) );
+}
 
 K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
 {
@@ -254,7 +290,10 @@ K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
 void K3b::DataView::add_device_urls(QString filepath)
 {
     QString s;
+        qDebug()<< "index " << filepath <<endl;
     m_doc->clear();
+    if ( filepath == "empty medium" || filepath == "no medium" )
+        return;
     if (filepath != NULL){
         QDir *dir = new QDir(filepath);
         QStringList nameFilters;
@@ -279,14 +318,19 @@ void K3b::DataView::slotStartBurn()
 
 void K3b::DataView::slotBurn()
 {
-    if( m_doc->burningSize() == 0 ) {
-        KMessageBox::information( this, i18n("Please add files to your project first."),
-                                  i18n("No Data to Burn") );
-    }
-    else {
-        ProjectBurnDialog* dlg = newBurnDialog( this );
-        dlg->execBurnDialog(true);
-        delete dlg;
+    if ( burn_setting->text() == "setting" ){
+        if( m_doc->burningSize() == 0 ) {
+            KMessageBox::information( this, i18n("Please add files to your project first."),
+                                      i18n("No Data to Burn") );
+        }
+        else {
+            ProjectBurnDialog* dlg = newBurnDialog( this );
+            dlg->execBurnDialog(true);
+            delete dlg;
+        }
+    }else if ( burn_setting->text() == "open" ){
+        QString filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks/* | QFileDialog::DontUseNativeDialog*/);
+        combo_CD->setCurrentText( filepath + "/data_burn.iso" );
     }
 }
 
