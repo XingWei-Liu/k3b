@@ -22,6 +22,7 @@
 class QModelIndex;
 class QTreeView;
 class QComboBox;
+class QPushButton;
 
 namespace K3b {
     class DataDoc;
@@ -49,6 +50,7 @@ namespace K3b {
         void addUrls( const QList<QUrl>& urls ) override;
         void slotMediaChange( K3b::Device::Device* );
         void slotDeviceChange( K3b::Device::DeviceManager* );
+        void slotBurnerChanged(int);
 
     private Q_SLOTS:
         void slotParentDir();
@@ -69,6 +71,8 @@ namespace K3b {
         QStringList device_index;
         QStringList CD_index;
         QStringList mount_index;
+        QPushButton* burn_setting;
+        QPushButton* burn_button;
 
     };
 }
