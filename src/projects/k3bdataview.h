@@ -19,6 +19,8 @@
 
 #include "k3bview.h"
 
+#include <KMountPoint>
+
 class QModelIndex;
 class QTreeView;
 class QComboBox;
@@ -50,7 +52,8 @@ namespace K3b {
         void addUrls( const QList<QUrl>& urls ) override;
         void slotMediaChange( K3b::Device::Device* );
         void slotDeviceChange( K3b::Device::DeviceManager* );
-        void slotBurnerChanged(int);
+        void slotComboCD(int);
+        void slotComboBurner(int);
 
     private Q_SLOTS:
         void slotParentDir();
@@ -68,8 +71,9 @@ namespace K3b {
 
         QComboBox* combo_burner;
         QComboBox* combo_CD;
-        QStringList device_index;
-        QStringList CD_index;
+        //QStringList device_index;
+        //QStringList CD_index;
+        QList<Device::Device *> device_index;
         QStringList mount_index;
         QPushButton* burn_setting;
         QPushButton* burn_button;

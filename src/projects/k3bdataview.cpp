@@ -49,7 +49,6 @@
 #include <Solid/Block>
 #include <Solid/Device>
 #include <Solid/StorageAccess>
-#include <KMountPoint>
 #include <QThread>
 
 K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
@@ -151,14 +150,15 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     connect( actionCollection()->action( "parent_dir" ), SIGNAL(triggered()),
              this, SLOT(slotParentDir()) );
 */     
-    add_device_urls("/home/ukylin/screenshot");
+    //add_device_urls("/home/ukylin/screenshot");
     m_doc->setVolumeID( "data_burn" );
     
 
     connect( burn_setting, SIGNAL(clicked()), this, SLOT(slotBurn()) );
     connect( burn_button, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
     
-    connect( combo_burner, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotBurnerChanged(int) ) );
+    connect( combo_burner, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotComboBurner(int) ) );
+    connect( combo_CD, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotComboCD(int) ) );
 
     connect( m_dataViewImpl, SIGNAL(setCurrentRoot(QModelIndex)),
              this, SLOT(slotSetCurrentRoot(QModelIndex)) );
@@ -228,20 +228,24 @@ void K3b::DataView::slotDeviceChange( K3b::Device::DeviceManager* manager )
 #if 1
 void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
 {
-    //if(dev){
-    QThread::sleep(5);
+    //QThread::sleep(5);
     QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
     combo_burner->clear();
     combo_CD->clear();
+    combo_CD->setEditable( false );
+    combo_burner->blockSignals( true );
+    //combo_CD->blockSignals( true );
     mount_index.clear();
+    device_index.clear();
+    
     qDebug()<< "device count" << device_list.count() <<endl;
     foreach(K3b::Device::Device* device, device_list){
         combo_burner->setEnabled( true );
         burn_setting->setText("setting");
         burn_button->setText("start burner");
-       
-        combo_burner->addItem( device->vendor() + " " + device->description() );
-        device_index.append( device->vendor() + " " + device->description() );
+         
+        device_index.append( device );
+        //combo_burner->addItem( device->vendor() + " " + device->description() );
 
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
@@ -251,35 +255,49 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
             qDebug()<< "empty medium" << device <<endl;
             
-            combo_CD->addItem( "empty medium  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
-            CD_index.append( "empty medium" + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
             mount_index.append( "empty medium" );    
+            combo_CD->addItem( "empty medium  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+            combo_burner->addItem( device->vendor() + " " + device->description() );
             continue;
         }
         if( !mountPoint ){
             qDebug()<< "no mount point" << device <<endl;
             
-            combo_CD->addItem( "please insert a medium or empty CD" );
-            CD_index.append( "please insert a medium or empty CD" );
             mount_index.append( "no medium" );    
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            combo_burner->addItem( device->vendor() + " " + device->description() );
             continue;
         }
         qDebug()<< "mount point" << device <<endl;
-        combo_CD->addItem( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
-        CD_index.append( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        //qDebug()<< "mount point realdevicename" << mountPoint->mountedFrom() <<endl;
+
         mount_index.append( mountPoint->mountPoint() );
+        combo_CD->addItem( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+
+        combo_burner->addItem( device->vendor() + " " + device->description() );
     }
-    add_device_urls( mount_index.at(0) );
-    //}
+    combo_burner->blockSignals( false );
+    //combo_CD->blockSignals( false );
+
+    //add_device_urls( mount_index.at(0) );
  
 }
 #endif
 
-void K3b::DataView::slotBurnerChanged(int index)
+void K3b::DataView::slotComboBurner(int index)
 {
-     qDebug()<< " combo index " << index << endl;
-     combo_CD->setCurrentIndex( index );
-     //add_device_urls( mount_index.at( index ) );
+    qDebug()<< " combo burner index " << index << mount_index << endl;
+    if ( index < 0 )
+        index = 0;
+    combo_CD->setCurrentIndex( index );
+}
+
+void K3b::DataView::slotComboCD(int index)
+{
+    qDebug()<< " combo Cd index " << index << mount_index << endl;
+    if ( index < 0 )
+        index = 0;
+    add_device_urls( mount_index.at( index ) );
 }
 
 K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
@@ -309,8 +327,10 @@ void K3b::DataView::add_device_urls(QString filepath)
 
 void K3b::DataView::slotStartBurn()
 {
-    
     DataBurnDialog *dlg = new DataBurnDialog( m_doc, this);
+    int index = combo_burner->currentIndex();
+    dlg->setComboMedium( device_index.at( index ) );
+    qDebug()<< "index :" <<  index << " device block name: " << device_index.at( index )->blockDeviceName() <<endl;
     dlg->slotStartClicked();
     
     delete dlg;
