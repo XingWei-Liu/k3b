@@ -349,6 +349,16 @@ void K3b::ProjectBurnDialog::addPage( QWidget* page, const QString& title )
     m_tabWidget->addTab( page, title );
 }
 
+void K3b::ProjectBurnDialog::setOnlyCreateImage( bool ret )
+{
+    m_checkOnlyCreateImage->setChecked( ret );
+}
+
+void K3b::ProjectBurnDialog::setTmpPath( QString ret )
+{
+    m_tempDirSelectionWidget->setTempPath( ret );
+}
+
 void K3b::ProjectBurnDialog::saveSettingsToProject()
 {
     m_doc->setDummy( m_checkSimulate->isChecked() );

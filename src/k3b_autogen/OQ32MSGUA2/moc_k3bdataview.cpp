@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_K3b__DataView_t {
-    QByteArrayData data[18];
-    char stringdata0[244];
+    QByteArrayData data[20];
+    char stringdata0[272];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -45,18 +45,21 @@ QT_MOC_LITERAL(9, 89, 15), // "slotMediaChange"
 QT_MOC_LITERAL(10, 105, 20), // "K3b::Device::Device*"
 QT_MOC_LITERAL(11, 126, 16), // "slotDeviceChange"
 QT_MOC_LITERAL(12, 143, 27), // "K3b::Device::DeviceManager*"
-QT_MOC_LITERAL(13, 171, 13), // "slotParentDir"
-QT_MOC_LITERAL(14, 185, 21), // "slotCurrentDirChanged"
-QT_MOC_LITERAL(15, 207, 18), // "slotSetCurrentRoot"
-QT_MOC_LITERAL(16, 226, 11), // "QModelIndex"
-QT_MOC_LITERAL(17, 238, 5) // "index"
+QT_MOC_LITERAL(13, 171, 11), // "slotComboCD"
+QT_MOC_LITERAL(14, 183, 15), // "slotComboBurner"
+QT_MOC_LITERAL(15, 199, 13), // "slotParentDir"
+QT_MOC_LITERAL(16, 213, 21), // "slotCurrentDirChanged"
+QT_MOC_LITERAL(17, 235, 18), // "slotSetCurrentRoot"
+QT_MOC_LITERAL(18, 254, 11), // "QModelIndex"
+QT_MOC_LITERAL(19, 266, 5) // "index"
 
     },
     "K3b::DataView\0slotBurn\0\0slotStartBurn\0"
     "add_device_urls\0filenpath\0addUrls\0"
     "QList<QUrl>\0urls\0slotMediaChange\0"
     "K3b::Device::Device*\0slotDeviceChange\0"
-    "K3b::Device::DeviceManager*\0slotParentDir\0"
+    "K3b::Device::DeviceManager*\0slotComboCD\0"
+    "slotComboBurner\0slotParentDir\0"
     "slotCurrentDirChanged\0slotSetCurrentRoot\0"
     "QModelIndex\0index"
 };
@@ -68,7 +71,7 @@ static const uint qt_meta_data_K3b__DataView[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -76,15 +79,17 @@ static const uint qt_meta_data_K3b__DataView[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x0a /* Public */,
-       3,    0,   60,    2, 0x0a /* Public */,
-       4,    1,   61,    2, 0x0a /* Public */,
-       6,    1,   64,    2, 0x0a /* Public */,
-       9,    1,   67,    2, 0x0a /* Public */,
-      11,    1,   70,    2, 0x0a /* Public */,
-      13,    0,   73,    2, 0x08 /* Private */,
-      14,    0,   74,    2, 0x08 /* Private */,
-      15,    1,   75,    2, 0x08 /* Private */,
+       1,    0,   69,    2, 0x0a /* Public */,
+       3,    0,   70,    2, 0x0a /* Public */,
+       4,    1,   71,    2, 0x0a /* Public */,
+       6,    1,   74,    2, 0x0a /* Public */,
+       9,    1,   77,    2, 0x0a /* Public */,
+      11,    1,   80,    2, 0x0a /* Public */,
+      13,    1,   83,    2, 0x0a /* Public */,
+      14,    1,   86,    2, 0x0a /* Public */,
+      15,    0,   89,    2, 0x08 /* Private */,
+      16,    0,   90,    2, 0x08 /* Private */,
+      17,    1,   91,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -93,9 +98,11 @@ static const uint qt_meta_data_K3b__DataView[] = {
     QMetaType::Void, 0x80000000 | 7,    8,
     QMetaType::Void, 0x80000000 | 10,    2,
     QMetaType::Void, 0x80000000 | 12,    2,
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Int,    2,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 16,   17,
+    QMetaType::Void, 0x80000000 | 18,   19,
 
        0        // eod
 };
@@ -112,9 +119,11 @@ void K3b::DataView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _i
         case 3: _t->addUrls((*reinterpret_cast< const QList<QUrl>(*)>(_a[1]))); break;
         case 4: _t->slotMediaChange((*reinterpret_cast< K3b::Device::Device*(*)>(_a[1]))); break;
         case 5: _t->slotDeviceChange((*reinterpret_cast< K3b::Device::DeviceManager*(*)>(_a[1]))); break;
-        case 6: _t->slotParentDir(); break;
-        case 7: _t->slotCurrentDirChanged(); break;
-        case 8: _t->slotSetCurrentRoot((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 6: _t->slotComboCD((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->slotComboBurner((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->slotParentDir(); break;
+        case 9: _t->slotCurrentDirChanged(); break;
+        case 10: _t->slotSetCurrentRoot((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -160,13 +169,13 @@ int K3b::DataView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }

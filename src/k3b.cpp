@@ -1319,6 +1319,7 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
 */
     d->documentTab->setCurrentTab( d->doc_data );
     slotCurrentDocChanged();
+
     return d->doc_data;
 }
 

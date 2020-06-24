@@ -50,6 +50,7 @@
 #include <Solid/Device>
 #include <Solid/StorageAccess>
 #include <QThread>
+#include <KMountPoint>
 
 K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 :
@@ -86,7 +87,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 
     burn_button = new QPushButton(this);
     //burn_button->setText("start burner");
-    burn_button->setText("crreate iso");
+    burn_button->setText("create iso");
     burn_button->setMinimumSize(140, 45);
 
     QLabel *label = new QLabel(this);
@@ -171,11 +172,12 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     /********************************************/
 /*    connect( k3bappcore->appDeviceManager(), SIGNAL( currentDeviceChanged( K3b::Device::Device* ) ),
               this, SLOT( slotMountPoint( K3b::Device::Device* ) ) );*/
+#if 0
     connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
               this, SLOT(slotMediaChange(K3b::Device::Device*)) );
     connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
               this, SLOT(slotDeviceChange(K3b::Device::DeviceManager*)) );
-
+#endif
     // Setup toolbar
     /*
     toolBox()->addAction( actionCollection()->action( "project_data_import_session" ) );
@@ -278,9 +280,6 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
     }
     combo_burner->blockSignals( false );
     //combo_CD->blockSignals( false );
-
-    //add_device_urls( mount_index.at(0) );
- 
 }
 #endif
 
@@ -328,9 +327,14 @@ void K3b::DataView::add_device_urls(QString filepath)
 void K3b::DataView::slotStartBurn()
 {
     DataBurnDialog *dlg = new DataBurnDialog( m_doc, this);
-    int index = combo_burner->currentIndex();
-    dlg->setComboMedium( device_index.at( index ) );
-    qDebug()<< "index :" <<  index << " device block name: " << device_index.at( index )->blockDeviceName() <<endl;
+    if ( burn_button->text() == "start burn" ){
+        int index = combo_burner->currentIndex();
+        dlg->setComboMedium( device_index.at( index ) );
+        qDebug()<< "index :" <<  index << " device block name: " << device_index.at( index )->blockDeviceName() <<endl;
+    }else if( burn_button->text() == "create iso" ){
+        dlg->setOnlyCreateImage( true );
+        dlg->setTmpPath( combo_CD->currentText() );
+    }
     dlg->slotStartClicked();
     
     delete dlg;

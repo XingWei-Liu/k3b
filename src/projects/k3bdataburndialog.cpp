@@ -223,7 +223,7 @@ void K3b::DataBurnDialog::slotStartClicked()
                                                      "multisession CDs in DAO mode.") )
             == KMessageBox::Cancel )
             return;
-    readSettingsFromProject();
+    //readSettingsFromProject();
     K3b::ProjectBurnDialog::slotStartClicked();
 }
 

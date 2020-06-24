@@ -513,6 +513,8 @@ void K3b::WriterSelectionWidget::slotWriterChanged()
     if( K3b::Device::Device* dev = writerDevice() ) {
         KConfigGroup g( KSharedConfig::openConfig(), "General Options" );
         g.writeEntry( "current_writer", dev->blockDeviceName() );
+
+        qDebug() << "current_writer" << dev->blockDeviceName() <<endl;
     }
 }
 

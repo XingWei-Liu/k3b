@@ -38,6 +38,10 @@
 #include <QLabel>
 #include <QFileDialog>
 #include "misc/k3bmediacopydialog.h"
+#include "k3bapplication.h"
+#include "k3bappdevicemanager.h"
+#include "k3bmediacache.h"
+#include <KMountPoint>
 
 K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
 :
@@ -123,6 +127,12 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
     connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
 
+#if 1
+    connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
+              this, SLOT(slotMediaChange(K3b::Device::Device*)) );
+    connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
+              this, SLOT(slotDeviceChange(K3b::Device::DeviceManager*)) );
+#endif
 
 /*
     m_view->setModel( m_model );
@@ -167,9 +177,63 @@ K3b::VcdView::~VcdView()
 {
 }
 
+void K3b::VcdView::slotDeviceChange( K3b::Device::DeviceManager* manager)
+{
+    QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
+    if ( device_list.count() == 0 ){
+        combo_iso->setEnabled( false );
+        combo_iso->setCurrentText( "please insert a device" );
+        combo_CD->setEnabled( false );
+        lineedit_CD->setEnabled( false );
+    }else
+        slotMediaChange( 0 );
+
+}
+
+void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
+{
+    QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
+    combo_iso->clear();
+    combo_CD->clear();
+    device_index.clear();
+    qDebug()<< "device count" << device_list.count() <<endl;
+    
+    foreach(K3b::Device::Device* device, device_list){
+        combo_iso->setEnabled( true );
+        combo_CD->setEnabled( true );
+        lineedit_CD->setEnabled( true );
+
+        device_index.append( device );
+
+        K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
+        KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
+
+        qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
+        if ( !( device->diskInfo().diskState() & (K3b::Device::STATE_COMPLETE | K3b::Device::STATE_INCOMPLETE ) ) ){
+            qDebug()<< "empty medium" << device <<endl;
+
+            combo_iso->addItem( "please insert a medium or empty CD" );
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            continue;
+        }
+        if( !(device->diskInfo().mediaType() & K3b::Device::MEDIA_ALL) ){
+            qDebug()<< "media type cannot use" << device->diskInfo().mediaType() <<endl;
+
+            combo_iso->addItem( "please insert a medium or empty CD" );
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            continue;
+        }
+        qDebug()<< "mount point" << device <<endl;
+        combo_iso->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        combo_CD->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+
+    }
+
+}
+
 void K3b::VcdView::slotOpenfile()
 {
-    filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks);
+    filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks/* | QFileDialog::DontUseNativeDialog*/);
 
     if(filepath == NULL)
         return;
@@ -211,16 +275,19 @@ void K3b::VcdView::slotSetting()
 
 void K3b::VcdView::slotStartBurn()
 {
+    int iso_index = combo_iso->currentIndex();
+    int CD_index = combo_CD->currentIndex();
     K3b::MediaCopyDialog *dlg = new K3b::MediaCopyDialog( this );
-    //dlg->setReadingDevice( dev );
+    dlg->setReadingDevice( device_index.at( iso_index ) );
     if ( label_path->isChecked() ){
         dlg->setOnlyCreateImage(true);
         dlg->setTempDirPath( lineedit_CD->text() );
         dlg->saveConfig();
         dlg->slotStartClicked();
     }else if ( label_CD->isChecked() ){
-        //dlg->setComboMedium( dev );
+        dlg->setComboMedium( device_index.at( CD_index ) );
         dlg->saveConfig();
+        qDebug()<< "from" << device_index.at( iso_index )->blockDeviceName() << "to" << device_index.at( CD_index )->blockDeviceName() <<endl;
         dlg->slotStartClicked();
     }else{
         KMessageBox::information( this, i18n("Please add files to your project first."),

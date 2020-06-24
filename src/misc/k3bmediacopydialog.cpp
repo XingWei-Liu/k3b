@@ -128,6 +128,11 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     m_checkDeleteImages = K3b::StdGuiItems::removeImagesCheckbox( groupOptions );
     m_checkVerifyData = K3b::StdGuiItems::verifyCheckBox( groupOptions );
     
+//******************************************
+    m_checkCacheImage->setChecked( true );
+    m_checkDeleteImages->setChecked( true );
+
+
   //tmp
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
     QLabel *m_labeltmpPath = new QLabel( groupOptions );
@@ -340,7 +345,8 @@ void K3b::MediaCopyDialog::slotStartClicked()
     K3b::Device::Device* burnDev = m_writerSelectionWidget->writerDevice();
     K3b::Medium sourceMedium = k3bappcore->mediaCache()->medium( readDev );
     K3b::Medium burnMedium = k3bappcore->mediaCache()->medium( burnDev );
-
+    
+    
     K3b::JobProgressDialog* dlg = 0;
     if (m_checkOnlyCreateImage->isChecked())
         dlg = new K3b::JobProgressDialog(parentWidget());
@@ -389,6 +395,7 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
         burnJob = job;
     }
     else if ( sourceMedium.diskInfo().mediaType() & K3b::Device::MEDIA_CD_ALL ) {
+
         K3b::CdCopyJob* job = new K3b::CdCopyJob( dlg, this );
 
         job->setWriterDevice( m_writerSelectionWidget->writerDevice() );
@@ -412,6 +419,9 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
         burnJob = job;
     }
     else if ( sourceMedium.diskInfo().mediaType() & ( K3b::Device::MEDIA_DVD_ALL|K3b::Device::MEDIA_BD_ALL ) ) {
+    
+    qDebug()<< "&&&&&&&& from" << readDev->blockDeviceName() << "to" << burnDev->blockDeviceName() <<endl;
+    
         K3b::DvdCopyJob* job = new K3b::DvdCopyJob( dlg, this );
 
         job->setWriterDevice( m_writerSelectionWidget->writerDevice() );

@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_K3b__AudioView_t {
-    QByteArrayData data[10];
-    char stringdata0[112];
+    QByteArrayData data[14];
+    char stringdata0[194];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,15 +37,21 @@ QT_MOC_LITERAL(1, 15, 7), // "addUrls"
 QT_MOC_LITERAL(2, 23, 0), // ""
 QT_MOC_LITERAL(3, 24, 11), // "QList<QUrl>"
 QT_MOC_LITERAL(4, 36, 4), // "urls"
-QT_MOC_LITERAL(5, 41, 22), // "slotPlayerStateChanged"
-QT_MOC_LITERAL(6, 64, 12), // "slotOpenfile"
-QT_MOC_LITERAL(7, 77, 11), // "slotSetting"
-QT_MOC_LITERAL(8, 89, 13), // "slotStartBurn"
-QT_MOC_LITERAL(9, 103, 8) // "slotBurn"
+QT_MOC_LITERAL(5, 41, 15), // "slotMediaChange"
+QT_MOC_LITERAL(6, 57, 20), // "K3b::Device::Device*"
+QT_MOC_LITERAL(7, 78, 16), // "slotDeviceChange"
+QT_MOC_LITERAL(8, 95, 27), // "K3b::Device::DeviceManager*"
+QT_MOC_LITERAL(9, 123, 22), // "slotPlayerStateChanged"
+QT_MOC_LITERAL(10, 146, 12), // "slotOpenfile"
+QT_MOC_LITERAL(11, 159, 11), // "slotSetting"
+QT_MOC_LITERAL(12, 171, 13), // "slotStartBurn"
+QT_MOC_LITERAL(13, 185, 8) // "slotBurn"
 
     },
     "K3b::AudioView\0addUrls\0\0QList<QUrl>\0"
-    "urls\0slotPlayerStateChanged\0slotOpenfile\0"
+    "urls\0slotMediaChange\0K3b::Device::Device*\0"
+    "slotDeviceChange\0K3b::Device::DeviceManager*\0"
+    "slotPlayerStateChanged\0slotOpenfile\0"
     "slotSetting\0slotStartBurn\0slotBurn"
 };
 #undef QT_MOC_LITERAL
@@ -56,7 +62,7 @@ static const uint qt_meta_data_K3b__AudioView[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       8,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -64,15 +70,19 @@ static const uint qt_meta_data_K3b__AudioView[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   44,    2, 0x0a /* Public */,
-       5,    0,   47,    2, 0x08 /* Private */,
-       6,    0,   48,    2, 0x08 /* Private */,
-       7,    0,   49,    2, 0x08 /* Private */,
-       8,    0,   50,    2, 0x08 /* Private */,
-       9,    0,   51,    2, 0x08 /* Private */,
+       1,    1,   54,    2, 0x0a /* Public */,
+       5,    1,   57,    2, 0x0a /* Public */,
+       7,    1,   60,    2, 0x0a /* Public */,
+       9,    0,   63,    2, 0x08 /* Private */,
+      10,    0,   64,    2, 0x08 /* Private */,
+      11,    0,   65,    2, 0x08 /* Private */,
+      12,    0,   66,    2, 0x08 /* Private */,
+      13,    0,   67,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
+    QMetaType::Void, 0x80000000 | 6,    2,
+    QMetaType::Void, 0x80000000 | 8,    2,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -89,11 +99,13 @@ void K3b::AudioView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->addUrls((*reinterpret_cast< const QList<QUrl>(*)>(_a[1]))); break;
-        case 1: _t->slotPlayerStateChanged(); break;
-        case 2: _t->slotOpenfile(); break;
-        case 3: _t->slotSetting(); break;
-        case 4: _t->slotStartBurn(); break;
-        case 5: _t->slotBurn(); break;
+        case 1: _t->slotMediaChange((*reinterpret_cast< K3b::Device::Device*(*)>(_a[1]))); break;
+        case 2: _t->slotDeviceChange((*reinterpret_cast< K3b::Device::DeviceManager*(*)>(_a[1]))); break;
+        case 3: _t->slotPlayerStateChanged(); break;
+        case 4: _t->slotOpenfile(); break;
+        case 5: _t->slotSetting(); break;
+        case 6: _t->slotStartBurn(); break;
+        case 7: _t->slotBurn(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -139,13 +151,13 @@ int K3b::AudioView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 8)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 8;
     }
     return _id;
 }

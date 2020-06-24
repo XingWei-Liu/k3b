@@ -42,6 +42,10 @@ namespace K3b {
 
     public Q_SLOTS:
         void addUrls( const QList<QUrl>& urls ) override;
+        
+        //*******************************************
+        void slotMediaChange( K3b::Device::Device* );
+        void slotDeviceChange( K3b::Device::DeviceManager* );
 
     protected:
         ProjectBurnDialog* newBurnDialog( QWidget* parent = 0 ) override;
@@ -60,6 +64,7 @@ namespace K3b {
         K3b::ImageWritingDialog *dlg;
         QLineEdit *lineedit_iso;
         QComboBox *combo_CD;
+        QList<Device::Device*> device_index;
         QString filepath;
     };
 }

@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_K3b__VcdView_t {
-    QByteArrayData data[13];
-    char stringdata0[178];
+    QByteArrayData data[17];
+    char stringdata0[260];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -38,17 +38,23 @@ QT_MOC_LITERAL(3, 34, 21), // "slotLabel_pathClicked"
 QT_MOC_LITERAL(4, 56, 12), // "slotOpenfile"
 QT_MOC_LITERAL(5, 69, 11), // "slotSetting"
 QT_MOC_LITERAL(6, 81, 13), // "slotStartBurn"
-QT_MOC_LITERAL(7, 95, 20), // "slotSelectionChanged"
-QT_MOC_LITERAL(8, 116, 14), // "slotProperties"
-QT_MOC_LITERAL(9, 131, 10), // "slotRemove"
-QT_MOC_LITERAL(10, 142, 17), // "slotItemActivated"
-QT_MOC_LITERAL(11, 160, 11), // "QModelIndex"
-QT_MOC_LITERAL(12, 172, 5) // "index"
+QT_MOC_LITERAL(7, 95, 15), // "slotMediaChange"
+QT_MOC_LITERAL(8, 111, 20), // "K3b::Device::Device*"
+QT_MOC_LITERAL(9, 132, 16), // "slotDeviceChange"
+QT_MOC_LITERAL(10, 149, 27), // "K3b::Device::DeviceManager*"
+QT_MOC_LITERAL(11, 177, 20), // "slotSelectionChanged"
+QT_MOC_LITERAL(12, 198, 14), // "slotProperties"
+QT_MOC_LITERAL(13, 213, 10), // "slotRemove"
+QT_MOC_LITERAL(14, 224, 17), // "slotItemActivated"
+QT_MOC_LITERAL(15, 242, 11), // "QModelIndex"
+QT_MOC_LITERAL(16, 254, 5) // "index"
 
     },
     "K3b::VcdView\0slotLabel_CDClicked\0\0"
     "slotLabel_pathClicked\0slotOpenfile\0"
-    "slotSetting\0slotStartBurn\0"
+    "slotSetting\0slotStartBurn\0slotMediaChange\0"
+    "K3b::Device::Device*\0slotDeviceChange\0"
+    "K3b::Device::DeviceManager*\0"
     "slotSelectionChanged\0slotProperties\0"
     "slotRemove\0slotItemActivated\0QModelIndex\0"
     "index"
@@ -61,7 +67,7 @@ static const uint qt_meta_data_K3b__VcdView[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       9,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -69,15 +75,17 @@ static const uint qt_meta_data_K3b__VcdView[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   59,    2, 0x0a /* Public */,
-       3,    0,   60,    2, 0x0a /* Public */,
-       4,    0,   61,    2, 0x0a /* Public */,
-       5,    0,   62,    2, 0x0a /* Public */,
-       6,    0,   63,    2, 0x0a /* Public */,
-       7,    0,   64,    2, 0x08 /* Private */,
-       8,    0,   65,    2, 0x08 /* Private */,
-       9,    0,   66,    2, 0x08 /* Private */,
-      10,    1,   67,    2, 0x08 /* Private */,
+       1,    0,   69,    2, 0x0a /* Public */,
+       3,    0,   70,    2, 0x0a /* Public */,
+       4,    0,   71,    2, 0x0a /* Public */,
+       5,    0,   72,    2, 0x0a /* Public */,
+       6,    0,   73,    2, 0x0a /* Public */,
+       7,    1,   74,    2, 0x0a /* Public */,
+       9,    1,   77,    2, 0x0a /* Public */,
+      11,    0,   80,    2, 0x08 /* Private */,
+      12,    0,   81,    2, 0x08 /* Private */,
+      13,    0,   82,    2, 0x08 /* Private */,
+      14,    1,   83,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -85,10 +93,12 @@ static const uint qt_meta_data_K3b__VcdView[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 8,    2,
+    QMetaType::Void, 0x80000000 | 10,    2,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 11,   12,
+    QMetaType::Void, 0x80000000 | 15,   16,
 
        0        // eod
 };
@@ -104,10 +114,12 @@ void K3b::VcdView::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 2: _t->slotOpenfile(); break;
         case 3: _t->slotSetting(); break;
         case 4: _t->slotStartBurn(); break;
-        case 5: _t->slotSelectionChanged(); break;
-        case 6: _t->slotProperties(); break;
-        case 7: _t->slotRemove(); break;
-        case 8: _t->slotItemActivated((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
+        case 5: _t->slotMediaChange((*reinterpret_cast< K3b::Device::Device*(*)>(_a[1]))); break;
+        case 6: _t->slotDeviceChange((*reinterpret_cast< K3b::Device::DeviceManager*(*)>(_a[1]))); break;
+        case 7: _t->slotSelectionChanged(); break;
+        case 8: _t->slotProperties(); break;
+        case 9: _t->slotRemove(); break;
+        case 10: _t->slotItemActivated((*reinterpret_cast< const QModelIndex(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -142,13 +154,13 @@ int K3b::VcdView::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 9)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 9;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 9)
+        if (_id < 11)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 9;
+        _id -= 11;
     }
     return _id;
 }

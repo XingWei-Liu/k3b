@@ -18388,10 +18388,13 @@ src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
  /usr/include/KF5/KXmlGui/ktoolbar.h
  /usr/include/KF5/KXmlGui/kxmlgui_export.h
  /usr/include/KF5/KXmlGui/kxmlguiclient.h
+ /usr/include/KF5/Solid/Solid/SolidNamespace
+ /usr/include/KF5/Solid/solid/solidnamespace.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractItemModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDate
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
@@ -18401,6 +18404,8 @@ src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QLatin1Char
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPair
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPoint
@@ -18411,7 +18416,9 @@ src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVarLengthArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
@@ -18488,6 +18495,7 @@ src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
@@ -18601,12 +18609,19 @@ src/CMakeFiles/k3b.dir/projects/k3baudioview.cpp.o
  libk3b/plugin/k3bpluginmanager.h
  libk3b/projects/audiocd/k3baudiodoc.h
  libk3b/projects/k3bdoc.h
+ libk3b/tools/k3biso9660.h
+ libk3b/tools/k3bmediacache.h
+ libk3b/tools/k3bmedium.h
  libk3bdevice/k3bcdtext.h
+ libk3bdevice/k3bdevice.h
  libk3bdevice/k3bdevice_export.h
+ libk3bdevice/k3bdevicemanager.h
  libk3bdevice/k3bdevicetypes.h
+ libk3bdevice/k3bdiskinfo.h
  libk3bdevice/k3bmsf.h
  libk3bdevice/k3btoc.h
  libk3bdevice/k3btrack.h
+ src/k3bappdevicemanager.h
  src/k3bapplication.h
  src/k3binteractiondialog.h
  src/misc/k3bimagewritingdialog.h
@@ -25187,10 +25202,12 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/KF5/KI18n/klocalizedstring.h
  /usr/include/KF5/KI18n/kuitmarkup.h
  /usr/include/KF5/KIOCore/KIO/Global
+ /usr/include/KF5/KIOCore/KMountPoint
  /usr/include/KF5/KIOCore/kio/global.h
  /usr/include/KF5/KIOCore/kio/jobtracker.h
  /usr/include/KF5/KIOCore/kio/metadata.h
  /usr/include/KF5/KIOCore/kiocore_export.h
+ /usr/include/KF5/KIOCore/kmountpoint.h
  /usr/include/KF5/KWidgetsAddons/KMessageBox
  /usr/include/KF5/KWidgetsAddons/KToggleAction
  /usr/include/KF5/KWidgetsAddons/kguiitem.h
@@ -25205,10 +25222,13 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/KF5/KXmlGui/kactioncollection.h
  /usr/include/KF5/KXmlGui/kxmlgui_export.h
  /usr/include/KF5/KXmlGui/kxmlguiclient.h
+ /usr/include/KF5/Solid/Solid/SolidNamespace
+ /usr/include/KF5/Solid/solid/solidnamespace.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QAbstractTableModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QByteArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QChar
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDate
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QEvent
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QExplicitlySharedDataPointer
@@ -25219,18 +25239,23 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QLatin1Char
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QList
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QModelIndex
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMutex
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPair
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QPoint
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QQueue
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QScopedPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSet
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSharedDataPointer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QUrl
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QVarLengthArray
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QtGlobal
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
@@ -25249,11 +25274,13 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qconfig.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontainerfwd.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcontiguouscache.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdir.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfileinfo.h
@@ -25306,6 +25333,7 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qthread.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
@@ -25324,8 +25352,10 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qguiapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qinputmethod.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
@@ -25350,6 +25380,7 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialogButtonBox
@@ -25376,8 +25407,10 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qabstractspinbox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qcombobox.h
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialogbuttonbox.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qfiledialog.h
@@ -25414,8 +25447,21 @@ src/CMakeFiles/k3b.dir/projects/k3bvcdview.cpp.o
  libk3b/projects/videocd/k3bvcddoc.h
  libk3b/projects/videocd/k3bvcdoptions.h
  libk3b/projects/videocd/mpeginfo/k3bmpeginfo.h
+ libk3b/tools/k3biso9660.h
+ libk3b/tools/k3bmediacache.h
+ libk3b/tools/k3bmedium.h
+ libk3bdevice/k3bcdtext.h
+ libk3bdevice/k3bdevice.h
+ libk3bdevice/k3bdevice_export.h
+ libk3bdevice/k3bdevicemanager.h
  libk3bdevice/k3bdevicetypes.h
+ libk3bdevice/k3bdiskinfo.h
+ libk3bdevice/k3bmsf.h
+ libk3bdevice/k3btoc.h
+ libk3bdevice/k3btrack.h
  src/k3baction.h
+ src/k3bappdevicemanager.h
+ src/k3bapplication.h
  src/k3binteractiondialog.h
  src/misc/k3bmediacopydialog.h
 src/CMakeFiles/k3b.dir/projects/k3bvideodvdburndialog.cpp.o

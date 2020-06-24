@@ -79,6 +79,8 @@ Solid/Device
 -
 Solid/StorageAccess
 -
+QThread
+-
 KMountPoint
 -
 

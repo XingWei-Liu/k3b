@@ -55,6 +55,10 @@
 #include <QLineEdit>
 #include <QFileDialog>
 #include "misc/k3bimagewritingdialog.h"
+#include "k3bapplication.h"
+#include "k3bappdevicemanager.h"
+#include "k3bmediacache.h"
+
 
 K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     : K3b::View( doc, parent )
@@ -89,6 +93,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     
     combo_CD = new QComboBox(this);
     combo_CD->setMinimumSize(360, 30);
+    combo_CD->addItem("please insert CD");
 
     QPushButton *button_setting = new QPushButton(this);
     button_setting->setText("setting");
@@ -124,6 +129,12 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
     connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
     connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
+#if 0
+    connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
+              this, SLOT(slotMediaChange(K3b::Device::Device*)) );
+    connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
+              this, SLOT(slotDeviceChange(K3b::Device::DeviceManager*)) );
+#endif
 //m_audioViewImpl = new AudioViewImpl( this, m_doc, actionCollection() );
 
     //setMainWidget( m_audioViewImpl->view() );
@@ -170,11 +181,56 @@ K3b::AudioView::~AudioView()
 {
 }
 
+void K3b::AudioView::slotDeviceChange( K3b::Device::DeviceManager* manager)
+{
+    QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
+    if ( device_list.count() == 0 ){
+        combo_CD->setCurrentText("please insert CD");
+    }else{
+        slotMediaChange( 0 );
+    }
+}
+
+void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
+{
+    QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
+    combo_CD->clear();
+    device_index.clear();
+    qDebug()<< "device count" << device_list.count() <<endl;
+    
+    foreach(K3b::Device::Device* device, device_list){
+
+        device_index.append( device );
+
+        K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
+        //KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
+
+        qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
+
+        if ( device->diskInfo().diskState() != K3b::Device::STATE_EMPTY ){
+            qDebug()<< "empty medium" << device <<endl;
+            
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            continue;
+        }
+        if( !(device->diskInfo().mediaType() & K3b::Device::MEDIA_WRITABLE) ){
+            qDebug()<< "media cannot write" << device->diskInfo().mediaType() <<endl;
+
+            combo_CD->addItem( "please insert a medium or empty CD" );
+            continue;
+        }
+        qDebug()<< "mount point" << device <<endl;
+        combo_CD->addItem( "empty medium " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+
+    }
+       
+}
+
 void K3b::AudioView::slotOpenfile()
 {
     int i = 0;
     QString str;
-    filepath = QFileDialog::getOpenFileName(this, "open file dialog", "/home","iso file(*.iso *.udf)", 0, QFileDialog::DontUseNativeDialog);
+    filepath = QFileDialog::getOpenFileName(this, "open file dialog", "/home","iso file(*.iso *.udf)", 0/*, QFileDialog::DontUseNativeDialog*/);
 
     if(filepath == NULL)
         return;
@@ -221,6 +277,11 @@ void K3b::AudioView::slotSetting()
 void K3b::AudioView::slotStartBurn()
 {
     dlg = new K3b::ImageWritingDialog( this );
+
+    int index = combo_CD->currentIndex();
+    dlg->setComboMedium( device_index.at( index ) );
+    qDebug()<< "block name:" << device_index.at( index )->blockDeviceName() <<endl;
+
     dlg->setImage( QUrl::fromLocalFile( filepath ) );
     dlg->saveConfig();
     dlg->slotStartClicked();

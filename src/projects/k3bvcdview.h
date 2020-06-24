@@ -55,7 +55,11 @@ namespace K3b {
             void slotOpenfile();
             void slotSetting();
             void slotStartBurn();
-            
+           
+            //*******************************************
+            void slotMediaChange( K3b::Device::Device* );
+            void slotDeviceChange( K3b::Device::DeviceManager* );
+
         private Q_SLOTS:
             void slotSelectionChanged();
             void slotProperties() override;
@@ -75,6 +79,9 @@ namespace K3b {
             QPushButton* button_openfile;
             QPushButton* button_setting;
             QString filepath;
+
+            QList<Device::Device*> device_index;
+
         private:
             VcdDoc* m_doc;
             VcdProjectModel* m_model;

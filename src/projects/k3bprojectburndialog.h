@@ -57,6 +57,10 @@ namespace K3b {
 
         Doc* doc() const { return m_doc; }
 
+        //**************************
+        void setOnlyCreateImage( bool );
+        void setTmpPath( QString );
+
     protected Q_SLOTS:
         /** burn */
         void slotStartClicked() override;

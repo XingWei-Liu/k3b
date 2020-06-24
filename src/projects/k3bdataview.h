@@ -19,8 +19,6 @@
 
 #include "k3bview.h"
 
-#include <KMountPoint>
-
 class QModelIndex;
 class QTreeView;
 class QComboBox;
@@ -71,8 +69,6 @@ namespace K3b {
 
         QComboBox* combo_burner;
         QComboBox* combo_CD;
-        //QStringList device_index;
-        //QStringList CD_index;
         QList<Device::Device *> device_index;
         QStringList mount_index;
         QPushButton* burn_setting;
