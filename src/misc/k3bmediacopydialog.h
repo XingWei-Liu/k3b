@@ -55,7 +55,9 @@ namespace K3b {
     public Q_SLOTS:
         void slotStartClicked() override;
         void slotSaveClicked();
-    
+        /* receive fniished signal*/
+        void slotFinished(bool);
+
     private Q_SLOTS:
         //void slotStartClicked() override;
         void updateOverrideDevice();
@@ -91,6 +93,9 @@ namespace K3b {
 
         QGroupBox* m_groupAdvancedDataOptions;
         QGroupBox* m_groupAdvancedAudioOptions;
+
+        /*  flag to choice whether burn */
+        int flag;
     };
 }
 

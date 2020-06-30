@@ -71,6 +71,9 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
                             "Disk Copy" )
 {
     QWidget* main = mainWidget();
+    
+/*flag */
+    flag = 0;
 
     QGridLayout* mainGrid = new QGridLayout( main );
     mainGrid->setContentsMargins( 0, 0, 0, 0 );
@@ -463,20 +466,23 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
     }
 
     hide();
-
+    
+    connect( burnJob, SIGNAL(finished(bool)), this, SLOT(slotFinished(bool)) );
     dlg->startJob( burnJob );
 
     delete burnJob;
 #if 1
     //dlg->close();
-    if( KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "writer_device" ) != KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "source_device" )){
-        
-        K3b::ImageWritingDialog *d = new K3b::ImageWritingDialog( this );
-        d->setComboMedium( m_writerSelectionWidget->writerDevice() );
+    if( flag  ){
+        if( KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "writer_device" ) != KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "source_device" )){
+            
+            K3b::ImageWritingDialog *d = new K3b::ImageWritingDialog( parentWidget() );
+            d->setComboMedium( m_writerSelectionWidget->writerDevice() );
 
-        d->setImage( QUrl::fromLocalFile( m_tempDirSelectionWidget->tempPath() ) );
-        d->saveConfig();
-        d->slotStartClicked();
+            d->setImage( QUrl::fromLocalFile( m_tempDirSelectionWidget->tempPath() ) );
+            d->saveConfig();
+            d->slotStartClicked();
+        }
     }
 #endif
     if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )
@@ -485,6 +491,10 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
         close();
 }
 
+void K3b::MediaCopyDialog::slotFinished( bool ret )
+{
+    flag = ret;
+}
 
 void K3b::MediaCopyDialog::toggleAll()
 {
