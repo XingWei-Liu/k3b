@@ -91,6 +91,11 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     QPushButton *button_start = new QPushButton(this);
     button_start->setText("start");
     button_start->setMinimumSize(140, 45);
+        
+    combo_CD->setEnabled(false);
+    button_setting->setEnabled(false);
+    button_openfile->setEnabled(false);
+    lineedit_CD->setEnabled(false);
 
     layout->addWidget( label_title, 0, 0, 2, 1 );
     layout->addWidget( label_iso, 1, 0, 1, 1 );
@@ -196,7 +201,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
     combo_iso->clear();
     combo_CD->clear();
     device_index.clear();
-    qDebug()<< "device count" << device_list.count() <<endl;
+    //qDebug()<< "device count" << device_list.count() <<endl;
     
     foreach(K3b::Device::Device* device, device_list){
         combo_iso->setEnabled( true );
@@ -208,7 +213,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
 
-        qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
+        //qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
         if ( !( device->diskInfo().diskState() & (K3b::Device::STATE_COMPLETE | K3b::Device::STATE_INCOMPLETE ) ) ){
             qDebug()<< "empty medium" << device <<endl;
 
@@ -223,7 +228,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
             combo_CD->addItem( "please insert a medium or empty CD" );
             continue;
         }
-        qDebug()<< "mount point" << device <<endl;
+        //qDebug()<< "mount point" << device <<endl;
         combo_iso->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
         combo_CD->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
 
@@ -263,8 +268,10 @@ void K3b::VcdView::slotLabel_pathClicked()
 void K3b::VcdView::MediaCopy( K3b::Device::Device* dev )
 {
     K3b::MediaCopyDialog *d = new K3b::MediaCopyDialog( this );
-    //d->setReadingDevice( dev );
-    //d->setComboMedium( dev );
+    d->setReadingDevice( device_index.at( combo_iso->currentIndex() ) );
+    d->setComboMedium( device_index.at( combo_CD->currentIndex() ) );
+    qDebug()<< "from" << device_index.at( combo_iso->currentIndex() )->blockDeviceName() << "to" << device_index.at( combo_CD->currentIndex() )->blockDeviceName() <<endl;
+    d->saveConfig();
     d->exec();
 }
 
@@ -285,10 +292,19 @@ void K3b::VcdView::slotStartBurn()
         dlg->saveConfig();
         dlg->slotStartClicked();
     }else if ( label_CD->isChecked() ){
+        dlg->setOnlyCreateImage(true);
         dlg->setComboMedium( device_index.at( CD_index ) );
         dlg->saveConfig();
         qDebug()<< "from" << device_index.at( iso_index )->blockDeviceName() << "to" << device_index.at( CD_index )->blockDeviceName() <<endl;
         dlg->slotStartClicked();
+#if 0       
+        K3b::ImageWritingDialog *d = new K3b::ImageWritingDialog( this );
+        d->setComboMedium( device_index.at( CD_index ) );
+
+        d->setImage( QUrl::fromLocalFile( KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "image path[$e]" ) ) );
+        d->saveConfig();
+        d->slotStartClicked();
+#endif
     }else{
         KMessageBox::information( this, i18n("Please add files to your project first."),
                                   i18n("No Data to Burn") );
