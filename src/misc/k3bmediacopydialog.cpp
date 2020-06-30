@@ -60,6 +60,7 @@
 #include <QTabWidget>
 
 #include <QLineEdit>
+#include "misc/k3bimagewritingdialog.h"
 
 K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     : K3b::InteractionDialog( parent,
@@ -80,6 +81,7 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     m_comboSourceDevice->setWantedMediumType( K3b::Device::MEDIA_ALL );
     m_comboSourceDevice->setWantedMediumState( K3b::Device::STATE_COMPLETE|K3b::Device::STATE_INCOMPLETE );
     QHBoxLayout* groupSourceLayout = new QHBoxLayout( groupSource );
+    //*****************************
     //groupSourceLayout->addWidget( m_comboSourceDevice );
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget( main );
@@ -227,6 +229,7 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
 
     tabWidget->addTab( advancedTab, i18n("&Advanced") );
 
+    //*******************
     //mainGrid->addWidget( groupSource, 0, 0  );
     mainGrid->addWidget( m_writerSelectionWidget, 1, 0  );
     mainGrid->addWidget( tabWidget, 2, 0 );
@@ -331,7 +334,7 @@ void K3b::MediaCopyDialog::slotStartClicked()
     // Let's check the available size
     //
     KConfigGroup g( KSharedConfig::openConfig(), "Disk Copy" );
-    loadSettings( g );
+    //loadSettings( g );
 
     if( m_checkCacheImage->isChecked() || m_checkOnlyCreateImage->isChecked() ) {
         if( neededSize() > m_tempDirSelectionWidget->freeTempSpace() ) {
@@ -420,7 +423,20 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
     }
     else if ( sourceMedium.diskInfo().mediaType() & ( K3b::Device::MEDIA_DVD_ALL|K3b::Device::MEDIA_BD_ALL ) ) {
     
-    qDebug()<< "&&&&&&&& from" << readDev->blockDeviceName() << "to" << burnDev->blockDeviceName() <<endl;
+        qDebug()<< "&&&&&&&& from" << readDev->blockDeviceName() << "to" << burnDev->blockDeviceName() <<endl;
+        qDebug()<< "parameter:::" <<endl << m_writerSelectionWidget->writerDevice();
+        qDebug()<< m_comboSourceDevice->selectedDevice();
+        qDebug()<< m_tempDirSelectionWidget->tempPath() ;
+        qDebug()<< (m_checkDeleteImages->isChecked() && !m_checkOnlyCreateImage->isChecked());
+        qDebug()<< m_checkOnlyCreateImage->isChecked() ;
+        qDebug()<< m_checkSimulate->isChecked() ;
+        qDebug()<< !m_checkCacheImage->isChecked() ;
+        qDebug()<< m_writerSelectionWidget->writerSpeed() ;
+        qDebug()<< (m_checkSimulate->isChecked() ? 1 : m_spinCopies->value() );
+        qDebug()<< m_writingModeWidget->writingMode() ;
+        qDebug()<< m_checkIgnoreDataReadErrors->isChecked() ;
+        qDebug()<< m_spinDataRetries->value() ;
+        qDebug()<< m_checkVerifyData->isChecked() <<endl;
     
         K3b::DvdCopyJob* job = new K3b::DvdCopyJob( dlg, this );
 
@@ -451,7 +467,18 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
     dlg->startJob( burnJob );
 
     delete burnJob;
+#if 1
+    //dlg->close();
+    if( KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "writer_device" ) != KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "source_device" )){
+        
+        K3b::ImageWritingDialog *d = new K3b::ImageWritingDialog( this );
+        d->setComboMedium( m_writerSelectionWidget->writerDevice() );
 
+        d->setImage( QUrl::fromLocalFile( m_tempDirSelectionWidget->tempPath() ) );
+        d->saveConfig();
+        d->slotStartClicked();
+    }
+#endif
     if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )
         show();
     else
