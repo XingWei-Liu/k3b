@@ -59,6 +59,7 @@
 #include <QScrollBar>
 #include <QTreeWidget>
 #include <QVBoxLayout>
+#include <unistd.h>
 
 
 class K3b::JobProgressDialog::Private
@@ -347,9 +348,9 @@ void K3b::JobProgressDialog::slotProcessedSubSize( int processedTrackSize, int t
 //#endif
 }
 
-
 void K3b::JobProgressDialog::slotInfoMessage( const QString& infoString, int type )
 {
+    qDebug() << "xingwei.liu::" << __func__ << __LINE__ << __FILE__ << infoString <<endl;
     d->viewInfo->clear();
     QTreeWidgetItem* currentInfoItem = new QTreeWidgetItem( d->viewInfo );
     currentInfoItem->setText( 0, infoString );
@@ -426,6 +427,8 @@ void K3b::JobProgressDialog::slotFinished( bool success )
     m_cancelButton->hide();
     m_showDbgOutButton->show();
     m_closeButton->show();
+    sleep(1);
+    close();
 }
 
 
@@ -527,6 +530,7 @@ void K3b::JobProgressDialog::slotNewTask(const QString& name)
 void K3b::JobProgressDialog::slotStarted()
 {
     qDebug();
+    qDebug() << __func__ << __FILE__ << __LINE__ <<endl;
     d->lastProgress = 0;
     m_lastProgressUpdateTime = 0;
     m_timer.start();
