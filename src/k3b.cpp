@@ -544,14 +544,12 @@ void K3b::MainWindow::initView()
     hLayout->addWidget(pTitleLabel);
 
     QLabel* ButtonView = new QLabel(this);
-    ButtonView->setFixedWidth(200);
-    
-    ButtonView->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/icon-侧边背景.png);"
+    ButtonView->setFixedWidth(125);
+
+    ButtonView->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-侧边背景.png);"
                          "background-position: top;"
                          "border:none;"
                          "background-repeat:repeat-xy;}");
-
-    //ButtonView->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
 
     QPushButton *viewData = new QPushButton( ButtonView );
     viewData->setText("data burn");
@@ -670,7 +668,6 @@ bool K3b::MainWindow::eventFilter(QObject *obj, QEvent *event)
         QWidget *pWidget = qobject_cast<QWidget *>(obj);
         if (pWidget)
         {
-            qDebug() << "window title::" << pWidget->windowTitle() <<endl;
             pTitleLabel->setText(pWidget->windowTitle());
             return true;
         }

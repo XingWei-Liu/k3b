@@ -56,44 +56,46 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     m_pTitleLabel->setContentsMargins(8,0,0,0);
     m_pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
 
+
+    //m_pMenubutton->setIcon( QIcon::fromTheme( "setting-default" ) );
     m_pMenubutton->setStyleSheet("QToolButton{border-image: url(:/icon/icon/icon-设置-默认.png);"
                                  "border:none;background-color:rgb(255, 255, 255);"
                                  "border-radius: 4px;}"
-                                "QToolButton:hover{border-image: url(:/new/prefix1/pic/icon-设置-悬停点击.png);"
+                                "QToolButton:hover{border-image: url(:/icon/icon/icon-设置-悬停点击.png);"
                                  "border:none;background-color:rgb(61, 107, 229);"
                                  "border-radius: 4px;}"
-                                "QToolButton:checked{border-image: url(:/new/prefix1/pic/icon-设置-悬停点击.png);"
+                                "QToolButton:checked{border-image: url(:/icon/icon/icon-设置-悬停点击.png);"
                                  "border:none;background-color:rgb(50, 87, 202);"
                                  "border-radius: 4px;}"
                                  "QToolButton::menu-indicator{image:none;}");
 
-    m_pMinimizeButton->setStyleSheet("QPushButton{border-image: url(:/new/prefix1/pic/icon-最小化-默认.png);"
+    m_pMinimizeButton->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-最小化-默认.png);"
                                      "border:none;background-color:rgb(255, 255, 255);"
                                      "border-radius: 4px;}"
-                                "QPushButton:hover{border-image: url(:/new/prefix1/pic/icon-最小化-悬停点击.png);"
+                                "QPushButton:hover{border-image: url(:/icon/icon/icon-最小化-悬停点击.png);"
                                      "border:none;background-color:rgb(61, 107, 229);"
                                      "border-radius: 4px;}"
-                                "QPushButton:checked{border-image: url(:/new/prefix1/pic/icon-最小化-悬停点击.png);"
+                                "QPushButton:checked{border-image: url(:/icon/icon/icon-最小化-悬停点击.png);"
                                      "border:none;background-color:rgb(50, 87, 202);"
                                      "border-radius: 4px;}");
 
-    m_pMaximizeButton->setStyleSheet("QPushButton{border-image: url(:/new/prefix1/pic/icon-最大化-默认.png);"
+    m_pMaximizeButton->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-最大化-默认.png);"
                                      "border:none;background-color:rgb(255, 255, 255);"
                                      "border-radius: 4px;}"
-                                "QPushButton:hover{border-image: url(:/new/prefix1/pic/icon-最大化-悬停点击.png);"
+                                "QPushButton:hover{border-image: url(:/icon/icon/icon-最大化-悬停点击.png);"
                                      "border:none;background-color:rgb(61, 107, 229);"
                                      "border-radius: 4px;}"
-                                "QPushButton:checked{border-image: url(:/new/prefix1/pic/icon-最大化-悬停点击.png);"
+                                "QPushButton:checked{border-image: url(:/icon/icon/icon-最大化-悬停点击.png);"
                                      "border:none;background-color:rgb(50, 87, 202);"
                                      "border-radius: 4px;}");
 
-    m_pCloseButton->setStyleSheet("QPushButton{border-image: url(:/new/prefix1/pic/icon-关闭-默认.png);"
+    m_pCloseButton->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
                                   "border:none;background-color:rgb(255, 255, 255);"
                                   "border-radius: 4px;}"
-                                "QPushButton:hover{border-image: url(:/new/prefix1/pic/icon-关闭-悬停点击.png);"
+                                "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
                                   "border:none;background-color:rgb(248, 100, 87);"
                                   "border-radius: 4px;}"
-                                "QPushButton:checked{border-image: url(:/new/prefix1/pic/icon-关闭-悬停点击.png);"
+                                "QPushButton:checked{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
                                   "border:none;background-color:rgb(228, 236, 80);"
                                   "border-radius: 4px;}");
 
