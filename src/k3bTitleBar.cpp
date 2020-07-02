@@ -56,7 +56,7 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     m_pTitleLabel->setContentsMargins(8,0,0,0);
     m_pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
 
-    m_pMenubutton->setStyleSheet("QToolButton{border-image: url(:/new/prefix1/pic/icon-设置-默认.png);"
+    m_pMenubutton->setStyleSheet("QToolButton{border-image: url(:/icon/icon/icon-设置-默认.png);"
                                  "border:none;background-color:rgb(255, 255, 255);"
                                  "border-radius: 4px;}"
                                 "QToolButton:hover{border-image: url(:/new/prefix1/pic/icon-设置-悬停点击.png);"

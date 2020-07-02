@@ -309,6 +309,7 @@ add_subdirectory( src )
 add_subdirectory( kioslaves )
 add_subdirectory( plugins )
 add_subdirectory( doc )
+
 if(BUILD_TESTING)
     find_package(Qt5Test REQUIRED)
     find_package(LibFuzzer)

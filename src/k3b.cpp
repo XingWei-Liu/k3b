@@ -545,6 +545,14 @@ void K3b::MainWindow::initView()
 
     QLabel* ButtonView = new QLabel(this);
     ButtonView->setFixedWidth(200);
+    
+    ButtonView->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/icon-侧边背景.png);"
+                         "background-position: top;"
+                         "border:none;"
+                         "background-repeat:repeat-xy;}");
+
+    //ButtonView->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
+
     QPushButton *viewData = new QPushButton( ButtonView );
     viewData->setText("data burn");
     QPushButton *viewImage = new QPushButton( ButtonView );

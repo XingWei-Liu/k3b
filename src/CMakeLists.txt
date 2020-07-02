@@ -4,6 +4,7 @@ add_subdirectory( helper )
 add_subdirectory( icons )
 add_subdirectory( pics )
 add_subdirectory( services )
+add_subdirectory( pic )
 
 
 ########### next target ###############
@@ -52,6 +53,12 @@ if(ENABLE_MUSICBRAINZ)
         projects/k3baudiotracktrmlookupdialog.cpp
     )
 endif()
+
+# Add Resource File
+
+set(IMAGE_RCCS pic/images.qrc)
+qt5_add_resources(IMAGES_RCC_SRCS ${IMAGE_RCCS})
+
 
 qt5_generate_dbus_interface( ${CMAKE_CURRENT_SOURCE_DIR}/k3binterface.h org.k3b.MainWindow.xml )
 qt5_add_dbus_adaptor( dbus_sources ${CMAKE_CURRENT_BINARY_DIR}/org.k3b.MainWindow.xml k3binterface.h K3b::Interface k3binterfaceadaptor K3bInterfaceAdaptor )
@@ -213,6 +220,7 @@ add_executable(k3b
     ${musicbrainz_sources}
     ${videodvd_sources}
     ${dbus_sources}
+    ${IMAGES_RCC_SRCS}
 )
 
 target_include_directories(k3b PRIVATE
