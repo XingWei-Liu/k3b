@@ -105,7 +105,8 @@ int main( int argc, char* argv[] )
 
     KAboutData::setApplicationData( aboutData );
 
-    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("k3b"), app.windowIcon()));
+    //QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("k3b"), app.windowIcon()));
+    QApplication::setWindowIcon(QIcon(":/icon/icon/logo.ico"));
 
     QCommandLineParser* parser = new QCommandLineParser;
     parser->addPositionalArgument( "urls", i18n("file(s) to open"), "[urls...]" );
