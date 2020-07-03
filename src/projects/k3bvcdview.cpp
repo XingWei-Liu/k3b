@@ -213,6 +213,10 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
 
+        if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
+            combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), "empty medium " );
+            continue;
+        }
         //qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
         if ( !( device->diskInfo().diskState() & (K3b::Device::STATE_COMPLETE | K3b::Device::STATE_INCOMPLETE ) ) ){
             qDebug()<< "empty medium" << device <<endl;
@@ -229,8 +233,8 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
             continue;
         }
         //qDebug()<< "mount point" << device <<endl;
-        combo_iso->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
-        combo_CD->addItem( medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        combo_iso->addItem( QIcon(":/icon/icon/icon-光盘.png"), medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
 
     }
 

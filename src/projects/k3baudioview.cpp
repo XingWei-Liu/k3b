@@ -80,6 +80,14 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
 
     lineedit_iso = new QLineEdit(this);
     lineedit_iso->setMinimumSize(360, 30);
+/*
+ lineedit add icon .
+ QLineEdit::LeadingPosition put it left
+ QLineEdit::TrailingPosition put it right
+*/
+    QAction *searchAction = new QAction( lineedit_iso );
+	searchAction->setIcon(QIcon(":/icon/icon/icon-镜像.png"));
+	lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
 
     QPushButton *button_openfile = new QPushButton(this);
     button_openfile->setText("open");
@@ -129,7 +137,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
     connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
     connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
-#if 0
+#if 1
     connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
               this, SLOT(slotMediaChange(K3b::Device::Device*)) );
     connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
@@ -210,17 +218,17 @@ void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
         if ( device->diskInfo().diskState() != K3b::Device::STATE_EMPTY ){
             qDebug()<< "empty medium" << device <<endl;
             
-            combo_CD->addItem( "please insert a medium or empty CD" );
+            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), "please insert a medium or empty CD" );
             continue;
         }
         if( !(device->diskInfo().mediaType() & K3b::Device::MEDIA_WRITABLE) ){
             qDebug()<< "media cannot write" << device->diskInfo().mediaType() <<endl;
 
-            combo_CD->addItem( "please insert a medium or empty CD" );
+            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), "please insert a medium or empty CD" );
             continue;
         }
         qDebug()<< "mount point" << device <<endl;
-        combo_CD->addItem( "empty medium " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), "empty medium available space " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
 
     }
        
@@ -236,10 +244,6 @@ void K3b::AudioView::slotOpenfile()
         return;
 
     QFileInfo fileinfo( filepath );
-    /*image_icon->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/icon-镜像.png);"
-                              "background-color:transparent;"
-                              "background-repeat: no-repeat;}");
-    ui->lineEdit->setTextMargins(image_icon->width()+10, 1, 1 , 1);*/
     long int file_size = fileinfo.size();
     double size;
     do{

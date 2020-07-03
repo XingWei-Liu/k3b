@@ -231,6 +231,10 @@ public:
     K3b::View *view_image;
     K3b::View *view_copy;
     K3b::Device::Device* dev;
+    
+    QPushButton* viewData;
+    QPushButton* viewImage;
+    QPushButton* viewCopy;
 
     QMimeDatabase mimeDatabase;
 };
@@ -241,11 +245,12 @@ K3b::MainWindow::MainWindow()
 {
     d->lastDoc = 0;
     //**********************
-    //setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     
     //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
-    //this->setWindowIcon(QIcon(":/new/prefix1/pic/logo.ico"));
-    this->setWindowTitle( i18n("K3b") );
+    //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
+    setWindowTitle( i18n("Kylin-Burner") );
+    
     installEventFilter(this);
     // /////////////////////////////////////////////////////////////////
     // call inits to invoke all other construction parts
@@ -288,7 +293,7 @@ K3b::MainWindow::MainWindow()
     //**************************
     d->documentHeader->hide();
     statusBar()->hide();
-    menuBar()->setVisible(true);
+    menuBar()->setVisible( false );
     for (int i = 0; i < toolBars().size(); i++){
         toolBars().at(i)->setVisible( false );
     }
@@ -511,7 +516,6 @@ void K3b::MainWindow::initView()
     QLabel *label_title = new QLabel(this);
     QLabel *label_window = new QLabel(this);
     title_bar = new TitleBar( this );
-    //installEventFilter(this);
 
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
@@ -529,21 +533,19 @@ void K3b::MainWindow::initView()
     pIconLabel = new QLabel( label_title );
     pTitleLabel = new QLabel( label_title );
     pIconLabel->setFixedSize(35,35);
-    pIconLabel->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/logo.png);"
-                              "background-color:transparent;"
-                              "background-repeat: no-repeat;}");
-    pTitleLabel->setContentsMargins(0,0,0,0);
     pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     pTitleLabel->setMinimumSize(100,35);
-    pTitleLabel->setText( "K3b" );
+    pTitleLabel->setText( "Kylin-Burner" );
     pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
     
     QHBoxLayout *hLayout = new QHBoxLayout( label_title );
     label_title->setFixedHeight( 45 );
+    hLayout->setContentsMargins(13,12,6,0);
+    hLayout->addSpacing( 0 );
     hLayout->addWidget(pIconLabel);
     hLayout->addWidget(pTitleLabel);
 
-    QLabel* ButtonView = new QLabel(this);
+    QLabel* ButtonView = new QLabel( d->mainSplitter );
     ButtonView->setFixedWidth(125);
 
     ButtonView->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-侧边背景.png);"
@@ -551,27 +553,30 @@ void K3b::MainWindow::initView()
                          "border:none;"
                          "background-repeat:repeat-xy;}");
 
-    QPushButton *viewData = new QPushButton( ButtonView );
-    viewData->setText("data burn");
-    QPushButton *viewImage = new QPushButton( ButtonView );
-    viewImage->setText("image burn");
-    QPushButton *viewCopy = new QPushButton( ButtonView );
-    viewCopy->setText("copy image");
+    d->viewData = new QPushButton( ButtonView );
+    d->viewData->setText("data burn");
+    d->viewImage = new QPushButton( ButtonView );
+    d->viewImage->setText("image burn");
+    d->viewCopy = new QPushButton( ButtonView );
+    d->viewCopy->setText("copy image");
+    
     QVBoxLayout* ButtonLayout = new QVBoxLayout( ButtonView );
-
     ButtonLayout->addWidget( label_title );
-
-    ButtonLayout->addWidget(viewData);
-    ButtonLayout->addWidget(viewImage);
-    ButtonLayout->addWidget(viewCopy);
+    ButtonLayout->addSpacing(46);
+    ButtonLayout->addWidget( d->viewData );
+    ButtonLayout->addSpacing(10);
+    ButtonLayout->addWidget( d->viewImage );
+    ButtonLayout->addSpacing(10);
+    ButtonLayout->addWidget( d->viewCopy );
     ButtonLayout->addStretch();
     d->mainSplitter->addWidget( ButtonView );
 
-    connect( viewData, SIGNAL(clicked(bool)), this, SLOT(slotNewDataDoc()) );
-    connect( viewImage, SIGNAL(clicked(bool)), this, SLOT(slotNewAudioDoc()) );
-    connect( viewCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
+    connect( d->viewData, SIGNAL(clicked(bool)), this, SLOT(slotNewDataDoc()) );
+    connect( d->viewImage, SIGNAL(clicked(bool)), this, SLOT(slotNewAudioDoc()) );
+    connect( d->viewCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
 
     QLabel *label_view = new QLabel( this );
+    //QLabel *label_view = new QLabel( d->mainSplitter );
     QVBoxLayout *layout_window = new QVBoxLayout( label_view );
     // --- Document Dock ----------------------------------------------------------------------------
     //d->documentStack = new QStackedWidget( d->mainSplitter );//buttom 
@@ -636,7 +641,6 @@ void K3b::MainWindow::initView()
     urlNavigatorAction->setText(i18n("&Location Bar"));
     //actionCollection()->addAction( "location_bar", urlNavigatorAction );
     // ---------------------------------------------------------------------------------------------
-    
     d->doc_image = k3bappcore->projectManager()->createProject( K3b::Doc::AudioProject ); 
     d->view_image = new K3b::AudioView( static_cast<K3b::AudioDoc*>( d->doc_image ), d->documentTab );
     
@@ -678,7 +682,6 @@ bool K3b::MainWindow::eventFilter(QObject *obj, QEvent *event)
         if (pWidget)
         {
             QIcon icon = pWidget->windowIcon();
-            qDebug() << "window icon::" <<endl;
             pIconLabel->setPixmap(icon.pixmap(pIconLabel->size()));
             return true;
         }

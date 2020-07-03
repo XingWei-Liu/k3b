@@ -172,7 +172,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     /********************************************/
 /*    connect( k3bappcore->appDeviceManager(), SIGNAL( currentDeviceChanged( K3b::Device::Device* ) ),
               this, SLOT( slotMountPoint( K3b::Device::Device* ) ) );*/
-#if 0
+#if 1
     connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
               this, SLOT(slotMediaChange(K3b::Device::Device*)) );
     connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
@@ -258,8 +258,8 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
             qDebug()<< "empty medium" << device <<endl;
             
             mount_index.append( "empty medium" );    
-            combo_CD->addItem( "empty medium  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
-            combo_burner->addItem( device->vendor() + " " + device->description() );
+            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), "empty medium  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+            combo_burner->addItem( QIcon(":/icon/icon/icon-刻录机.png"), device->vendor() + " " + device->description() );
             continue;
         }
         if( !mountPoint ){
@@ -267,16 +267,16 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
             
             mount_index.append( "no medium" );    
             combo_CD->addItem( "please insert a medium or empty CD" );
-            combo_burner->addItem( device->vendor() + " " + device->description() );
+            combo_burner->addItem( QIcon(":/icon/icon/icon-刻录机.png"), device->vendor() + " " + device->description() );
             continue;
         }
         qDebug()<< "mount point" << device <<endl;
         //qDebug()<< "mount point realdevicename" << mountPoint->mountedFrom() <<endl;
 
         mount_index.append( mountPoint->mountPoint() );
-        combo_CD->addItem( medium.shortString() + " " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
+        combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), medium.shortString() + "remaining available space  " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ));
 
-        combo_burner->addItem( device->vendor() + " " + device->description() );
+        combo_burner->addItem( QIcon(":/icon/icon/icon-刻录机.png"), device->vendor() + " " + device->description() );
     }
     combo_burner->blockSignals( false );
     //combo_CD->blockSignals( false );
