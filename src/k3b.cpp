@@ -220,7 +220,6 @@ public:
     K3b::Doc* lastDoc;
 
     QSplitter* mainSplitter;
-    K3b::WelcomeWidget* welcomeWidget;
     QStackedWidget* documentStack;
     QWidget* documentHull;
 
@@ -232,9 +231,9 @@ public:
     K3b::View *view_copy;
     K3b::Device::Device* dev;
     
-    QPushButton* viewData;
-    QPushButton* viewImage;
-    QPushButton* viewCopy;
+    QPushButton* btnData;
+    QPushButton* btnImage;
+    QPushButton* btnCopy;
 
     QMimeDatabase mimeDatabase;
 };
@@ -250,6 +249,8 @@ K3b::MainWindow::MainWindow()
     //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
     //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
     setWindowTitle( i18n("Kylin-Burner") );
+
+    resize(900, 600);
     
     installEventFilter(this);
     // /////////////////////////////////////////////////////////////////
@@ -266,10 +267,11 @@ K3b::MainWindow::MainWindow()
     connect( k3bappcore->appDeviceManager(), SIGNAL(detectingDiskInfo(K3b::Device::Device*)),
              this, SLOT(showDiskInfo(K3b::Device::Device*)) );
 
+#if 0
     // we need the actions for the welcomewidget
     KConfigGroup grp( config(), "Welcome Widget" );
     d->welcomeWidget->loadConfig( grp );
-    
+#endif
 
     // fill the tabs action menu
 
@@ -513,97 +515,116 @@ void K3b::MainWindow::initStatusBar()
 
 void K3b::MainWindow::initView()
 {
-    QLabel *label_title = new QLabel(this);
-    QLabel *label_window = new QLabel(this);
-    title_bar = new TitleBar( this );
-
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
     
-    // setup main docking things
-    //d->mainSplitter = new QSplitter( Qt::Vertical, this );
+    //左右分割
     d->mainSplitter = new QSplitter( Qt::Horizontal, this );
-    
-    //QSplitter* upperSplitter = new QSplitter( Qt::Horizontal, d->mainSplitter );//top horizontal
-    QSplitter* upperSplitter = new QSplitter( );//top horizontal
-    //d->mainSplitter->addWidget( upperSplitter );
  
+    //左侧 上方tille 
+    QLabel *label_title = new QLabel(this);
+    label_title->setFixedHeight( 45 );
+
+    //左侧 上方tille :icon
     pIconLabel = new QLabel( label_title );
-    pTitleLabel = new QLabel( label_title );
     pIconLabel->setFixedSize(35,35);
+
+    //左侧 上方tille :text
+    pTitleLabel = new QLabel( label_title );
     pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     pTitleLabel->setMinimumSize(100,35);
     pTitleLabel->setText( "Kylin-Burner" );
     pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
     
+    //左侧 上方tille :水平布局
     QHBoxLayout *hLayout = new QHBoxLayout( label_title );
-    label_title->setFixedHeight( 45 );
     hLayout->setContentsMargins(13,12,6,0);
     hLayout->addSpacing( 0 );
     hLayout->addWidget(pIconLabel);
     hLayout->addWidget(pTitleLabel);
+    
+    QLabel* btnLabel = new QLabel( d->mainSplitter );
+    btnLabel->setFixedWidth(125);
 
-    QLabel* ButtonView = new QLabel( d->mainSplitter );
-    ButtonView->setFixedWidth(125);
+    d->btnData = new QPushButton("Data", btnLabel);     // 数据刻录
+    d->btnImage = new QPushButton("Image", btnLabel);   // 镜像刻录
+    d->btnCopy = new QPushButton("Copy", btnLabel);     // 复制光盘
+    
+    QSpacerItem * horizontalSpacer = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    QSpacerItem * horizontalSpacer_2 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    QSpacerItem * horizontalSpacer_3 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    QSpacerItem * horizontalSpacer_4 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    QSpacerItem * horizontalSpacer_5 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    QSpacerItem * horizontalSpacer_6 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
+    
+    QHBoxLayout *layoutData = new QHBoxLayout;
+    layoutData->addItem(horizontalSpacer);
+    layoutData->addWidget(d->btnData);
+    layoutData->addItem(horizontalSpacer_2);
 
-    ButtonView->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-侧边背景.png);"
+    QHBoxLayout *layoutImage = new QHBoxLayout;
+    layoutImage->addItem(horizontalSpacer_3);
+    layoutImage->addWidget(d->btnImage);
+    layoutImage->addItem(horizontalSpacer_4);
+    
+    QHBoxLayout *layoutCopy = new QHBoxLayout;
+    layoutCopy->addItem(horizontalSpacer_5);
+    layoutCopy->addWidget(d->btnCopy);
+    layoutCopy->addItem(horizontalSpacer_6);
+    
+    //左侧label : 下方的button :垂直布局 
+    QVBoxLayout* ButtonLayout = new QVBoxLayout( btnLabel );
+    ButtonLayout->setContentsMargins(0,0,0,0);
+    ButtonLayout->addWidget( label_title );
+    ButtonLayout->addSpacing(46);
+    ButtonLayout->addLayout( layoutData);
+    ButtonLayout->addSpacing(10);
+    ButtonLayout->addLayout( layoutImage );
+    ButtonLayout->addSpacing(10);
+    ButtonLayout->addLayout( layoutCopy );
+    ButtonLayout->addStretch();
+
+    btnLabel->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-侧边背景.png);"
                          "background-position: top;"
                          "border:none;"
                          "background-repeat:repeat-xy;}");
-
-    d->viewData = new QPushButton( ButtonView );
-    d->viewData->setText("data burn");
-    d->viewImage = new QPushButton( ButtonView );
-    d->viewImage->setText("image burn");
-    d->viewCopy = new QPushButton( ButtonView );
-    d->viewCopy->setText("copy image");
     
-    QVBoxLayout* ButtonLayout = new QVBoxLayout( ButtonView );
-    ButtonLayout->addWidget( label_title );
-    ButtonLayout->addSpacing(46);
-    ButtonLayout->addWidget( d->viewData );
-    ButtonLayout->addSpacing(10);
-    ButtonLayout->addWidget( d->viewImage );
-    ButtonLayout->addSpacing(10);
-    ButtonLayout->addWidget( d->viewCopy );
-    ButtonLayout->addStretch();
-    d->mainSplitter->addWidget( ButtonView );
+    connect( d->btnData, SIGNAL(clicked(bool)), this, SLOT(slotNewDataDoc()) );
+    connect( d->btnImage, SIGNAL(clicked(bool)), this, SLOT(slotNewAudioDoc()) );
+    connect( d->btnCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
 
-    connect( d->viewData, SIGNAL(clicked(bool)), this, SLOT(slotNewDataDoc()) );
-    connect( d->viewImage, SIGNAL(clicked(bool)), this, SLOT(slotNewAudioDoc()) );
-    connect( d->viewCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
-
+    //右侧：label
     QLabel *label_view = new QLabel( this );
-    //QLabel *label_view = new QLabel( d->mainSplitter );
-    QVBoxLayout *layout_window = new QVBoxLayout( label_view );
-    // --- Document Dock ----------------------------------------------------------------------------
-    //d->documentStack = new QStackedWidget( d->mainSplitter );//buttom 
-    d->documentStack = new QStackedWidget( label_view );//buttom 
-    d->documentStack->showFullScreen();
+    label_view->setFixedWidth(775);
+
+    // 右侧：label :上方 title bar
+    title_bar = new TitleBar( this );
     
+    // 右侧：label :中部 view
+    d->documentStack = new QStackedWidget( label_view );
+    d->documentStack->showFullScreen();
+   
+    // 右侧：label :垂直布局 
+    QVBoxLayout *layout_window = new QVBoxLayout( label_view );
     layout_window->addWidget( title_bar );
     layout_window->addWidget( d->documentStack );
-    //d->mainSplitter->addWidget( d->documentStack );
     d->mainSplitter->addWidget( label_view );
     
-    d->documentHull = new QWidget( d->documentStack ); //project ui
+    d->documentHull = new QWidget( d->documentStack );
     QGridLayout* documentHullLayout = new QGridLayout( d->documentHull );
     documentHullLayout->setContentsMargins( 0, 0, 0, 0 );
     documentHullLayout->setSpacing( 0 );
     
-    setCentralWidget( d->mainSplitter );
-    //setEqualSizes( d->mainSplitter );
-
+    //右侧：label :中部 view : header
     d->documentHeader = new K3b::ThemedHeader( d->documentHull ); //buttom title
     d->documentHeader->setTitle( i18n("Current Projects") );
     d->documentHeader->setAlignment( Qt::AlignHCenter | Qt::AlignVCenter );
     d->documentHeader->setLeftPixmap( K3b::Theme::PROJECT_LEFT );
     d->documentHeader->setRightPixmap( K3b::Theme::PROJECT_RIGHT );
-    /*connect( d->actionViewDocumentHeader, SIGNAL(toggled(bool)),
-             d->documentHeader, SLOT(setVisible(bool)) );*/
 
+    setCentralWidget( d->mainSplitter );
     // add the document tab to the styled document box
     d->documentTab = new K3b::ProjectTabWidget( d->documentHull ); //buttom tab
 
@@ -613,34 +634,17 @@ void K3b::MainWindow::initView()
     connect( d->documentTab, SIGNAL(currentChanged(int)), this, SLOT(slotCurrentDocChanged()) );
     connect( d->documentTab, SIGNAL(tabCloseRequested(Doc*)), this, SLOT(slotFileClose(Doc*)) );
 
-    d->welcomeWidget = new K3b::WelcomeWidget( this, d->documentStack );  //welcome ui??
-    d->documentStack->addWidget( d->welcomeWidget );
     d->documentStack->addWidget( d->documentHull );
-    d->documentStack->setCurrentWidget( d->welcomeWidget );
-    // ---------------------------------------------------------------------------------------------
-
-    // --- Directory Dock --------------------------------------------------------------------------
-    K3b::FileTreeView* fileTreeView = new K3b::FileTreeView( upperSplitter );  //top left
-    //upperSplitter->addWidget( fileTreeView );
-    // ---------------------------------------------------------------------------------------------
-
-
-    // --- Contents Dock ---------------------------------------------------------------------------
-    d->dirView = new K3b::DirView( fileTreeView, upperSplitter );   //top right
-    //upperSplitter->addWidget( d->dirView );
 
     // --- filetreecombobox-toolbar ----------------------------------------------------------------
 	d->filePlacesModel = new KFilePlacesModel;
     d->urlNavigator = new K3b::UrlNavigator(d->filePlacesModel, this);
-    connect( d->urlNavigator, SIGNAL(activated(QUrl)), d->dirView, SLOT(showUrl(QUrl)) );
-    connect( d->urlNavigator, SIGNAL(activated(K3b::Device::Device*)), d->dirView, SLOT(showDevice(K3b::Device::Device*)) );
-    connect( d->dirView, SIGNAL(urlEntered(QUrl)), d->urlNavigator, SLOT(setUrl(QUrl)) );
-    connect( d->dirView, SIGNAL(deviceSelected(K3b::Device::Device*)), d->urlNavigator, SLOT(setDevice(K3b::Device::Device*)) );
+
     QWidgetAction * urlNavigatorAction = new QWidgetAction(this);
     urlNavigatorAction->setDefaultWidget(d->urlNavigator);
     urlNavigatorAction->setText(i18n("&Location Bar"));
-    //actionCollection()->addAction( "location_bar", urlNavigatorAction );
     // ---------------------------------------------------------------------------------------------
+    
     d->doc_image = k3bappcore->projectManager()->createProject( K3b::Doc::AudioProject ); 
     d->view_image = new K3b::AudioView( static_cast<K3b::AudioDoc*>( d->doc_image ), d->documentTab );
     
@@ -817,7 +821,7 @@ void K3b::MainWindow::saveOptions()
     d->actionFileOpenRecent->saveEntries( recentGrp );
 
     KConfigGroup grpFileView( config(), "file view" );
-    d->dirView->saveConfig( grpFileView );
+//    d->dirView->saveConfig( grpFileView );
 
     KConfigGroup grpWindows(config(), "main_window_settings");
     saveMainWindowSettings( grpWindows );
@@ -825,7 +829,7 @@ void K3b::MainWindow::saveOptions()
     k3bcore->saveSettings( config() );
 
     KConfigGroup grp(config(), "Welcome Widget" );
-    d->welcomeWidget->saveConfig( grp );
+//    d->welcomeWidget->saveConfig( grp );
 
     KConfigGroup grpOption( config(), "General Options" );
     grpOption.writeEntry( "Show Document Header", d->actionViewDocumentHeader->isChecked() );
@@ -849,7 +853,7 @@ void K3b::MainWindow::readOptions()
     d->actionFileOpenRecent->loadEntries( recentGrp );
 
     KConfigGroup grpFileView( config(), "file view" );
-    d->dirView->readConfig( grpFileView );
+//    d->dirView->readConfig( grpFileView );
 
     d->documentHeader->setVisible( d->actionViewDocumentHeader->isChecked() );
 }
@@ -1421,10 +1425,12 @@ void K3b::MainWindow::slotCurrentDocChanged()
         slotStateChanged( "state_project_active", KXMLGUIClient::StateNoReverse );
     }
 
+#if 0
     if( k3bappcore->projectManager()->isEmpty() )
         d->documentStack->setCurrentWidget( d->welcomeWidget );
     else
         d->documentStack->setCurrentWidget( d->documentHull );
+#endif
 }
 
 
@@ -1660,8 +1666,8 @@ void K3b::MainWindow::cddaRip( K3b::Device::Device* dev )
                                                      this,
                                                      i18n("Audio CD Rip") );
 
-    if( dev )
-        d->dirView->showDevice( dev );
+//    if( dev )
+//        d->dirView->showDevice( dev );
 }
 
 
@@ -1675,8 +1681,8 @@ void K3b::MainWindow::videoDvdRip( K3b::Device::Device* dev )
                                                      this,
                                                      i18n("Video DVD Rip") );
 
-    if( dev )
-        d->dirView->showDevice( dev );
+//    if( dev )
+//        d->dirView->showDevice( dev );
 }
 
 
@@ -1696,8 +1702,8 @@ void K3b::MainWindow::videoCdRip( K3b::Device::Device* dev )
                                                      this,
                                                      i18n("Video CD Rip") );
 
-    if( dev )
-        d->dirView->showDevice( dev );
+//    if( dev )
+//        d->dirView->showDevice( dev );
 }
 
 
@@ -1709,7 +1715,7 @@ void K3b::MainWindow::slotVideoCdRip()
 
 void K3b::MainWindow::showDiskInfo( K3b::Device::Device* dev )
 {
-    d->dirView->showDiskInfo( dev );
+//    d->dirView->showDiskInfo( dev );
 }
 
 
