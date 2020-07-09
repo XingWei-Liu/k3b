@@ -1,0 +1,20 @@
+Package: libk3b7-extracodecs
+Source: k3b
+Version: 19.12.3-0ubuntu1
+Architecture: amd64
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 317
+Depends: libk3b7 (= 19.12.3-0ubuntu1), kio, libavcodec58 (>= 7:4.0), libavformat58 (>= 7:4.1), libavutil56 (>= 7:4.0), libc6 (>= 2.14), libkf5configcore5 (>= 4.97.0), libkf5configwidgets5 (>= 4.96.0), libkf5coreaddons5 (>= 4.99.0), libkf5i18n5 (>= 4.97.0), libkf5kiocore5 (>= 5.48.0), libmad0 (>= 0.15.1b-3), libmp3lame0 (>= 3.100), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.10.0~) | libqt5gui5-gles (>= 5.10.0~), libqt5widgets5 (>= 5.10.0~), libstdc++6 (>= 4.1.1), libtag1v5 (>= 1.9.1-2.2~)
+Breaks: k3b-data (<< 18.08.3~)
+Replaces: k3b-data (<< 18.08.3~)
+Section: kde
+Priority: optional
+Homepage: https://userbase.kde.org/K3b
+Description: KDE CD/DVD burning application library - extra decoders
+ K3b provides a comfortable user interface to perform most CD/DVD burning
+ tasks. While the experienced user can take influence in all steps
+ of the burning process the beginner may find comfort in the automatic settings
+ and the reasonable k3b defaults which allow a quick start.
+ .
+ This package contains runtime libraries for the MP3 and FFMPEG decoder plugin.
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>

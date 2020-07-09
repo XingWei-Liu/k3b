@@ -1,0 +1,11 @@
+k3b-data_19.12.3-0ubuntu1_all.deb kde optional
+k3b-dbgsym_19.12.3-0ubuntu1_amd64.ddeb debug optional automatic=yes
+k3b-extrathemes_19.12.3-0ubuntu1_all.deb kde optional
+k3b-i18n_19.12.3-0ubuntu1_all.deb localization optional
+k3b_19.12.3-0ubuntu1_amd64.buildinfo kde optional
+k3b_19.12.3-0ubuntu1_amd64.deb kde optional
+libk3b-dev_19.12.3-0ubuntu1_amd64.deb libdevel optional
+libk3b7-dbgsym_19.12.3-0ubuntu1_amd64.ddeb debug optional automatic=yes
+libk3b7-extracodecs-dbgsym_19.12.3-0ubuntu1_amd64.ddeb debug optional automatic=yes
+libk3b7-extracodecs_19.12.3-0ubuntu1_amd64.deb kde optional
+libk3b7_19.12.3-0ubuntu1_amd64.deb libs optional

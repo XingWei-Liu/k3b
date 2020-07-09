@@ -1,5 +1,6 @@
 #include "k3bFileFilterDialog.h"
 
+#include <KLocalizedString>
 #include <KConfig>
 #include <KSharedConfig>
 #include <KIO/Global>
@@ -19,7 +20,7 @@ FileFilter::FileFilter(QWidget *parent) :
     icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo.png);"
                         "background-color:rgb(233, 233, 233);"
                         "background-repeat: no-repeat;background-color:transparent;}");
-    QLabel *title = new QLabel("kylin-burner");
+    QLabel *title = new QLabel(i18n("kylin-burner"));
     title->setFixedSize(80,30);
     title->setStyleSheet("QLabel{background-color:rgb(233, 233, 233);"
                          "background-repeat: no-repeat;color:rgb(0, 0, 0);"

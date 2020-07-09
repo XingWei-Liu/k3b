@@ -1,0 +1,12 @@
+c2f782564d3231fe03b9c3d53c1115b2  usr/bin/k3b
+546011df212b6403ed841a12065387cf  usr/lib/x86_64-linux-gnu/libexec/k3bhelper
+0390a0a62f1b600b5b003e43355434c6  usr/share/applications/org.kde.k3b.desktop
+fc81b787f78d6f764f449f3cb0419bd4  usr/share/bug/k3b/presubj
+1ea12ba73efb29fcf19671efb9b2a1f3  usr/share/bug/k3b/script
+5fe551c1f20010c7a52c067db5c68946  usr/share/doc/k3b/FAQ.txt
+4cd5233adf469e701adefad049dc289d  usr/share/doc/k3b/README.Debian
+9949f40a5ec7d3827aaa2d3b474eb759  usr/share/doc/k3b/README.txt
+c95a232e221625c9f359030628901d58  usr/share/doc/k3b/changelog.Debian.gz
+0cf4b3df2893a0ca89ced38fc9c39974  usr/share/doc/k3b/copyright
+52cc56880575f8b28fb13837fa391810  usr/share/man/man1/k3b.1.gz
+70a58760b494eb443b23638f9c14efc8  usr/share/metainfo/org.kde.k3b.appdata.xml

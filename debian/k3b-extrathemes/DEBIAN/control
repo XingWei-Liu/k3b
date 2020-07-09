@@ -1,0 +1,18 @@
+Package: k3b-extrathemes
+Source: k3b
+Version: 19.12.3-0ubuntu1
+Architecture: all
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 853
+Depends: k3b
+Section: kde
+Priority: optional
+Homepage: https://userbase.kde.org/K3b
+Description: Sophisticated CD/DVD burning application - extra themes
+ K3b provides a comfortable user interface to perform most CD/DVD burning
+ tasks. While the experienced user can take influence in all steps
+ of the burning process the beginner may find comfort in the automatic settings
+ and the reasonable k3b defaults which allow a quick start.
+ .
+ This package contains additional themes for K3b.
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>

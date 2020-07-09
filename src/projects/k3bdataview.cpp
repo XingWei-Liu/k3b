@@ -89,7 +89,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     line->raise();
 
     burn_setting = new QPushButton(this);
-    burn_setting->setText("setting");
+    burn_setting->setText(i18n("setting"));
     //burn_setting->setText("open");
     burn_setting->setVisible(false);
     burn_setting->setMinimumSize(80, 30);
@@ -98,7 +98,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
                                 "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
 
     burn_button = new QPushButton(this);
-    burn_button->setText("start burner");
+    burn_button->setText(i18n("start burner"));
     //burn_button->setText("create iso");
     burn_button->setVisible(false);
     burn_button->setMinimumSize(140, 45);
@@ -110,7 +110,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     QGridLayout *layout = new QGridLayout(label);
 
     QLabel *label_burner = new QLabel(label);
-    label_burner->setText("current burner");
+    label_burner->setText(i18n("current burner"));
     label_burner->setMinimumSize(75, 30);
 
     combo_burner = new QComboBox(label);
@@ -120,7 +120,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     QLabel *label_space = new QLabel(label);
 
     QLabel *label_CD = new QLabel(label);
-    label_CD->setText("current CD");
+    label_CD->setText(i18n("current CD"));
     label_CD->setMinimumSize(75, 30);
 
     combo_CD = new QComboBox(label);
@@ -208,28 +208,28 @@ add menu button
     label_action->setMinimumSize(370, 30);
     
     QPushButton* button_add = new QPushButton( label_action );
-    button_add->setText("Add");
+    button_add->setText(i18n("Add"));
     button_add->setFixedSize(80, 30);
     button_add->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-添加-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;border-left:12px solid rgb(233, 233, 233);}"
                               "QPushButton:hover{background-image: url(:/icon/icon/icon-添加-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
                               "QPushButton:pressed{background-image: url(:/icon/icon/icon-添加-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
     
     QPushButton* button_remove = new QPushButton( label_action );
-    button_remove->setText("Remove");
+    button_remove->setText(i18n("Remove"));
     button_remove->setFixedSize(80, 30);
     button_remove->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-删除-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
                                  "QPushButton:hover{background-image: url(:/icon/icon/icon-删除-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
                                  "QPushButton:pressed{background-image: url(:/icon/icon/icon-删除-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
     
     QPushButton* button_clear = new QPushButton( label_action );
-    button_clear->setText("Clear");
+    button_clear->setText(i18n("Clear"));
     button_clear->setFixedSize(80, 30);
     button_clear->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-清空-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
                                 "QPushButton:hover{background-image: url(:/icon/icon/icon-清空-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
                                  "QPushButton:pressed{background-image: url(:/icon/icon/icon-清空-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
     
     QPushButton* button_newdir = new QPushButton( label_action );
-    button_newdir->setText("New Dir");
+    button_newdir->setText(i18n("New Dir"));
     button_newdir->setFixedSize(80, 30);
     button_newdir->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-新建文件-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
                                  "QPushButton:hover{background-image: url(:/icon/icon/icon-新建文件-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
@@ -340,8 +340,8 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         burn_setting->setVisible(true);
         combo_burner->setEnabled( true );
         combo_CD->setEnabled( true );
-        burn_setting->setText("setting");
-        burn_button->setText("start burner");
+        burn_setting->setText(i18n("setting"));
+        burn_button->setText(i18n("start burner"));
          
         device_index.append( device );
         //combo_burner->addItem( device->vendor() + " " + device->description() );
@@ -424,11 +424,11 @@ void K3b::DataView::add_device_urls(QString filepath)
 void K3b::DataView::slotStartBurn()
 {
     DataBurnDialog *dlg = new DataBurnDialog( m_doc, this);
-    if ( burn_button->text() == "start burn" ){
+    if ( burn_button->text() == i18n("start burn" )){
         int index = combo_burner->currentIndex();
         dlg->setComboMedium( device_index.at( index ) );
         qDebug()<< "index :" <<  index << " device block name: " << device_index.at( index )->blockDeviceName() <<endl;
-    }else if( burn_button->text() == "create iso" ){
+    }else if( burn_button->text() == i18n("create iso" )){
         dlg->setOnlyCreateImage( true );
         dlg->setTmpPath( combo_CD->currentText() );
     }
@@ -439,7 +439,7 @@ void K3b::DataView::slotStartBurn()
 
 void K3b::DataView::slotBurn()
 {
-    if ( burn_setting->text() == "setting" ){
+    if ( burn_setting->text() == i18n("setting") ){
         if( m_doc->burningSize() == 0 ) {
             KMessageBox::information( this, i18n("Please add files to your project first."),
                                       i18n("No Data to Burn") );
@@ -449,7 +449,7 @@ void K3b::DataView::slotBurn()
             dlg->execBurnDialog(true);
             delete dlg;
         }
-    }else if ( burn_setting->text() == "open" ){
+    }else if ( burn_setting->text() == i18n("open" )){
         QString filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks/* | QFileDialog::DontUseNativeDialog*/);
         combo_CD->setCurrentText( filepath + "/data_burn.iso" );
     }

@@ -1,0 +1,20 @@
+Package: libk3b7
+Source: k3b
+Version: 19.12.3-0ubuntu1
+Architecture: amd64
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 2929
+Depends: kio, libc6 (>= 2.15), libdvdread7 (>= 4.1.3), libflac++6v5 (>= 1.3.1), libkf5cddb5 (>= 4:19.12.3~), libkf5completion5 (>= 4.97.0), libkf5configcore5 (>= 4.98.0), libkf5configwidgets5 (>= 4.96.0), libkf5coreaddons5 (>= 4.99.0), libkf5filemetadata3 (>= 5.0.2+git20140925), libkf5i18n5 (>= 4.97.0), libkf5iconthemes5 (>= 4.96.0), libkf5kcmutils5 (>= 4.96.0), libkf5kiocore5 (>= 4.96.0), libkf5service-bin, libkf5service5 (>= 4.99.0), libkf5solid5 (>= 4.97.0), libkf5widgetsaddons5 (>= 4.96.0), libmpcdec6 (>= 1:0.1~r435), libogg0 (>= 1.0rc3), libqt5core5a (>= 5.12.2), libqt5gui5 (>= 5.10.0~) | libqt5gui5-gles (>= 5.10.0~), libqt5network5 (>= 5.10.0~), libqt5widgets5 (>= 5.10.0~), libqt5xml5 (>= 5.10.0~), libsamplerate0 (>= 0.1.7), libsndfile1 (>= 1.0.20), libstdc++6 (>= 4.1.1), libtag1v5 (>= 1.9.1-2.2~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvorbisfile3 (>= 1.1.2)
+Breaks: libk3b7-extracodecs (<< 18.08.3~)
+Replaces: libk3b7-extracodecs (<< 18.08.3~)
+Section: libs
+Priority: optional
+Homepage: https://userbase.kde.org/K3b
+Description: KDE CD/DVD burning application library - runtime files
+ K3b provides a comfortable user interface to perform most CD/DVD burning
+ tasks. While the experienced user can take influence in all steps
+ of the burning process the beginner may find comfort in the automatic settings
+ and the reasonable k3b defaults which allow a quick start.
+ .
+ This package contains runtime libraries.
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>

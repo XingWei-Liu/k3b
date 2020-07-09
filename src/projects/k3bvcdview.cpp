@@ -55,14 +55,14 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     QGridLayout *layout = new QGridLayout(widget_label);
  
     QLabel* label_title = new QLabel(this);
-    label_title->setText("copy image");
+    label_title->setText(i18n("copy image"));
     QFont title_font;
     title_font.setPointSize(24);
     label_title->setFont( title_font );
     label_title->setStyleSheet("color: #444444");
 
     QLabel *label_iso = new QLabel(this);
-    label_iso->setText("select CD");
+    label_iso->setText(i18n("CD to copy"));
     QFont label_font;
     label_font.setPointSize(14);
     label_iso->setFont( label_font );
@@ -72,7 +72,7 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     combo_iso->setMinimumSize(360, 30);
     
     label_CD = new QRadioButton(this);
-    label_CD->setText("select CD");
+    label_CD->setText(i18n("Copy CD"));
     label_CD->setFont( label_font );
     label_CD->setStyleSheet("color: #444444");
 
@@ -80,7 +80,7 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     combo_CD->setMinimumSize(360, 30);
 
     button_setting = new QPushButton(this);
-    button_setting->setText("setting");
+    button_setting->setText(i18n("setting"));
     button_setting->setMinimumSize(80, 30);
     button_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
@@ -89,7 +89,7 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     QLabel *label_space = new QLabel(this);
 
     label_path = new QRadioButton(this);
-    label_path->setText("extract image");
+    label_path->setText(i18n("extract image"));
 
     lineedit_CD = new QLineEdit(this);
     lineedit_CD->setMinimumSize(360, 30);
@@ -97,14 +97,14 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     label_CD->setStyleSheet("color: #444444");
     
     button_openfile = new QPushButton(this);
-    button_openfile->setText("choice");
+    button_openfile->setText(i18n("choice"));
     button_openfile->setMinimumSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                    "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                    "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
 
     QPushButton *button_start = new QPushButton(this);
-    button_start->setText("start");
+    button_start->setText(i18n("Start copying/extracting"));
     button_start->setMinimumSize(140, 45);
     button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"

@@ -69,14 +69,14 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     QGridLayout *layout = new QGridLayout(widget_label);
     
     QLabel *label_title = new QLabel(this);
-    label_title->setText("write image");
+    label_title->setText(i18n("write image"));
     QFont title_font;
     title_font.setPixelSize(24);
     label_title->setFont( title_font );
     label_title->setStyleSheet("color:#444444;");
 
     QLabel *label_iso = new QLabel(this);
-    label_iso->setText("select iso");
+    label_iso->setText(i18n("select iso"));
     //label->setMinimumSize();
     QFont label_font;
     label_font.setPixelSize(14);
@@ -95,7 +95,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
 	lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
 
     QPushButton *button_openfile = new QPushButton(this);
-    button_openfile->setText("open");
+    button_openfile->setText(i18n("browse"));
     button_openfile->setMinimumSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                    "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
@@ -104,7 +104,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     QLabel *label_space = new QLabel(this);
     
     QLabel *label_CD = new QLabel(this);
-    label_CD->setText("select disk");
+    label_CD->setText(i18n("select disk"));
     //label_CD->setMinimumSize();
     label_CD->setFont( label_font );
     label_CD->setStyleSheet("color:#444444;");
@@ -115,14 +115,14 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     combo_CD->setStyleSheet("QComboBox");
 
     QPushButton *button_setting = new QPushButton(this);
-    button_setting->setText("setting");
+    button_setting->setText(i18n("setting"));
     button_setting->setMinimumSize(80, 30);
     button_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
 
     QPushButton *button_start = new QPushButton(this);
-    button_start->setText("start");
+    button_start->setText(i18n("start"));
     button_start->setMinimumSize(140, 45);
     button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
@@ -210,7 +210,7 @@ void K3b::AudioView::slotDeviceChange( K3b::Device::DeviceManager* manager)
 {
     QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
     if ( device_list.count() == 0 ){
-        combo_CD->setCurrentText("please insert CD");
+        combo_CD->setCurrentText(i18n("please insert CD"));
     }else{
         slotMediaChange( 0 );
     }

@@ -540,7 +540,7 @@ void K3b::MainWindow::initView()
     pTitleLabel = new QLabel( label_title );
     pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
     pTitleLabel->setMinimumSize(100,35);
-    pTitleLabel->setText( "Kylin-Burner" );
+    pTitleLabel->setText( i18n("Kylin-Burner" ));
     pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
     
     //左侧 上方tille :水平布局
@@ -553,9 +553,9 @@ void K3b::MainWindow::initView()
     QLabel* btnLabel = new QLabel( d->mainSplitter );
     btnLabel->setFixedWidth(125);
 
-    d->btnData = new QPushButton("Data", btnLabel);     // 数据刻录
-    d->btnImage = new QPushButton("Image", btnLabel);   // 镜像刻录
-    d->btnCopy = new QPushButton("Copy", btnLabel);     // 复制光盘
+    d->btnData = new QPushButton(i18n("Data Burner"), btnLabel);     // 数据刻录
+    d->btnImage = new QPushButton(i18n("Image Burner"), btnLabel);   // 镜像刻录
+    d->btnCopy = new QPushButton(i18n("Copy Disk"), btnLabel);     // 复制光盘
 
     d->btnData->setFixedSize( 115, 50);
     d->btnData->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-数据刻录-默认.png);"
