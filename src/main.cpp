@@ -21,6 +21,7 @@
 #include <sanitizer/common_interface_defs.h>
 #endif
 
+
 int main( int argc, char* argv[] )
 {
     K3b::Application app( argc, argv );
@@ -106,6 +107,7 @@ int main( int argc, char* argv[] )
     KAboutData::setApplicationData( aboutData );
 
     //QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("k3b"), app.windowIcon()));
+    /* modify app icon */
     QApplication::setWindowIcon(QIcon(":/icon/icon/logo.ico"));
 
     QCommandLineParser* parser = new QCommandLineParser;

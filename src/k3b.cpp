@@ -105,6 +105,7 @@
 #include <QStatusBar>
 #include <QPushButton>
 #include <QDebug>
+#include <QDesktopWidget>
 
 #include <cstdlib>
 
@@ -243,16 +244,20 @@ K3b::MainWindow::MainWindow()
       d( new Private )
 {
     d->lastDoc = 0;
-    //**********************
-    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     
-    //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
+    /* modify UI */
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
     setWindowTitle( i18n("Kylin-Burner") );
-
+#if 0
+    QDesktopWidget *desktop = QApplication::desktop();
+    this->move(desktop->width() / 2 - this->width() / 2, desktop->height() / 2 - this->height() / 2);
+#endif
     resize(900, 600);
     
     installEventFilter(this);
+    
+    //setPlainCaption( i18n("K3b - The CD and DVD Kreator") );
     // /////////////////////////////////////////////////////////////////
     // call inits to invoke all other construction parts
     initActions();
@@ -522,7 +527,7 @@ void K3b::MainWindow::initView()
     
     //左右分割
     d->mainSplitter = new QSplitter( Qt::Horizontal, this );
- 
+
     //左侧 上方tille 
     QLabel *label_title = new QLabel(this);
     label_title->setFixedHeight( 45 );
@@ -540,9 +545,9 @@ void K3b::MainWindow::initView()
     
     //左侧 上方tille :水平布局
     QHBoxLayout *hLayout = new QHBoxLayout( label_title );
-    hLayout->setContentsMargins(13,12,6,0);
-    hLayout->addSpacing( 0 );
+    hLayout->setContentsMargins(13,12,0,0);
     hLayout->addWidget(pIconLabel);
+    //hLayout->addSpacing( 6 );
     hLayout->addWidget(pTitleLabel);
     
     QLabel* btnLabel = new QLabel( d->mainSplitter );
@@ -551,7 +556,59 @@ void K3b::MainWindow::initView()
     d->btnData = new QPushButton("Data", btnLabel);     // 数据刻录
     d->btnImage = new QPushButton("Image", btnLabel);   // 镜像刻录
     d->btnCopy = new QPushButton("Copy", btnLabel);     // 复制光盘
-    
+
+    d->btnData->setFixedSize( 115, 50);
+    d->btnData->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-数据刻录-默认.png);"
+                                  "background-color:rgba(87, 137, 217,0.2);"
+                                  "border:0px;border-left:12px solid rgba(87,137,217, 0.2);"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color: #417ff9;font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-数据刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217,0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-数据刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnImage->setFixedSize( 115, 50);
+    d->btnImage->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-镜像刻录-默认.png);"
+                                   "background-color:transparent; border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color: #444444;font: 14px;border-radius: 6px;}"
+                               "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217,0.15); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnCopy->setFixedSize( 115, 50);
+    d->btnCopy->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-光盘复制-默认.png);"
+                                  "background-color:transparent; border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color: #444444;font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217,0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+
+
+
     QSpacerItem * horizontalSpacer = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
     QSpacerItem * horizontalSpacer_2 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
     QSpacerItem * horizontalSpacer_3 = new QSpacerItem(5, 50, QSizePolicy::Fixed, QSizePolicy::Minimum);    
@@ -596,7 +653,7 @@ void K3b::MainWindow::initView()
     connect( d->btnCopy, SIGNAL(clicked(bool)), this, SLOT(slotNewVcdDoc()) );
 
     //右侧：label
-    QLabel *label_view = new QLabel( this );
+    QLabel *label_view = new QLabel( d->mainSplitter );
     label_view->setFixedWidth(775);
 
     // 右侧：label :上方 title bar
@@ -608,8 +665,11 @@ void K3b::MainWindow::initView()
    
     // 右侧：label :垂直布局 
     QVBoxLayout *layout_window = new QVBoxLayout( label_view );
+    layout_window->setContentsMargins(25,0,0,0);
     layout_window->addWidget( title_bar );
     layout_window->addWidget( d->documentStack );
+    
+    d->mainSplitter->addWidget( btnLabel );
     d->mainSplitter->addWidget( label_view );
     
     d->documentHull = new QWidget( d->documentStack );
@@ -625,6 +685,23 @@ void K3b::MainWindow::initView()
     d->documentHeader->setRightPixmap( K3b::Theme::PROJECT_RIGHT );
 
     setCentralWidget( d->mainSplitter );
+#if 1
+    //pRightTopWidget 为子窗口1
+    QSizePolicy rightTopPolicy = btnLabel->sizePolicy();
+    rightTopPolicy.setHorizontalStretch( 5 );
+    btnLabel->setSizePolicy(rightTopPolicy);
+    //pRightDownWidget 为子窗口2
+    QSizePolicy rightDownPolicy = label_view->sizePolicy();
+    rightDownPolicy.setHorizontalStretch( 31 );
+    label_view->setSizePolicy(rightDownPolicy);
+
+    QSplitterHandle *splitterHandle = d->mainSplitter->handle(1);
+    if(splitterHandle)
+    {
+        //Disable the Middle Line, it can't adjust.
+        splitterHandle->setDisabled(true);
+    }
+#endif
     // add the document tab to the styled document box
     d->documentTab = new K3b::ProjectTabWidget( d->documentHull ); //buttom tab
 
@@ -1315,6 +1392,51 @@ K3b::Doc* K3b::MainWindow::slotNewAudioDoc()
 
     return doc;
     */
+    d->btnData->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-数据刻录-默认.png);"
+                                  "background-color:transparent; border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnImage->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnCopy->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-光盘复制-默认.png);"
+                                  "background-color:transparent; border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
     d->documentTab->setCurrentTab( d->doc_image );
     slotCurrentDocChanged();
     return d->doc_image;
@@ -1329,6 +1451,51 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
 
     return doc;
 */
+    d->btnData->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-数据刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnImage->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-镜像刻录-默认.png);"
+                                   "background-color:transparent; border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnCopy->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-光盘复制-默认.png);"
+                                  "background-color:transparent; border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
     d->documentTab->setCurrentTab( d->doc_data );
     slotCurrentDocChanged();
 
@@ -1368,6 +1535,51 @@ K3b::Doc* K3b::MainWindow::slotNewVcdDoc()
     K3b::Doc* doc = k3bappcore->projectManager()->createProject( K3b::Doc::VcdProject );
 
     return doc;*/
+    d->btnData->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-数据刻录-默认.png);"
+                                  "background-color:transparent; border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnImage->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-镜像刻录-默认.png);"
+                                   "background-color:transparent; border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:hover{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                               "QPushButton:pressed{background-image: url(:/icon/icon/icon-镜像刻录-悬停点击.png);"
+                                   "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                   "background-repeat: no-repeat;"
+                                   "background-position:left;"
+                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+    d->btnCopy->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:hover{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.15); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-光盘复制-悬停点击.png);"
+                                  "background-color:rgba(87, 137, 217, 0.2); border: 12px solid transparent;"
+                                  "background-repeat: no-repeat;"
+                                  "background-position:left;"
+                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
     d->documentTab->setCurrentTab( d->doc_copy );
     slotCurrentDocChanged();
     return d->doc_copy;

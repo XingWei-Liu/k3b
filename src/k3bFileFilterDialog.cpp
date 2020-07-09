@@ -16,7 +16,7 @@ FileFilter::FileFilter(QWidget *parent) :
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(30,30);
-    icon->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/logo.png);"
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo.png);"
                         "background-color:rgb(233, 233, 233);"
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel("kylin-burner");
@@ -26,10 +26,10 @@ FileFilter::FileFilter(QWidget *parent) :
                          "font: 14px;background-color:transparent;}");
     QPushButton *close = new QPushButton();
     close->setFixedSize(30,30);
-    close->setStyleSheet("QPushButton{border-image: url(:/new/prefix1/pic/icon-关闭-默认.png);"
+    close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
                          "border:none;background-color:rgb(233, 233, 233);"
                          "border-radius: 4px;background-color:transparent;}"
-                          "QPushButton:hover{border-image: url(:/new/prefix1/pic/icon-关闭-悬停点击.png);"
+                          "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
                          "border:none;background-color:rgb(248, 100, 87);"
                          "border-radius: 4px;}");
     connect(close, &QPushButton::clicked, this, &FileFilter::filter_exit);

@@ -53,14 +53,21 @@ namespace K3b {
     public Q_SLOTS:
         void slotCurrentRootChanged( const QModelIndex& newRoot );
         void slotItemActivated( const QModelIndex& index );
+       
+        void slotNewDir();
+        void slotOpenDir();
+        void slotClear();
+        void slotRemove();
 
     private Q_SLOTS:
+        /*
         void slotNewDir();
         //*************************************
         void slotOpenDir();
         void slotClear();
 
         void slotRemove();
+        */
         void slotRename();
         void slotProperties();
         void slotOpen();

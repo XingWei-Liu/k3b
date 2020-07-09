@@ -217,8 +217,12 @@ QVariant K3b::DataProjectModel::data( const QModelIndex& index, int role ) const
             }
             else if( role == Qt::FontRole && item->isSymLink() ) {
                 QFont font;
+                font.setPixelSize( 14 );
                 font.setItalic( true );
                 return font;
+            }
+            if( role == Qt::SizeHintRole ){
+                return QSize(274, 35);
             }
             break;
 
@@ -232,6 +236,9 @@ QVariant K3b::DataProjectModel::data( const QModelIndex& index, int role ) const
                     return item->mimeType().comment();
                 }
             }
+            if( role == Qt::SizeHintRole ){
+                return QSize(84, 35);
+            }
             break;
 
         case SizeColumn:
@@ -241,11 +248,17 @@ QVariant K3b::DataProjectModel::data( const QModelIndex& index, int role ) const
             else if ( role == SortRole ) {
                 return item->size();
             }
+            if( role == Qt::SizeHintRole ){
+                return QSize(77, 35);
+            }
             break; 
         //***********************************************************
         case PathColumn:
             if ( role == Qt::DisplayRole )
                 return item->localPath();
+            if( role == Qt::SizeHintRole ){
+                return QSize(198, 35);
+            }
             break;
 
         }

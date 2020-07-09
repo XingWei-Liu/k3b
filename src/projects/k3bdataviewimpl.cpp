@@ -87,7 +87,7 @@ K3b::DataViewImpl::DataViewImpl( View* view, DataDoc* doc, KActionCollection* ac
 
     m_sortModel->setSourceModel( m_model );
 
-    m_fileView->setItemDelegate( new DataProjectDelegate( this ) );
+    //m_fileView->setItemDelegate( new DataProjectDelegate( this ) );
     m_fileView->setModel( m_sortModel );
     m_fileView->setAcceptDrops( true );
     m_fileView->setDragEnabled( true );
@@ -101,8 +101,13 @@ K3b::DataViewImpl::DataViewImpl( View* view, DataDoc* doc, KActionCollection* ac
     m_fileView->sortByColumn( DataProjectModel::FilenameColumn, Qt::AscendingOrder );
     m_fileView->setMouseTracking( true );
     m_fileView->setAllColumnsShowFocus( true );
+
+    //*********************
+    m_fileView->setIconSize( QSize(24,24) );
+
     connect( m_fileView, SIGNAL(doubleClicked(QModelIndex)),
              this, SLOT(slotItemActivated(QModelIndex)) );
+ 
     connect( m_fileView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
              this, SLOT(slotSelectionChanged()) );
 
@@ -269,6 +274,9 @@ void K3b::DataViewImpl::slotOpenDir()
   */
      QList<QUrl> urls;
      QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl()/*, QFileDialog::DontUseNativeDialog*/);
+
+     if( url.isEmpty() )
+         return;
      m_doc->addUrls( urls << url );
 }
 
@@ -391,6 +399,7 @@ void K3b::DataViewImpl::slotSelectionChanged()
 
 void K3b::DataViewImpl::slotItemActivated( const QModelIndex& index )
 {
+#if 0
     if( index.isValid() ) {
         const int type = index.data( DataProjectModel::ItemTypeRole ).toInt();
         if( type == DataProjectModel::DirItemType ) {
@@ -400,6 +409,7 @@ void K3b::DataViewImpl::slotItemActivated( const QModelIndex& index )
             m_fileView->edit( index );
         }
     }
+#endif
 }
 
 

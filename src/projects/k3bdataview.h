@@ -52,6 +52,10 @@ namespace K3b {
         void slotDeviceChange( K3b::Device::DeviceManager* );
         void slotComboCD(int);
         void slotComboBurner(int);
+        void slotOpenClicked();
+        void slotRemoveClicked();
+        void slotClearClicked();
+        void slotNewdirClicked();
 
     private Q_SLOTS:
         void slotParentDir();

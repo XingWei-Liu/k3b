@@ -123,13 +123,15 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     mainWidgetLayout->addWidget(mainWidget);
     mainWidget->setLayout(pLayout);
     mainWidgetLayout->setMargin(0);
-    pLayout->setContentsMargins(7,0,0,0);
+    pLayout->setContentsMargins(4,4,4,4);
     pLayout->setSpacing(0);
+    pLayout->addStretch(0);
     mainWidget->setStyleSheet("QWidget{background-color:rgb(255,255,255);}");
-    pLayout->addStretch();
     pLayout->addWidget(m_pMenubutton);
+    pLayout->addSpacing(4);
     pLayout->addWidget(m_pMinimizeButton);
-    pLayout->addWidget(m_pMaximizeButton);
+    //pLayout->addWidget(m_pMaximizeButton);
+    pLayout->addSpacing(4);
     pLayout->addWidget(m_pCloseButton);
 
     connect(m_pMenubutton, &QPushButton::clicked, this, &TitleBar::onClicked);
@@ -154,7 +156,7 @@ void K3b::TitleBar::mouseDoubleClickEvent(QMouseEvent *event)
 {
     Q_UNUSED(event);
 
-    Q_EMIT m_pMaximizeButton->clicked();
+    //Q_EMIT m_pMaximizeButton->clicked();
 }
 
 void K3b::TitleBar::mouseMoveEvent(QMouseEvent *event)
