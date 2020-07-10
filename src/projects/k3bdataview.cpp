@@ -88,20 +88,17 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     line->setFrameShadow(QFrame::Sunken);
     line->raise();
 
-    burn_setting = new QPushButton(this);
-    burn_setting->setText(i18n("setting"));
-    //burn_setting->setText("open");
+    //刻录设置按钮
+    burn_setting = new QPushButton(i18n("setting"), this);
     burn_setting->setVisible(false);
-    burn_setting->setMinimumSize(80, 30);
+    burn_setting->setFixedSize(80, 30);
     burn_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                 "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                 "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
-
-    burn_button = new QPushButton(this);
-    burn_button->setText(i18n("start burner"));
-    //burn_button->setText("create iso");
+    //开始刻录按钮
+    burn_button = new QPushButton(i18n("start burner"), this);
     burn_button->setVisible(false);
-    burn_button->setMinimumSize(140, 45);
+    burn_button->setFixedSize(140, 45);
     burn_button->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
@@ -109,9 +106,8 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     QLabel *label = new QLabel(this);
     QGridLayout *layout = new QGridLayout(label);
 
-    QLabel *label_burner = new QLabel(label);
-    label_burner->setText(i18n("current burner"));
-    label_burner->setMinimumSize(75, 30);
+    QLabel *label_burner = new QLabel(i18n("current burner"), label);
+    label_burner->setFixedSize(75, 30);
 
     combo_burner = new QComboBox(label);
     combo_burner->setEnabled( false );
@@ -129,15 +125,6 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     combo_CD->setMinimumSize(310, 30);
     
     m_dataViewImpl->view()->setFrameStyle(QFrame::NoFrame);
-    //m_dataViewImpl->view()->setStyle(QStyleFactory::create("windows"));
-/*
-    m_dataViewImpl->view()->setStyleSheet("QTreeView {outline:none;show-decoration-selected: 1;}"
-	                                      "QTreeView {outline:none;border:0px;}"
-	                                      "QTreeView::branch{background-color: transparent;	border-color: #b3b3b3;}"
-	                                      "QTreeView::item, QTreeView::branch:hover { background-color: transparent;border-color: #b3b3b3;}"
- 	                                      "QTreeView::item:selected, QTreeView::branch:selected { background-color: #b3b3b3;}");
-*/
-
     layout->addWidget( m_dataViewImpl->view(), 0, 0, 1, 5 );
     layout->addWidget( line, 1, 0, 1, 5);
     layout->addWidget( label_burner, 2, 0, 1, 1 );
@@ -161,79 +148,68 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     layout->setVerticalSpacing(10);
 
     QSplitter* splitter = new QSplitter( this );
-    //splitter->addWidget( m_dirView );
-    //splitter->addWidget( ButtonView );
-    //splitter->addWidget( m_dataViewImpl->view() );
     splitter->addWidget( label );
-    //splitter->setStretchFactor( 0, 1 );
-    //splitter->setStretchFactor( 1, 3 );
     setMainWidget( splitter );
-
-    // FIXME: always sort folders first in fileview
-    // FIXME: allow sorting by clicking fileview headers
-/*
-    connect( actionCollection()->action( "parent_dir" ), SIGNAL(triggered()),
-             this, SLOT(slotParentDir()) );
-*/     
     m_doc->setVolumeID( "data_burn" );
     
-
     connect( burn_setting, SIGNAL(clicked()), this, SLOT(slotBurn()) );
     connect( burn_button, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
-    
     connect( combo_burner, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotComboBurner(int) ) );
     connect( combo_CD, SIGNAL( currentIndexChanged(int) ), this, SLOT( slotComboCD(int) ) );
-
-    connect( m_dataViewImpl, SIGNAL(setCurrentRoot(QModelIndex)),
-             this, SLOT(slotSetCurrentRoot(QModelIndex)) );
-
+    connect( m_dataViewImpl, SIGNAL(setCurrentRoot(QModelIndex)), this, SLOT(slotSetCurrentRoot(QModelIndex)) );
     connect( m_dirView->selectionModel(), SIGNAL(selectionChanged(QItemSelection,QItemSelection)),
              this, SLOT(slotCurrentDirChanged()) );
 
     if( m_dirProxy->rowCount() > 0 )
         m_dirView->setCurrentIndex( m_dirProxy->index( 0, 0 ) );
-    /********************************************/
-/*    connect( k3bappcore->appDeviceManager(), SIGNAL( currentDeviceChanged( K3b::Device::Device* ) ),
-              this, SLOT( slotMountPoint( K3b::Device::Device* ) ) );*/
-#if 1
     connect( k3bappcore->mediaCache(), SIGNAL(mediumChanged(K3b::Device::Device*)),
               this, SLOT(slotMediaChange(K3b::Device::Device*)) );
     connect( k3bcore->deviceManager(), SIGNAL(changed(K3b::Device::DeviceManager*)),
               this, SLOT(slotDeviceChange(K3b::Device::DeviceManager*)) );
-#endif
 /*
 add menu button
 */
     QLabel* label_action = new QLabel( this );
     label_action->setMinimumSize(370, 30);
     
-    QPushButton* button_add = new QPushButton( label_action );
-    button_add->setText(i18n("Add"));
+    //添加按钮
+    button_add = new QPushButton(i18n("Add"), label_action);
     button_add->setFixedSize(80, 30);
-    button_add->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-添加-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;border-left:12px solid rgb(233, 233, 233);}"
-                              "QPushButton:hover{background-image: url(:/icon/icon/icon-添加-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
-                              "QPushButton:pressed{background-image: url(:/icon/icon/icon-添加-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
-    
-    QPushButton* button_remove = new QPushButton( label_action );
-    button_remove->setText(i18n("Remove"));
+    button_add->setIcon(QIcon(":/icon/icon/icon-添加-默认.png"));
+    button_add->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                              "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                              "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+
+    //删除按钮
+    button_remove = new QPushButton(i18n("Remove"), label_action );
+    button_remove->setIcon(QIcon(":/icon/icon/icon-删除-默认.png"));
     button_remove->setFixedSize(80, 30);
-    button_remove->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-删除-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
-                                 "QPushButton:hover{background-image: url(:/icon/icon/icon-删除-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
-                                 "QPushButton:pressed{background-image: url(:/icon/icon/icon-删除-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
-    
-    QPushButton* button_clear = new QPushButton( label_action );
-    button_clear->setText(i18n("Clear"));
+    button_remove->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                                 "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                                 "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+
+    //清空按钮
+    button_clear = new QPushButton(i18n("Clear"), label_action );
+    button_clear->setIcon(QIcon(":/icon/icon/icon-清空-默认.png")); 
     button_clear->setFixedSize(80, 30);
-    button_clear->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-清空-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
-                                "QPushButton:hover{background-image: url(:/icon/icon/icon-清空-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
-                                 "QPushButton:pressed{background-image: url(:/icon/icon/icon-清空-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
-    
-    QPushButton* button_newdir = new QPushButton( label_action );
-    button_newdir->setText(i18n("New Dir"));
-    button_newdir->setFixedSize(80, 30);
-    button_newdir->setStyleSheet("QPushButton{background-image: url(:/icon/icon/icon-新建文件-默认.png);background-color:rgb(233, 233, 233);background-repeat: no-repeat;background-position:left;color:#444444;font: 14px;border-radius: 4px;}"
-                                 "QPushButton:hover{background-image: url(:/icon/icon/icon-新建文件-悬停点击.png);background-color:rgb(107, 142, 235);background-repeat: no-repeat;background-position:left;color:#ffffff;font: 14px;border-radius: 4px;}"
-                                 "QPushButton:pressed{background-image: url(:/icon/icon/icon-新建文件-悬停点击.png);background-color:rgb(65, 95, 196);background-repeat: no-repeat;background-position:left;border:none;color:#ffffff;font: 14px;border-radius: 4px;}");
+    button_clear->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                                "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                                "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+    //新建文件夹按钮
+    button_newdir = new QPushButton(i18n("New Dir"), label_action );
+    button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-默认.png")); 
+    button_newdir->setFixedSize(112, 30);
+    button_newdir->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                                 "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                                 "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+
+    //安装事件过滤器
+    button_add->installEventFilter(this); 
+    button_remove->installEventFilter(this); 
+    button_clear->installEventFilter(this); 
+    button_newdir->installEventFilter(this); 
+
+
     //QLabel* label_action = new QLabel( this );
     QHBoxLayout* layout_action = new QHBoxLayout( label_action );
     layout_action->setContentsMargins(0,0,0,0);
@@ -250,20 +226,6 @@ add menu button
     connect( button_clear, SIGNAL( clicked() ), this, SLOT( slotClear()clicked  ) );
     connect( button_newdir, SIGNAL( clicked() ), this, SLOT( slotNewdirClicked() ) );
 
- // Setup toolbar
-    /*
-    toolBox()->addAction( actionCollection()->action( "project_data_import_session" ) );
-    toolBox()->addAction( actionCollection()->action( "project_data_clear_imported_session" ) );
-    toolBox()->addAction( actionCollection()->action( "project_data_edit_boot_images" ) );
-    
-    toolBox()->addAction( actionCollection()->action( "open_dir" ) );
-    toolBox()->addAction( actionCollection()->action( "remove" ) );
-    toolBox()->addAction( actionCollection()->action( "clear" ) );
-    toolBox()->addAction( actionCollection()->action( "parent_dir" ) );
-    toolBox()->addSeparator();
-    toolBox()->addAction( actionCollection()->action( "new_dir" ) );
-    toolBox()->addActions( createPluginsActions( m_doc->type() ) );
-    toolBox()->addSeparator();*/
     toolBox()->addWidget( label_action );
     toolBox()->addAction( actionCollection()->action( "project_volume_name" ) );
 
@@ -287,6 +249,45 @@ add menu button
 
 K3b::DataView::~DataView()
 {
+}
+
+bool K3b::DataView::eventFilter(QObject *obj, QEvent *event)
+{
+    switch (event->type()) {
+    case QEvent::HoverEnter:
+        if(obj == button_add)
+            button_add->setIcon(QIcon(":/icon/icon/icon-添加-悬停点击.png"));
+        if(obj == button_remove)
+            button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        if(obj == button_clear)
+            button_clear->setIcon(QIcon(":/icon/icon/icon-清空-悬停点击.png"));
+        if(obj == button_newdir)
+            button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-悬停点击.png"));
+        break;
+    case QEvent::HoverLeave:
+        if(obj == button_add)
+            button_add->setIcon(QIcon(":/icon/icon/icon-添加-默认.png"));
+        if(obj == button_remove)
+            button_remove->setIcon(QIcon(":/icon/icon/icon-删除-默认.png"));
+        if(obj == button_clear)
+            button_clear->setIcon(QIcon(":/icon/icon/icon-清空-默认.png"));
+        if(obj == button_newdir)
+            button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-默认.png"));
+        break;
+    case QEvent::MouseButtonPress:
+        if(obj == button_add)
+            button_add->setIcon(QIcon(":/icon/icon/icon-添加-悬停点击.png"));
+        if(obj == button_remove)
+            button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        if(obj == button_clear)
+            button_clear->setIcon(QIcon(":/icon/icon/icon-清空-悬停点击.png"));
+        if(obj == button_newdir)
+            button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-悬停点击.png"));
+        break;
+    default:
+        break;
+    }
+    return QWidget::eventFilter(obj, event);
 }
 
 void K3b::DataView::slotOpenClicked()

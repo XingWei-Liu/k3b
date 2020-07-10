@@ -75,8 +75,16 @@ namespace K3b {
         QComboBox* combo_CD;
         QList<Device::Device *> device_index;
         QStringList mount_index;
+
         QPushButton* burn_setting;
         QPushButton* burn_button;
+        QPushButton* button_add;
+        QPushButton* button_remove;
+        QPushButton* button_clear;
+        QPushButton* button_newdir;
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;  //事件过滤
 
     };
 }
