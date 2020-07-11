@@ -24,6 +24,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QRadioButton>
+#include <QLabel>
 
 class QAction;
 class QTreeView;
@@ -50,8 +51,6 @@ namespace K3b {
             void MediaCopy( K3b::Device::Device* dev );
       
         public Q_SLOTS:
-            void slotLabel_CDClicked();
-            void slotLabel_pathClicked();
             void slotOpenfile();
             void slotSetting();
             void slotStartBurn();
@@ -71,14 +70,12 @@ namespace K3b {
 
             void init();
         public:
-            QRadioButton* label_CD;
-            QRadioButton* label_path;
+            QLabel* label_CD;
             QComboBox* combo_CD;
             QComboBox* combo_iso;
-            QLineEdit* lineedit_CD;
             QPushButton* button_openfile;
-            QPushButton* button_setting;
             QString filepath;
+            int flag;
 
             QList<Device::Device*> device_index;
 

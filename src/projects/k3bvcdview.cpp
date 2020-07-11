@@ -51,103 +51,100 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     //m_view( new QTreeView( this ) )
     m_view( new QTreeView( ) )
 {
+    flag = 0;
+
     QLabel *widget_label = new QLabel(this);
-    QGridLayout *layout = new QGridLayout(widget_label);
+    QGridLayout *layout = new QGridLayout();
+
+    QVBoxLayout *vlayout = new QVBoxLayout(widget_label);
  
     QLabel* label_title = new QLabel(this);
     label_title->setText(i18n("copy image"));
     QFont title_font;
-    title_font.setPointSize(24);
+    title_font.setPixelSize(24);
     label_title->setFont( title_font );
     label_title->setStyleSheet("color: #444444");
 
     QLabel *label_iso = new QLabel(this);
     label_iso->setText(i18n("CD to copy"));
     QFont label_font;
-    label_font.setPointSize(14);
+    label_font.setPixelSize(14);
     label_iso->setFont( label_font );
     label_iso->setStyleSheet("color: #444444");
 
     combo_iso = new QComboBox(this);
-    combo_iso->setMinimumSize(360, 30);
+    combo_iso->setFixedSize(360, 30);
     
-    label_CD = new QRadioButton(this);
+    label_CD = new QLabel(this);
     label_CD->setText(i18n("Copy CD"));
     label_CD->setFont( label_font );
     label_CD->setStyleSheet("color: #444444");
 
     combo_CD = new QComboBox(this);
-    combo_CD->setMinimumSize(360, 30);
-
-    button_setting = new QPushButton(this);
+    combo_CD->setFixedSize(360, 30);
+#if 0
+    button_setting = new QPushButton();
     button_setting->setText(i18n("setting"));
-    button_setting->setMinimumSize(80, 30);
+    button_setting->setFixedSize(80, 30);
     button_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
-
-    QLabel *label_space = new QLabel(this);
-
-    label_path = new QRadioButton(this);
-    label_path->setText(i18n("extract image"));
-
-    lineedit_CD = new QLineEdit(this);
-    lineedit_CD->setMinimumSize(360, 30);
-    label_CD->setFont( label_font );
-    label_CD->setStyleSheet("color: #444444");
-    
+#endif
     button_openfile = new QPushButton(this);
     button_openfile->setText(i18n("choice"));
-    button_openfile->setMinimumSize(80, 30);
+    button_openfile->setFixedSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                    "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                    "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
 
     QPushButton *button_start = new QPushButton(this);
     button_start->setText(i18n("Start copying/extracting"));
-    button_start->setMinimumSize(140, 45);
+    button_start->setFixedSize(140, 45);
     button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
         
-    combo_CD->setEnabled(false);
-    button_setting->setEnabled(false);
-    button_openfile->setEnabled(false);
-    lineedit_CD->setEnabled(false);
-
-    layout->addWidget( label_title, 0, 0, 2, 1 );
-    layout->addWidget( label_iso, 1, 0, 1, 1 );
-    layout->addWidget( combo_iso, 2, 0, 1, 1 );
-    layout->addWidget( label_space, 3, 0, 1, 1 );
-    layout->addWidget( label_CD, 4, 0, 1, 1 );
-    layout->addWidget( combo_CD, 5, 0, 1, 1 );
-    layout->addWidget( button_setting, 5, 1, 1, 1 );
-    layout->addWidget( label_space, 6, 0, 1, 1 );
-    layout->addWidget( label_path, 7, 0, 1, 1 );
-    layout->addWidget( lineedit_CD, 8, 0, 1, 1 );
-    layout->addWidget( button_openfile, 8, 1, 1, 1 );
-    layout->addWidget( label_space, 9, 0, 1, 1 );
-    layout->addWidget( button_start, 10, 2, 1, 1 );
-
-    layout->setRowStretch(0, 3);
-    layout->setRowStretch(1, 1);
-    layout->setRowStretch(2, 1);
-    layout->setRowStretch(3, 3);
-    layout->setRowStretch(4, 1);
-    layout->setRowStretch(5, 1);
-    layout->setRowStretch(6, 3);
-    layout->setRowStretch(7, 1);
-    layout->setRowStretch(8, 1);
-    layout->setRowStretch(9, 3);
-    layout->setRowStretch(10, 1);
-    layout->setVerticalSpacing(10);
-
+    combo_CD->setEnabled( true );
+    button_openfile->setEnabled( true );
+#if 1
+    QLabel* CD_label = new QLabel( widget_label); 
+    CD_label->setFixedHeight(30);
+    QHBoxLayout *CD_layout = new QHBoxLayout( CD_label );
+    CD_layout->setContentsMargins(0,0,0,0);
+    CD_layout->addSpacing( 0 );
+    CD_layout->addWidget(combo_CD);
+    CD_layout->addSpacing( 10 );
+    CD_layout->addWidget(button_openfile);
+    CD_layout->addStretch( 0 );
+    
+    QLabel* start_label = new QLabel( widget_label); 
+    start_label->setFixedHeight(45);
+    QHBoxLayout *start_layout = new QHBoxLayout( start_label );
+    start_layout->setContentsMargins(0,0,25,0);
+    start_layout->addStretch( 0 );
+    start_layout->addWidget( button_start);
+    start_layout->addSpacing( 0 );
+    
+    vlayout->setContentsMargins(10,0,0,0);
+    vlayout->addWidget( label_title );
+    vlayout->addSpacing( 35 );
+    vlayout->addWidget( label_iso );
+    vlayout->addSpacing( 10 );
+    vlayout->addWidget( combo_iso );
+    vlayout->addSpacing( 70 );
+    vlayout->addWidget( label_CD );
+    vlayout->addSpacing( 10 );
+    vlayout->addWidget( CD_label );
+    vlayout->addStretch( 0 );
+    vlayout->addWidget( start_label );
+    vlayout->addSpacing( 25 );
+#endif
     setMainWidget( widget_label );
     
-    connect( label_CD, SIGNAL(clicked()), this, SLOT(slotLabel_CDClicked()) );
-    connect( label_path, SIGNAL(clicked()), this, SLOT(slotLabel_pathClicked()) );
+    //connect( label_CD, SIGNAL(clicked()), this, SLOT(slotLabel_CDClicked()) );
+    //connect( label_path, SIGNAL(clicked()), this, SLOT(slotLabel_pathClicked()) );
     connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
-    connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
+    //connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
     connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
 
 #if 1
@@ -207,7 +204,7 @@ void K3b::VcdView::slotDeviceChange( K3b::Device::DeviceManager* manager)
         combo_iso->setEnabled( false );
         combo_iso->setCurrentText( "please insert a device" );
         combo_CD->setEnabled( false );
-        lineedit_CD->setEnabled( false );
+        //lineedit_CD->setEnabled( false );
     }else
         slotMediaChange( 0 );
 
@@ -224,7 +221,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
     foreach(K3b::Device::Device* device, device_list){
         combo_iso->setEnabled( true );
         combo_CD->setEnabled( true );
-        lineedit_CD->setEnabled( true );
+        //lineedit_CD->setEnabled( true );
 
         device_index.append( device );
 
@@ -265,26 +262,9 @@ void K3b::VcdView::slotOpenfile()
     if(filepath == NULL)
         return;
 
-   lineedit_CD->setText( filepath );
+   //lineedit_CD->setText( filepath );
+   combo_CD->setCurrentText( filepath );
 
-}
-void K3b::VcdView::slotLabel_CDClicked()
-{
-    if ( label_CD->isChecked() ){
-        combo_CD->setEnabled(true);
-        button_setting->setEnabled(true);
-        button_openfile->setEnabled(false);
-        lineedit_CD->setEnabled(false);
-    }
-}
-void K3b::VcdView::slotLabel_pathClicked()
-{
-    if ( label_path->isChecked() ){
-        combo_CD->setEnabled(false);
-        button_setting->setEnabled(false);
-        button_openfile->setEnabled(true);
-        lineedit_CD->setEnabled(true);
-    }
 }
 
 void K3b::VcdView::MediaCopy( K3b::Device::Device* dev )
@@ -308,28 +288,17 @@ void K3b::VcdView::slotStartBurn()
     int CD_index = combo_CD->currentIndex();
     K3b::MediaCopyDialog *dlg = new K3b::MediaCopyDialog( this );
     dlg->setReadingDevice( device_index.at( iso_index ) );
-    if ( label_path->isChecked() ){
+    if ( flag ){
         dlg->setOnlyCreateImage(true);
-        dlg->setTempDirPath( lineedit_CD->text() );
+        dlg->setTempDirPath( combo_CD->currentText() );
         dlg->saveConfig();
         dlg->slotStartClicked();
-    }else if ( label_CD->isChecked() ){
+    }else {
         dlg->setOnlyCreateImage(true);
         dlg->setComboMedium( device_index.at( CD_index ) );
         dlg->saveConfig();
         qDebug()<< "from" << device_index.at( iso_index )->blockDeviceName() << "to" << device_index.at( CD_index )->blockDeviceName() <<endl;
         dlg->slotStartClicked();
-#if 0       
-        K3b::ImageWritingDialog *d = new K3b::ImageWritingDialog( this );
-        d->setComboMedium( device_index.at( CD_index ) );
-
-        d->setImage( QUrl::fromLocalFile( KConfigGroup( KSharedConfig::openConfig(), "Disk Copy" ).readEntry( "image path[$e]" ) ) );
-        d->saveConfig();
-        d->slotStartClicked();
-#endif
-    }else{
-        KMessageBox::information( this, i18n("Please add files to your project first."),
-                                  i18n("No Data to Burn") );
     }
 }
 

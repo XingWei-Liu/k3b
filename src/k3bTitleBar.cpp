@@ -110,7 +110,8 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     menu->addAction(QIcon(""),"help",this,&TitleBar::help);
     menu->addAction(QIcon(""),"about",this,&TitleBar::about);
 
-    menu->setStyleSheet("QMenu:hover{background-color:rgb(248, 100, 87);}");
+    //menu->setStyleSheet("QMenu::item:hover{background-color:#6b8eeb;}");
+    //menu->setStyleSheet("QMenu:hover{background-color:#ffffff;}");
 
     m_pMenubutton->setPopupMode(QToolButton::InstantPopup); //点击模式
     m_pMenubutton->setMenu(menu);  //下拉菜单

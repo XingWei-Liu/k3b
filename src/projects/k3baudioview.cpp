@@ -66,7 +66,8 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     m_doc = doc;
 
     QLabel *widget_label = new QLabel(this);
-    QGridLayout *layout = new QGridLayout(widget_label);
+    QVBoxLayout *layout = new QVBoxLayout(widget_label);
+    layout->setContentsMargins(10,0,0,0);    
     
     QLabel *label_title = new QLabel(this);
     label_title->setText(i18n("write image"));
@@ -77,14 +78,13 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
 
     QLabel *label_iso = new QLabel(this);
     label_iso->setText(i18n("select iso"));
-    //label->setMinimumSize();
     QFont label_font;
     label_font.setPixelSize(14);
     label_iso->setFont( label_font );
     label_iso->setStyleSheet("color:#444444;");
 
     lineedit_iso = new QLineEdit(this);
-    lineedit_iso->setMinimumSize(360, 30);
+    lineedit_iso->setFixedSize(360, 30);
 /*
  lineedit add icon .
  QLineEdit::LeadingPosition put it left
@@ -96,7 +96,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
 
     QPushButton *button_openfile = new QPushButton(this);
     button_openfile->setText(i18n("browse"));
-    button_openfile->setMinimumSize(80, 30);
+    button_openfile->setFixedSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                    "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                    "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
@@ -105,50 +105,69 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     
     QLabel *label_CD = new QLabel(this);
     label_CD->setText(i18n("select disk"));
-    //label_CD->setMinimumSize();
     label_CD->setFont( label_font );
     label_CD->setStyleSheet("color:#444444;");
     
     combo_CD = new QComboBox(this);
-    combo_CD->setMinimumSize(360, 30);
+    combo_CD->setFixedSize(360, 30);
     combo_CD->addItem("please insert CD");
     combo_CD->setStyleSheet("QComboBox");
 
     QPushButton *button_setting = new QPushButton(this);
     button_setting->setText(i18n("setting"));
-    button_setting->setMinimumSize(80, 30);
+    button_setting->setFixedSize(80, 30);
     button_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
 
     QPushButton *button_start = new QPushButton(this);
     button_start->setText(i18n("start"));
-    button_start->setMinimumSize(140, 45);
+    button_start->setFixedSize(140, 45);
     button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                 "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
- 
-    layout->addWidget( label_title, 0, 0, 2, 1 );
-    layout->addWidget( label_iso, 1, 0, 1, 1 );
-    layout->addWidget( lineedit_iso, 2, 0, 1, 1 );
-    layout->addWidget( button_openfile, 2, 1, 1, 1 );
-    layout->addWidget( label_space, 3, 0, 1, 1 );
-    layout->addWidget( label_CD, 4, 0, 1, 1 );
-    layout->addWidget( combo_CD, 5, 0, 1, 1 );
-    layout->addWidget( button_setting, 5, 1, 1, 1 );
-    layout->addWidget( label_space, 6, 0, 1, 1 );
-    layout->addWidget( button_start, 7, 2, 1, 1 );
+#if 1
+    QLabel* CD_label = new QLabel( widget_label); 
+    CD_label->setFixedHeight(30);
+    QHBoxLayout *CD_layout = new QHBoxLayout( CD_label );
+    CD_layout->setContentsMargins(0,0,0,0);
+    CD_layout->addSpacing( 0 );
+    CD_layout->addWidget(combo_CD);
+    CD_layout->addSpacing( 10 );
+    CD_layout->addWidget( button_setting );
+    CD_layout->addStretch( 0 );
+     
+    QLabel* iso_label = new QLabel( widget_label); 
+    iso_label->setFixedHeight(30);
+    QHBoxLayout *iso_layout = new QHBoxLayout( iso_label );
+    iso_layout->setContentsMargins(0,0,0,0);
+    iso_layout->addSpacing( 0 );
+    iso_layout->addWidget( lineedit_iso );
+    iso_layout->addSpacing( 10 );
+    iso_layout->addWidget(button_openfile);
+    iso_layout->addStretch( 0 );
 
-    layout->setRowStretch(0, 3);
-    layout->setRowStretch(1, 1);
-    layout->setRowStretch(2, 1);
-    layout->setRowStretch(3, 3);
-    layout->setRowStretch(4, 1);
-    layout->setRowStretch(5, 1);
-    layout->setRowStretch(6, 3);
-    layout->setRowStretch(7, 1);
-    layout->setVerticalSpacing(10);
-
+    QLabel* start_label = new QLabel( widget_label); 
+    start_label->setFixedHeight(45);
+    QHBoxLayout *start_layout = new QHBoxLayout( start_label );
+    start_layout->setContentsMargins(0,0,25,0);
+    start_layout->addStretch( 0 );
+    start_layout->addWidget( button_start);
+    start_layout->addSpacing( 0 );
+    
+    layout->addWidget( label_title );
+    layout->addSpacing( 35 );
+    layout->addWidget( label_iso );
+    layout->addSpacing( 10 );
+    layout->addWidget( iso_label );
+    layout->addSpacing( 70 );
+    layout->addWidget( label_CD );
+    layout->addSpacing( 10 );
+    layout->addWidget( CD_label );
+    layout->addStretch( 0 );
+    layout->addWidget( start_label );
+    layout->addSpacing( 25 );
+#endif
     setMainWidget( widget_label );
     
     connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
