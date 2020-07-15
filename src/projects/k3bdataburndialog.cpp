@@ -72,11 +72,6 @@ K3b::DataBurnDialog::DataBurnDialog(K3b::DataDoc* _doc, QWidget *parent )
     //**************
     m_checkVerify->hide();
 
-    QPushButton *button_close = new QPushButton(m_optionGroup);
-    button_close->setText("ok");
-    m_optionGroupLayout->addWidget( button_close );
-    connect( button_close, SIGNAL( clicked() ), this, SLOT( slotClose() ) );
-
     QSpacerItem* spacer = new QSpacerItem( 20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding );
     m_optionGroupLayout->addItem( spacer );
 
@@ -107,11 +102,11 @@ K3b::DataBurnDialog::DataBurnDialog(K3b::DataDoc* _doc, QWidget *parent )
 K3b::DataBurnDialog::~DataBurnDialog(){
 }
 
-void K3b::DataBurnDialog::slotClose()
+void K3b::DataBurnDialog::slotCancelClicked()
 {
     saveConfig( );
     saveSettingsToProject();
-    this->close();
+    close();
 }
 
 void K3b::DataBurnDialog::saveConfig( )

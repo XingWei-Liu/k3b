@@ -68,7 +68,8 @@ namespace K3b {
 
     //protected Q_SLOTS:
     public Q_SLOTS:
-        void slotClose();
+        //void slotClose();
+        void slotCancelClicked() override;
         void slotStartClicked() override;
         void saveSettingsToProject() override;
         void readSettingsFromProject() override;

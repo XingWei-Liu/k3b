@@ -54,7 +54,8 @@ namespace K3b {
     //protected Q_SLOTS:
     public Q_SLOTS:
         void slotStartClicked() override;
-        void slotSaveClicked();
+        void slotCancelClicked() override;
+        //void slotSaveClicked();
         void slotMd5JobPercent( int );
         void slotMd5JobFinished( bool );
         void slotContextMenuRequested( const QPoint& pos );

@@ -569,10 +569,6 @@ void K3b::ImageWritingDialog::setupGui()
     m_labeltmpPath->setText( tmp_path );
     m_tmpPath->setText( tmp_size);
 
-    //********************
-    QPushButton *button_save = new QPushButton(optionGroup);
-    button_save->setText("save");
-    connect( button_save, SIGNAL( clicked() ), this, SLOT( slotSaveClicked() ) );
   //***************
     QVBoxLayout* optionGroupLayout = new QVBoxLayout( optionGroup );
     optionGroupLayout->addWidget( d->checkDummy );
@@ -581,7 +577,6 @@ void K3b::ImageWritingDialog::setupGui()
     //tmp
     optionGroupLayout->addWidget( m_labeltmpPath );
     optionGroupLayout->addWidget( m_tmpPath );
-    optionGroupLayout->addWidget( button_save );
 
     optionGroupLayout->addStretch( 1 );
 /*
@@ -670,7 +665,7 @@ void K3b::ImageWritingDialog::setupGui()
                                          "files.") );
 }
 
-void K3b::ImageWritingDialog::slotSaveClicked()
+void K3b::ImageWritingDialog::slotCancelClicked()
 {
     saveConfig();
     this->close();

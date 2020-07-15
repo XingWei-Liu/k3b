@@ -29,7 +29,7 @@ int main( int argc, char* argv[] )
     QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     
     KAboutData aboutData( "k3b",
-                          i18n("K3b"),
+                          i18n("Kylin-Burner"),
                           LIBK3B_VERSION, i18n("<p>K3b is a full-featured CD/DVD/Blu-ray burning and ripping application.<br/>"
                                                "It supports a variety of project types as well as copying of optical media, "
                                                "burning of different types of images, and ripping Audio CDs, Video CDs, and "

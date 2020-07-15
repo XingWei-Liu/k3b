@@ -149,10 +149,6 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     m_labeltmpPath->setText( tmp_path );
     m_tmpPath->setText( tmp_size);
     //********************
-    QPushButton *button_save = new QPushButton( groupOptions );
-    button_save->setText("save");
-    connect( button_save, SIGNAL( clicked() ), this, SLOT( slotSaveClicked() ) ); 
-    //***************
 
 
     QVBoxLayout* groupOptionsLayout = new QVBoxLayout( groupOptions );
@@ -164,7 +160,6 @@ K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
 
     groupOptionsLayout->addWidget( m_labeltmpPath );
     groupOptionsLayout->addWidget( m_tmpPath );
-    groupOptionsLayout->addWidget( button_save );
 
     groupOptionsLayout->addStretch( 1 );
 /*
@@ -291,7 +286,7 @@ void K3b::MediaCopyDialog::init()
     slotToggleAll();
 }
 
-void K3b::MediaCopyDialog::slotSaveClicked()
+void K3b::MediaCopyDialog::slotCancelClicked()
 {
     saveConfig();
     this->close();

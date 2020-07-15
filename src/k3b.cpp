@@ -248,7 +248,8 @@ K3b::MainWindow::MainWindow()
     /* modify UI */
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
-    setWindowTitle( i18n("Kylin-Burner") );
+    //setWindowTitle( i18n("Kylin-Burner") );
+    //setPlainCaption( i18n("Kylin-Burner") );
 #if 0
     QDesktopWidget *desktop = QApplication::desktop();
     this->move(desktop->width() / 2 - this->width() / 2, desktop->height() / 2 - this->height() / 2);
@@ -954,8 +955,8 @@ void K3b::MainWindow::saveOptions()
 
 void K3b::MainWindow::readOptions()
 {
-    KConfigGroup grpWindow(config(), "main_window_settings");
-    applyMainWindowSettings( grpWindow );
+    //KConfigGroup grpWindow(config(), "main_window_settings");
+    //applyMainWindowSettings( grpWindow );
     
     KConfigGroup grp( config(), "General Options" );
     d->actionViewDocumentHeader->setChecked( grp.readEntry("Show Document Header", false) );

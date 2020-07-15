@@ -62,7 +62,7 @@ namespace K3b {
     private Q_SLOTS:
         /*
         void slotNewDir();
-        //*************************************
+        *************************************
         void slotOpenDir();
         void slotClear();
 

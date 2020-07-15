@@ -104,7 +104,7 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
     QDialogButtonBox *buttonBox = new QDialogButtonBox( );
     connect( buttonBox, SIGNAL(accepted()), this, SLOT(accept()) );
     connect( buttonBox, SIGNAL(rejected()), this, SLOT(reject()) );
-
+#if 1
     if( buttonMask & START_BUTTON ) {
         //m_buttonStart = new QPushButton( buttonBox );
         m_buttonStart = new QPushButton( );
@@ -139,8 +139,18 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
     else {
         m_buttonCancel = 0;
     }
+#endif
+    QPushButton *button_close = new QPushButton( buttonBox );
+    button_close->setText("ok");
+    button_close->setFixedSize(80,30);
+    button_close->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
+                               "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
+                               "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    
+    connect( button_close, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ) );
 
     //mainGrid->addWidget( buttonBox, 2, 2 );
+    mainGrid->addWidget( button_close, 2, 2 );
     mainGrid->setRowStretch( 1, 1 );
 
     setTitle( title, subTitle );

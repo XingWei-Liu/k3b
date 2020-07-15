@@ -15,6 +15,11 @@ FileFilter::FileFilter(QWidget *parent) :
     this->setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     this->setFixedSize(400, 400);
 
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+
     QLabel *icon = new QLabel();
     icon->setFixedSize(30,30);
     icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo.png);"

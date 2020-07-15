@@ -54,7 +54,8 @@ namespace K3b {
     
     public Q_SLOTS:
         void slotStartClicked() override;
-        void slotSaveClicked();
+        void slotCancelClicked() override;
+        //void slotSaveClicked();
         /* receive fniished signal*/
         void slotFinished(bool);
 

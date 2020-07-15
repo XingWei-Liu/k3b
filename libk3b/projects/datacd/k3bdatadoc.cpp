@@ -257,7 +257,7 @@ void K3b::DataDoc::addUrlsToDir( const QList<QUrl>& l, K3b::DirItem* dir )
 
             // recursively add all the files in the directory
             QStringList dlist;
-            
+            //filter hidden file
             KConfigGroup grp( KSharedConfig::openConfig(), "default data settings" );
             int AddHiddenFiles = !grp.readEntry( "discard hidden file", false );
             if ( AddHiddenFiles ){
