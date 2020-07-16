@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.0)
 
 # KDE Application Version, managed by release script
-set (RELEASE_SERVICE_VERSION_MAJOR "20")
-set (RELEASE_SERVICE_VERSION_MINOR "07")
-set (RELEASE_SERVICE_VERSION_MICRO "70")
-set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
+set (KDE_APPLICATIONS_VERSION_MAJOR "19")
+set (KDE_APPLICATIONS_VERSION_MINOR "12")
+set (KDE_APPLICATIONS_VERSION_MICRO "3")
+set (KDE_APPLICATIONS_VERSION "${KDE_APPLICATIONS_VERSION_MAJOR}.${KDE_APPLICATIONS_VERSION_MINOR}.${KDE_APPLICATIONS_VERSION_MICRO}")
 
-project(k3b VERSION ${RELEASE_SERVICE_VERSION})
+project(k3b VERSION ${KDE_APPLICATIONS_VERSION})
 
 set (QT_MIN_VERSION "5.10.0")
 set (KF5_MIN_VERSION "5.56.0")
@@ -15,7 +15,7 @@ find_package(ECM ${KF5_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${ECM_MODULE_PATH}" "${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules")
 
 ##################  K3b version  ################################
-set(K3B_VERSION_STRING ${RELEASE_SERVICE_VERSION})
+set(K3B_VERSION_STRING ${KDE_APPLICATIONS_VERSION})
 
 # increase on BC breakage
 set(K3B_LIB_VERSION_MAJOR 7)
@@ -156,6 +156,9 @@ if(K3B_BUILD_FFMPEG_DECODER_PLUGIN)
         check_symbol_exists(avformat_find_stream_info "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVFORMAT_FIND_STREAM_INFO)
         check_symbol_exists(avformat_close_input "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVFORMAT_CLOSE_INPUT)
         check_symbol_exists(avcodec_open2 "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVCODEC_OPEN2)
+        check_symbol_exists(avcodec_decode_audio2 "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVCODEC_DECODE_AUDIO2)
+        check_symbol_exists(avcodec_decode_audio3 "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVCODEC_DECODE_AUDIO3)
+        check_symbol_exists(avcodec_decode_audio4 "${FFMPEG_HEADERS}" HAVE_FFMPEG_AVCODEC_DECODE_AUDIO4)
         include(CheckCSourceCompiles)
         check_c_source_compiles("
             #ifdef NEWFFMPEGAVCODECPATH
@@ -240,7 +243,7 @@ if(K3B_BUILD_LAME_ENCODER_PLUGIN)
     set_package_properties(Lame PROPERTIES
         DESCRIPTION "Lame mp3 encoder"
         PURPOSE "Needed for the lame mpf encoder encoder plugin."
-        URL "https://lame.sourceforge.io/"
+        URL "http://lame.sourceforge.net"
         TYPE OPTIONAL)
 
     set(BUILD_LAME_ENCODER_PLUGIN "${LAME_FOUND}")
@@ -251,7 +254,7 @@ if(K3B_BUILD_OGGVORBIS_DECODER_PLUGIN OR K3B_BUILD_OGGVORBIS_ENCODER_PLUGIN)
     set_package_properties(OggVorbis PROPERTIES
         DESCRIPTION "Ogg Vorbis"
         PURPOSE "Needed for the K3b Ogg Vorbis decoder and encoder plugins."
-        URL "https://xiph.org/vorbis/"
+        URL "http://www.vorbis.com"
         TYPE OPTIONAL)
 
     set(BUILD_OGGVORBIS_DECODER_PLUGIN "${OGGVORBIS_FOUND}")
@@ -293,12 +296,12 @@ if(K3B_BUILD_API_DOCS)
         if(EXISTS ${QT_DOC_DIR}/html)
             set(QTDOCS "${QT_DOC_DIR}/html")
         else()
-            set(QTDOCS "https://doc.qt.io/qt-5/")
+            set(QTDOCS "http://doc.trolltech.com/4.5/")
         endif()
 
         add_custom_target(apidox
             COMMAND ${DOXYGEN_EXECUTABLE} Doxyfile
-            COMMAND docs/html/installdox -l qt5.tag@${QTDOCS} docs/html/*.html)
+            COMMAND docs/html/installdox -l qt4.tag@${QTDOCS} docs/html/*.html)
     endif()
 endif(K3B_BUILD_API_DOCS)
 
@@ -309,16 +312,19 @@ add_subdirectory( src )
 add_subdirectory( kioslaves )
 add_subdirectory( plugins )
 add_subdirectory( doc )
-
 if(BUILD_TESTING)
     find_package(Qt5Test REQUIRED)
     find_package(LibFuzzer)
     set_package_properties(LibFuzzer PROPERTIES
         PURPOSE "libFuzzer – a library for coverage-guided fuzz testing."
-        URL "https://llvm.org/docs/LibFuzzer.html"
+        URL "http://libfuzzer.info"
         TYPE OPTIONAL)
     add_subdirectory(tests)
 endif()
 
 ###################  K3b config summary ################################
 feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
+ki18n_install(po)
+if (KF5DocTools_FOUND)
+ kdoctools_install(po)
+endif()
