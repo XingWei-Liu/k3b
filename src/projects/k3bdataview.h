@@ -18,6 +18,8 @@
 #define K3BDATAVIEW_H
 
 #include "k3bview.h"
+#include <QThread>
+#include <QMutex>
 
 class QModelIndex;
 class QTreeView;
@@ -34,6 +36,18 @@ namespace K3b {
         class Device;
         class DeviceManager;
     }
+    
+    //加载文件到线程类
+    class LoadWorker: public QObject
+    {
+        Q_OBJECT
+
+    signals:
+        void loadFinished();
+
+    public slots:
+        void load(QString, DataDoc*);
+    };
 
     class DataView : public View
     {
@@ -83,9 +97,18 @@ namespace K3b {
         QPushButton* button_clear;
         QPushButton* button_newdir;
 
-protected:
-    bool eventFilter(QObject *obj, QEvent *event) override;  //事件过滤
+    protected:
+        bool eventFilter(QObject *obj, QEvent *event) override;  //事件过滤
 
+    signals:
+        void load(QString, DataDoc*);
+
+    public slots:
+        void onLoadFinished();
+
+    protected:
+        QThread *workerThread;
+        LoadWorker *worker;
     };
 }
 
