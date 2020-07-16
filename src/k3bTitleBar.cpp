@@ -16,7 +16,7 @@
 #include  "k3bdevice.h"
 #include "k3bapplication.h"
 #include "k3bappdevicemanager.h"
-
+#include <KMountPoint>
 
 K3b::TitleBar::TitleBar(QWidget *parent)
     : QWidget(parent)
@@ -247,8 +247,8 @@ void K3b::TitleBar::popup()
 {
     QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
     foreach(K3b::Device::Device* dev, device_list){
-        qDebug() << "device list" << dev <<endl;
-        if(dev){
+        KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( dev->blockDeviceName() );
+        if(dev && mountPoint){
             dev->eject();
             break;
         }
