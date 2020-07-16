@@ -300,8 +300,6 @@ void K3b::DataView::slotNewdirClicked()
 
 void K3b::DataView::slotDeviceChange( K3b::Device::DeviceManager* manager )
 {
-    combo_burner->clear();
-    combo_CD->clear();
     QList<K3b::Device::Device*> device_list = k3bcore->deviceManager()->allDevices();
     if ( device_list.count() == 0 ){
         combo_burner->setEnabled(false);
@@ -358,14 +356,8 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         }
         mount_index.append(mountInfo);
     
-        //不发送信号，不调用回调函数
-        combo_burner->blockSignals( true );
         combo_burner->addItem(QIcon(":/icon/icon/icon-刻录机.png"), burnerInfo);
-        combo_burner->blockSignals( false );
-       
-        combo_CD->blockSignals( true );
         combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), CDInfo);
-        combo_CD->blockSignals( false );
     }
 }
 
@@ -373,7 +365,7 @@ void K3b::DataView::slotComboBurner(int index)
 {
     qDebug()<< " combo burner index " << index << mount_index << endl;
     if ( index < 0 )
-        index = 0;
+       index = 0;
 
     // 会调用slotComboCD 槽函数    
     combo_CD->setCurrentIndex( index );
