@@ -126,7 +126,6 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     combo_CD->setEditable( true );
     combo_CD->setMinimumSize(310, 30);
     
-    m_dataViewImpl->view()->setFrameStyle(QFrame::NoFrame);
 
     QHBoxLayout *hlayout_burner = new QHBoxLayout();
     hlayout_burner->setContentsMargins(0, 0, 0, 0);

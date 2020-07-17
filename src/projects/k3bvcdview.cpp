@@ -254,10 +254,10 @@ void K3b::VcdView::slotOpenfile()
 {
     filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks/* | QFileDialog::DontUseNativeDialog*/);
 
-    if(filepath == NULL)
+    if( filepath.isEmpty() )
         return;
-
-   //lineedit_CD->setText( filepath );
+   flag = 1;
+   combo_CD->setEditable( true );
    combo_CD->setCurrentText( filepath );
 
 }

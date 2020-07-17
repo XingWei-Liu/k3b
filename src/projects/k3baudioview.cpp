@@ -112,6 +112,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     combo_CD = new QComboBox(this);
     combo_CD->setFixedSize(360, 30);
     combo_CD->addItem("please insert CD");
+    combo_CD->setEnabled( false );
     combo_CD->setStyleSheet("QComboBox");
 
     QPushButton *button_setting = new QPushButton(this);
@@ -244,6 +245,8 @@ void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
     qDebug()<< "device count" << device_list.count() <<endl;
     
     foreach(K3b::Device::Device* device, device_list){
+    
+        combo_CD->setEnabled( true );
 
         device_index.append( device );
 
@@ -311,26 +314,35 @@ void K3b::AudioView::slotOpenfile()
 
 void K3b::AudioView::slotSetting()
 {
-    dlg = new K3b::ImageWritingDialog( this );
-    dlg->exec();
+    if( lineedit_iso->text().isEmpty() ) { 
+        KMessageBox::information( this, i18n("Please add files to your project first."),
+                                  i18n("No Data to Burn") );
+    }else{   
+        dlg = new K3b::ImageWritingDialog( this );
+        dlg->exec();
+    }
 }
 
 void K3b::AudioView::slotStartBurn()
 {
     dlg = new K3b::ImageWritingDialog( this );
+    if( lineedit_iso->text().isEmpty() ) { 
+        KMessageBox::information( this, i18n("Please add files to your project first."),
+                                  i18n("No Data to Burn") );
+    }else{   
+        int index = combo_CD->currentIndex();
+        dlg->setComboMedium( device_index.at( index ) );
+        qDebug()<< "block name:" << device_index.at( index )->blockDeviceName() <<endl;
 
-    int index = combo_CD->currentIndex();
-    dlg->setComboMedium( device_index.at( index ) );
-    qDebug()<< "block name:" << device_index.at( index )->blockDeviceName() <<endl;
-
-    dlg->setImage( QUrl::fromLocalFile( filepath ) );
-    dlg->saveConfig();
-    dlg->slotStartClicked();
+        dlg->setImage( QUrl::fromLocalFile( filepath ) );
+        dlg->saveConfig();
+        dlg->slotStartClicked();
+    }
 }
 
 void K3b::AudioView::slotBurn()
 {
-    if( lineedit_iso->text() == NULL ) { 
+    if( lineedit_iso->text().isEmpty() ) { 
         KMessageBox::information( this, i18n("Please add files to your project first."),
                                   i18n("No Data to Burn") );
     }   

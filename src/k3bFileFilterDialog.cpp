@@ -13,7 +13,7 @@ FileFilter::FileFilter(QWidget *parent) :
     QDialog(parent)
 {
     this->setWindowFlags(Qt::FramelessWindowHint | windowFlags());
-    this->setFixedSize(400, 400);
+    this->setFixedSize(430, 250);
 
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
@@ -21,17 +21,16 @@ FileFilter::FileFilter(QWidget *parent) :
     setPalette(pal);
 
     QLabel *icon = new QLabel();
-    icon->setFixedSize(30,30);
-    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo.png);"
-                        "background-color:rgb(233, 233, 233);"
+    icon->setFixedSize(16,16);
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel(i18n("kylin-burner"));
-    title->setFixedSize(80,30);
-    title->setStyleSheet("QLabel{background-color:rgb(233, 233, 233);"
-                         "background-repeat: no-repeat;color:rgb(0, 0, 0);"
-                         "font: 14px;background-color:transparent;}");
+    title->setFixedSize(48,11);
+    title->setStyleSheet("QLabel{background-color:transparent;"
+                         "background-repeat: no-repeat;color:#444444;"
+                         "font: 12px;}");
     QPushButton *close = new QPushButton();
-    close->setFixedSize(30,30);
+    close->setFixedSize(20,20);
     close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
                          "border:none;background-color:rgb(233, 233, 233);"
                          "border-radius: 4px;background-color:transparent;}"
@@ -40,40 +39,69 @@ FileFilter::FileFilter(QWidget *parent) :
                          "border-radius: 4px;}");
     connect(close, &QPushButton::clicked, this, &FileFilter::filter_exit);
 
-    QHBoxLayout *titlebar = new QHBoxLayout();
+    QLabel* label = new QLabel( this );
+    label->setFixedHeight(27);
+    QHBoxLayout *titlebar = new QHBoxLayout(label);
+    titlebar->setContentsMargins(11, 0, 0, 0);
     titlebar->addWidget(icon);
-    titlebar->addSpacing(10);
+    titlebar->addSpacing(5);
     titlebar->addWidget(title);
     titlebar->addStretch();
     titlebar->addWidget(close);
     
-    QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
     QLabel *filter_label = new QLabel("filter");
-    filter_label->setFixedSize(80,30);
-    filter_label->setStyleSheet("QLabel{background-color:rgb(233, 233, 233);"
-                                "background-repeat: no-repeat;color:rgb(0, 0, 0);"
-                                "font: 24px;background-color:transparent;}");
+    //filter_label->setFixedSize(80,30);
+    filter_label->setStyleSheet("QLabel{background-color:transparent;\
+                                        background-repeat: no-repeat;\
+                                        width:96px;\
+                                        height:24px;\
+                                        font-size:24px;\
+                                        font-family:Microsoft YaHei;\
+                                        font-weight:400;\
+                                        color:rgba(68,68,68,1);\
+                                        line-height:32px;}");
 
     discard_hidden_file = new QCheckBox("discard hidden file");
     discard_hidden_file->setChecked(true);
+    discard_hidden_file->setFixedHeight(16);
+    QFont label_font;
+    label_font.setPixelSize(14);
+    discard_hidden_file->setFont( label_font );
+    discard_hidden_file->setStyleSheet("color:#444444;");
+
     
     discard_broken_link = new QCheckBox("discard broken link");
     discard_broken_link->setChecked(true);
+    discard_broken_link->setFixedHeight(16);
+    discard_broken_link->setFont( label_font );
+    discard_broken_link->setStyleSheet("color:#444444;");
+
     
     follow_link = new QCheckBox("follow link");
     follow_link->setChecked(false);
+    follow_link->setFixedHeight(16);
+    follow_link->setFont( label_font );
+    follow_link->setStyleSheet("color:#444444;");
 
-    mainWidgetLayout->addLayout(titlebar);
-    mainWidgetLayout->addWidget(filter_label);
-    mainWidgetLayout->addSpacing(50);
-    mainWidgetLayout->addWidget( discard_hidden_file);
-    mainWidgetLayout->addSpacing(20);
-    mainWidgetLayout->addWidget( discard_broken_link);
-    mainWidgetLayout->addSpacing(20);
-    mainWidgetLayout->addWidget(follow_link);
-    mainWidgetLayout->addStretch();
+    QVBoxLayout* vlayout = new QVBoxLayout();
+    vlayout->setContentsMargins(25, 0, 0, 0);
+    vlayout->addWidget(filter_label);
+    vlayout->addSpacing(31);
+    vlayout->addWidget( discard_hidden_file);
+    vlayout->addSpacing(13);
+    vlayout->addWidget( discard_broken_link);
+    vlayout->addSpacing(13);
+    vlayout->addWidget(follow_link);
+    vlayout->addSpacing(62);
 
-    this->setModal(true);
+
+    QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
+    mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
+    mainWidgetLayout->addWidget( label );
+    mainWidgetLayout->addSpacing(32);
+    mainWidgetLayout->addLayout(vlayout);
+
+    this->setModal( false );
 
 }
 

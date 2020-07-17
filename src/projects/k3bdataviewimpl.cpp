@@ -104,6 +104,8 @@ K3b::DataViewImpl::DataViewImpl( View* view, DataDoc* doc, KActionCollection* ac
 
     //*********************
     m_fileView->setIconSize( QSize(24,24) );
+    m_fileView->setFixedHeight( 370 );
+    m_fileView->setFrameStyle(QFrame::NoFrame);
 
     connect( m_fileView, SIGNAL(doubleClicked(QModelIndex)),
              this, SLOT(slotItemActivated(QModelIndex)) );

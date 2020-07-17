@@ -375,6 +375,11 @@ K3b::ImageWritingDialog::ImageWritingDialog( QWidget* parent )
     d->negativeTextColor = colorScheme.foreground( KColorScheme::NegativeText ).color();
     d->normalTextColor = colorScheme.foreground( KColorScheme::NormalText ).color();
 
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+
     setAcceptDrops( true );
 
     setupGui();
@@ -520,12 +525,16 @@ void K3b::ImageWritingDialog::setupGui()
 
     d->writerSelectionWidget = new K3b::WriterSelectionWidget( frame );
     d->writerSelectionWidget->hideComboMedium();
+    d->writerSelectionWidget->setWindowFlags(Qt::FramelessWindowHint);
     d->writerSelectionWidget->setWantedMediumType( K3b::Device::MEDIA_WRITABLE );
     d->writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_EMPTY );
 
     // options
     // -----------------------------------------------------------------------
     d->optionTabbed = new QTabWidget( frame );
+
+    d->optionTabbed->tabBar()->hide();
+    d->optionTabbed->setWindowFlags(Qt::FramelessWindowHint);
 
     QWidget* optionTab = new QWidget( d->optionTabbed );
     QGridLayout* optionTabLayout = new QGridLayout( optionTab );

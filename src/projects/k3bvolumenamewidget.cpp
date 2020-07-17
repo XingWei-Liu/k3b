@@ -47,10 +47,15 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
       d( new Private )
 {
     d->doc = doc;
-    //this->setFixedWidth(200);
+    //this->setFixedWidth(100);
+
+    QLabel* label = new QLabel(this);
+    label->setText(i18n("Project Size:"));
+    
+
     d->volumeNameEdit = new KLineEdit( KIO::convertSize( doc->size() ), this );
     d->volumeNameEdit->setReadOnly(true);
-    d->volumeNameEdit->setFixedWidth(100);
+    d->volumeNameEdit->setFixedWidth(50);
     d->volumeNameEdit->setAlignment( Qt::AlignRight );
     //d->volumeNameEdit->setText((char *)doc->size());
     d->volumeNameEdit->setStyleSheet("QLineEdit{border-width:0;border-style:outset}"
@@ -58,7 +63,8 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
     
     QHBoxLayout* layout = new QHBoxLayout( this );
     layout->addStretch();
-    layout->addWidget( new QLabel( i18n("Project Size:"), this ), 1, Qt::AlignRight );
+    //layout->addWidget( new QLabel( i18n("Project Size:"), this ), 1, Qt::AlignRight );
+    layout->addWidget( label, 1, Qt::AlignRight );
     layout->addWidget( d->volumeNameEdit, 2 );
     layout->setContentsMargins( 0, 0, 0, 0 );
     connect( d->doc, SIGNAL(changed()),
