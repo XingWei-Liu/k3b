@@ -10327,7 +10327,7 @@ msgstr "开始复制/提取"
 
 #: src/projects/k3bvolumenamewidget.cpp
 msgid "Project Size:"
-msgstr "项目大小："
+msgstr "项目大小:"
 
 #: src/projects/k3bdataviewimpl.cpp
 #msgid "Path"
