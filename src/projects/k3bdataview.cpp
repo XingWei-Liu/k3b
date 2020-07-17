@@ -407,7 +407,7 @@ void K3b::DataView::slotStartBurn()
     if( m_doc->burningSize() == 0 ) { 
          KMessageBox::information( this, i18n("Please add files to your project first."),
                                       i18n("No Data to Burn") );
-    }else if ( burn_button->text() == i18n("start burn" )){ 
+    }else if ( burn_button->text() == i18n("start burner" )){ 
         int index = combo_burner->currentIndex();
         dlg->setComboMedium( device_index.at( index ) );
         qDebug()<< "index :" <<  index << " device block name: " << device_index.at( index )->blockDeviceName() <<endl;

@@ -1,0 +1,14 @@
+Package: k3b-dbgsym
+Package-Type: ddeb
+Source: k3b
+Version: 19.12.3-0ubuntu1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 25447
+Depends: k3b (= 19.12.3-0ubuntu1)
+Section: debug
+Priority: optional
+Description: debug symbols for k3b
+Build-Ids: 73c32665fd612233bc90caca70fd1939ea1a3582 9d5fdd27592df86c3418dda7fdd0c22c90b4cc12
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>

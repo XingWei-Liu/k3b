@@ -181,7 +181,6 @@ void K3b::DirView::showMediumInfo( const K3b::Medium& medium )
         // show cd info
         d->setCurrentView( d->infoView );
         d->infoView->reload( medium );
-
         return;
     }
 
@@ -239,7 +238,6 @@ void K3b::DirView::slotMountFinished( const QString& mp )
                                    k3bappcore->appDeviceManager()->currentDevice()->vendor(),
                                    k3bappcore->appDeviceManager()->currentDevice()->description() ) );
     }
-    qDebug() << "aaaaaaaaaaaaaaaaaaa" << __func__ << __LINE__ << __FILE__ <<endl;
 }
 
 

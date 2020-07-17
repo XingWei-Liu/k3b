@@ -1,0 +1,4 @@
+debian/tmp/usr/bin/k3b
+debian/tmp/usr/lib/x86_64-linux-gnu/libexec/k3bhelper
+debian/tmp/usr/share/applications/org.kde.k3b.desktop
+debian/tmp/usr/share/metainfo/org.kde.k3b.appdata.xml

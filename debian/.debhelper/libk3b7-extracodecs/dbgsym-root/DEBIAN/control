@@ -1,0 +1,14 @@
+Package: libk3b7-extracodecs-dbgsym
+Package-Type: ddeb
+Source: k3b
+Version: 19.12.3-0ubuntu1
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Installed-Size: 1805
+Depends: libk3b7-extracodecs (= 19.12.3-0ubuntu1)
+Section: debug
+Priority: optional
+Description: debug symbols for libk3b7-extracodecs
+Build-Ids: 07a6616123ce62de5c4cd3b72fd3a0acac4e797f 1209383b44764a5567a6371c38b963437c7be94d 296c2480c90b9aaec7348be8c3ebc50788d40a1e e62a300e888cc084539b2ff07b4f5c7107d71beb ec4dd258e96b3bed9e24010f0f97ee52492e2734
+Original-Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>

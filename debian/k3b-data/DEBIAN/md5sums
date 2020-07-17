@@ -148,7 +148,7 @@ ef987188ff6d5f7de90dc2943c42ff53  usr/share/kservices5/ServiceMenus/k3b_create_a
 2217dd7da8c9cdc91b275be6a1132718  usr/share/kservices5/ServiceMenus/k3b_write_bin_image.desktop
 1cff019b417e5cf276bef598441edf57  usr/share/kservices5/ServiceMenus/k3b_write_iso_image.desktop
 fddd680179afa0aa445e4993aaa777e4  usr/share/kservices5/k3baudiometainforenamerplugin.desktop
-bf660d2e1c1f4f665dca11163862139c  usr/share/kservices5/k3baudioprojectcddbplugin.desktop
+b46a8ec60abb13eee5741e3c1bb534a1  usr/share/kservices5/k3baudioprojectcddbplugin.desktop
 53c3b2340cf3860c5c4d095c92fd7511  usr/share/kservices5/k3bexternalencoder.desktop
 4e16c898678e3b9ce2b80678dbec8bfe  usr/share/kservices5/k3bflacdecoder.desktop
 ee5a83089f4ad2fc52cd3b0d09294889  usr/share/kservices5/k3blibsndfiledecoder.desktop
