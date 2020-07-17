@@ -65,6 +65,8 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
 {
     m_dirProxy->setSourceModel( m_dataViewImpl->model() );
 
+    toolBox()->show();
+
     // Dir panel
     m_dirView->setFrameStyle(QFrame::NoFrame); //去掉边框
 
@@ -93,8 +95,8 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     burn_setting = new QPushButton(i18n("open"), this);
     burn_setting->setFixedSize(80, 30);
     burn_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
-                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
-                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
+                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color:#ffffff}"
+                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color:#ffffff}");
     //开始刻录按钮
     burn_button = new QPushButton(i18n("create iso"), this);
     burn_button->setFixedSize(140, 45);
@@ -102,27 +104,66 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
 
-    QLabel *label = new QLabel(this);
-    QGridLayout *layout = new QGridLayout(label);
+    QLabel *label_view = new QLabel(this);
+    //QGridLayout *layout = new QGridLayout(label_view);
+    QVBoxLayout *layout = new QVBoxLayout( label_view );
+    layout->setContentsMargins(0, 0, 5, 25);
 
-    QLabel *label_burner = new QLabel(i18n("current burner"), label);
+    QLabel *label_burner = new QLabel(i18n("current burner"), label_view);
     label_burner->setFixedSize(75, 30);
 
-    combo_burner = new QComboBox(label);
+    combo_burner = new QComboBox( label_view );
     combo_burner->setEnabled( false );
     combo_burner->setMinimumSize(310, 30);
     
-    QLabel *label_space = new QLabel(label);
+    //QLabel *label_space = new QLabel(label);
 
-    QLabel *label_CD = new QLabel(label);
+    QLabel *label_CD = new QLabel( label_view );
     label_CD->setText(i18n("current CD"));
     label_CD->setMinimumSize(75, 30);
 
-    combo_CD = new QComboBox(label);
+    combo_CD = new QComboBox( label_view );
     combo_CD->setEditable( true );
     combo_CD->setMinimumSize(310, 30);
     
     m_dataViewImpl->view()->setFrameStyle(QFrame::NoFrame);
+
+    QHBoxLayout *hlayout_burner = new QHBoxLayout();
+    hlayout_burner->setContentsMargins(0, 0, 0, 0);
+    hlayout_burner->addWidget( label_burner );
+    hlayout_burner->addSpacing( 15 );
+    hlayout_burner->addWidget( combo_burner );
+    hlayout_burner->addStretch( 0 );
+    
+    QHBoxLayout *hlayout_CD = new QHBoxLayout();
+    hlayout_CD->setContentsMargins(0, 0, 0, 0);
+    hlayout_CD->addWidget( label_CD );
+    hlayout_CD->addSpacing( 15 );
+    hlayout_CD->addWidget( combo_CD );
+    hlayout_CD->addSpacing( 10 );
+    hlayout_CD->addWidget( burn_setting );
+    hlayout_CD->addStretch( 0 );
+    
+    QVBoxLayout *vlayout_combo = new QVBoxLayout();
+    vlayout_combo->setContentsMargins(0, 0, 0, 0);
+    vlayout_combo->addLayout( hlayout_burner );
+    vlayout_combo->addSpacing( 8 );
+    vlayout_combo->addLayout( hlayout_CD );
+    
+    QVBoxLayout *vlayout_button = new QVBoxLayout();
+    vlayout_button->setContentsMargins(0, 0, 20, 0);
+    vlayout_button->addStretch( 0 );
+    vlayout_button->addWidget( burn_button );
+    
+    QHBoxLayout *hlayout_bottom = new QHBoxLayout();
+    hlayout_bottom->setContentsMargins(0, 0, 0, 0);
+    hlayout_bottom->addLayout( vlayout_combo );
+    hlayout_bottom->addLayout( vlayout_button );
+
+    layout->addWidget( m_dataViewImpl->view() );
+    layout->addStretch( 26 );
+    layout->addLayout( hlayout_bottom );
+#if 0
     layout->addWidget( m_dataViewImpl->view(), 0, 0, 1, 5 );
     layout->addWidget( line, 1, 0, 1, 5);
     layout->addWidget( label_burner, 2, 0, 1, 1 );
@@ -144,9 +185,9 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     layout->setRowStretch(3, 1);
     layout->setHorizontalSpacing(15);
     layout->setVerticalSpacing(10);
-
+#endif
     QSplitter* splitter = new QSplitter( this );
-    splitter->addWidget( label );
+    splitter->addWidget( label_view );
     setMainWidget( splitter );
     m_doc->setVolumeID( "data_burn" );
     
@@ -219,19 +260,19 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     
     connect( button_add, SIGNAL( clicked() ), this, SLOT( slotOpenClicked() ) );
     connect( button_remove, SIGNAL( clicked() ), this, SLOT( slotRemoveClicked() ) );
-    connect( button_clear, SIGNAL( clicked() ), this, SLOT( slotClearClicked  ) );
+    connect( button_clear, SIGNAL( clicked() ), this, SLOT( slotClearClicked()  ) );
     connect( button_newdir, SIGNAL( clicked() ), this, SLOT( slotNewdirClicked() ) );
 
     toolBox()->addWidget( label_action );
     toolBox()->addAction( actionCollection()->action( "project_volume_name" ) );
 
-     workerThread = new QThread;
-     LoadWorker *worker = new LoadWorker;
-     worker->moveToThread(workerThread);
-     connect(this,SIGNAL(load(QString, DataDoc*)),worker,SLOT(load(QString, DataDoc*)));
-     connect(worker,SIGNAL(loadFinished()),this,SLOT(onLoadFinished()));
-     connect(workerThread,SIGNAL(finished()),worker,SLOT(deleteLater()));
-     workerThread->start();
+    workerThread = new QThread;
+    LoadWorker *worker = new LoadWorker;
+    worker->moveToThread(workerThread);
+    connect(this,SIGNAL(load(QString, DataDoc*)),worker,SLOT(load(QString, DataDoc*)));
+    connect(worker,SIGNAL(loadFinished()),this,SLOT(onLoadFinished()));
+    connect(workerThread,SIGNAL(finished()),worker,SLOT(deleteLater()));
+    workerThread->start();
    
 }
 

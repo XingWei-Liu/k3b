@@ -40,6 +40,7 @@ K3b::View::View( K3b::Doc* pDoc, QWidget *parent )
       m_doc( pDoc )
 {
     m_toolBox = new KToolBar( this );
+    m_toolBox->hide();
     m_fillStatusDisplay = new K3b::FillStatusDisplay( m_doc/*, this */);
 
     QVBoxLayout* fillStatusDisplayLayout = new QVBoxLayout;

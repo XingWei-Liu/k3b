@@ -247,6 +247,12 @@ K3b::MainWindow::MainWindow()
     
     /* modify UI */
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    setStyleSheet("QWidget:{width:900px;\
+                            height:600px;\
+                            background:rgba(255,255,255,1);\
+                            border:1px solid rgba(207, 207, 207, 1);\
+                            box-shadow:0px 3px 10px 0px rgba(0, 0, 0, 0.2);\
+                            border-radius:6px;}");
     //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
     //setWindowTitle( i18n("Kylin-Burner") );
     //setPlainCaption( i18n("Kylin-Burner") );

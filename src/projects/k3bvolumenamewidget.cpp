@@ -51,9 +51,10 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
     d->volumeNameEdit = new KLineEdit( KIO::convertSize( doc->size() ), this );
     d->volumeNameEdit->setReadOnly(true);
     d->volumeNameEdit->setFixedWidth(100);
+    d->volumeNameEdit->setAlignment( Qt::AlignRight );
     //d->volumeNameEdit->setText((char *)doc->size());
     d->volumeNameEdit->setStyleSheet("QLineEdit{border-width:0;border-style:outset}"
-    "QLineEdit{background-color:transparent}");
+    "QLineEdit{background-color:transparent; font: 12px; color:#f37308;}");
     
     QHBoxLayout* layout = new QHBoxLayout( this );
     layout->addStretch();

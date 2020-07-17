@@ -45,18 +45,17 @@
 
 K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
 :
-    View( doc, parent ),
+    K3b::View( doc, parent ),
     m_doc( doc ),
     m_model( new K3b::VcdProjectModel( m_doc, this ) ),
-    //m_view( new QTreeView( this ) )
     m_view( new QTreeView( ) )
 {
     flag = 0;
-
+    
     QLabel *widget_label = new QLabel(this);
-    QGridLayout *layout = new QGridLayout();
 
     QVBoxLayout *vlayout = new QVBoxLayout(widget_label);
+    vlayout->setContentsMargins(10,0,0,0);
  
     QLabel* label_title = new QLabel(this);
     label_title->setText(i18n("copy image"));
@@ -94,8 +93,8 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     button_openfile->setText(i18n("choice"));
     button_openfile->setFixedSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
-                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
-                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
+                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color:#ffffff}"
+                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color:#ffffff}");
 
     QPushButton *button_start = new QPushButton(this);
     button_start->setText(i18n("Start copying/extracting"));
@@ -125,7 +124,6 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
     start_layout->addWidget( button_start);
     start_layout->addSpacing( 0 );
     
-    vlayout->setContentsMargins(10,0,0,0);
     vlayout->addWidget( label_title );
     vlayout->addSpacing( 35 );
     vlayout->addWidget( label_iso );
@@ -141,10 +139,7 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
 #endif
     setMainWidget( widget_label );
     
-    //connect( label_CD, SIGNAL(clicked()), this, SLOT(slotLabel_CDClicked()) );
-    //connect( label_path, SIGNAL(clicked()), this, SLOT(slotLabel_pathClicked()) );
     connect( button_openfile, SIGNAL(clicked()), this, SLOT(slotOpenfile()) );
-    //connect( button_setting, SIGNAL(clicked()), this, SLOT(slotSetting()) );
     connect( button_start, SIGNAL(clicked()), this, SLOT(slotStartBurn()) );
 
 #if 1

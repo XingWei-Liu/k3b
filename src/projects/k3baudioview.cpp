@@ -64,13 +64,14 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     : K3b::View( doc, parent )
 {
     m_doc = doc;
-
+    
     QLabel *widget_label = new QLabel(this);
     QVBoxLayout *layout = new QVBoxLayout(widget_label);
     layout->setContentsMargins(10,0,0,0);    
     
     QLabel *label_title = new QLabel(this);
     label_title->setText(i18n("write image"));
+    label_title->setFixedHeight(24);
     QFont title_font;
     title_font.setPixelSize(24);
     label_title->setFont( title_font );
@@ -98,8 +99,8 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     button_openfile->setText(i18n("browse"));
     button_openfile->setFixedSize(80, 30);
     button_openfile->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
-                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
-                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
+                                   "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color:#ffffff}"
+                                   "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color:#ffffff}");
 
     QLabel *label_space = new QLabel(this);
     
@@ -117,8 +118,8 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     button_setting->setText(i18n("setting"));
     button_setting->setFixedSize(80, 30);
     button_setting->setStyleSheet("QPushButton{background-color:rgb(233, 233, 233);font: 14px;border-radius: 4px;}"
-                                  "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;}"
-                                  "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;}");
+                                  "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color:#ffffff}"
+                                  "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color:#ffffff}");
 
     QPushButton *button_start = new QPushButton(this);
     button_start->setText(i18n("start"));
