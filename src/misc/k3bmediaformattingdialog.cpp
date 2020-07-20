@@ -51,8 +51,69 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
                             "Formatting and Erasing" ) // config group
 {
     QWidget* frame = mainWidget();
+    
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+    
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    resize(430, 280);
+
+    QLabel *icon = new QLabel();
+    icon->setFixedSize(16,16);
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
+                        "background-repeat: no-repeat;background-color:transparent;}");
+    QLabel *title = new QLabel(i18n("kylin-burner"));
+    //title->setFixedSize(48,11);
+    title->setFixedWidth(48);
+    title->setStyleSheet("QLabel{background-color:transparent;"
+                         "background-repeat: no-repeat;color:#444444;"
+                         "font: 12px;}");
+    QPushButton *close = new QPushButton();
+    close->setFixedSize(20,20);
+    close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
+                         "border:none;background-color:rgb(233, 233, 233);"
+                         "border-radius: 4px;background-color:transparent;}"
+                          "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
+                         "border:none;background-color:rgb(248, 100, 87);"
+                         "border-radius: 4px;}");
+    connect(close, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ));
+
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight(27);
+    label_top->setFixedWidth(430);
+    QHBoxLayout *titlebar = new QHBoxLayout( label_top );
+    titlebar->setContentsMargins(11, 0, 0, 0);
+    titlebar->addWidget(icon);
+    titlebar->addSpacing(5);
+    titlebar->addWidget(title);
+    titlebar->addStretch();
+    titlebar->addWidget(close);
+    titlebar->addSpacing(5);
+
+    QLabel* label_title = new QLabel( this );
+    label_title->setText( i18n("clean") );
+    label_title->setFixedHeight(24);
+    label_title->setStyleSheet("QLabel{width:48px;\
+                                      height:24px;\
+                                      font-size:24px;\
+                                      font-family:Microsoft YaHei;\
+                                      font-weight:400;\
+                                      color:rgba(68,68,68,1);}");
+
+    QLabel* label_CD = new QLabel( this );
+    label_CD->setText( i18n("select CD") );
+    label_CD->setFixedHeight(12);
+    label_CD->setStyleSheet("QLabel{width:140px;\
+                                       height:12px;\
+                                       font-size:14px;\
+                                       font-family:Microsoft YaHei;\
+                                       font-weight:400;\
+                                       color:rgba(68,68,68,1);}");
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget( frame );
+    m_writerSelectionWidget->setFixedWidth(369);
     m_writerSelectionWidget->setWantedMediumType( K3b::Device::MEDIA_REWRITABLE );
     m_writerSelectionWidget->hideSpeed();
     // we need state empty here for preformatting DVD+RW.
@@ -61,7 +122,7 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
                                                    K3b::Device::STATE_EMPTY );
     m_writerSelectionWidget->setSupportedWritingApps( K3b::WritingAppDvdRwFormat );
     m_writerSelectionWidget->setForceAutoSpeed(true);
-
+#if 1
     //QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"), frame );
     QGroupBox* groupWritingMode = new QGroupBox( i18n("Writing Mode"));
     m_writingModeWidget = new K3b::WritingModeWidget( K3b::WritingModeIncrementalSequential|K3b::WritingModeRestrictedOverwrite,
@@ -78,15 +139,35 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
     groupOptionsLayout->addWidget( m_checkForce );
     groupOptionsLayout->addWidget( m_checkQuickFormat );
     groupOptionsLayout->addStretch( 1 );
-
-    QGridLayout* grid = new QGridLayout( frame );
-    grid->setContentsMargins( 0, 0, 0, 0 );
-
-    grid->addWidget( m_writerSelectionWidget, 0, 0, 1, 2 );
+    
+    //QGridLayout* grid = new QGridLayout( frame );
     //grid->addWidget( groupWritingMode, 1, 0 );
     //grid->addWidget( groupOptions, 1, 1 );
-    grid->setRowStretch( 1, 1 );
+    //grid->setRowStretch( 1, 1 );
+#endif
+#if 1
+    QLabel* label_bottom = new QLabel( this );
+    QVBoxLayout* vlayout = new QVBoxLayout( label_bottom );
+    vlayout->setContentsMargins( 31, 0, 0, 0 );
+    vlayout->addWidget( label_title );
+    vlayout->addSpacing(29);
+    vlayout->addWidget( label_CD );
+    vlayout->addSpacing(10);
+    vlayout->addWidget( m_writerSelectionWidget );
+    vlayout->addStretch(0);
 
+    QVBoxLayout* vlayout_frame  =  new QVBoxLayout( frame );
+    vlayout_frame->setContentsMargins( 0, 0, 0, 0 );
+
+    vlayout_frame->addWidget( label_top );
+    vlayout_frame->addSpacing(30);
+    vlayout_frame->addWidget( label_bottom );
+#else
+    label_top->move( 11, 0);
+    label_title->move(31, 57);
+    label_CD->move( 31, 110);
+    m_writerSelectionWidget->move(31,132);
+#endif
     m_checkForce->setToolTip( i18n("Force formatting of empty DVDs") );
     m_checkForce->setWhatsThis( i18n("<p>If this option is checked K3b will format a "
                                      "DVD-RW even if it is empty. It may also be used to "
@@ -119,6 +200,11 @@ K3b::MediaFormattingDialog::~MediaFormattingDialog()
 void K3b::MediaFormattingDialog::setDevice( K3b::Device::Device* dev )
 {
     m_writerSelectionWidget->setWriterDevice( dev );
+}
+
+void K3b::MediaFormattingDialog::slotCancelClicked()
+{
+    close();
 }
 
 void K3b::MediaFormattingDialog::slotStartClicked()

@@ -123,20 +123,26 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
 
     QGroupBox* groupWriter = new QGroupBox( this );
     //groupWriter->setTitle( i18n( "Burn Medium" ) );
-    groupWriter->setTitle( i18n( "Burn Setting" ) );
+    //groupWriter->setTitle( i18n( "Burn Setting" ) );
     
-    QGroupBox* group_Writer = new QGroupBox(  );
+    //QGroupBox* group_Writer = new QGroupBox(  );
 
+    groupWriter->setFlat( true );
+    groupWriter->setStyleSheet("QGroupBox{border:none;}");
+    
     QGridLayout* groupWriterLayout = new QGridLayout( groupWriter );
-    groupWriterLayout->setAlignment( Qt::AlignTop );
+    //groupWriterLayout->setAlignment( Qt::AlignTop );
+    groupWriterLayout->setContentsMargins(0, 0, 0, 0);
 
     //labelSpeed = new QLabel( groupWriter );
     labelSpeed = new QLabel( );
     labelSpeed->setText( i18n( "Speed:" ) );
 
     m_comboSpeed = new K3b::IntMapComboBox( groupWriter );
+    m_comboSpeed->setFixedHeight( 30 );
 
-    m_comboMedium = new MediaSelectionComboBox( group_Writer );
+    m_comboMedium = new MediaSelectionComboBox( groupWriter );
+    m_comboMedium->setFixedHeight( 30 );
 
     m_writingAppLabel = new QLabel( i18n("Writing app:"), groupWriter );
     m_comboWritingApp = new K3b::IntMapComboBox( groupWriter );
@@ -159,6 +165,7 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     mainLayout->setContentsMargins( 0, 0, 0, 0 );
 
     mainLayout->addWidget( groupWriter, 0, 0 );
+    //mainLayout->addWidget( m_comboMedium, 0, 0 );
 
     // tab order
     setTabOrder( m_comboMedium, m_comboSpeed );

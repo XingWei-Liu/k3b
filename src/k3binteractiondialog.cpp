@@ -62,6 +62,7 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
     installEventFilter( this );
 
     mainGrid = new QGridLayout( this );
+    mainGrid->setContentsMargins(0, 0, 0, 31);
 
     // header
     // ---------------------------------------------------------------------------------------------------
@@ -148,11 +149,29 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
     
     connect( button_close, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ) );
+    
+    QPushButton *button_cancel = new QPushButton( buttonBox );
+    button_cancel->setText("cancel");
+    button_cancel->setFixedSize(80,30);
+    button_cancel->setStyleSheet("QPushButton{background-color:#e9e9e9;font: 14px;border-radius: 4px;color: #444444;}"
+                               "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
+                               "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    
+    connect( button_cancel, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ) );
 
-    //mainGrid->addWidget( buttonBox, 2, 2 );
-    mainGrid->addWidget( button_close, 2, 2 );
+    QHBoxLayout* hlayout = new QHBoxLayout();
+    hlayout->addStretch( 0 );
+    hlayout->addWidget( button_cancel );
+    hlayout->addSpacing( 8 );
+    hlayout->addWidget( button_close );
+    hlayout->addSpacing( 30 );
+/*
+    mainGrid->addWidget( buttonBox, 2, 2 );
     mainGrid->setRowStretch( 1, 1 );
-
+*/
+    mainGrid->addLayout( hlayout, 2, 2 );
+    mainGrid->setRowStretch( 1, 1 );
+    
     setTitle( title, subTitle );
 
     initConnections();

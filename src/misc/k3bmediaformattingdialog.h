@@ -41,6 +41,7 @@ namespace K3b {
 
     protected Q_SLOTS:
         void slotStartClicked() override;
+        void slotCancelClicked() override;
 
     protected:
         void toggleAll() override;

@@ -48,9 +48,10 @@ FileFilter::FileFilter(QWidget *parent) :
     titlebar->addWidget(title);
     titlebar->addStretch();
     titlebar->addWidget(close);
+    titlebar->addSpacing(5);
     
     QLabel *filter_label = new QLabel("filter");
-    //filter_label->setFixedSize(80,30);
+    filter_label->setFixedHeight(24);
     filter_label->setStyleSheet("QLabel{background-color:transparent;\
                                         background-repeat: no-repeat;\
                                         width:96px;\
@@ -92,7 +93,7 @@ FileFilter::FileFilter(QWidget *parent) :
     vlayout->addWidget( discard_broken_link);
     vlayout->addSpacing(13);
     vlayout->addWidget(follow_link);
-    vlayout->addSpacing(62);
+    vlayout->addStretch(0);
 
 
     QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);

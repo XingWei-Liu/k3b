@@ -532,11 +532,13 @@ void K3b::ImageWritingDialog::setupGui()
     // options
     // -----------------------------------------------------------------------
     d->optionTabbed = new QTabWidget( frame );
-
-    d->optionTabbed->tabBar()->hide();
+    /* hide frame*/
     d->optionTabbed->setWindowFlags(Qt::FramelessWindowHint);
 
     QWidget* optionTab = new QWidget( d->optionTabbed );
+    /* hide frame*/
+    optionTab->setWindowFlags(Qt::FramelessWindowHint);
+    
     QGridLayout* optionTabLayout = new QGridLayout( optionTab );
     optionTabLayout->setAlignment( Qt::AlignTop );
 
