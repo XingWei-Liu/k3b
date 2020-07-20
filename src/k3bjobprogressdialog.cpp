@@ -101,8 +101,12 @@ K3b::JobProgressDialog::~JobProgressDialog()
 
 void K3b::JobProgressDialog::setupGUI()
 {
-    QVBoxLayout* mainLayout = new QVBoxLayout( this );
-
+    QVBoxLayout* mainView = new QVBoxLayout( this );
+    mainView->setContentsMargins(0, 0, 0, 0);
+    
+    QVBoxLayout* mainLayout = new QVBoxLayout();
+    mainLayout->setContentsMargins(31, 0, 30, 30);
+#if 1
     // header
     // ------------------------------------------------------------------------------------------
     //QFrame* headerParentFrame = new QFrame( this );
@@ -156,9 +160,14 @@ void K3b::JobProgressDialog::setupGUI()
     d->viewInfo->setRootIsDecorated( false );
     d->viewInfo->setSelectionMode( QAbstractItemView::NoSelection );
     d->viewInfo->setFocusPolicy( Qt::NoFocus );
-    d->viewInfo->setFixedHeight(30);
+    //d->viewInfo->setFixedHeight(12);
     //mainLayout->addWidget( d->viewInfo, 1 );
+    d->viewInfo->setFrameStyle(QFrame::NoFrame);
+    QFont label_font;
+    label_font.setPixelSize(12);
+    d->viewInfo->setFont( label_font );
 
+    d->viewInfo->setStyleSheet("color:#888888;");
 
     // progress header
     // ------------------------------------------------------------------------------------------
@@ -217,20 +226,81 @@ void K3b::JobProgressDialog::setupGUI()
     //m_progressSubPercent = new QProgressBar( this );
     m_progressSubPercent = new QProgressBar( );
     //mainLayout->addWidget( m_progressSubPercent );
+#endif
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    setFixedSize(430, 260);
+
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+
+    QLabel *icon = new QLabel();
+    icon->setFixedSize(16,16);
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
+                        "background-repeat: no-repeat;background-color:transparent;}");
+    QLabel *title = new QLabel(i18n("kylin-burner"));
+    title->setFixedSize(48,11);
+    title->setStyleSheet("QLabel{background-color:transparent;"
+                         "background-repeat: no-repeat;color:#444444;"
+                         "font: 12px;}");
+    QPushButton *close = new QPushButton();
+    close->setFixedSize(20,20);
+    close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
+                         "border:none;background-color:rgb(233, 233, 233);"
+                         "border-radius: 4px;background-color:transparent;}"
+                          "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
+                         "border:none;background-color:rgb(248, 100, 87);"
+                         "border-radius: 4px;}");
+    connect(close, SIGNAL(clicked()), this, SLOT( accept() ) );
+
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight(27);
+    QHBoxLayout *titlebar = new QHBoxLayout(label_top);
+    titlebar->setContentsMargins(11, 0, 0, 0);
+    titlebar->addWidget(icon);
+    titlebar->addSpacing(5);
+    titlebar->addWidget(title);
+    titlebar->addStretch();
+    titlebar->addWidget(close);
+    titlebar->addSpacing(5);
+    
+    mainView->addWidget( label_top );
+    mainView->addSpacing(40);
+    mainView->addLayout( mainLayout );
+    
+    QLabel* label_title = new QLabel( this );
+    label_title->setText( i18n("burning") );
+    label_title->setFixedHeight(18);
+    mainLayout->addWidget( label_title);
+    mainLayout->addSpacing(15);
 
     QHBoxLayout* layout4 = new QHBoxLayout;
-
-    QLabel* textLabel5 = new QLabel( i18n("Overall progress:"), this );
-    layout4->addWidget( textLabel5 );
+    layout4->setContentsMargins(0, 0, 0, 0);
+    //QLabel* textLabel5 = new QLabel( i18n("Overall progress:"), this );
+    //layout4->addWidget( textLabel5 );
 
     m_labelProcessedSize = new QLabel( this );
+    m_labelProcessedSize->setFixedHeight( 12 );
     m_labelProcessedSize->setAlignment( Qt::AlignVCenter | Qt::AlignRight );
-    layout4->addWidget( m_labelProcessedSize );
-    mainLayout->addLayout( layout4 );
+    m_labelProcessedSize->setStyleSheet("QLabel{font:12px;color:#888888}");
+    //layout4->addWidget( m_labelProcessedSize );
+    //mainLayout->addLayout( layout4 );
 
     m_progressPercent = new QProgressBar( this );
+    m_progressPercent->setFixedHeight(10);
     mainLayout->addWidget( m_progressPercent );
-    mainLayout->addWidget( d->viewInfo, 1 );
+    //m_progressPercent->setAlignment(Qt::AlignBottom | Qt::AlignVCenter);
+    m_progressPercent->setStyleSheet("border-radius:4px;font:10px;color:#444444;text-align: center;");
+
+    //mainLayout->addWidget( d->viewInfo, 1 );
+    layout4->addWidget( d->viewInfo );
+    layout4->addWidget( m_labelProcessedSize );
+    
+    mainLayout->addSpacing( 10 );
+    mainLayout->addLayout( layout4 );
+    mainLayout->addStretch( 0 );
+
 
     //m_frameExtraInfo = new QFrame( this );
     m_frameExtraInfo = new QFrame( );
@@ -240,7 +310,8 @@ void K3b::JobProgressDialog::setupGUI()
     m_frameExtraInfoLayout->setContentsMargins( 0, 0, 0,0 );
     //mainLayout->addWidget( m_frameExtraInfo );
 
-    QDialogButtonBox* buttonBox = new QDialogButtonBox( this );
+    //QDialogButtonBox* buttonBox = new QDialogButtonBox( this );
+    QDialogButtonBox* buttonBox = new QDialogButtonBox();
     m_cancelButton = buttonBox->addButton( QDialogButtonBox::Cancel );
     connect( m_cancelButton, SIGNAL(clicked()), this, SLOT(reject()) );
 
@@ -250,8 +321,20 @@ void K3b::JobProgressDialog::setupGUI()
     m_closeButton = buttonBox->addButton( QDialogButtonBox::Close );
     connect( m_closeButton, SIGNAL(clicked()), this, SLOT(accept()) );
 
-    mainLayout->addWidget( buttonBox );
+    //mainLayout->addWidget( buttonBox );
+    QPushButton* cancel = new QPushButton( i18n("cancel"), this );
+    cancel->setFixedSize(80, 30);
+    cancel->setStyleSheet("QPushButton{background-color:#e9e9e9;font: 14px;border-radius: 4px;color: #444444;}"
+                          "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
+                          "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    connect( cancel, SIGNAL(clicked()), this, SLOT(accept()) );
 
+    QHBoxLayout* hlayout = new QHBoxLayout();
+    hlayout->addStretch(0);
+    hlayout->addWidget( cancel );
+
+    mainLayout->addLayout( hlayout );
+    
     m_pixLabel->setThemePixmap( K3b::Theme::PROGRESS_WORKING );
 
     slotThemeChanged();
