@@ -53,6 +53,7 @@
 #include <QGridLayout>
 #include <QVBoxLayout>
 #include <QLineEdit>
+#include "k3bResultDialog.h"
 
 K3b::ProjectBurnDialog::ProjectBurnDialog( K3b::Doc* doc, QWidget *parent )
     : K3b::InteractionDialog( parent,
@@ -65,6 +66,8 @@ K3b::ProjectBurnDialog::ProjectBurnDialog( K3b::Doc* doc, QWidget *parent )
       m_tempDirSelectionWidget(0),
       m_imageTipText(i18n("Use the 'Image' tab to optionally adjust the path of the image."))
 {
+    flag = 1;
+
     m_doc = doc;
 
     KGuiItem closeItem = KStandardGuiItem::close();
@@ -227,15 +230,27 @@ void K3b::ProjectBurnDialog::slotStartClicked()
 
     hideTemporarily();
 
+    connect( m_job, SIGNAL(finished(bool)), this, SLOT(slotFinished(bool)) );
+    
     dlg->startJob(m_job);
 
     qDebug() << "(K3b::ProjectBurnDialog) job done. cleaning up.";
-
+    
     delete m_job;
+    
+    BurnResult* dialog = new BurnResult( flag );
+    dialog->show();
+    
     m_job = 0;
     delete dlg;
 
     done( Burn );
+    
+}
+
+void K3b::ProjectBurnDialog::slotFinished( bool ret )
+{
+    flag = ret;
 }
 
 

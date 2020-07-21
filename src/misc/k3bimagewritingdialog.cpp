@@ -79,6 +79,7 @@
 #include <QTabWidget>
 #include <QToolTip>
 #include <QTreeWidget>
+#include "k3bResultDialog.h"
 
 namespace {
 
@@ -156,6 +157,7 @@ public:
     void createAudioCueItems( const CueFileParser& cp );
     int currentImageType();
     QString imagePath() const;
+    bool flag;
 };
 
 
@@ -375,6 +377,7 @@ K3b::ImageWritingDialog::ImageWritingDialog( QWidget* parent )
     d->negativeTextColor = colorScheme.foreground( KColorScheme::NegativeText ).color();
     d->normalTextColor = colorScheme.foreground( KColorScheme::NormalText ).color();
 
+    d->flag = 1;
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
@@ -808,10 +811,15 @@ void K3b::ImageWritingDialog::slotStartClicked()
         job->setWritingApp( d->writerSelectionWidget->writingApp() );
 
         hide();
+        
+        connect( job, SIGNAL(finished(bool)), this, SLOT(slotFinished(bool)) );
 
         dlg.startJob(job);
 
         delete job;
+
+        BurnResult* dialog = new BurnResult( d->flag );
+        dialog->show();
 
         if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )
             show();
@@ -820,6 +828,11 @@ void K3b::ImageWritingDialog::slotStartClicked()
     }
 }
 
+
+void K3b::ImageWritingDialog::slotFinished( bool ret )
+{
+    d->flag = ret;
+}
 
 void K3b::ImageWritingDialog::slotUpdateImage( const QString& )
 {

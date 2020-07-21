@@ -60,6 +60,9 @@ namespace K3b {
         //**************************
         void setOnlyCreateImage( bool );
         void setTmpPath( QString );
+    
+    public Q_SLOTS:
+        void slotFinished( bool );
 
     protected Q_SLOTS:
         /** burn */
@@ -182,6 +185,7 @@ namespace K3b {
     private:
         Doc* m_doc;
         BurnJob* m_job;
+        int flag;
     };
 }
 

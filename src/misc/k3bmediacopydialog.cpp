@@ -61,6 +61,7 @@
 
 #include <QLineEdit>
 #include "misc/k3bimagewritingdialog.h"
+#include "k3bResultDialog.h"
 
 K3b::MediaCopyDialog::MediaCopyDialog( QWidget *parent )
     : K3b::InteractionDialog( parent,
@@ -477,7 +478,13 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
             d->setImage( QUrl::fromLocalFile( m_tempDirSelectionWidget->tempPath() ) );
             d->saveConfig();
             d->slotStartClicked();
+        }else{
+            BurnResult* dialog = new BurnResult( flag );
+            dialog->show();
         }
+    }else{
+        BurnResult* dialog = new BurnResult( flag );
+        dialog->show();
     }
 #endif
     if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )

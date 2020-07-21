@@ -60,6 +60,8 @@ namespace K3b {
         void slotMd5JobFinished( bool );
         void slotContextMenuRequested( const QPoint& pos );
         void slotUpdateImage( const QString& );
+        
+        void slotFinished(bool);
 
     protected:
         void loadSettings( const KConfigGroup& ) override;

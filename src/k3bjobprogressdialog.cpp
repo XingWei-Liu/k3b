@@ -61,7 +61,6 @@
 #include <QVBoxLayout>
 #include <unistd.h>
 
-
 class K3b::JobProgressDialog::Private
 {
 public:
@@ -462,7 +461,7 @@ void K3b::JobProgressDialog::slotInfoMessage( const QString& infoString, int typ
 void K3b::JobProgressDialog::slotFinished( bool success )
 {
     qDebug() << "received finished signal!";
-
+    
     m_logFile.close();
 
     const KColorScheme colorScheme( QPalette::Normal, KColorScheme::Window );
@@ -511,7 +510,8 @@ void K3b::JobProgressDialog::slotFinished( bool success )
     m_showDbgOutButton->show();
     m_closeButton->show();
     sleep(1);
-    close();
+    //close();
+    accept();
 }
 
 

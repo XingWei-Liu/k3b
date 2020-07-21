@@ -88,6 +88,7 @@ add_executable(k3b
     k3b
     k3bTitleBar.cpp
     k3bFileFilterDialog.cpp
+    k3bResultDialog.cpp
     main.cpp
     k3bstatusbarmanager.cpp
     k3burlnavigator.cpp
