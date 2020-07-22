@@ -156,7 +156,7 @@ namespace K3b {
          * Close the dialog and return from any exec call.
          */
         void done( int r ) override;
-
+    
     protected Q_SLOTS:
         // FIXME: replace these with protected methods which are called from private slots.
         virtual void slotStartClicked();

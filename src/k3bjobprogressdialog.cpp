@@ -290,7 +290,7 @@ void K3b::JobProgressDialog::setupGUI()
     m_progressPercent->setFixedHeight(10);
     mainLayout->addWidget( m_progressPercent );
     //m_progressPercent->setAlignment(Qt::AlignBottom | Qt::AlignVCenter);
-    m_progressPercent->setStyleSheet("border-radius:4px;font:10px;color:#444444;text-align: center;");
+    m_progressPercent->setStyleSheet(" background-color:#e9e9e9; border-radius:4px;font:10px;color:#444444;text-align: center;");
 
     //mainLayout->addWidget( d->viewInfo, 1 );
     layout4->addWidget( d->viewInfo );

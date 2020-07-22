@@ -39,9 +39,9 @@ FileFilter::FileFilter(QWidget *parent) :
                          "border-radius: 4px;}");
     connect(close, &QPushButton::clicked, this, &FileFilter::filter_exit);
 
-    QLabel* label = new QLabel( this );
-    label->setFixedHeight(27);
-    QHBoxLayout *titlebar = new QHBoxLayout(label);
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight(27);
+    QHBoxLayout *titlebar = new QHBoxLayout( label_top );
     titlebar->setContentsMargins(11, 0, 0, 0);
     titlebar->addWidget(icon);
     titlebar->addSpacing(5);
@@ -98,7 +98,7 @@ FileFilter::FileFilter(QWidget *parent) :
 
     QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
     mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
-    mainWidgetLayout->addWidget( label );
+    mainWidgetLayout->addWidget( label_top );
     mainWidgetLayout->addSpacing(32);
     mainWidgetLayout->addLayout(vlayout);
 

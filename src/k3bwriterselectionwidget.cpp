@@ -130,19 +130,29 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     groupWriter->setFlat( true );
     groupWriter->setStyleSheet("QGroupBox{border:none;}");
     
-    QGridLayout* groupWriterLayout = new QGridLayout( groupWriter );
+    //QGridLayout* groupWriterLayout = new QGridLayout( groupWriter );
+    QVBoxLayout* groupWriterLayout = new QVBoxLayout( groupWriter );
     //groupWriterLayout->setAlignment( Qt::AlignTop );
     groupWriterLayout->setContentsMargins(0, 0, 0, 0);
 
     //labelSpeed = new QLabel( groupWriter );
     labelSpeed = new QLabel( );
     labelSpeed->setText( i18n( "Speed:" ) );
+    QFont label_font;
+    label_font.setPixelSize(14);
+    labelSpeed->setFont( label_font );
+    labelSpeed->setFixedHeight(12);
+    labelSpeed->setStyleSheet("color:#444444;");
 
-    m_comboSpeed = new K3b::IntMapComboBox( groupWriter );
-    m_comboSpeed->setFixedHeight( 30 );
+    m_comboSpeed = new K3b::IntMapComboBox();
+    m_comboSpeed->setFixedSize( 368, 30);
+    m_comboSpeed->setFont( label_font );
+    m_comboSpeed->setStyleSheet("color:#444444;");
 
     m_comboMedium = new MediaSelectionComboBox( groupWriter );
-    m_comboMedium->setFixedHeight( 30 );
+    m_comboMedium->setFixedSize( 368, 30);
+    m_comboMedium->setFont( label_font );
+    m_comboMedium->setStyleSheet("color:#444444;");
 
     m_writingAppLabel = new QLabel( i18n("Writing app:"), groupWriter );
     m_comboWritingApp = new K3b::IntMapComboBox( groupWriter );
@@ -154,18 +164,20 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     groupWriterLayout->addWidget( m_comboWritingApp, 0, 4 );
     groupWriterLayout->setColumnStretch( 0, 1 );
   */
-   
-    groupWriterLayout->addWidget( m_comboMedium, 0, 0 );
-    groupWriterLayout->addWidget( labelSpeed, 1, 0 );
-    groupWriterLayout->addWidget( m_comboSpeed, 2, 0 );
 
 
-    QGridLayout* mainLayout = new QGridLayout( this );
+    //QGridLayout* mainLayout = new QGridLayout( this );
+    QVBoxLayout* mainLayout = new QVBoxLayout( this );
     mainLayout->setAlignment( Qt::AlignTop );
     mainLayout->setContentsMargins( 0, 0, 0, 0 );
 
-    mainLayout->addWidget( groupWriter, 0, 0 );
-    //mainLayout->addWidget( m_comboMedium, 0, 0 );
+    //mainLayout->addWidget( groupWriter, 0, 0 );
+    mainLayout->addWidget( m_comboMedium );
+    mainLayout->addSpacing( 10 );
+    mainLayout->addWidget( labelSpeed );
+    mainLayout->addSpacing( 10 );
+    mainLayout->addWidget( m_comboSpeed );
+    mainLayout->addStretch( 0 );
 
     // tab order
     setTabOrder( m_comboMedium, m_comboSpeed );

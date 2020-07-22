@@ -455,7 +455,8 @@ void K3b::ImageWritingDialog::setupGui()
     // image
     // -----------------------------------------------------------------------
     //QGroupBox* groupImageUrl = new QGroupBox( i18n("Image to Burn"), frame );
-    QGroupBox* groupImageUrl = new QGroupBox( i18n(" "), frame );
+    QWidget* w = new QWidget();
+    QGroupBox* groupImageUrl = new QGroupBox( i18n(" "), w);
     //d->comboRecentImages = new KComboBox( true, this );
     d->comboRecentImages = new KComboBox( true );
     d->comboRecentImages->setSizeAdjustPolicy( QComboBox::AdjustToMinimumContentsLength );
@@ -475,7 +476,7 @@ void K3b::ImageWritingDialog::setupGui()
     groupImageUrlLayout->addWidget( d->editImagePath );
 
     //QGroupBox* groupImageType = new QGroupBox( i18n("Image Type"), frame );
-    QGroupBox* groupImageType = new QGroupBox( i18n(" "), frame );
+    QGroupBox* groupImageType = new QGroupBox( i18n(" "), w );
     QHBoxLayout* groupImageTypeLayout = new QHBoxLayout( groupImageType );
     d->comboImageType = new QComboBox( groupImageType );
     groupImageTypeLayout->addWidget( d->comboImageType );
@@ -526,6 +527,51 @@ void K3b::ImageWritingDialog::setupGui()
     connect( d->infoView, SIGNAL(customContextMenuRequested(QPoint)),
             this, SLOT(slotContextMenuRequested(QPoint)) );
 
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    setFixedSize(430, 485);
+
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+
+    
+    QLabel *icon = new QLabel();
+    icon->setFixedSize(16,16);
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
+                        "background-repeat: no-repeat;background-color:transparent;}");
+    QLabel *title = new QLabel(i18n("kylin-burner"));
+    title->setFixedSize(48,11);
+    title->setStyleSheet("QLabel{background-color:transparent;"
+                         "background-repeat: no-repeat;color:#444444;"
+                         "font: 12px;}");
+    QPushButton *close = new QPushButton( this );
+    close->setFixedSize(20,20);
+    close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
+                         "border:none;background-color:rgb(233, 233, 233);"
+                         "border-radius: 4px;background-color:transparent;}"
+                          "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
+                         "border:none;background-color:rgb(248, 100, 87);"
+                         "border-radius: 4px;}");
+    connect(close, SIGNAL( clicked() ), this , SLOT( close() ) );
+
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight(27);
+    QHBoxLayout *titlebar = new QHBoxLayout( label_top );
+    titlebar->setContentsMargins(11, 0, 0, 0);
+    titlebar->addWidget(icon);
+    titlebar->addSpacing(5);
+    titlebar->addWidget(title);
+    titlebar->addStretch();
+    titlebar->addWidget(close);
+    titlebar->addSpacing(5);
+
+    QLabel* label_title = new QLabel( i18n("burn setting"),this );
+    label_title->setFixedHeight(24);
+    QFont label_font;
+    label_font.setPixelSize(24);
+    label_title->setFont( label_font );
+
     d->writerSelectionWidget = new K3b::WriterSelectionWidget( frame );
     d->writerSelectionWidget->hideComboMedium();
     d->writerSelectionWidget->setWindowFlags(Qt::FramelessWindowHint);
@@ -534,7 +580,8 @@ void K3b::ImageWritingDialog::setupGui()
 
     // options
     // -----------------------------------------------------------------------
-    d->optionTabbed = new QTabWidget( frame );
+    //d->optionTabbed = new QTabWidget( frame );
+    d->optionTabbed = new QTabWidget();
     /* hide frame*/
     d->optionTabbed->setWindowFlags(Qt::FramelessWindowHint);
 
@@ -565,10 +612,23 @@ void K3b::ImageWritingDialog::setupGui()
     groupCopiesLayout->addWidget( d->spinCopies );
     // -------- copies
 
-    QGroupBox* optionGroup = new QGroupBox( i18n("Settings"), optionTab );
-    d->checkDummy = K3b::StdGuiItems::simulateCheckbox( optionGroup );
-    d->checkCacheImage = K3b::StdGuiItems::createCacheImageCheckbox( optionGroup );
-    d->checkVerify = K3b::StdGuiItems::verifyCheckBox( optionGroup );
+    //QGroupBox* optionGroup = new QGroupBox( i18n("Settings"), optionTab );
+    //QGroupBox* optionGroup = new QGroupBox();
+    d->checkDummy = K3b::StdGuiItems::simulateCheckbox();
+    d->checkDummy->setFixedHeight(16);
+    label_font.setPixelSize(14);
+    d->checkDummy->setFont( label_font );
+    d->checkDummy->setStyleSheet("color:#444444;");
+
+    d->checkCacheImage = K3b::StdGuiItems::createCacheImageCheckbox();
+    d->checkCacheImage->setFixedHeight(16);
+    d->checkCacheImage->setFont( label_font );
+    d->checkCacheImage->setStyleSheet("color:#444444;");
+    
+    d->checkVerify = K3b::StdGuiItems::verifyCheckBox();
+    d->checkVerify->setFixedHeight(16);
+    d->checkVerify->setFont( label_font );
+    d->checkVerify->setStyleSheet("color:#444444;");
 
 //tmp
     d->tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
@@ -576,14 +636,37 @@ void K3b::ImageWritingDialog::setupGui()
     QLineEdit *m_tmpPath = new QLineEdit( optionTab );
     QString tmp_path ="temp file path: ";
     KIO::filesize_t tempFreeSpace = d->tempDirSelectionWidget->freeTempSpace();
-
-    qDebug() << "temp path:::" << d->tempDirSelectionWidget->tempPath() <<endl;
-
     QString tmp_size = d->tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
     m_labeltmpPath->setText( tmp_path );
-    m_tmpPath->setText( tmp_size);
+    m_labeltmpPath->setFixedSize( 56, 12);
+    m_labeltmpPath->setFont( label_font );
+    m_labeltmpPath->setStyleSheet("color:#444444;");
 
+    m_tmpPath->setText( tmp_size);
+    m_tmpPath->setFixedSize( 368, 30);
+    m_tmpPath->setFont( label_font );
+    m_tmpPath->setStyleSheet("color:#444444;");
   //***************
+
+    QVBoxLayout* vlayout = new QVBoxLayout();
+    vlayout->setContentsMargins(31, 0, 0, 0);
+    vlayout->addWidget( label_title );
+    vlayout->addSpacing( 25 );
+    vlayout->addWidget( d->writerSelectionWidget );
+    vlayout->addSpacing( 25 );
+    vlayout->addWidget( d->checkDummy );
+    vlayout->addSpacing( 11 );
+    vlayout->addWidget( d->checkCacheImage );
+    vlayout->addSpacing( 11 );
+    vlayout->addWidget( d->checkVerify );
+    vlayout->addSpacing( 25 );
+    vlayout->addWidget( m_labeltmpPath );
+    vlayout->addSpacing( 10 );
+    vlayout->addWidget( m_tmpPath );
+    vlayout->addStretch( 0 );
+ 
+
+#if 0
     QVBoxLayout* optionGroupLayout = new QVBoxLayout( optionGroup );
     optionGroupLayout->addWidget( d->checkDummy );
     optionGroupLayout->addWidget( d->checkCacheImage );
@@ -593,6 +676,7 @@ void K3b::ImageWritingDialog::setupGui()
     optionGroupLayout->addWidget( m_tmpPath );
 
     optionGroupLayout->addStretch( 1 );
+#endif
 /*
     optionTabLayout->addWidget( writingModeGroup, 0, 0 );
     optionTabLayout->addWidget( groupCopies, 1, 0 );
@@ -600,7 +684,7 @@ void K3b::ImageWritingDialog::setupGui()
     optionTabLayout->setRowStretch( 1, 1 );
     optionTabLayout->setColumnStretch( 1, 1 );
 */
-    optionTabLayout->addWidget( optionGroup , 0, 0);
+    //optionTabLayout->addWidget( optionGroup , 0, 0);
     d->optionTabbed->addTab( optionTab, i18n("Settings") );
     //hide tabBar
     d->optionTabbed->tabBar()->hide();
@@ -639,8 +723,13 @@ void K3b::ImageWritingDialog::setupGui()
 
 
 
-    QGridLayout* grid = new QGridLayout( frame );
+    //QGridLayout* grid = new QGridLayout( frame );
+    QVBoxLayout* grid = new QVBoxLayout( frame );
     grid->setContentsMargins( 0, 0, 0, 0 );
+    grid->addWidget( label_top );
+    grid->addSpacing( 30 );
+    grid->addLayout( vlayout );
+
 
     //grid->addWidget( groupImageUrl, 0, 0 );
     //grid->addWidget( groupImageType, 0, 1 );
@@ -648,9 +737,9 @@ void K3b::ImageWritingDialog::setupGui()
     //grid->addWidget( d->infoView, 1, 0, 1, 2 );
     //grid->addWidget( d->writerSelectionWidget, 2, 0, 1, 2 );
     //grid->addWidget( d->optionTabbed, 3, 0, 1, 2 );
-    grid->addWidget( d->writerSelectionWidget, 0, 0, 1, 2 );
-    grid->addWidget( d->optionTabbed, 1, 0, 1, 2 );
-    grid->setRowStretch( 1, 1 );
+    //grid->addWidget( d->writerSelectionWidget, 0, 0, 1, 2 );
+    //grid->addWidget( d->optionTabbed, 1, 0, 1, 2 );
+    //grid->setRowStretch( 1, 1 );
 
 
     d->comboImageType->setWhatsThis( i18n("<p><b>Image types supported by K3b:</p>"
@@ -677,6 +766,12 @@ void K3b::ImageWritingDialog::setupGui()
                                          "<p><b>Cdrdao TOC files</b><br/>"
                                          "K3b supports writing cdrdao's own image format, the toc "
                                          "files.") );
+}
+
+
+void K3b::ImageWritingDialog::close()
+{
+    K3b::InteractionDialog::slotCancelClicked();
 }
 
 void K3b::ImageWritingDialog::slotCancelClicked()

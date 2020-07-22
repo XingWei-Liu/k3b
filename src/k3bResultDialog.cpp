@@ -53,12 +53,12 @@ BurnResult::BurnResult( int ret ,QWidget *parent) :
     QLabel* label_icon = new QLabel();
     label_icon->setFixedSize(50,50);
     label_icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-right.png);"
-                        "background-repeat: no-repeat;background-color:transparent;}");
+                              "background-repeat: no-repeat;background-color:transparent;}");
 
     QLabel* label_info = new QLabel( i18n("success"), this );
     label_info->setFixedSize(130,29);
     label_info->setStyleSheet("QLabel{background-color:transparent;"
-                         "background-repeat: no-repeat;font:30px;color:#444444;}");
+                              "background-repeat: no-repeat;font:30px;color:#444444;}");
 
     QHBoxLayout* hlayout = new QHBoxLayout();
     hlayout->addSpacing( 113 );
@@ -67,8 +67,11 @@ BurnResult::BurnResult( int ret ,QWidget *parent) :
     hlayout->addWidget( label_info );
     hlayout->addStretch( 0 );
     
-    if( !ret )
+    if( !ret ){
+        label_icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-error.png);"
+                                  "background-repeat: no-repeat;background-color:transparent;}");
         label_info->setText( i18n("failed") );
+    }
     
     QVBoxLayout* mainLayout = new QVBoxLayout( this );
     mainLayout->setContentsMargins(0, 0, 0, 0);

@@ -62,6 +62,7 @@ namespace K3b {
         void slotUpdateImage( const QString& );
         
         void slotFinished(bool);
+        void close();
 
     protected:
         void loadSettings( const KConfigGroup& ) override;

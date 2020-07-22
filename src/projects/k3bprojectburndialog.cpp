@@ -259,15 +259,67 @@ void K3b::ProjectBurnDialog::prepareGui()
     QVBoxLayout* mainLay = new QVBoxLayout( mainWidget() );
     mainLay->setContentsMargins( 0, 0, 0, 0 );
 
-    m_writerSelectionWidget = new K3b::WriterSelectionWidget( mainWidget() );
+    setWindowFlags(Qt::FramelessWindowHint | windowFlags());
+    setFixedSize(430, 485);
+
+    QPalette pal(palette());
+    pal.setColor(QPalette::Background, QColor(255, 255, 255));
+    setAutoFillBackground(true);
+    setPalette(pal);
+
+    QLabel *icon = new QLabel();
+    icon->setFixedSize(16,16);
+    icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
+                        "background-repeat: no-repeat;background-color:transparent;}");
+    QLabel *title = new QLabel(i18n("kylin-burner"));
+    title->setFixedSize(48,11);
+    title->setStyleSheet("QLabel{background-color:transparent;"
+                         "background-repeat: no-repeat;color:#444444;"
+                         "font: 12px;}");
+    QPushButton *close = new QPushButton();
+    close->setFixedSize(20,20);
+    close->setStyleSheet("QPushButton{border-image: url(:/icon/icon/icon-关闭-默认.png);"
+                         "border:none;background-color:rgb(233, 233, 233);"
+                         "border-radius: 4px;background-color:transparent;}"
+                          "QPushButton:hover{border-image: url(:/icon/icon/icon-关闭-悬停点击.png);"
+                         "border:none;background-color:rgb(248, 100, 87);"
+                         "border-radius: 4px;}");
+    connect(close, SIGNAL( clicked() ), this, SLOT( close() ) );
+
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight(27);
+    QHBoxLayout *titlebar = new QHBoxLayout( label_top );
+    titlebar->setContentsMargins(11, 0, 0, 0); 
+    titlebar->addWidget(icon);
+    titlebar->addSpacing(5);
+    titlebar->addWidget(title);
+    titlebar->addStretch();
+    titlebar->addWidget(close);
+    titlebar->addSpacing(5);
+    
+    mainLay->addWidget( label_top );
+    mainLay->addSpacing( 24 );
+
+    QLabel* label_title = new QLabel( i18n("burn setting"),this );
+    label_title->setFixedHeight(24);
+    QFont label_font;
+    label_font.setPixelSize(24);
+    label_title->setFont( label_font );
+    label_title->setStyleSheet("color:#444444");
+
+    m_writerSelectionWidget = new K3b::WriterSelectionWidget();
     m_writerSelectionWidget->hideComboMedium();
     m_writerSelectionWidget->setWantedMediumType( m_doc->supportedMediaTypes() );
     m_writerSelectionWidget->setWantedMediumState( K3b::Device::STATE_EMPTY );
     m_writerSelectionWidget->setWantedMediumSize( m_doc->length() );
-    mainLay->addWidget( m_writerSelectionWidget );
+    //mainLay->addWidget( label_title );
+    //mainLay->addSpacing( 30 );
+    //mainLay->addWidget( m_writerSelectionWidget );
+    //mainLay->addSpacing( 30 );
 
-    m_tabWidget = new QTabWidget( mainWidget() );
-    mainLay->addWidget( m_tabWidget );
+    //m_tabWidget = new QTabWidget( mainWidget() );
+    m_tabWidget = new QTabWidget();
+    //mainLay->addWidget( m_tabWidget );
 
     QWidget* w = new QWidget( m_tabWidget );
     m_tabWidget->addTab( w, i18n("Writing") );
@@ -281,27 +333,71 @@ void K3b::ProjectBurnDialog::prepareGui()
     QVBoxLayout* groupWritingModeLayout = new QVBoxLayout( groupWritingMode );
     groupWritingModeLayout->addWidget( m_writingModeWidget );
 
-    m_optionGroup = new QGroupBox( i18n("Settings"), w );
+    //m_optionGroup = new QGroupBox( i18n("Settings"), w );
+    m_optionGroup = new QGroupBox();
     m_optionGroupLayout = new QVBoxLayout( m_optionGroup );
 
     // add the options
     m_checkCacheImage = K3b::StdGuiItems::createCacheImageCheckbox( m_optionGroup );
+    m_checkCacheImage->setFixedHeight(16);
+    label_font.setPixelSize(14);
+    m_checkCacheImage->setFont( label_font );
+    m_checkCacheImage->setStyleSheet("color:#444444;");
+
     m_checkSimulate = K3b::StdGuiItems::simulateCheckbox( m_optionGroup );
+    m_checkSimulate->setFixedHeight(16);
+    m_checkSimulate->setFont( label_font );
+    m_checkSimulate->setStyleSheet("color:#444444;");
+
     m_checkRemoveBufferFiles = K3b::StdGuiItems::removeImagesCheckbox( m_optionGroup );
+    m_checkRemoveBufferFiles->setFixedHeight(16);
+    m_checkRemoveBufferFiles->setFont( label_font );
+    m_checkRemoveBufferFiles->setStyleSheet("color:#444444;");
+
     m_checkOnlyCreateImage = K3b::StdGuiItems::onlyCreateImagesCheckbox( m_optionGroup );
+    m_checkOnlyCreateImage->setFixedHeight(16);
+    m_checkOnlyCreateImage->setFont( label_font );
+    m_checkOnlyCreateImage->setStyleSheet("color:#444444;");
    
    //tmp
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
     QLabel *m_labeltmpPath = new QLabel( m_optionGroup );
     QLineEdit *m_tmpPath = new QLineEdit( m_optionGroup );
-    //QLabel *m_tmpSize = new QLabel( m_optionGroup );
     QString tmp_path ="temp file path: ";
     KIO::filesize_t tempFreeSpace = m_tempDirSelectionWidget->freeTempSpace();
     QString tmp_size = m_tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
     m_labeltmpPath->setText( tmp_path );
+    m_labeltmpPath->setFixedSize( 56, 12);
+    m_labeltmpPath->setFont( label_font );
+    m_labeltmpPath->setStyleSheet("color:#444444;");
+    
     m_tmpPath->setText( tmp_size);
-    //m_labeltmpSize->setText( tmp_size );
+    m_tmpPath->setFixedSize( 368, 30);
+    m_tmpPath->setFont( label_font );
+    m_tmpPath->setStyleSheet("color:#444444;");
 
+    QVBoxLayout* vlayout = new QVBoxLayout();
+    vlayout->setContentsMargins(31, 0, 0, 0);
+    vlayout->addWidget( label_title );
+    vlayout->addSpacing( 25 );
+    //vlayout->addStretch( 0 );
+    vlayout->addWidget( m_writerSelectionWidget );
+    vlayout->addSpacing( 25 );
+    vlayout->addWidget( m_checkSimulate );
+    vlayout->addSpacing( 11 );
+    vlayout->addWidget( m_checkCacheImage );
+    vlayout->addSpacing( 11 );
+    vlayout->addWidget( m_checkOnlyCreateImage );
+    vlayout->addSpacing( 11 );
+    vlayout->addWidget( m_checkRemoveBufferFiles );
+    vlayout->addSpacing( 25 );
+    vlayout->addWidget( m_labeltmpPath );
+    vlayout->addSpacing( 10 );
+    vlayout->addWidget( m_tmpPath );
+    vlayout->addStretch( 0 );
+
+    mainLay->addLayout( vlayout );
+/*
     m_optionGroupLayout->addWidget(m_checkSimulate);
     m_optionGroupLayout->addWidget(m_checkCacheImage);
     m_optionGroupLayout->addWidget(m_checkOnlyCreateImage);
@@ -311,7 +407,7 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_optionGroupLayout->addWidget(m_labeltmpPath);
     m_optionGroupLayout->addWidget(m_tmpPath);
 
-
+*/
     //QGroupBox* groupCopies = new QGroupBox( i18n("Copies"), w );
     QGroupBox* groupCopies = new QGroupBox( i18n(" "), w );
     QLabel* pixLabel = new QLabel( groupCopies );
@@ -322,21 +418,22 @@ void K3b::ProjectBurnDialog::prepareGui()
     QHBoxLayout* groupCopiesLayout = new QHBoxLayout( groupCopies );
     groupCopiesLayout->addWidget( pixLabel );
     groupCopiesLayout->addWidget( m_spinCopies );
+#if 0
     // arrange it
     QGridLayout* grid = new QGridLayout( w );
     
     //grid->addWidget( groupWritingMode, 0, 0 );
     grid->addWidget( m_optionGroup, 0, 1, 3, 1 );
     //grid->addWidget( groupCopies, 2, 0 );
-      //grid->addWidget( m_tempDirSelectionWidget, 1, 1, 3, 1 );
+    //grid->addWidget( m_tempDirSelectionWidget, 1, 1, 3, 1 );
     grid->setRowStretch( 1, 1 );
     grid->setColumnStretch( 1, 1 );
-
+#endif
     QWidget *tempW = new QWidget( m_tabWidget );
-    grid = new QGridLayout( tempW );
+    //grid = new QGridLayout( tempW );
     m_tabWidget->addTab( tempW, i18n("Image") );
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( tempW );
-    grid->addWidget( m_tempDirSelectionWidget, 0, 0 );
+    //grid->addWidget( m_tempDirSelectionWidget, 0, 0 );
     m_tempDirSelectionWidget->setNeededSize( doc()->size() );
 
     // tab order
@@ -358,6 +455,10 @@ void K3b::ProjectBurnDialog::prepareGui()
     connect( m_checkCacheImage, SIGNAL(toggled(bool)), this, SLOT(slotShowImageTip(bool)) );
 }
 
+void K3b::ProjectBurnDialog::close()
+{
+    K3b::InteractionDialog::slotCancelClicked();
+}
 
 void K3b::ProjectBurnDialog::addPage( QWidget* page, const QString& title )
 {

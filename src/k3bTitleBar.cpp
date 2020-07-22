@@ -13,10 +13,10 @@
 #include "k3bTitleBar.h"
 #include "k3bFileFilterDialog.h"
 #include "k3bappdevicemanager.h"
-#include  "k3bdevice.h"
+#include "k3bdevice.h"
 #include "k3bapplication.h"
-#include "k3bappdevicemanager.h"
 #include <KMountPoint>
+#include "k3bMd5Dialog.h"
 
 K3b::TitleBar::TitleBar(QWidget *parent)
     : QWidget(parent)
@@ -257,12 +257,13 @@ void K3b::TitleBar::popup()
 
 void K3b::TitleBar::md5()
 {
-
+    K3b::Md5Check* dialog = new K3b::Md5Check( this );
+    dialog->show();
 }
 
 void K3b::TitleBar::filter()
 {
-    FileFilter* dlg = new FileFilter();
+    FileFilter* dlg = new FileFilter( this );
     dlg->show();
 }
 void K3b::TitleBar::help()
