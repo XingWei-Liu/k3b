@@ -329,6 +329,9 @@ void K3b::AudioView::slotStartBurn()
     if( lineedit_iso->text().isEmpty() ) { 
         KMessageBox::information( this, i18n("Please add files to your project first."),
                                   i18n("No Data to Burn") );
+    }else if( device_index.isEmpty() ){
+        KMessageBox::information( this, i18n("Please insert medium first."),
+                                  i18n("No CD to Burn") );
     }else{   
         int index = combo_CD->currentIndex();
         dlg->setComboMedium( device_index.at( index ) );

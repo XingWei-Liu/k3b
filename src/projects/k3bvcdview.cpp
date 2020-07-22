@@ -279,6 +279,8 @@ void K3b::VcdView::slotSetting()
 
 void K3b::VcdView::slotStartBurn()
 {
+    if( device_index.isEmpty() )
+        return;
     int iso_index = combo_iso->currentIndex();
     int CD_index = combo_CD->currentIndex();
     K3b::MediaCopyDialog *dlg = new K3b::MediaCopyDialog( this );

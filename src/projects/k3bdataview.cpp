@@ -123,7 +123,7 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     label_CD->setMinimumSize(75, 30);
 
     combo_CD = new QComboBox( label_view );
-    combo_CD->setEditable( true );
+    combo_CD->setEditable( false );
     combo_CD->setMinimumSize(310, 30);
     
 

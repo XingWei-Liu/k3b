@@ -45,7 +45,7 @@
 #include <QWidgetAction>
 #include <QFileDialog>
 
-
+#include "k3bfileselect.h"
 
 namespace {
 
@@ -274,12 +274,44 @@ void K3b::DataViewImpl::slotOpenDir()
                                                      QUrl(),
                                                      "All Files(*.*)");
   */
-     QList<QUrl> urls;
-     QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl()/*, QFileDialog::DontUseNativeDialog*/);
+    //QString filepath = QFileDialog::getExistingDirectory( m_view, i18n("Open Directory"), "/home", QFileDialog::Directory | QFileDialog::DontResolveSymlinks);
+   /*  QFileDialog dialog( m_view );
+    dialog.setFileMode( QFileDialog::Directory );
+    dialog.setNameFilter( "All Files (*.*)" );
+    dialog.setOptions()
 
-     if( url.isEmpty() )
-         return;
-     m_doc->addUrls( urls << url );
+    QStringList filepath;
+    if( dialog.exec() )
+        filepath = dialog.selectedFiles();
+
+    QList<QUrl> urls;*/
+    //QUrl url = QFileDialog::getExistingDirectoryUrl( m_view, i18n("Open Dir"), QUrl()/*, QFileDialog::DontUseNativeDialog*/);
+    //QUrl url = QUrl::fromLocalFile( filepath.at(0) );
+    QStringList filepath;
+    QUrl url;
+    QList<QUrl> urls;
+    myFileSelect *a =new myFileSelect( m_view );
+    a->setOption(QFileDialog::DontUseNativeDialog, true);
+
+    QListView *listView = a->findChild<QListView*>("listView");
+    if (listView)
+        listView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    QTreeView *treeView = a->findChild<QTreeView*>();
+    if (treeView)
+        treeView->setSelectionMode(QAbstractItemView::ExtendedSelection);
+    QDialogButtonBox *button = a->findChild<QDialogButtonBox *>("buttonBox");
+
+    disconnect(button,SIGNAL(accepted()),a,SLOT(accept()));
+
+    connect(button,SIGNAL(accepted()),a,SLOT(go()));
+
+    if(a->exec()==QDialog::Accepted)
+    {
+        urls = a->selectedUrls();
+    }
+    if( urls.count() == 0 )
+        return;
+    m_doc->addUrls( urls );
 }
 
 void K3b::DataViewImpl::slotClear()

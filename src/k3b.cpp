@@ -1186,7 +1186,7 @@ bool K3b::MainWindow::canCloseDocument( K3b::Doc* doc )
     if( !doc->isModified() )
         return true;
 
-    if( !KConfigGroup( config(), "General Options" ).readEntry( "ask_for_saving_changes_on_exit", true ) )
+    if( !KConfigGroup( config(), "General Options" ).readEntry( "ask_for_saving_changes_on_exit", false ) )
         return true;
 
     switch ( KMessageBox::warningYesNoCancel( this,

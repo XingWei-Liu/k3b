@@ -70,7 +70,7 @@ void K3b::MiscOptionTab::readSettings()
 {
     KConfigGroup c = KSharedConfig::openConfig()->group( "General Options" );
 
-    m_checkSaveOnExit->setChecked( c.readEntry( "ask_for_saving_changes_on_exit", true ) );
+    m_checkSaveOnExit->setChecked( c.readEntry( "ask_for_saving_changes_on_exit", false ) );
     m_checkShowSplash->setChecked( c.readEntry("Show splash", true) );
     m_checkShowProgressOSD->setChecked(c.readEntry("Show progress OSD", false));
     m_checkHideMainWindowWhileWriting->setChecked( c.readEntry( "hide main window while writing", false ) );
@@ -92,7 +92,8 @@ bool K3b::MiscOptionTab::saveSettings()
 {
     KConfigGroup c = KSharedConfig::openConfig()->group( "General Options" );
 
-    c.writeEntry( "ask_for_saving_changes_on_exit", m_checkSaveOnExit->isChecked() );
+    //c.writeEntry( "ask_for_saving_changes_on_exit", m_checkSaveOnExit->isChecked() );
+    c.writeEntry( "ask_for_saving_changes_on_exit", false );
     c.writeEntry( "Show splash", m_checkShowSplash->isChecked() );
     c.writeEntry( "Show progress OSD", m_checkShowProgressOSD->isChecked() );
     c.writeEntry( "hide main window while writing", m_checkHideMainWindowWhileWriting->isChecked() );
