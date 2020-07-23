@@ -455,6 +455,10 @@ void K3b::DataView::slotStartBurn()
     }else if( burn_button->text() == i18n("create iso" )){ 
         dlg->setOnlyCreateImage( true );
         dlg->setTmpPath( combo_CD->currentText() );
+        QFileInfo fileinfo( combo_CD->currentText() );
+        QDir dir( fileinfo.path() );
+        if ( !dir.exists() )
+            return;
         dlg->slotStartClicked();
     }   
     
@@ -474,6 +478,7 @@ void K3b::DataView::slotBurn()
         QString filepath = QFileDialog::getExistingDirectory(this, "open file dialog", "/home", QFileDialog::ShowDirsOnly | QFileDialog::DontResolveSymlinks/* | QFileDialog::DontUseNativeDialog*/);
         if ( filepath.isEmpty() )
             return;
+        combo_CD->setEditable( true );
         combo_CD->setCurrentText( filepath + "/data_burn.iso" );
     } 
 }

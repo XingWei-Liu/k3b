@@ -44,7 +44,8 @@ void K3b::GlobalSettings::readSettings( const KConfigGroup& c )
     m_bufferSize = c.readEntry( "Fifo buffer", 4 );
     m_force = c.readEntry( "Force unsafe operations", false );
 	m_defaultTempPath = c.readPathEntry("Temp Dir",
-            QStandardPaths::writableLocation(QStandardPaths::MoviesLocation));
+            //QStandardPaths::writableLocation(QStandardPaths::MoviesLocation));
+            QStandardPaths::writableLocation(QStandardPaths::TempLocation));
     QFileInfo checkPath(m_defaultTempPath);
     if (!checkPath.exists()) {
         m_defaultTempPath =

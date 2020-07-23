@@ -298,6 +298,12 @@ void K3b::MediaCopyDialog::setOnlyCreateImage(bool ret)
     m_checkOnlyCreateImage->setChecked( ret );
 }
 
+void K3b::MediaCopyDialog::loadConfig()
+{
+    KConfigGroup grp( KSharedConfig::openConfig(), "Disk Copy" );
+    loadSettings( grp );
+}
+
 void K3b::MediaCopyDialog::saveConfig()
 {
     KConfigGroup grp( KSharedConfig::openConfig(), "Disk Copy" );
@@ -421,22 +427,6 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
         burnJob = job;
     }
     else if ( sourceMedium.diskInfo().mediaType() & ( K3b::Device::MEDIA_DVD_ALL|K3b::Device::MEDIA_BD_ALL ) ) {
-    
-        qDebug()<< "&&&&&&&& from" << readDev->blockDeviceName() << "to" << burnDev->blockDeviceName() <<endl;
-        qDebug()<< "parameter:::" <<endl << m_writerSelectionWidget->writerDevice();
-        qDebug()<< m_comboSourceDevice->selectedDevice();
-        qDebug()<< m_tempDirSelectionWidget->tempPath() ;
-        qDebug()<< (m_checkDeleteImages->isChecked() && !m_checkOnlyCreateImage->isChecked());
-        qDebug()<< m_checkOnlyCreateImage->isChecked() ;
-        qDebug()<< m_checkSimulate->isChecked() ;
-        qDebug()<< !m_checkCacheImage->isChecked() ;
-        qDebug()<< m_writerSelectionWidget->writerSpeed() ;
-        qDebug()<< (m_checkSimulate->isChecked() ? 1 : m_spinCopies->value() );
-        qDebug()<< m_writingModeWidget->writingMode() ;
-        qDebug()<< m_checkIgnoreDataReadErrors->isChecked() ;
-        qDebug()<< m_spinDataRetries->value() ;
-        qDebug()<< m_checkVerifyData->isChecked() <<endl;
-    
         K3b::DvdCopyJob* job = new K3b::DvdCopyJob( dlg, this );
 
         job->setWriterDevice( m_writerSelectionWidget->writerDevice() );
@@ -479,11 +469,11 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
             d->saveConfig();
             d->slotStartClicked();
         }else{
-            BurnResult* dialog = new BurnResult( flag );
+            BurnResult* dialog = new BurnResult( flag, "extra" );
             dialog->show();
         }
     }else{
-        BurnResult* dialog = new BurnResult( flag );
+        BurnResult* dialog = new BurnResult( flag, "extra");
         dialog->show();
     }
 #endif

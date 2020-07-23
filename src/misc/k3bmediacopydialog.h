@@ -44,6 +44,7 @@ namespace K3b {
         void setComboMedium( K3b::Device::Device* dev );
         void setTempDirPath( const QString& dir );
         void saveConfig();
+        void loadConfig();
         void setOnlyCreateImage( bool ret);
         QCheckBox* m_checkOnlyCreateImage;
         QCheckBox* m_checkCacheImage;

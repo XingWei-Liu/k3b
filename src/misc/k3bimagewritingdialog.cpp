@@ -780,6 +780,12 @@ void K3b::ImageWritingDialog::slotCancelClicked()
     this->close();
 }
 
+void K3b::ImageWritingDialog::loadConfig()
+{
+    KConfigGroup grp( KSharedConfig::openConfig(), "image writing" );
+    loadSettings( grp );
+}
+
 void K3b::ImageWritingDialog::saveConfig()
 {
     KConfigGroup grp( KSharedConfig::openConfig(), "image writing" );
@@ -904,7 +910,7 @@ void K3b::ImageWritingDialog::slotStartClicked()
 
     if( job ) {
         job->setWritingApp( d->writerSelectionWidget->writingApp() );
-
+        
         hide();
         
         connect( job, SIGNAL(finished(bool)), this, SLOT(slotFinished(bool)) );
@@ -913,7 +919,7 @@ void K3b::ImageWritingDialog::slotStartClicked()
 
         delete job;
 
-        BurnResult* dialog = new BurnResult( d->flag );
+        BurnResult* dialog = new BurnResult( d->flag, "image");
         dialog->show();
 
         if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )
@@ -1332,7 +1338,7 @@ void K3b::ImageWritingDialog::loadSettings( const KConfigGroup& c )
 void K3b::ImageWritingDialog::saveSettings( KConfigGroup c )
 {
     d->writingModeWidget->saveConfig( c ),
-        c.writeEntry( "simulate", d->checkDummy->isChecked() );
+    c.writeEntry( "simulate", d->checkDummy->isChecked() );
     c.writeEntry( "multisession", d->checkNoFix->isChecked() );
     c.writeEntry( "on_the_fly", !d->checkCacheImage->isChecked() );
     d->dataModeWidget->saveConfig(c);

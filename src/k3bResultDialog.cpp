@@ -7,7 +7,7 @@
 #include <QHBoxLayout>
 #include <QDebug>
 
-BurnResult::BurnResult( int ret ,QWidget *parent) :
+BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
     QDialog(parent)
 {
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
@@ -54,9 +54,10 @@ BurnResult::BurnResult( int ret ,QWidget *parent) :
     label_icon->setFixedSize(50,50);
     label_icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-right.png);"
                               "background-repeat: no-repeat;background-color:transparent;}");
-
-    QLabel* label_info = new QLabel( i18n("success"), this );
-    label_info->setFixedSize(130,29);
+   
+    QString string = str + " success!";
+    QLabel* label_info = new QLabel( i18n( string.toLatin1().data() ), this );
+    label_info->setFixedHeight(29);
     label_info->setStyleSheet("QLabel{background-color:transparent;"
                               "background-repeat: no-repeat;font:30px;color:#444444;}");
 
@@ -70,7 +71,8 @@ BurnResult::BurnResult( int ret ,QWidget *parent) :
     if( !ret ){
         label_icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/icon-error.png);"
                                   "background-repeat: no-repeat;background-color:transparent;}");
-        label_info->setText( i18n("failed") );
+        string = str + " failed!";
+        label_info->setText( i18n( string.toLatin1().data() ) );
     }
     
     QVBoxLayout* mainLayout = new QVBoxLayout( this );
@@ -83,6 +85,7 @@ BurnResult::BurnResult( int ret ,QWidget *parent) :
 
 BurnResult::~BurnResult()
 {
+   
 }
 
 void BurnResult::exit()

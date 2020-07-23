@@ -253,9 +253,8 @@ K3b::MainWindow::MainWindow()
                             border:1px solid rgba(207, 207, 207, 1);\
                             box-shadow:0px 3px 10px 0px rgba(0, 0, 0, 0.2);\
                             border-radius:6px;}");
-    //setWindowIcon(QIcon(":/icon/icon/logo.ico"));
-    //setWindowTitle( i18n("Kylin-Burner") );
-    //setPlainCaption( i18n("Kylin-Burner") );
+    setWindowIcon(QIcon(":/icon/icon/logo.ico"));
+    setWindowTitle( i18n("Kylin-Burner") );
 #if 0
     QDesktopWidget *desktop = QApplication::desktop();
     this->move(desktop->width() / 2 - this->width() / 2, desktop->height() / 2 - this->height() / 2);
@@ -537,22 +536,22 @@ void K3b::MainWindow::initView()
 
     //左侧 上方tille 
     QLabel *label_title = new QLabel(this);
-    label_title->setFixedHeight( 45 );
+    label_title->setFixedHeight( 35 );
 
     //左侧 上方tille :icon
     pIconLabel = new QLabel( label_title );
-    pIconLabel->setFixedSize(35,35);
+    pIconLabel->setFixedSize(22,22);
 
     //左侧 上方tille :text
     pTitleLabel = new QLabel( label_title );
     pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-    pTitleLabel->setMinimumSize(100,35);
+    pTitleLabel->setFixedHeight(13);
     pTitleLabel->setText( i18n("Kylin-Burner" ));
-    pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 12px;}");
+    pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 14px;color:#333333}");
     
     //左侧 上方tille :水平布局
     QHBoxLayout *hLayout = new QHBoxLayout( label_title );
-    hLayout->setContentsMargins(13,12,0,0);
+    hLayout->setContentsMargins(15,10,0,0);
     hLayout->addWidget(pIconLabel);
     //hLayout->addSpacing( 6 );
     hLayout->addWidget(pTitleLabel);

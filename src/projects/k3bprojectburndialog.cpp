@@ -119,7 +119,8 @@ void K3b::ProjectBurnDialog::toggleAll()
             m_checkSimulate->setEnabled(false);
         }
         else {
-            m_checkSimulate->setEnabled(true);
+            //m_checkSimulate->setEnabled(true);
+            m_checkSimulate->setEnabled( false );
         }
 
         setButtonEnabled( START_BUTTON, true );
@@ -152,6 +153,8 @@ void K3b::ProjectBurnDialog::toggleAll()
     else
         setButtonText( START_BUTTON, i18n("Burn"),
                        i18n("Start the burning process") );
+    
+    m_checkSimulate->setEnabled( false );
 }
 
 
@@ -238,7 +241,7 @@ void K3b::ProjectBurnDialog::slotStartClicked()
     
     delete m_job;
     
-    BurnResult* dialog = new BurnResult( flag );
+    BurnResult* dialog = new BurnResult( flag, "data");
     dialog->show();
     
     m_job = 0;
@@ -348,6 +351,7 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_checkSimulate->setFixedHeight(16);
     m_checkSimulate->setFont( label_font );
     m_checkSimulate->setStyleSheet("color:#444444;");
+    m_checkSimulate->setDisabled( true );
 
     m_checkRemoveBufferFiles = K3b::StdGuiItems::removeImagesCheckbox( m_optionGroup );
     m_checkRemoveBufferFiles->setFixedHeight(16);

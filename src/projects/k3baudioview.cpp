@@ -334,6 +334,7 @@ void K3b::AudioView::slotStartBurn()
                                   i18n("No CD to Burn") );
     }else{   
         int index = combo_CD->currentIndex();
+        dlg->loadConfig();
         dlg->setComboMedium( device_index.at( index ) );
         qDebug()<< "block name:" << device_index.at( index )->blockDeviceName() <<endl;
 

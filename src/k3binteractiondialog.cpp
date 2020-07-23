@@ -141,14 +141,14 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
         m_buttonCancel = 0;
     }
 #endif
-    QPushButton *button_close = new QPushButton( buttonBox );
-    button_close->setText("ok");
-    button_close->setFixedSize(80,30);
-    button_close->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
+    QPushButton *button_ok = new QPushButton( buttonBox );
+    button_ok->setText("ok");
+    button_ok->setFixedSize(80,30);
+    button_ok->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
     
-    connect( button_close, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ) );
+    connect( button_ok, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ) );
     
     QPushButton *button_cancel = new QPushButton( buttonBox );
     button_cancel->setText("cancel");
@@ -163,7 +163,7 @@ K3b::InteractionDialog::InteractionDialog( QWidget* parent,
     hlayout->addStretch( 0 );
     hlayout->addWidget( button_cancel );
     hlayout->addSpacing( 8 );
-    hlayout->addWidget( button_close );
+    hlayout->addWidget( button_ok );
     hlayout->addSpacing( 30 );
 /*
     mainGrid->addWidget( buttonBox, 2, 2 );

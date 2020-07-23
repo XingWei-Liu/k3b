@@ -48,6 +48,7 @@ namespace K3b {
         void setImage( const QUrl& url );
         
         void saveConfig();
+        void loadConfig();
         class Private;
         Private* d;
 
