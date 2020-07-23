@@ -10332,3 +10332,34 @@ msgstr "项目大小:"
 #: src/projects/k3bdataviewimpl.cpp
 #msgid "Path"
 #msgstr "路径"
+
+msgid "popup"
+msgstr "弹出"
+
+msgid "clean"
+msgstr "清除"
+
+msgid "MD5"
+msgstr "检查完整性"
+
+msgid "filter"
+msgstr "文件过滤设置"
+
+msgid "help"
+msgstr "帮助"
+
+msgid "about"
+msgstr "关于"
+
+msgid "open"
+msgstr "选择路径"
+
+msgid "create iso"
+msgstr "创建镜像"
+
+#msgid "please insert a medium or empty CD"
+#msgstr ""
+
+
+
+

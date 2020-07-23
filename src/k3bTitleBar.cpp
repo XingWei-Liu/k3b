@@ -17,6 +17,7 @@
 #include "k3bapplication.h"
 #include <KMountPoint>
 #include "k3bMd5Dialog.h"
+#include <klocalizedstring.h>
 
 K3b::TitleBar::TitleBar(QWidget *parent)
     : QWidget(parent)
@@ -101,14 +102,14 @@ K3b::TitleBar::TitleBar(QWidget *parent)
 
     QMenu *menu = new QMenu(this);  //新建菜单
 
-    menu->addAction(QIcon(""),"popup",this,&TitleBar::popup);
-    menu->addAction(QIcon(""),"clean",this,&TitleBar::clean);
+    menu->addAction(QIcon(""), i18n("popup"), this,&TitleBar::popup);
+    menu->addAction(QIcon(""), i18n("clean"), this,&TitleBar::clean);
     menu->addSeparator();
-    menu->addAction(QIcon(""),"MD5",this,&TitleBar::md5);
-    menu->addAction(QIcon(""),"filter",this, &TitleBar::filter);
+    menu->addAction(QIcon(""), i18n("MD5"), this,&TitleBar::md5);
+    menu->addAction(QIcon(""), i18n("filter"), this, &TitleBar::filter);
     menu->addSeparator();
-    menu->addAction(QIcon(""),"help",this,&TitleBar::help);
-    menu->addAction(QIcon(""),"about",this,&TitleBar::about);
+    menu->addAction(QIcon(""), i18n("help"), this,&TitleBar::help);
+    menu->addAction(QIcon(""), i18n("about"), this,&TitleBar::about);
 
     //menu->setStyleSheet("QMenu::item:hover{background-color:#6b8eeb;}");
     //menu->setStyleSheet("QMenu:hover{background-color:#ffffff;}");
