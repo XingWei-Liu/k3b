@@ -21,10 +21,20 @@
 #include <sanitizer/common_interface_defs.h>
 #endif
 
+#include <QLockFile>
+#include <QDebug>
 
 int main( int argc, char* argv[] )
 {
     K3b::Application app( argc, argv );
+
+    /*Prevent multiple opening*/
+    QLockFile *lockFile = new QLockFile("/tmp/appName.app.lock");
+    if (!lockFile ->tryLock(2000)) {    //上锁失败，不能启动
+        return 0;
+    }else{
+         qDebug() << "app is not running";
+    }   
 
     QGuiApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
     

@@ -222,18 +222,14 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     button_remove->setIcon(QIcon(":/icon/icon/icon-删除-默认.png"));
     button_remove->setFixedSize(80, 30);
     button_remove->setEnabled( false );
-    button_remove->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
-                                 "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
-                                 "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+    button_remove->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#d1d1d1;}");
 
     //清空按钮
     button_clear = new QPushButton(i18n("Clear"), label_action );
     button_clear->setIcon(QIcon(":/icon/icon/icon-清空-默认.png")); 
     button_clear->setFixedSize(80, 30);
     button_clear->setEnabled( false );
-    button_clear->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
-                                "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
-                                "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
+    button_clear->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#d1d1d1;}");
     //新建文件夹按钮
     button_newdir = new QPushButton(i18n("New Dir"), label_action );
     button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-默认.png")); 
@@ -324,7 +320,13 @@ void K3b::DataView::slotOpenClicked()
 {
     m_dataViewImpl->slotOpenDir();
     button_remove->setEnabled( true );
+    button_remove->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                                 "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                                 "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
     button_clear->setEnabled( true );
+    button_clear->setStyleSheet("QPushButton{ background-color:#e9e9e9; border-radius:4px; font: 14px; color:#444444;}" 
+                                "QPushButton::hover{background-color:#6b8eeb; border-radius:4px; font: 14px; color:#ffffff;}"  
+                                "QPushButton::pressed{background-color:#415fc4; border-radius:4px; font: 14px; color:#ffffff;}");
 }
 
 void K3b::DataView::slotRemoveClicked()
