@@ -7,6 +7,7 @@
 #include <QLineEdit>
 #include <QLabel>
 
+using namespace::std;
 namespace K3b{
 
 namespace Device {
@@ -23,6 +24,7 @@ class Md5Check : public QDialog
 public:
     explicit Md5Check(QWidget *parent = nullptr);
     ~Md5Check();
+    bool checkMd5(const char* cmd);
 
 public Q_SLOTS:
     void exit();
@@ -37,7 +39,6 @@ private:
     QCheckBox* check;
     QLineEdit* lineedit;
     QStringList mount_index;
-
 };
 }
 #endif // MD5DIALOG_H

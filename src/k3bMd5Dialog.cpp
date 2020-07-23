@@ -12,6 +12,8 @@
 #include <QVBoxLayout>
 #include <QFileDialog>
 
+#include "k3bResultDialog.h"
+
 K3b::Md5Check::Md5Check(QWidget *parent) :
     QDialog(parent)
 {
@@ -152,13 +154,66 @@ K3b::Md5Check::~Md5Check()
 
 }
 
+bool K3b::Md5Check::checkMd5(const char* cmd)
+{
+    array<char, 1024>buffer;
+
+    bool result = true;
+    unique_ptr<FILE, decltype (&pclose)> pipe(popen(cmd,"r"), pclose);
+    if(!pipe){
+        qDebug() << __FUNCTION__ << __LINE__ << " Popen() failed!!! ";
+        return false;
+    }
+
+    while(fgets(buffer.data(),buffer.size(),pipe.get()) != nullptr){
+        QString str = QString(buffer.data());
+        result = str.contains("成功");
+        if(!result)
+            break;
+    }
+    return result;
+}
+
+
 void K3b::Md5Check::md5_start()
 {
+     int index = combo->currentIndex();
+     QString mountPoint = mount_index.at( index );
+
+    qDebug() << __FUNCTION__ << __LINE__ << "mountPoint :" << mountPoint;
+    if(mountPoint.isEmpty()){
+        return ;
+    }
+
+    //切换当前工作目录
+    QDir::setCurrent(mountPoint);
+
+    array<char, 1024>buffer;
+
+    QString cmd = "md5sum -c ";
+    QString fileName = "md5sum.txt";
+    
+    //选中复选框
+    if(check->isChecked()){
+        QString temp = lineedit->text();
+        if(!temp.isEmpty()){
+            fileName = temp;
+        }
+    }
+    cmd += fileName;
+
+    qDebug() << __FUNCTION__ << __LINE__ << "cmd :" << cmd;
+
+    bool result = checkMd5(cmd.toLatin1().data());
+    
+    qDebug() << __FUNCTION__ << __LINE__ << "result :" << result;
+    
+    BurnResult* dialog = new BurnResult( result );
+    dialog->show();
 }
 
 void K3b::Md5Check::openfile()
 {
-    int i = 0;
     QString str;
     str = QFileDialog::getOpenFileName(this, "open file dialog", "/home","All files(*.*)", 0/*, QFileDialog::DontUseNativeDialog*/);
     
