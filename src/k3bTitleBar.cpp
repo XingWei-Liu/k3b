@@ -32,7 +32,7 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     m_pMaximizeButton = new QPushButton(this);
     m_pCloseButton = new QPushButton(this);
 
-    m_pIconLabel->setFixedSize(35,35);
+    m_pIconLabel->setFixedSize(30,30);
     m_pIconLabel->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/logo.png);"
                                 "background-color:rgb(255,255,255);"
                                 "background-repeat: no-repeat;}");
@@ -118,23 +118,31 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     m_pMenubutton->setMenu(menu);  //下拉菜单
 
 
-    QHBoxLayout *mainWidgetLayout = new QHBoxLayout(this);
-    QWidget *mainWidget = new QWidget;
-    QHBoxLayout *pLayout = new QHBoxLayout;
+    //QHBoxLayout *mainWidgetLayout = new QHBoxLayout(this);
+    //QWidget *mainWidget = new QWidget;
+    QLabel* label_top = new QLabel( this );
+    label_top->setFixedHeight( 30 );
+    QHBoxLayout *pLayout = new QHBoxLayout( label_top );
 
-    mainWidgetLayout->addWidget(mainWidget);
-    mainWidget->setLayout(pLayout);
-    mainWidgetLayout->setMargin(0);
-    pLayout->setContentsMargins(4,4,4,4);
+    //mainWidgetLayout->addWidget(mainWidget);
+    //mainWidget->setLayout(pLayout);
+    //mainWidgetLayout->setMargin(0);
+    pLayout->setContentsMargins( 0, 0, 0, 0);
     pLayout->setSpacing(0);
     pLayout->addStretch(0);
-    mainWidget->setStyleSheet("QWidget{background-color:rgb(255,255,255);}");
+    label_top->setStyleSheet("QWidget{background-color:rgb(255,255,255);}");
     pLayout->addWidget(m_pMenubutton);
     pLayout->addSpacing(4);
     pLayout->addWidget(m_pMinimizeButton);
     //pLayout->addWidget(m_pMaximizeButton);
     pLayout->addSpacing(4);
     pLayout->addWidget(m_pCloseButton);
+    pLayout->addSpacing(3);
+
+    QVBoxLayout* mainLayout = new QVBoxLayout( this );
+    mainLayout->setContentsMargins( 0, 5, 5, 0);
+    mainLayout->addWidget( label_top );
+    mainLayout->addStretch( 0 );
 
     connect(m_pMenubutton, &QPushButton::clicked, this, &TitleBar::onClicked);
     connect(m_pMinimizeButton, &QPushButton::clicked, this, &TitleBar::onClicked);

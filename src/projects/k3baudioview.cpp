@@ -91,10 +91,11 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
  QLineEdit::LeadingPosition put it left
  QLineEdit::TrailingPosition put it right
 */
+/*
     QAction *searchAction = new QAction( lineedit_iso );
 	searchAction->setIcon(QIcon(":/icon/icon/icon-镜像.png"));
-	lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
-
+    lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
+*/
     QPushButton *button_openfile = new QPushButton(this);
     button_openfile->setText(i18n("browse"));
     button_openfile->setFixedSize(80, 30);
@@ -248,8 +249,6 @@ void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
     
         combo_CD->setEnabled( true );
 
-        device_index.append( device );
-
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         //KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
 
@@ -269,6 +268,7 @@ void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
         }
         qDebug()<< "mount point" << device <<endl;
         combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), "empty medium available space " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        device_index.append( device );
 
     }
        
@@ -308,8 +308,11 @@ void K3b::AudioView::slotOpenfile()
         str = fileinfo.fileName() + " " + QString::number(file_size);
         break;
     }
+    QAction *searchAction = new QAction( lineedit_iso );
+	searchAction->setIcon(QIcon(":/icon/icon/icon-镜像.png"));
+	lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
+    
     lineedit_iso->setText(str);
-
 }
 
 void K3b::AudioView::slotSetting()

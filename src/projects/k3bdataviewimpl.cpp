@@ -97,9 +97,9 @@ K3b::DataViewImpl::DataViewImpl( View* view, DataDoc* doc, KActionCollection* ac
     m_fileView->setSelectionMode( QTreeView::ExtendedSelection );
     m_fileView->setVerticalScrollMode( QAbstractItemView::ScrollPerPixel );
     m_fileView->setContextMenuPolicy( Qt::ActionsContextMenu );
-    m_fileView->setSortingEnabled( true );
+    m_fileView->setSortingEnabled( false );
     m_fileView->sortByColumn( DataProjectModel::FilenameColumn, Qt::AscendingOrder );
-    m_fileView->setMouseTracking( true );
+    m_fileView->setMouseTracking( false );
     m_fileView->setAllColumnsShowFocus( true );
 
     //*********************

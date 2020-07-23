@@ -80,6 +80,8 @@
 #include <QToolTip>
 #include <QTreeWidget>
 #include "k3bResultDialog.h"
+#include <QBitmap>
+#include <QPainter>
 
 namespace {
 
@@ -378,11 +380,12 @@ K3b::ImageWritingDialog::ImageWritingDialog( QWidget* parent )
     d->normalTextColor = colorScheme.foreground( KColorScheme::NormalText ).color();
 
     d->flag = 1;
+    /*
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
-
+    */
     setAcceptDrops( true );
 
     setupGui();
@@ -528,13 +531,20 @@ void K3b::ImageWritingDialog::setupGui()
             this, SLOT(slotContextMenuRequested(QPoint)) );
 
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
-    setFixedSize(430, 485);
+    resize(430, 485);
 
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
-
+ 
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
     
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);

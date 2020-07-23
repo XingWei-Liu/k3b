@@ -55,7 +55,7 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
 
     d->volumeNameEdit = new KLineEdit( KIO::convertSize( doc->size() ), this );
     d->volumeNameEdit->setReadOnly(true);
-    d->volumeNameEdit->setFixedWidth(50);
+    d->volumeNameEdit->setFixedWidth(60);
     d->volumeNameEdit->setAlignment( Qt::AlignRight );
     //d->volumeNameEdit->setText((char *)doc->size());
     d->volumeNameEdit->setStyleSheet("QLineEdit{border-width:0;border-style:outset}"
@@ -66,6 +66,7 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
     //layout->addWidget( new QLabel( i18n("Project Size:"), this ), 1, Qt::AlignRight );
     layout->addWidget( label, 1, Qt::AlignRight );
     layout->addWidget( d->volumeNameEdit, 2 );
+    layout->addSpacing( 25 );
     layout->setContentsMargins( 0, 0, 0, 0 );
     connect( d->doc, SIGNAL(changed()),
              this, SLOT(slotDocChanged()) );

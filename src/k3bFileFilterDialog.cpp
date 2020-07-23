@@ -8,6 +8,8 @@
 #include <QPushButton>
 #include <QLabel>
 #include <QHBoxLayout>
+#include <QPainter>
+#include <QBitmap>
 
 FileFilter::FileFilter(QWidget *parent) :
     QDialog(parent)
@@ -19,6 +21,14 @@ FileFilter::FileFilter(QWidget *parent) :
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);

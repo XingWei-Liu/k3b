@@ -11,7 +11,8 @@
 #include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QFileDialog>
-
+#include <QPainter>
+#include <QBitmap>
 #include "k3bResultDialog.h"
 
 K3b::Md5Check::Md5Check(QWidget *parent) :
@@ -24,6 +25,14 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);
@@ -208,7 +217,7 @@ void K3b::Md5Check::md5_start()
     
     qDebug() << __FUNCTION__ << __LINE__ << "result :" << result;
     
-    BurnResult* dialog = new BurnResult( result );
+    BurnResult* dialog = new BurnResult( result, "md5" );
     dialog->show();
 }
 

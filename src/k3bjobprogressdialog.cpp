@@ -60,6 +60,8 @@
 #include <QTreeWidget>
 #include <QVBoxLayout>
 #include <unistd.h>
+#include <QBitmap>
+#include <QPainter>
 
 class K3b::JobProgressDialog::Private
 {
@@ -233,6 +235,14 @@ void K3b::JobProgressDialog::setupGUI()
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);
@@ -572,7 +582,7 @@ void K3b::JobProgressDialog::setJob( K3b::Job* job )
         m_labelJob->setText( m_job->jobDescription() );
         m_labelJobDetails->setText( m_job->jobDetails() );
 
-        setWindowTitle( m_job->jobDescription() );
+        //setWindowTitle( m_job->jobDescription() );
 
         if (KConfigGroup(KSharedConfig::openConfig(), "General Options").readEntry("Show progress OSD", false)) {
             KIO::getJobTracker()->registerJob(new KJobBridge(*job));
@@ -645,7 +655,7 @@ void K3b::JobProgressDialog::slotProgress( int percent )
         m_plainCaption.remove(QRegularExpression("\\(.+?\\) "));
         k3bappcore->k3bMainWindow()->setPlainCaption(QString("(%1%) %2").arg(percent).arg(m_plainCaption));
 
-        setWindowTitle(QString("(%1%) %2").arg(percent).arg(m_job->jobDescription()));
+        //setWindowTitle(QString("(%1%) %2").arg(percent).arg(m_job->jobDescription()));
     }
 
     if (m_timer.isValid()) {

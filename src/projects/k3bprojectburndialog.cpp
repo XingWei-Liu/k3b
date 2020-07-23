@@ -53,6 +53,8 @@
 #include <QGridLayout>
 #include <QVBoxLayout>
 #include <QLineEdit>
+#include <QBitmap>
+#include <QPainter>
 #include "k3bResultDialog.h"
 
 K3b::ProjectBurnDialog::ProjectBurnDialog( K3b::Doc* doc, QWidget *parent )
@@ -269,6 +271,14 @@ void K3b::ProjectBurnDialog::prepareGui()
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);

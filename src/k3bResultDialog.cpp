@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include <QHBoxLayout>
 #include <QDebug>
+#include <QBitmap>
+#include <QPainter>
 
 BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
     QDialog(parent)
@@ -13,12 +15,18 @@ BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     setFixedSize(430, 260);
 
-    qDebug() << __func__ << __LINE__ << __FILE__ << endl;
-
     QPalette pal(palette());
     pal.setColor(QPalette::Background, QColor(255, 255, 255));
     setAutoFillBackground(true);
     setPalette(pal);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);

@@ -106,7 +106,8 @@
 #include <QPushButton>
 #include <QDebug>
 #include <QDesktopWidget>
-
+#include <QBitmap>
+#include <QPainter>
 #include <cstdlib>
 
 
@@ -247,19 +248,29 @@ K3b::MainWindow::MainWindow()
     
     /* modify UI */
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
-    setStyleSheet("QWidget:{width:900px;\
+    this->setStyleSheet("QWidget:{width:900px;\
                             height:600px;\
                             background:rgba(255,255,255,1);\
                             border:1px solid rgba(207, 207, 207, 1);\
                             box-shadow:0px 3px 10px 0px rgba(0, 0, 0, 0.2);\
-                            border-radius:6px;}");
+                            border-radius:12px;}");
     setWindowIcon(QIcon(":/icon/icon/logo.ico"));
     setWindowTitle( i18n("Kylin-Burner") );
+
+    resize(900, 600);
+    //add widget border-radius
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
+
 #if 0
     QDesktopWidget *desktop = QApplication::desktop();
     this->move(desktop->width() / 2 - this->width() / 2, desktop->height() / 2 - this->height() / 2);
 #endif
-    resize(900, 600);
     
     installEventFilter(this);
     
@@ -541,6 +552,9 @@ void K3b::MainWindow::initView()
     //左侧 上方tille :icon
     pIconLabel = new QLabel( label_title );
     pIconLabel->setFixedSize(22,22);
+    pIconLabel->setStyleSheet("QLabel{background-image: url(:/new/prefix1/pic/logo.png);"
+                              "background-color:transparent;"
+                              "background-repeat: no-repeat;}");
 
     //左侧 上方tille :text
     pTitleLabel = new QLabel( label_title );
@@ -767,7 +781,7 @@ bool K3b::MainWindow::eventFilter(QObject *obj, QEvent *event)
             QWidget *pWidget = qobject_cast<QWidget *>(obj);
             if (pWidget)
             {
-                pTitleLabel->setText(pWidget->windowTitle());
+                //pTitleLabel->setText(pWidget->windowTitle());
                 return true;
             }
         }

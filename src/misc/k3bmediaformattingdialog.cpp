@@ -39,7 +39,8 @@
 #include <QCheckBox>
 #include <QPushButton>
 #include <QToolTip>
-
+#include <QPainter>
+#include <QBitmap>
 
 
 K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
@@ -59,6 +60,14 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
     
     setWindowFlags(Qt::FramelessWindowHint | windowFlags());
     resize(430, 280);
+
+    QBitmap bmp(this->size());
+    bmp.fill();
+    QPainter p(&bmp);
+    p.setPen(Qt::NoPen);
+    p.setBrush(Qt::black);
+    p.drawRoundedRect(bmp.rect(), 6, 6);
+    setMask(bmp);
 
     QLabel *icon = new QLabel();
     icon->setFixedSize(16,16);
