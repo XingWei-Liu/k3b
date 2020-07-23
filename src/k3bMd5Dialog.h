@@ -32,6 +32,7 @@ public Q_SLOTS:
     void slotDeviceChange( K3b::Device::DeviceManager* );
     void md5_start();
     void openfile();
+    void checkChange(int state);
 
 private:
 
@@ -39,6 +40,7 @@ private:
     QCheckBox* check;
     QLineEdit* lineedit;
     QStringList mount_index;
+    QPushButton* button_open;
 };
 }
 #endif // MD5DIALOG_H

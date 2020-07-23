@@ -13,6 +13,8 @@
 #include <QFileDialog>
 #include <QPainter>
 #include <QBitmap>
+
+
 #include "k3bResultDialog.h"
 
 K3b::Md5Check::Md5Check(QWidget *parent) :
@@ -93,13 +95,16 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     lineedit->setFixedSize( 278, 30);
     lineedit->setFont( label_font );
     lineedit->setStyleSheet("color:#444444;");
-    
-    QPushButton* button_open = new QPushButton( this );
+    lineedit->setEnabled(true);  
+ 
+    button_open = new QPushButton( this );
     button_open->setText( i18n("open") );
     button_open->setFixedSize( 80, 30);
     button_open->setStyleSheet("QPushButton{background-color:#e9e9e9;font: 14px;border-radius: 4px;color: #444444;}"
                           "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                           "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    button_open->setEnabled(true);    
+
     QPushButton* button_ok = new QPushButton( this );
     button_ok->setText( i18n("ok") );
     button_ok->setFixedSize( 80, 31);
@@ -155,6 +160,9 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     connect(button_ok, &QPushButton::clicked, this, &Md5Check::md5_start);
     connect(button_cancel, &QPushButton::clicked, this, &Md5Check::exit);
 
+    connect(check, SIGNAL(stateChanged(int)), this, SLOT(checkChange(int)));
+
+
     slotMediaChange( 0 );
 }
 
@@ -167,19 +175,28 @@ bool K3b::Md5Check::checkMd5(const char* cmd)
 {
     array<char, 1024>buffer;
 
-    bool result = true;
+    bool result = false;
     unique_ptr<FILE, decltype (&pclose)> pipe(popen(cmd,"r"), pclose);
     if(!pipe){
         qDebug() << __FUNCTION__ << __LINE__ << " Popen() failed!!! ";
         return false;
     }
 
+    bool errFlag = false;
+    bool runFlag = false;
     while(fgets(buffer.data(),buffer.size(),pipe.get()) != nullptr){
+        runFlag = true;
         QString str = QString(buffer.data());
         result = str.contains("成功");
         if(!result)
-            break;
+        {
+           errFlag = true; 
+           break;
+        }
     }
+    if(errFlag && runFlag)
+        result = true;
+
     return result;
 }
 
@@ -195,7 +212,13 @@ void K3b::Md5Check::md5_start()
     }
 
     //切换当前工作目录
-    QDir::setCurrent(mountPoint);
+    bool result = QDir::setCurrent(mountPoint);
+    if(!result)
+    {
+        BurnResult* dialog = new BurnResult( result , "md5");
+        dialog->show();
+        return ;
+    }
 
     array<char, 1024>buffer;
 
@@ -204,20 +227,23 @@ void K3b::Md5Check::md5_start()
     
     //选中复选框
     if(check->isChecked()){
-        QString temp = lineedit->text();
-        if(!temp.isEmpty()){
-            fileName = temp;
+        fileName = lineedit->text();
+        if(fileName.isEmpty())
+        {
+            BurnResult* dialog = new BurnResult( false , "md5");
+            dialog->show();
+            return ;
         }
     }
     cmd += fileName;
 
     qDebug() << __FUNCTION__ << __LINE__ << "cmd :" << cmd;
 
-    bool result = checkMd5(cmd.toLatin1().data());
+    result = checkMd5(cmd.toLatin1().data());
     
     qDebug() << __FUNCTION__ << __LINE__ << "result :" << result;
     
-    BurnResult* dialog = new BurnResult( result, "md5" );
+    BurnResult* dialog = new BurnResult( result , "md5");
     dialog->show();
 }
 
@@ -286,4 +312,13 @@ void K3b::Md5Check::slotMediaChange( K3b::Device::Device* dev )
     }
 }
 
-
+void K3b::Md5Check::checkChange(int state)
+{
+    if(state){
+        lineedit->setEnabled(true);  
+        button_open->setEnabled(true);    
+    }else{
+        lineedit->setDisabled(true);  
+        button_open->setDisabled(true);    
+    }
+}
