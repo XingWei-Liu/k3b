@@ -171,35 +171,26 @@ K3b::Md5Check::~Md5Check()
 
 }
 
-bool K3b::Md5Check::checkMd5(const char* cmd)
+bool K3b::Md5Check::checkMd5(QString cmd)
 {
     array<char, 1024>buffer;
-
     bool result = false;
-    unique_ptr<FILE, decltype (&pclose)> pipe(popen(cmd,"r"), pclose);
-    if(!pipe){
-        qDebug() << __FUNCTION__ << __LINE__ << " Popen() failed!!! ";
-        return false;
-    }
-
-    bool errFlag = false;
-    bool runFlag = false;
-    while(fgets(buffer.data(),buffer.size(),pipe.get()) != nullptr){
-        runFlag = true;
-        QString str = QString(buffer.data());
-        result = str.contains("成功");
-        if(!result)
+    FILE* pipe = popen(cmd.toStdString().c_str(), "r");
+    if (pipe)
+    { 
+        while (fgets(buffer.data(), buffer.size(), pipe) != nullptr)
         {
-           errFlag = true; 
-           break;
-        }
+            result = QString(buffer.data()).contains("成功");
+            if(!result)
+            {
+                fclose(pipe);
+                return result;
+            }
+       }
+        fclose(pipe);
     }
-    if(errFlag && runFlag)
-        result = true;
-
     return result;
 }
-
 
 void K3b::Md5Check::md5_start()
 {
@@ -238,9 +229,7 @@ void K3b::Md5Check::md5_start()
     cmd += fileName;
 
     qDebug() << __FUNCTION__ << __LINE__ << "cmd :" << cmd;
-
-    result = checkMd5(cmd.toLatin1().data());
-    
+    result = checkMd5(cmd);
     qDebug() << __FUNCTION__ << __LINE__ << "result :" << result;
     
     BurnResult* dialog = new BurnResult( result , "md5");
