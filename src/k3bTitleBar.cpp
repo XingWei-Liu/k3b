@@ -103,7 +103,7 @@ K3b::TitleBar::TitleBar(QWidget *parent)
     QMenu *menu = new QMenu(this);  //新建菜单
 
     menu->addAction(QIcon(""), i18n("popup"), this,&TitleBar::popup);
-    menu->addAction(QIcon(""), i18n("clean"), this,&TitleBar::clean);
+    menu->addAction(QIcon(""), i18n("Clean"), this,&TitleBar::clean);
     menu->addSeparator();
     menu->addAction(QIcon(""), i18n("MD5"), this,&TitleBar::md5);
     menu->addAction(QIcon(""), i18n("filter"), this, &TitleBar::filter);

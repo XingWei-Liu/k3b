@@ -60,7 +60,7 @@ FileFilter::FileFilter(QWidget *parent) :
     titlebar->addWidget(close);
     titlebar->addSpacing(5);
     
-    QLabel *filter_label = new QLabel( i18n("filter") );
+    QLabel *filter_label = new QLabel( i18n("filterSet") );
     filter_label->setFixedHeight(24);
     filter_label->setStyleSheet("QLabel{background-color:transparent;\
                                         background-repeat: no-repeat;\
@@ -83,14 +83,14 @@ FileFilter::FileFilter(QWidget *parent) :
     
     discard_broken_link = new QCheckBox( i18n("discard broken link") );
     discard_broken_link->setChecked(true);
-    discard_broken_link->setFixedHeight(16);
+//    discard_broken_link->setFixedHeight(16);
     discard_broken_link->setFont( label_font );
     discard_broken_link->setStyleSheet("color:#444444;");
 
     
     follow_link = new QCheckBox( i18n("follow link") );
     follow_link->setChecked(false);
-    follow_link->setFixedHeight(16);
+//    follow_link->setFixedHeight(16);
     follow_link->setFont( label_font );
     follow_link->setStyleSheet("color:#444444;");
 
@@ -109,7 +109,7 @@ FileFilter::FileFilter(QWidget *parent) :
     QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
     mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
     mainWidgetLayout->addWidget( label_top );
-    mainWidgetLayout->addSpacing(32);
+    mainWidgetLayout->addSpacing(28);
     mainWidgetLayout->addLayout(vlayout);
 
     this->setModal( false );

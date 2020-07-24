@@ -71,7 +71,6 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     
     QLabel *label_title = new QLabel(this);
     label_title->setText(i18n("write image"));
-    label_title->setFixedHeight(24);
     QFont title_font;
     title_font.setPixelSize(24);
     label_title->setFont( title_font );

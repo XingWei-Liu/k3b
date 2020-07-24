@@ -733,8 +733,8 @@ void K3b::MainWindow::initView()
     // add the document tab to the styled document box
     d->documentTab = new K3b::ProjectTabWidget( d->documentHull ); //buttom tab
 
-    documentHullLayout->addWidget( d->documentHeader, 0, 0 );
-    documentHullLayout->addWidget( d->documentTab, 1, 0 );
+//    documentHullLayout->addWidget( d->documentHeader, 0, 0 );
+    documentHullLayout->addWidget( d->documentTab, 0, 0 );
 
     connect( d->documentTab, SIGNAL(currentChanged(int)), this, SLOT(slotCurrentDocChanged()) );
     connect( d->documentTab, SIGNAL(tabCloseRequested(Doc*)), this, SLOT(slotFileClose(Doc*)) );

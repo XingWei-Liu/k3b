@@ -90,7 +90,7 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
     connect(close, SIGNAL( clicked() ), this, SLOT( slotCancelClicked() ));
 
     QLabel* label_top = new QLabel( this );
-    label_top->setFixedHeight(27);
+  //  label_top->setFixedHeight(27);
     label_top->setFixedWidth(430);
     QHBoxLayout *titlebar = new QHBoxLayout( label_top );
     titlebar->setContentsMargins(11, 0, 0, 0);
@@ -103,7 +103,7 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
 
     QLabel* label_title = new QLabel( this );
     label_title->setText( i18n("clean") );
-    label_title->setFixedHeight(24);
+//    label_title->setFixedHeight(24);
     label_title->setStyleSheet("QLabel{width:48px;\
                                       height:24px;\
                                       font-size:24px;\
@@ -113,7 +113,7 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
 
     QLabel* label_CD = new QLabel( this );
     label_CD->setText( i18n("select CD") );
-    label_CD->setFixedHeight(12);
+ //   label_CD->setFixedHeight(12);
     label_CD->setStyleSheet("QLabel{width:140px;\
                                        height:12px;\
                                        font-size:14px;\

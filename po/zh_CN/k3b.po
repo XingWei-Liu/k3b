@@ -10267,9 +10267,6 @@ msgid "Copy Disk"
 msgstr "复制光盘"
 
 #: src//misc/k3bmediaformattingdialog.cpp
-msgid "kylin-burner"
-msgstr "刻录软件"
-
 msgid "clean"
 msgstr "擦除"
 
@@ -10289,7 +10286,7 @@ msgstr "选择一张光盘"
 msgid "choice md5 file"
 msgstr "使用MD5文件检查光盘"
 
-msgid "open"
+msgid "Browse"
 msgstr "浏览"
 
 msgid "ok"
@@ -10298,8 +10295,8 @@ msgstr "确定"
 msgid "cancel"
 msgstr "取消"
 
-msgid "empty medium  "
-msgstr "空介质"
+msgid "empty medium "
+msgstr "空介质 "
 
 msgid "please insert a medium or empty CD"
 msgstr "请插入光盘"
@@ -10320,9 +10317,6 @@ msgid "extra"
 msgstr "提取"
 
 #: src/k3bResultDialog.cpp
-msgid "kylin-burner"
-msgstr "刻录软件"
-
 msgid " success!"
 msgstr "成功!"
 
@@ -10330,10 +10324,7 @@ msgid " failed!"
 msgstr "失败!"
 
 #: src/k3bFileFilterDialog.cpp
-msgid "kylin-burner"
-msgstr "刻录软件"
-
-msgid "filter"
+msgid "filterSet"
 msgstr "过滤设置"
 
 msgid "discard hidden file"
@@ -10348,9 +10339,6 @@ msgstr "替换符号链接"
 #: src/k3bjobprogressdialog.cpp
 msgid "burning"
 msgstr "正在刻录"
-
-msgid "cancel"
-msgstr "取消"
 
 #: src/projects/k3bdataview.cpp
 msgid "setting"
@@ -10370,12 +10358,6 @@ msgstr "清空"
 
 msgid "New Dir"
 msgstr "新建文件夹"
-
-msgid "empty medium  "
-msgstr "空介质 "
-
-msgid "please insert a medium or empty CD"
-msgstr "请插入光盘介质或空光盘"
 
 msgid ", remaining available space"
 msgstr ", 剩余空间"
@@ -10442,7 +10424,7 @@ msgstr "项目大小:"
 msgid "popup"
 msgstr "弹出"
 
-msgid "clean"
+msgid "Clean"
 msgstr "清除"
 
 msgid "MD5"
@@ -10462,9 +10444,5 @@ msgstr "选择路径"
 
 msgid "create iso"
 msgstr "创建镜像"
-
-#msgid "please insert a medium or empty CD"
-#msgstr ""
-
 
 

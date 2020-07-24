@@ -56,7 +56,7 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     connect(close, &QPushButton::clicked, this, &Md5Check::exit);
 
     QLabel* label_top = new QLabel( this );
-    label_top->setFixedHeight(27);
+//    label_top->setFixedHeight(27);
     QHBoxLayout *titlebar = new QHBoxLayout( label_top );
     titlebar->setContentsMargins(11, 0, 0, 0);
     titlebar->addWidget(icon);
@@ -67,14 +67,14 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     titlebar->addSpacing(5);
 
     QLabel* label_title = new QLabel( i18n("md5 check"),this );
-    label_title->setFixedHeight(24);
+//    label_title->setFixedHeight(24);
     QFont label_font;
     label_font.setPixelSize(24);
     label_title->setFont( label_font );
     label_title->setStyleSheet("color:#444444");
     
     QLabel* label_CD = new QLabel( i18n("choice CD"),this );
-    label_CD->setFixedHeight(12);
+//    label_CD->setFixedHeight(12);
     label_font.setPixelSize(14);
     label_CD->setFont( label_font );
     label_CD->setStyleSheet("color:#444444");
@@ -86,7 +86,7 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     combo->setStyleSheet("color:#444444;");
 
     check = new QCheckBox( i18n("choice md5 file"), this );
-    check->setFixedSize( 125, 11);
+    //check->setFixedSize( 125, 11);
     check->setChecked( true );
     check->setFont( label_font );
     check->setStyleSheet("color:#444444;");
@@ -98,7 +98,7 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
     lineedit->setEnabled(true);  
  
     button_open = new QPushButton( this );
-    button_open->setText( i18n("open") );
+    button_open->setText( i18n("Browse") );
     button_open->setFixedSize( 80, 30);
     button_open->setStyleSheet("QPushButton{background-color:#e9e9e9;font: 14px;border-radius: 4px;color: #444444;}"
                           "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
@@ -296,7 +296,7 @@ void K3b::Md5Check::slotMediaChange( K3b::Device::Device* dev )
 
         if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
             mountInfo = "empty medium ";
-            CDInfo = i18n("empty medium  ") + CDSize;
+            CDInfo = i18n("empty medium ") + CDSize;
         }
 
         if( !mountPoint ){
