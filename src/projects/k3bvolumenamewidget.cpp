@@ -51,6 +51,7 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
 
     QLabel* label = new QLabel(this);
     label->setText(i18n("Project Size:"));
+    label->setStyleSheet("font:12px;color:#444444;");
     
 
     d->volumeNameEdit = new KLineEdit( KIO::convertSize( doc->size() ), this );
@@ -65,7 +66,7 @@ VolumeNameWidget::VolumeNameWidget( DataDoc* doc, QWidget* parent )
     layout->addStretch();
     //layout->addWidget( new QLabel( i18n("Project Size:"), this ), 1, Qt::AlignRight );
     layout->addWidget( label, 1, Qt::AlignRight );
-    layout->addWidget( d->volumeNameEdit, 2 );
+    layout->addWidget( d->volumeNameEdit );
     layout->addSpacing( 25 );
     layout->setContentsMargins( 0, 0, 0, 0 );
     connect( d->doc, SIGNAL(changed()),
@@ -108,7 +109,9 @@ void VolumeNameWidget::changeEvent( QEvent* event )
 void VolumeNameWidget::slotDocChanged()
 {
     // do not update the editor in case it changed the volume id itself
-    d->volumeNameEdit->setText( KIO::convertSize( d->doc->size() ) );
+    //Qstring str = "Project Size: ";
+    //d->volumeNameEdit->setText( i18n("Project Size: ") + KIO::convertSize( d->doc->size() ) );
+    d->volumeNameEdit->setText(  KIO::convertSize( d->doc->size() )  );
      
 /*  
     if( d->doc->isoOptions().volumeID() != d->volumeNameEdit->text() )

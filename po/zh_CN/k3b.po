@@ -10266,9 +10266,91 @@ msgstr "镜像刻录"
 msgid "Copy Disk"
 msgstr "复制光盘"
 
+#: src//misc/k3bmediaformattingdialog.cpp
+msgid "kylin-burner"
+msgstr "刻录软件"
+
+msgid "clean"
+msgstr "擦除"
+
+msgid "select CD"
+msgstr "选择一张要擦除的光盘"
+
+#: src/k3bMd5Dialog.cpp
+msgid "kylin-burner"
+msgstr "刻录软件"
+
+msgid "md5 check"
+msgstr "检查完整性"
+
+msgid "choice CD"
+msgstr "选择一张光盘"
+
+msgid "choice md5 file"
+msgstr "使用MD5文件检查光盘"
+
+msgid "open"
+msgstr "浏览"
+
+msgid "ok"
+msgstr "确定"
+
+msgid "cancel"
+msgstr "取消"
+
+msgid "empty medium  "
+msgstr "空介质"
+
+msgid "please insert a medium or empty CD"
+msgstr "请插入光盘"
+
+msgid " remaining available space  "
+msgstr " 剩余空间 "
+
+#: src/projects/k3bprojectburndialog.cpp
+msgid "data"
+msgstr "刻录"
+
+#: src/misc/k3bimagewritingdialog.cpp
+msgid "image"
+msgstr "刻录"
+
+#: src/misc/k3bmediacopydialog.cpp
+msgid "extra"
+msgstr "提取"
+
+#: src/k3bResultDialog.cpp
+msgid "kylin-burner"
+msgstr "刻录软件"
+
+msgid " success!"
+msgstr "成功!"
+
+msgid " failed!"
+msgstr "失败!"
+
 #: src/k3bFileFilterDialog.cpp
 msgid "kylin-burner"
 msgstr "刻录软件"
+
+msgid "filter"
+msgstr "过滤设置"
+
+msgid "discard hidden file"
+msgstr "过滤隐藏文件"
+
+msgid "discard broken link"
+msgstr "过滤残缺的符号链接"
+
+msgid "follow link"
+msgstr "替换符号链接"
+
+#: src/k3bjobprogressdialog.cpp
+msgid "burning"
+msgstr "正在刻录"
+
+msgid "cancel"
+msgstr "取消"
 
 #: src/projects/k3bdataview.cpp
 msgid "setting"
@@ -10289,6 +10371,15 @@ msgstr "清空"
 msgid "New Dir"
 msgstr "新建文件夹"
 
+msgid "empty medium  "
+msgstr "空介质 "
+
+msgid "please insert a medium or empty CD"
+msgstr "请插入光盘介质或空光盘"
+
+msgid ", remaining available space"
+msgstr ", 剩余空间"
+
 #: src/projects/k3baudioview.cpp
 msgid "write image"
 msgstr "镜像刻录"
@@ -10304,6 +10395,18 @@ msgstr "选择光盘"
 
 msgid "start"
 msgstr "开始刻录"
+
+msgid "please insert CD"
+msgstr "请插入光盘"
+
+msgid "medium is not empty"
+msgstr "光盘非空"
+
+msgid "medium is unavailable"
+msgstr "介质不可用"
+
+msgid "empty medium available space "
+msgstr "光盘剩余空间 "
 
 #: src/projects/k3bvcdview.cpp
 
@@ -10324,6 +10427,9 @@ msgstr "选择"
 
 msgid "Start copying/extracting"
 msgstr "开始复制/提取"
+
+msgid "please insert a available medium"
+msgstr "请插入可用光盘"
 
 #: src/projects/k3bvolumenamewidget.cpp
 msgid "Project Size:"
@@ -10359,7 +10465,6 @@ msgstr "创建镜像"
 
 #msgid "please insert a medium or empty CD"
 #msgstr ""
-
 
 
 

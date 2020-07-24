@@ -112,7 +112,7 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
     
     combo_CD = new QComboBox(this);
     combo_CD->setFixedSize(360, 30);
-    combo_CD->addItem("please insert CD");
+    combo_CD->addItem( i18n("please insert CD") );
     combo_CD->setEnabled( false );
     combo_CD->setStyleSheet("QComboBox");
 
@@ -257,17 +257,17 @@ void K3b::AudioView::slotMediaChange( K3b::Device::Device* dev)
         if ( device->diskInfo().diskState() != K3b::Device::STATE_EMPTY ){
             qDebug()<< "empty medium" << device <<endl;
             
-            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), "please insert a medium or empty CD" );
+            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), i18n("medium is not empty") );
             continue;
         }
         if( !(device->diskInfo().mediaType() & K3b::Device::MEDIA_WRITABLE) ){
             qDebug()<< "media cannot write" << device->diskInfo().mediaType() <<endl;
 
-            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), "please insert a medium or empty CD" );
+            combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), i18n("medium is unavailable") );
             continue;
         }
         qDebug()<< "mount point" << device <<endl;
-        combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), "empty medium available space " + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
+        combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), i18n("empty medium available space ") + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
         device_index.append( device );
 
     }

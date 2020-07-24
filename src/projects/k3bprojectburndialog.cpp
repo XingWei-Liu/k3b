@@ -243,7 +243,7 @@ void K3b::ProjectBurnDialog::slotStartClicked()
     
     delete m_job;
     
-    BurnResult* dialog = new BurnResult( flag, "data");
+    BurnResult* dialog = new BurnResult( flag, i18n("data") );
     dialog->show();
     
     m_job = 0;

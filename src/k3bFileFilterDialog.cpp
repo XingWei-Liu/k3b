@@ -60,7 +60,7 @@ FileFilter::FileFilter(QWidget *parent) :
     titlebar->addWidget(close);
     titlebar->addSpacing(5);
     
-    QLabel *filter_label = new QLabel("filter");
+    QLabel *filter_label = new QLabel( i18n("filter") );
     filter_label->setFixedHeight(24);
     filter_label->setStyleSheet("QLabel{background-color:transparent;\
                                         background-repeat: no-repeat;\
@@ -72,7 +72,7 @@ FileFilter::FileFilter(QWidget *parent) :
                                         color:rgba(68,68,68,1);\
                                         line-height:32px;}");
 
-    discard_hidden_file = new QCheckBox("discard hidden file");
+    discard_hidden_file = new QCheckBox( i18n("discard hidden file") );
     discard_hidden_file->setChecked(true);
     discard_hidden_file->setFixedHeight(16);
     QFont label_font;
@@ -81,14 +81,14 @@ FileFilter::FileFilter(QWidget *parent) :
     discard_hidden_file->setStyleSheet("color:#444444;");
 
     
-    discard_broken_link = new QCheckBox("discard broken link");
+    discard_broken_link = new QCheckBox( i18n("discard broken link") );
     discard_broken_link->setChecked(true);
     discard_broken_link->setFixedHeight(16);
     discard_broken_link->setFont( label_font );
     discard_broken_link->setStyleSheet("color:#444444;");
 
     
-    follow_link = new QCheckBox("follow link");
+    follow_link = new QCheckBox( i18n("follow link") );
     follow_link->setChecked(false);
     follow_link->setFixedHeight(16);
     follow_link->setFont( label_font );

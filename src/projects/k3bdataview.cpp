@@ -377,6 +377,7 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         burn_button->setText(i18n("start burner"));
          
         device_index.append( device );
+        QThread::sleep(2);
 
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
@@ -390,15 +391,15 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         
         if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){     
             mountInfo = "empty medium ";            
-            CDInfo = "empty medium  " + CDSize;
+            CDInfo = i18n("empty medium  ") + CDSize;
         }
         
         if( !mountPoint ){
             mountInfo = "no medium ";
-            CDInfo = "please insert a medium or empty CD";
+            CDInfo = i18n("please insert a medium or empty CD");
         } else {
             mountInfo = mountPoint->mountPoint(); 
-            CDInfo = medium.shortString() + "remaining available space  " + CDSize;
+            CDInfo = medium.shortString() + i18n(", remaining available space") + CDSize;
         }
         mount_index.append(mountInfo);
     

@@ -24,7 +24,7 @@ class Md5Check : public QDialog
 public:
     explicit Md5Check(QWidget *parent = nullptr);
     ~Md5Check();
-    bool checkMd5(QString cmd);
+    bool checkMd5(const char* cmd);
 
 public Q_SLOTS:
     void exit();

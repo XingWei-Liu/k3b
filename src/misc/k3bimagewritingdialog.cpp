@@ -929,7 +929,7 @@ void K3b::ImageWritingDialog::slotStartClicked()
 
         delete job;
 
-        BurnResult* dialog = new BurnResult( d->flag, "image");
+        BurnResult* dialog = new BurnResult( d->flag, i18n("image") );
         dialog->show();
 
         if( KConfigGroup( KSharedConfig::openConfig(), "General Options" ).readEntry( "keep action dialogs open", false ) )

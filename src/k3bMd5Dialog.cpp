@@ -171,26 +171,35 @@ K3b::Md5Check::~Md5Check()
 
 }
 
-bool K3b::Md5Check::checkMd5(QString cmd)
+bool K3b::Md5Check::checkMd5(const char* cmd)
 {
     array<char, 1024>buffer;
+
     bool result = false;
-    FILE* pipe = popen(cmd.toStdString().c_str(), "r");
-    if (pipe)
-    { 
-        while (fgets(buffer.data(), buffer.size(), pipe) != nullptr)
-        {
-            result = QString(buffer.data()).contains("成功");
-            if(!result)
-            {
-                fclose(pipe);
-                return result;
-            }
-       }
-        fclose(pipe);
+    unique_ptr<FILE, decltype (&pclose)> pipe(popen(cmd,"r"), pclose);
+    if(!pipe){
+        qDebug() << __FUNCTION__ << __LINE__ << " Popen() failed!!! ";
+        return false;
     }
+
+    bool errFlag = false;
+    bool runFlag = false;
+    while(fgets(buffer.data(),buffer.size(),pipe.get()) != nullptr){
+        runFlag = true;
+        QString str = QString(buffer.data());
+        result = str.contains("成功");
+        if(!result)
+        {
+           errFlag = true; 
+           break;
+        }
+    }
+    if(errFlag && runFlag)
+        result = true;
+
     return result;
 }
+
 
 void K3b::Md5Check::md5_start()
 {
@@ -229,7 +238,9 @@ void K3b::Md5Check::md5_start()
     cmd += fileName;
 
     qDebug() << __FUNCTION__ << __LINE__ << "cmd :" << cmd;
-    result = checkMd5(cmd);
+
+    result = checkMd5(cmd.toLatin1().data());
+    
     qDebug() << __FUNCTION__ << __LINE__ << "result :" << result;
     
     BurnResult* dialog = new BurnResult( result , "md5");
@@ -285,15 +296,15 @@ void K3b::Md5Check::slotMediaChange( K3b::Device::Device* dev )
 
         if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
             mountInfo = "empty medium ";
-            CDInfo = "empty medium  " + CDSize;
+            CDInfo = i18n("empty medium  ") + CDSize;
         }
 
         if( !mountPoint ){
             mountInfo = "no medium ";
-            CDInfo = "please insert a medium or empty CD";
+            CDInfo = i18n("please insert a medium or empty CD");
         } else {
             mountInfo = mountPoint->mountPoint();
-            CDInfo = medium.shortString() + " remaining available space  " + CDSize;
+            CDInfo = medium.shortString() + i18n(" remaining available space  ") + CDSize;
         }
         mount_index.append(mountInfo);
 

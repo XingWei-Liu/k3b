@@ -582,7 +582,7 @@ void K3b::MainWindow::initView()
                                   "background-color:rgba(87, 137, 217,0.2);"
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
-                                  "color: #417ff9;font: 14px;border-radius: 6px;}"
+                                  "color: rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
                               "QPushButton:hover{"
                                   "background-color:rgba(87, 137, 217,0.15);"
                                   "background-repeat: no-repeat;"
@@ -663,7 +663,7 @@ void K3b::MainWindow::initView()
     QVBoxLayout* ButtonLayout = new QVBoxLayout( btnLabel );
     ButtonLayout->setContentsMargins(0,0,0,0);
     ButtonLayout->addWidget( label_title );
-    ButtonLayout->addSpacing(46);
+    ButtonLayout->addSpacing(56);
     ButtonLayout->addLayout( layoutData);
     ButtonLayout->addSpacing(10);
     ButtonLayout->addLayout( layoutImage );
@@ -1452,7 +1452,7 @@ K3b::Doc* K3b::MainWindow::slotNewAudioDoc()
                                   "background-color:transparent;"
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
-                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                  "color:#444444;font: 14px;border-radius: 6px;}"
                               "QPushButton:hover{"
                                   "background-color:rgba(87, 137, 217, 0.15);"
                                   "background-repeat: no-repeat;"
@@ -1482,7 +1482,7 @@ K3b::Doc* K3b::MainWindow::slotNewAudioDoc()
                                   "background-color:transparent;"
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
-                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                  "color: #444444;font: 14px;border-radius: 6px;}"
                               "QPushButton:hover{"
                                   "background-color:rgba(87, 137, 217, 0.15);"
                                   "background-repeat: no-repeat;"
@@ -1507,6 +1507,7 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
 
     return doc;
 */
+#if 1
     d->btnData->setStyleSheet("QPushButton{"
                                   "background-color:rgba(87, 137, 217, 0.2);"
                                   "background-repeat: no-repeat;"
@@ -1526,7 +1527,7 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
                                    "background-color:transparent;"
                                    "background-repeat: no-repeat;"
                                    "background-position:left;"
-                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                   "color: #444444;font: 14px;border-radius: 6px;}"
                                "QPushButton:hover{"
                                    "background-color:rgba(87, 137, 217, 0.15);"
                                    "background-repeat: no-repeat;"
@@ -1541,7 +1542,7 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
                                   "background-color:transparent;"
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
-                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                  "color: #444444;font: 14px;border-radius: 6px;}"
                               "QPushButton:hover{"
                                   "background-color:rgba(87, 137, 217, 0.15);"
                                   "background-repeat: no-repeat;"
@@ -1552,6 +1553,7 @@ K3b::Doc* K3b::MainWindow::slotNewDataDoc()
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+#endif
     d->documentTab->setCurrentTab( d->doc_data );
     slotCurrentDocChanged();
 
@@ -1591,11 +1593,12 @@ K3b::Doc* K3b::MainWindow::slotNewVcdDoc()
     K3b::Doc* doc = k3bappcore->projectManager()->createProject( K3b::Doc::VcdProject );
 
     return doc;*/
+#if 1
     d->btnData->setStyleSheet("QPushButton{"
                                   "background-color:transparent;"
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
-                                  "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                  "color: #444444;font: 14px;border-radius: 6px;}"
                               "QPushButton:hover{"
                                   "background-color:rgba(87, 137, 217, 0.15);"
                                   "background-repeat: no-repeat;"
@@ -1610,7 +1613,7 @@ K3b::Doc* K3b::MainWindow::slotNewVcdDoc()
                                    "background-color:transparent;"
                                    "background-repeat: no-repeat;"
                                    "background-position:left;"
-                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}"
+                                   "color: #444444;font: 14px;border-radius: 6px;}"
                                "QPushButton:hover{"
                                    "background-color:rgba(87, 137, 217, 0.15);"
                                    "background-repeat: no-repeat;"
@@ -1636,6 +1639,7 @@ K3b::Doc* K3b::MainWindow::slotNewVcdDoc()
                                   "background-repeat: no-repeat;"
                                   "background-position:left;"
                                   "color:rgb(65, 127, 249);font: 14px;border-radius: 6px;}");
+#endif
     d->documentTab->setCurrentTab( d->doc_copy );
     slotCurrentDocChanged();
     return d->doc_copy;

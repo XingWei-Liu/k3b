@@ -231,15 +231,15 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
         if ( !( device->diskInfo().diskState() & (K3b::Device::STATE_COMPLETE | K3b::Device::STATE_INCOMPLETE ) ) ){
             qDebug()<< "empty medium" << device <<endl;
 
-            combo_iso->addItem( "please insert a medium or empty CD" );
-            combo_CD->addItem( "please insert a medium or empty CD" );
+            combo_iso->addItem( i18n("please insert a available medium") );
+            combo_CD->addItem( i18n("please insert a available medium") );
             continue;
         }
         if( !(device->diskInfo().mediaType() & K3b::Device::MEDIA_ALL) ){
             qDebug()<< "media type cannot use" << device->diskInfo().mediaType() <<endl;
 
-            combo_iso->addItem( "please insert a medium or empty CD" );
-            combo_CD->addItem( "please insert a medium or empty CD" );
+            combo_iso->addItem( i18n("please insert a available medium") );
+            combo_CD->addItem( i18n("please insert a available medium") );
             continue;
         }
         //qDebug()<< "mount point" << device <<endl;
