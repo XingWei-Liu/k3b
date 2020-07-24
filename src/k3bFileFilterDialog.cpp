@@ -112,7 +112,7 @@ FileFilter::FileFilter(QWidget *parent) :
     mainWidgetLayout->addSpacing(28);
     mainWidgetLayout->addLayout(vlayout);
 
-    this->setModal( false );
+    this->setModal( true );
 
 }
 

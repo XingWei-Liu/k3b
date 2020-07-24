@@ -6999,6 +6999,10 @@ msgctxt "file size"
 msgid "Size"
 msgstr "大小"
 
+msgctxt "file path"
+msgid "Path"
+msgstr "路径"
+
 #: projects/k3bdatapropertiesdialog.cpp:44
 #, kde-format
 msgid "File Properties"
@@ -10308,6 +10312,12 @@ msgstr " 剩余空间 "
 msgid "data"
 msgstr "刻录"
 
+msgid "burn setting"
+msgstr "刻录设置"
+
+msgid "temp file path: "
+msgstr "临时文件:"
+
 #: src/misc/k3bimagewritingdialog.cpp
 msgid "image"
 msgstr "刻录"
@@ -10382,7 +10392,7 @@ msgid "please insert CD"
 msgstr "请插入光盘"
 
 msgid "medium is not empty"
-msgstr "光盘非空"
+msgstr "光盘不可用"
 
 msgid "medium is unavailable"
 msgstr "介质不可用"

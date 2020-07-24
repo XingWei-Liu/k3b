@@ -644,7 +644,7 @@ void K3b::ImageWritingDialog::setupGui()
     d->tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
     QLabel *m_labeltmpPath = new QLabel( optionTab );
     QLineEdit *m_tmpPath = new QLineEdit( optionTab );
-    QString tmp_path ="temp file path: ";
+    QString tmp_path =i18n("temp file path: ");
     KIO::filesize_t tempFreeSpace = d->tempDirSelectionWidget->freeTempSpace();
     QString tmp_size = d->tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
     m_labeltmpPath->setText( tmp_path );

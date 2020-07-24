@@ -377,7 +377,7 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
     QLabel *m_labeltmpPath = new QLabel( m_optionGroup );
     QLineEdit *m_tmpPath = new QLineEdit( m_optionGroup );
-    QString tmp_path ="temp file path: ";
+    QString tmp_path =i18n("temp file path: ");
     KIO::filesize_t tempFreeSpace = m_tempDirSelectionWidget->freeTempSpace();
     QString tmp_size = m_tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
     m_labeltmpPath->setText( tmp_path );

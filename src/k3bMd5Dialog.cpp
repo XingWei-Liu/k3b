@@ -13,7 +13,7 @@
 #include <QFileDialog>
 #include <QPainter>
 #include <QBitmap>
-
+#include <QGraphicsDropShadowEffect>
 
 #include "k3bResultDialog.h"
 
@@ -164,6 +164,7 @@ K3b::Md5Check::Md5Check(QWidget *parent) :
 
 
     slotMediaChange( 0 );
+    setModal( true );
 }
 
 K3b::Md5Check::~Md5Check()
