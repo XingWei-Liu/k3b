@@ -89,6 +89,8 @@ BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
     mainLayout->addSpacing( 78 );
     mainLayout->addLayout( hlayout );
     mainLayout->addStretch( 0 );
+
+    setModal( true );
 }
 
 BurnResult::~BurnResult()

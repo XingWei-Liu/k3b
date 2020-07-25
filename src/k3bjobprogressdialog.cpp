@@ -336,7 +336,7 @@ void K3b::JobProgressDialog::setupGUI()
     cancel->setStyleSheet("QPushButton{background-color:#e9e9e9;font: 14px;border-radius: 4px;color: #444444;}"
                           "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
                           "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
-    connect( cancel, SIGNAL(clicked()), this, SLOT(accept()) );
+    connect( cancel, SIGNAL(clicked()), this, SLOT(reject()) );
 
     QHBoxLayout* hlayout = new QHBoxLayout();
     hlayout->addStretch(0);

@@ -468,7 +468,8 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
             d->setImage( QUrl::fromLocalFile( m_tempDirSelectionWidget->tempPath() ) );
             d->saveConfig();
             d->slotStartClicked();
-        }else{
+        }
+        else{
             BurnResult* dialog = new BurnResult( flag, "extra" );
             dialog->show();
         }

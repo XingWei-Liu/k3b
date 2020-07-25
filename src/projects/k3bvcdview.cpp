@@ -291,7 +291,11 @@ void K3b::VcdView::slotStartBurn()
         dlg->setTempDirPath( combo_CD->currentText() );
         dlg->saveConfig();
         dlg->slotStartClicked();
-    }else {
+    }else if ( device_index.at( iso_index ) == device_index.at( CD_index )){
+        dlg->setComboMedium( device_index.at( CD_index ) );
+        dlg->saveConfig();
+        dlg->slotStartClicked();
+    }else{
         dlg->loadConfig();
         dlg->setOnlyCreateImage(true);
         dlg->setComboMedium( device_index.at( CD_index ) );
