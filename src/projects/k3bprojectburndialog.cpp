@@ -285,7 +285,7 @@ void K3b::ProjectBurnDialog::prepareGui()
     icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel(i18n("kylin-burner"));
-    title->setFixedSize(48,11);
+    title->setFixedSize(50,13);
     title->setStyleSheet("QLabel{background-color:transparent;"
                          "background-repeat: no-repeat;color:#444444;"
                          "font: 12px;}");
@@ -311,14 +311,23 @@ void K3b::ProjectBurnDialog::prepareGui()
     titlebar->addSpacing(5);
     
     mainLay->addWidget( label_top );
-    mainLay->addSpacing( 24 );
+    mainLay->addSpacing( 20 );
 
     QLabel* label_title = new QLabel( i18n("burn setting"),this );
-    label_title->setFixedHeight(24);
+    //label_title->setFixedHeight(24);
     QFont label_font;
+#if 0
     label_font.setPixelSize(24);
     label_title->setFont( label_font );
     label_title->setStyleSheet("color:#444444");
+#endif    
+    label_title->setStyleSheet("QLabel{width:96px; \
+                                height:24px; \
+                                font-size:24px; \
+                                font-family:Microsoft YaHei; \
+                                font-weight:400; \
+                                color:rgba(68,68,68,1); \
+                                line-height:32px;}");
 
     m_writerSelectionWidget = new K3b::WriterSelectionWidget();
     m_writerSelectionWidget->hideComboMedium();
@@ -373,6 +382,19 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_checkOnlyCreateImage->setFont( label_font );
     m_checkOnlyCreateImage->setStyleSheet("color:#444444;");
    
+    QLabel *lcheck = new QLabel(this);
+    QVBoxLayout  *laycheck = new QVBoxLayout(lcheck);
+    lcheck->setFixedHeight(112);
+    laycheck->setContentsMargins(3, 0, 0, 0);
+    laycheck->addWidget( m_checkSimulate );
+    laycheck->addSpacing( 9 );
+    laycheck->addWidget( m_checkCacheImage );
+    laycheck->addSpacing( 9 );
+    laycheck->addWidget( m_checkOnlyCreateImage );
+    laycheck->addSpacing( 9 );
+    laycheck->addWidget( m_checkRemoveBufferFiles );
+    //laycheck->addSpacing( 25 );
+
    //tmp
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( );
     QLabel *m_labeltmpPath = new QLabel( m_optionGroup );
@@ -381,7 +403,8 @@ void K3b::ProjectBurnDialog::prepareGui()
     KIO::filesize_t tempFreeSpace = m_tempDirSelectionWidget->freeTempSpace();
     QString tmp_size = m_tempDirSelectionWidget->tempPath() + "     "  +  KIO::convertSize(tempFreeSpace);
     m_labeltmpPath->setText( tmp_path );
-    m_labeltmpPath->setFixedSize( 56, 12);
+    //m_labeltmpPath->setFixedSize( 56, 12);
+    m_labeltmpPath->setFixedSize( 60, 18);
     m_labeltmpPath->setFont( label_font );
     m_labeltmpPath->setStyleSheet("color:#444444;");
     
@@ -393,20 +416,14 @@ void K3b::ProjectBurnDialog::prepareGui()
     QVBoxLayout* vlayout = new QVBoxLayout();
     vlayout->setContentsMargins(31, 0, 0, 0);
     vlayout->addWidget( label_title );
-    vlayout->addSpacing( 25 );
+    vlayout->addSpacing( 20 );
     //vlayout->addStretch( 0 );
     vlayout->addWidget( m_writerSelectionWidget );
-    vlayout->addSpacing( 25 );
-    vlayout->addWidget( m_checkSimulate );
-    vlayout->addSpacing( 11 );
-    vlayout->addWidget( m_checkCacheImage );
-    vlayout->addSpacing( 11 );
-    vlayout->addWidget( m_checkOnlyCreateImage );
-    vlayout->addSpacing( 11 );
-    vlayout->addWidget( m_checkRemoveBufferFiles );
-    vlayout->addSpacing( 25 );
+    vlayout->addSpacing( 20 );
+    vlayout->addWidget( lcheck);
+    vlayout->addSpacing( 12 );
     vlayout->addWidget( m_labeltmpPath );
-    vlayout->addSpacing( 10 );
+    vlayout->addSpacing( 6 );
     vlayout->addWidget( m_tmpPath );
     vlayout->addStretch( 0 );
 
@@ -449,6 +466,10 @@ void K3b::ProjectBurnDialog::prepareGui()
     m_tempDirSelectionWidget = new K3b::TempDirSelectionWidget( tempW );
     //grid->addWidget( m_tempDirSelectionWidget, 0, 0 );
     m_tempDirSelectionWidget->setNeededSize( doc()->size() );
+
+
+//    setStyleSheet(QString::fromUtf8("border:1px solid red"));
+
 
     // tab order
     setTabOrder( m_writerSelectionWidget, m_writingModeWidget );

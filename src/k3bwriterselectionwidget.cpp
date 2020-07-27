@@ -124,7 +124,6 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
     QGroupBox* groupWriter = new QGroupBox( this );
     //groupWriter->setTitle( i18n( "Burn Medium" ) );
     //groupWriter->setTitle( i18n( "Burn Setting" ) );
-    
     //QGroupBox* group_Writer = new QGroupBox(  );
 
     groupWriter->setFlat( true );
@@ -137,15 +136,24 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
 
     //labelSpeed = new QLabel( groupWriter );
     labelSpeed = new QLabel( );
-    labelSpeed->setText( i18n( "Speed:" ) );
+    labelSpeed->setText( i18n( "burner speed" ) );
     QFont label_font;
+#if 0
     label_font.setPixelSize(14);
     labelSpeed->setFont( label_font );
-    labelSpeed->setFixedHeight(12);
+    labelSpeed->setFixedHeight(14);
     labelSpeed->setStyleSheet("color:#444444;");
+#endif
+    labelSpeed->setStyleSheet("QLabel{width:56px; \
+height:12px; \
+font-size:14px; \
+font-family:Microsoft YaHei; \
+font-weight:400; \
+color:rgba(68,68,68,1); \
+line-height:18px;}");
 
     m_comboSpeed = new K3b::IntMapComboBox();
-    m_comboSpeed->setFixedSize( 368, 30);
+    m_comboSpeed->setFixedSize( 368, 32);
     m_comboSpeed->setFont( label_font );
     m_comboSpeed->setStyleSheet("color:#444444;");
 
@@ -173,9 +181,9 @@ K3b::WriterSelectionWidget::WriterSelectionWidget( QWidget *parent )
 
     //mainLayout->addWidget( groupWriter, 0, 0 );
     mainLayout->addWidget( m_comboMedium );
-    mainLayout->addSpacing( 10 );
+//    mainLayout->addSpacing( 2 );
     mainLayout->addWidget( labelSpeed );
-    mainLayout->addSpacing( 10 );
+    mainLayout->addSpacing( 6 );
     mainLayout->addWidget( m_comboSpeed );
     mainLayout->addStretch( 0 );
 
