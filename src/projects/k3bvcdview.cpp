@@ -224,7 +224,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
 
         if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
-            combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), "empty medium " );
+            combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), i18n("empty medium " ));
             continue;
         }
         //qDebug()<< "device disk state" << device->diskInfo().diskState() <<endl;
