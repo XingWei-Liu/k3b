@@ -63,6 +63,8 @@ namespace K3b {
         
         K3b::ImageWritingDialog *dlg;
         QLineEdit *lineedit_iso;
+        QLabel* lineEdit_icon;
+        QLabel* lineEdit_text;
         QComboBox *combo_CD;
         QList<Device::Device*> device_index;
         QString filepath;

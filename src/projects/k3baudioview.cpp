@@ -85,16 +85,19 @@ K3b::AudioView::AudioView( K3b::AudioDoc* doc, QWidget* parent )
 
     lineedit_iso = new QLineEdit(this);
     lineedit_iso->setFixedSize(360, 30);
-/*
- lineedit add icon .
- QLineEdit::LeadingPosition put it left
- QLineEdit::TrailingPosition put it right
-*/
-/*
-    QAction *searchAction = new QAction( lineedit_iso );
-	searchAction->setIcon(QIcon(":/icon/icon/icon-镜像.png"));
-    lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
-*/
+    
+    lineEdit_icon = new QLabel( lineedit_iso );
+    lineEdit_icon->setFixedSize( 15,15);
+    lineEdit_text = new QLabel( lineedit_iso );
+    
+    QHBoxLayout* hlayout = new QHBoxLayout( lineedit_iso );
+    hlayout->setContentsMargins(0, 0, 0, 0);
+    hlayout->addSpacing(10);
+    hlayout->addWidget( lineEdit_icon );
+    hlayout->addSpacing(5);
+    hlayout->addWidget( lineEdit_text );
+    hlayout->addStretch(0);
+ 
     QPushButton *button_openfile = new QPushButton(this);
     button_openfile->setText(i18n("browse"));
     button_openfile->setFixedSize(80, 30);
@@ -307,11 +310,13 @@ void K3b::AudioView::slotOpenfile()
         str = fileinfo.fileName() + " " + QString::number(file_size);
         break;
     }
-    QAction *searchAction = new QAction( lineedit_iso );
-	searchAction->setIcon(QIcon(":/icon/icon/icon-镜像.png"));
-	lineedit_iso->addAction(searchAction,QLineEdit::LeadingPosition);
+     
+
+    lineEdit_icon->setStyleSheet("background-image:url(:/icon/icon/icon-镜像.png);\
+                                 background-color:transparent;\
+                                background-repeat: no-repeat;});");
     
-    lineedit_iso->setText(str);
+    lineEdit_text->setText( str );
 }
 
 void K3b::AudioView::slotSetting()
