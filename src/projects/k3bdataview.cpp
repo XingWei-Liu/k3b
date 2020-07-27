@@ -122,10 +122,14 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     label_CD->setText(i18n("current CD"));
     label_CD->setMinimumSize(75, 30);
 
+    iso_index = 0;
+
     combo_CD = new QComboBox( label_view );
+    combo_CD->setFixedWidth( 310 );
     combo_CD->setEditable( false );
     combo_CD->setMinimumSize(310, 30);
-    
+    image_path = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/kylin_burner.iso";
+    combo_CD->addItem(QIcon(":/icon/icon/icon-镜像.png"), i18n("image file: ") + image_path);
 
     QHBoxLayout *hlayout_burner = new QHBoxLayout();
     hlayout_burner->setContentsMargins(0, 0, 0, 0);
@@ -360,7 +364,9 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
     burn_button->setVisible(true);
     mount_index.clear();
     device_index.clear();
-    
+ 
+    iso_index = 0;
+
     combo_burner->blockSignals( true );
     combo_burner->clear();
     combo_burner->blockSignals( false );
@@ -403,9 +409,15 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         }
         mount_index.append(mountInfo);
     
+        iso_index++;
+
         combo_burner->addItem(QIcon(":/icon/icon/icon-刻录机.png"), burnerInfo);
         combo_CD->addItem(QIcon(":/icon/icon/icon-光盘.png"), CDInfo);
     }
+    
+    image_path = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/kylin_burner.iso";
+    combo_CD->addItem(QIcon(":/icon/icon/icon-镜像.png"), i18n("image file: ") + image_path);
+
 }
 
 void K3b::DataView::slotComboBurner(int index)
@@ -420,15 +432,29 @@ void K3b::DataView::slotComboBurner(int index)
 
 void K3b::DataView::slotComboCD(int index)
 {
-    qDebug()<< " combo Cd index " << index << mount_index << endl;
-    if ( index < 0 )   
+    qDebug()<< " combo Cd index " << index << mount_index << iso_index <<endl;
+    if ( index < 0 )
         index = 0;
-    
-    combo_burner->blockSignals( true ); //不发送信号，不会调用slotComboBurner 槽函数
-    combo_burner->setCurrentIndex( index );
-    combo_burner->blockSignals( false );
-   
-    add_device_urls( mount_index.at( index ) );
+
+    if ( index == iso_index ){
+        m_doc->clear();
+        combo_burner->setEnabled( false );
+        //combo_CD->setEditable( true );
+        burn_setting->setText(i18n("open"));
+        burn_button->setText(i18n("create iso"));
+    }else{
+        combo_burner->setEnabled( true );
+        //combo_CD->setEditable( false );
+        burn_setting->setText(i18n("setting"));
+        burn_button->setText(i18n("start burner"));
+
+        combo_burner->blockSignals( true ); //不发送信号，不会调用slotComboBurner 槽函数
+        combo_burner->setCurrentIndex( index );
+        combo_burner->blockSignals( false );
+
+        add_device_urls( mount_index.at( index ) );
+    }
+
 }
 
 K3b::ProjectBurnDialog* K3b::DataView::newBurnDialog( QWidget* parent )
@@ -461,8 +487,8 @@ void K3b::DataView::slotStartBurn()
         dlg->slotStartClicked();
     }else if( burn_button->text() == i18n("create iso" )){ 
         dlg->setOnlyCreateImage( true );
-        dlg->setTmpPath( combo_CD->currentText() );
-        QFileInfo fileinfo( combo_CD->currentText() );
+        dlg->setTmpPath( image_path );
+        QFileInfo fileinfo( image_path );
         QDir dir( fileinfo.path() );
         if ( !dir.exists() )
             return;
@@ -486,7 +512,8 @@ void K3b::DataView::slotBurn()
         if ( filepath.isEmpty() )
             return;
         combo_CD->setEditable( true );
-        combo_CD->setCurrentText( filepath + "/data_burn.iso" );
+        image_path = filepath + "/kylin_burner.iso";
+        combo_CD->setCurrentText(  i18n("image file: ") + image_path );
     } 
 }
 

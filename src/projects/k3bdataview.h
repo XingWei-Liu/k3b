@@ -90,6 +90,9 @@ namespace K3b {
         QList<Device::Device *> device_index;
         QStringList mount_index;
 
+        int iso_index;
+        QString image_path;
+
         QPushButton* burn_setting;
         QPushButton* burn_button;
         QPushButton* button_add;
