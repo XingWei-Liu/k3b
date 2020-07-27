@@ -33,7 +33,7 @@ BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
     icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel(i18n("kylin-burner"));
-    title->setFixedSize(48,11);
+    title->setFixedSize(48,13);
     title->setStyleSheet("QLabel{background-color:transparent;"
                          "background-repeat: no-repeat;color:#444444;"
                          "font: 12px;}");
@@ -65,7 +65,6 @@ BurnResult::BurnResult( int ret ,QString str, QWidget *parent) :
    
     QString string = str + " success!";
     QLabel* label_info = new QLabel( i18n( string.toLatin1().data() ), this );
-    label_info->setFixedHeight(29);
     label_info->setStyleSheet("QLabel{background-color:transparent;"
                               "background-repeat: no-repeat;font:30px;color:#444444;}");
 

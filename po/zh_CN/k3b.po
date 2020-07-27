@@ -10309,22 +10309,11 @@ msgid " remaining available space  "
 msgstr " 剩余空间 "
 
 #: src/projects/k3bprojectburndialog.cpp
-msgid "data"
-msgstr "刻录"
-
 msgid "burn setting"
 msgstr "刻录设置"
 
 msgid "temp file path: "
 msgstr "临时文件:"
-
-#: src/misc/k3bimagewritingdialog.cpp
-msgid "image"
-msgstr "刻录"
-
-#: src/misc/k3bmediacopydialog.cpp
-msgid "extra"
-msgstr "提取"
 
 #: src/k3bResultDialog.cpp
 msgid " success!"
@@ -10332,6 +10321,24 @@ msgstr "成功!"
 
 msgid " failed!"
 msgstr "失败!"
+
+msgid "data success!"
+msgstr "刻录成功!"
+
+msgid "image success!"
+msgstr "刻录成功!"
+
+msgid "extra success!"
+msgstr "提取成功!"
+
+msgid "data failed!"
+msgstr "刻录失败!"
+
+msgid "image failed!"
+msgstr "刻录失败!"
+
+msgid "extra failed!"
+msgstr "提取失败!"
 
 #: src/k3bFileFilterDialog.cpp
 msgid "filterSet"
@@ -10454,5 +10461,4 @@ msgstr "选择路径"
 
 msgid "create iso"
 msgstr "创建镜像"
-
 

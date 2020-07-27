@@ -35,7 +35,7 @@ FileFilter::FileFilter(QWidget *parent) :
     icon->setStyleSheet("QLabel{background-image: url(:/icon/icon/logo-小.png);"
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel(i18n("kylin-burner"));
-    title->setFixedSize(48,11);
+    title->setFixedSize(48,13);
     title->setStyleSheet("QLabel{background-color:transparent;"
                          "background-repeat: no-repeat;color:#444444;"
                          "font: 12px;}");
@@ -61,7 +61,7 @@ FileFilter::FileFilter(QWidget *parent) :
     titlebar->addSpacing(5);
     
     QLabel *filter_label = new QLabel( i18n("filterSet") );
-    filter_label->setFixedHeight(24);
+    filter_label->setFixedHeight(25);
     filter_label->setStyleSheet("QLabel{background-color:transparent;\
                                         background-repeat: no-repeat;\
                                         width:96px;\

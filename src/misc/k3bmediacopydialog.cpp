@@ -474,7 +474,7 @@ qDebug() << "temp path:::" << m_tempDirSelectionWidget->tempPath() <<endl;
             dialog->show();
         }
     }else{
-        BurnResult* dialog = new BurnResult( flag, i18n("extra") );
+        BurnResult* dialog = new BurnResult( flag, "extra");
         dialog->show();
     }
 #endif

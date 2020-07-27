@@ -559,7 +559,7 @@ void K3b::MainWindow::initView()
     //左侧 上方tille :text
     pTitleLabel = new QLabel( label_title );
     pTitleLabel->setAlignment(Qt::AlignLeft | Qt::AlignVCenter);
-    pTitleLabel->setFixedHeight(13);
+    //pTitleLabel->setFixedHeight(15);
     pTitleLabel->setText( i18n("Kylin-Burner" ));
     pTitleLabel->setStyleSheet("QLabel{background-color:transparent;background-repeat: no-repeat;font: 14px;color:#333333}");
     

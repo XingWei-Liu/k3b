@@ -100,9 +100,9 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     //开始刻录按钮
     burn_button = new QPushButton(i18n("create iso"), this);
     burn_button->setFixedSize(140, 45);
-    burn_button->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
-                               "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
-                               "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    burn_button->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 18px;border-radius: 4px;color: rgb(255,255,255);}"
+                               "QPushButton:hover{background-color:rgb(107, 142, 235);font: 18px;border-radius: 4px;color: rgb(255,255,255);}"
+                               "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 18px;border-radius: 4px;color: rgb(255,255,255);}");
 
     QLabel *label_view = new QLabel(this);
     //QGridLayout *layout = new QGridLayout(label_view);

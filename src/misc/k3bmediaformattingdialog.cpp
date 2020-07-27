@@ -75,7 +75,8 @@ K3b::MediaFormattingDialog::MediaFormattingDialog( QWidget* parent )
                         "background-repeat: no-repeat;background-color:transparent;}");
     QLabel *title = new QLabel(i18n("kylin-burner"));
     //title->setFixedSize(48,11);
-    title->setFixedWidth(48);
+    title->setFixedSize(48,13);
+    //title->setFixedWidth(48);
     title->setStyleSheet("QLabel{background-color:transparent;"
                          "background-repeat: no-repeat;color:#444444;"
                          "font: 12px;}");
