@@ -395,14 +395,15 @@ void K3b::DataView::slotMediaChange( K3b::Device::Device* dev )
         QString CDInfo;
         QString CDSize =  KIO::convertSize(device->diskInfo().remainingSize().mode1Bytes());
         
-        if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){     
-            mountInfo = "empty medium ";            
-            CDInfo = i18n("empty medium  ") + CDSize;
-        }
         
-        if( !mountPoint ){
-            mountInfo = "no medium ";
-            CDInfo = i18n("please insert a medium or empty CD");
+        if( !mountPoint){            
+            if ( device->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){     
+                mountInfo = i18n("empty medium ");            
+                CDInfo = i18n("empty medium ") + CDSize;
+            } else {
+                mountInfo = "no medium ";
+                CDInfo = i18n("please insert a medium or empty CD");
+            }        
         } else {
             mountInfo = mountPoint->mountPoint(); 
             CDInfo = medium.shortString() + i18n(", remaining available space") + CDSize;

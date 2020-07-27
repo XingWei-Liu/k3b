@@ -83,21 +83,20 @@ FileFilter::FileFilter(QWidget *parent) :
     
     discard_broken_link = new QCheckBox( i18n("discard broken link") );
     discard_broken_link->setChecked(true);
-//    discard_broken_link->setFixedHeight(16);
+    discard_broken_link->setFixedHeight(18);
     discard_broken_link->setFont( label_font );
     discard_broken_link->setStyleSheet("color:#444444;");
-
     
     follow_link = new QCheckBox( i18n("follow link") );
     follow_link->setChecked(false);
-//    follow_link->setFixedHeight(16);
+    follow_link->setFixedHeight(18);
     follow_link->setFont( label_font );
     follow_link->setStyleSheet("color:#444444;");
 
     QVBoxLayout* vlayout = new QVBoxLayout();
     vlayout->setContentsMargins(25, 0, 0, 0);
     vlayout->addWidget(filter_label);
-    vlayout->addSpacing(31);
+    vlayout->addSpacing(28);
     vlayout->addWidget( discard_hidden_file);
     vlayout->addSpacing(13);
     vlayout->addWidget( discard_broken_link);
@@ -109,7 +108,7 @@ FileFilter::FileFilter(QWidget *parent) :
     QVBoxLayout *mainWidgetLayout = new QVBoxLayout(this);
     mainWidgetLayout->setContentsMargins(0, 0, 0, 0);
     mainWidgetLayout->addWidget( label_top );
-    mainWidgetLayout->addSpacing(28);
+    mainWidgetLayout->addSpacing(24);
     mainWidgetLayout->addLayout(vlayout);
 
     this->setModal( true );

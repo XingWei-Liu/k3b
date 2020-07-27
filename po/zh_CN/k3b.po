@@ -10308,6 +10308,9 @@ msgstr "请插入光盘"
 msgid " remaining available space  "
 msgstr " 剩余空间 "
 
+msgid "image file: "
+msgstr "镜像文件: "
+
 #: src/projects/k3bprojectburndialog.cpp
 msgid "burn setting"
 msgstr "刻录设置"
@@ -10405,7 +10408,7 @@ msgid "medium is unavailable"
 msgstr "介质不可用"
 
 msgid "empty medium available space "
-msgstr "光盘剩余空间 "
+msgstr "空光盘,剩余空间:"
 
 #: src/projects/k3bvcdview.cpp
 
