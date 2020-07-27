@@ -97,11 +97,11 @@ K3b::VcdView::VcdView( K3b::VcdDoc* doc, QWidget* parent )
                                    "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color:#ffffff}");
 
     QPushButton *button_start = new QPushButton(this);
-    button_start->setText(i18n("Start copying/extracting"));
+    button_start->setText(i18n("Create image"));
     button_start->setFixedSize(140, 45);
-    button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
-                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 14px;border-radius: 4px;color: rgb(255,255,255);}"
-                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 14px;border-radius: 4px;color: rgb(255,255,255);}");
+    button_start->setStyleSheet("QPushButton{background-color:rgb(61, 107, 229);font: 18px;border-radius: 4px;color: rgb(255,255,255);}"
+                                "QPushButton:hover{background-color:rgb(107, 142, 235);font: 18px;border-radius: 4px;color: rgb(255,255,255);}"
+                                "QPushButton:pressed{border:none;background-color:rgb(65, 95, 196);font: 18px;border-radius: 4px;color: rgb(255,255,255);}");
         
     combo_CD->setEnabled( true );
     button_openfile->setEnabled( true );

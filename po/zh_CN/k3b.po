@@ -10416,16 +10416,16 @@ msgid "CD to copy"
 msgstr "要复制的光盘"
 
 msgid "Copy CD"
-msgstr "复制光盘"
+msgstr "要写入的光盘/镜像"
 
 msgid "extract image"
 msgstr "提取镜像"
 
 msgid "choice"
-msgstr "选择"
+msgstr "选择路径"
 
-msgid "Start copying/extracting"
-msgstr "开始复制/提取"
+msgid "Create image"
+msgstr "创建镜像"
 
 msgid "please insert a available medium"
 msgstr "请插入可用光盘"
