@@ -218,7 +218,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
         combo_CD->setEnabled( true );
         //lineedit_CD->setEnabled( true );
 
-        device_index.append( device );
+        //device_index.append( device );
 
         K3b::Medium medium = k3bappcore->mediaCache()->medium( device );
         KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( device->blockDeviceName() );
@@ -243,6 +243,7 @@ void K3b::VcdView::slotMediaChange( K3b::Device::Device* dev)
             continue;
         }
         //qDebug()<< "mount point" << device <<endl;
+        device_index.append( device );
         combo_iso->addItem( QIcon(":/icon/icon/icon-光盘.png"), medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
         combo_CD->addItem( QIcon(":/icon/icon/icon-光盘.png"), medium.shortString() + KIO::convertSize( device->diskInfo().remainingSize().mode1Bytes() ) );
 
@@ -279,29 +280,32 @@ void K3b::VcdView::slotSetting()
 
 void K3b::VcdView::slotStartBurn()
 {
-    if( device_index.isEmpty() )
-        return;
     int iso_index = combo_iso->currentIndex();
     int CD_index = combo_CD->currentIndex();
     K3b::MediaCopyDialog *dlg = new K3b::MediaCopyDialog( this );
-    dlg->setReadingDevice( device_index.at( iso_index ) );
-    if ( flag ){
-        dlg->loadConfig();
-        dlg->setOnlyCreateImage(true);
-        dlg->setTempDirPath( combo_CD->currentText() );
-        dlg->saveConfig();
-        dlg->slotStartClicked();
-    }else if ( device_index.at( iso_index ) == device_index.at( CD_index )){
-        dlg->setComboMedium( device_index.at( CD_index ) );
-        dlg->saveConfig();
-        dlg->slotStartClicked();
-    }else{
-        dlg->loadConfig();
-        dlg->setOnlyCreateImage(true);
-        dlg->setComboMedium( device_index.at( CD_index ) );
-        dlg->saveConfig();
-        qDebug()<< "from" << device_index.at( iso_index )->blockDeviceName() << "to" << device_index.at( CD_index )->blockDeviceName() <<endl;
-        dlg->slotStartClicked();
+    if( device_index.isEmpty() ){
+        KMessageBox::information( this, i18n("Please add files to your project first."),
+                                  i18n("No Data to Burn") );
+    }else {
+        dlg->setReadingDevice( device_index.at( iso_index ) );
+        if ( flag ){
+            dlg->loadConfig();
+            dlg->setOnlyCreateImage(true);
+            dlg->setTempDirPath( combo_CD->currentText() );
+            dlg->saveConfig();
+            dlg->slotStartClicked();
+        }else if ( device_index.at( iso_index ) == device_index.at( CD_index )){
+            dlg->setComboMedium( device_index.at( CD_index ) );
+            dlg->saveConfig();
+            dlg->slotStartClicked();
+        }else{
+            dlg->loadConfig();
+            dlg->setOnlyCreateImage(true);
+            dlg->setComboMedium( device_index.at( CD_index ) );
+            dlg->saveConfig();
+            qDebug()<< "from" << device_index.at( iso_index )->blockDeviceName() << "to" << device_index.at( CD_index )->blockDeviceName() <<endl;
+            dlg->slotStartClicked();
+        }
     }
 }
 

@@ -256,10 +256,16 @@ void K3b::TitleBar::popup()
 {
     QList<K3b::Device::Device*> device_list = k3bappcore->appDeviceManager()->allDevices();
     foreach(K3b::Device::Device* dev, device_list){
-        KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( dev->blockDeviceName() );
-        if(dev && mountPoint){
-            dev->eject();
-            break;
+        if ( dev ){
+            KMountPoint::Ptr mountPoint = KMountPoint::currentMountPoints().findByDevice( dev->blockDeviceName() );
+            if ( dev->diskInfo().diskState() == K3b::Device::STATE_EMPTY ){
+                dev->eject();
+                break;
+            }
+            if( mountPoint ){
+                dev->eject();
+                break;
+            }
         }
     }
 }

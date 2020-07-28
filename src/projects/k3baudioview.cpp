@@ -321,7 +321,7 @@ void K3b::AudioView::slotOpenfile()
 
 void K3b::AudioView::slotSetting()
 {
-    if( lineedit_iso->text().isEmpty() ) { 
+    if( lineEdit_text->text().isEmpty() ) { 
         KMessageBox::information( this, i18n("Please add files to your project first."),
                                   i18n("No Data to Burn") );
     }else{   
@@ -333,7 +333,7 @@ void K3b::AudioView::slotSetting()
 void K3b::AudioView::slotStartBurn()
 {
     dlg = new K3b::ImageWritingDialog( this );
-    if( lineedit_iso->text().isEmpty() ) { 
+    if( lineEdit_text->text().isEmpty() ) { 
         KMessageBox::information( this, i18n("Please add files to your project first."),
                                   i18n("No Data to Burn") );
     }else if( device_index.isEmpty() ){
