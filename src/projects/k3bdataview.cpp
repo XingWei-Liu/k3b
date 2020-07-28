@@ -84,13 +84,13 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     //*********************************************************************
     m_dirView->setColumnHidden( DataProjectModel::PathColumn, true );
     m_dirView->hide();
-    
+/*    
     QFrame *line = new QFrame(this);
     line->setGeometry(QRect(40, 180, 400, 3));
     line->setFrameShape(QFrame::HLine);
     line->setFrameShadow(QFrame::Sunken);
     line->raise();
-
+*/
     //刻录设置按钮
     burn_setting = new QPushButton(i18n("open"), this);
     burn_setting->setFixedSize(80, 30);
@@ -287,10 +287,14 @@ bool K3b::DataView::eventFilter(QObject *obj, QEvent *event)
     case QEvent::HoverEnter:
         if(obj == button_add)
             button_add->setIcon(QIcon(":/icon/icon/icon-添加-悬停点击.png"));
-        if(obj == button_remove)
-            button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
-        if(obj == button_clear)
-            button_clear->setIcon(QIcon(":/icon/icon/icon-清空-悬停点击.png"));
+        if(obj == button_remove){
+            if ( button_remove->isEnabled() )
+                button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        }
+        if(obj == button_clear){
+            if ( button_clear->isEnabled() )
+                button_clear->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        }
         if(obj == button_newdir)
             button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-悬停点击.png"));
         break;
@@ -307,10 +311,14 @@ bool K3b::DataView::eventFilter(QObject *obj, QEvent *event)
     case QEvent::MouseButtonPress:
         if(obj == button_add)
             button_add->setIcon(QIcon(":/icon/icon/icon-添加-悬停点击.png"));
-        if(obj == button_remove)
-            button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
-        if(obj == button_clear)
-            button_clear->setIcon(QIcon(":/icon/icon/icon-清空-悬停点击.png"));
+        if(obj == button_remove){
+            if ( button_remove->isEnabled() )
+                button_remove->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        }
+        if(obj == button_clear){
+            if ( button_clear->isEnabled() )
+                button_clear->setIcon(QIcon(":/icon/icon/icon-删除-悬停点击.png"));
+        }
         if(obj == button_newdir)
             button_newdir->setIcon(QIcon(":/icon/icon/icon-新建文件-悬停点击.png"));
         break;
