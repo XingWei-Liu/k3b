@@ -29,8 +29,10 @@ int main( int argc, char* argv[] )
     K3b::Application app( argc, argv );
 
     /*Prevent multiple opening*/
-    QLockFile *lockFile = new QLockFile("/tmp/appName.app.lock");
+    QString path =  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    QLockFile *lockFile = new QLockFile( path + "/appName.app.lock");
     if (!lockFile ->tryLock(2000)) {    //上锁失败，不能启动
+        qDebug() << "app is running";
         return 0;
     }else{
          qDebug() << "app is not running";
