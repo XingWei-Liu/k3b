@@ -130,6 +130,12 @@ K3b::DataView::DataView( K3b::DataDoc* doc, QWidget* parent )
     image_path = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation) + "/kylin_burner.iso";
     combo_CD->addItem(QIcon(":/icon/icon/icon-镜像.png"), i18n("image file: ") + image_path);
 
+    combo_CD->setStyleSheet("QComboBox{background:rgba(255,255,255,1);  border:1px solid rgba(220,221,222,1);border-radius:4px;}"
+                            "QComboBox::drop-down{subcontrol-origin: padding; subcontrol-position: top right; \
+                             border-top-right-radius: 3px; \ 
+                             border-bottom-right-radius: 3px;}"
+                             "QComboBox::down-arrow{width: 8px; height: 16;  padding: 0px 0px 0px 0px;}");
+
     QHBoxLayout *hlayout_burner = new QHBoxLayout();
     hlayout_burner->setContentsMargins(0, 0, 0, 0);
     hlayout_burner->addWidget( label_burner );
