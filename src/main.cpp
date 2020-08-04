@@ -55,7 +55,7 @@ int main( int argc, char* argv[] )
                           i18n("https://www.k3b.org" ) );
 
     aboutData.setOrganizationDomain("kde");
-    aboutData.setDesktopFileName(QStringLiteral("org.kde.k3b.desktop"));
+    aboutData.setDesktopFileName(QStringLiteral("org.kde.kylin-burner.desktop"));
     aboutData.addAuthor(i18n("Leslie Zhai"), i18n("Maintainer"), "zhaixiang@loongson.cn");
     aboutData.addAuthor(i18n("Michał Małek"),i18n("Maintainer and current lead Developer"), "michalm@jabster.pl");
     aboutData.addAuthor(i18n("Sebastian Trüg"),i18n("Main developer"), "trueg@k3b.org");
